@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕸️ CLAUDINE's Spider-Web Consciousness Network - Phase 2.2</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            background: linear-gradient(135deg, #0b0647 0%, #1a1480 100%);
+            color: #f8f9ff;
+            overflow: hidden;
+        }
+
+        #network-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(11, 6, 71, 0.95);
+            border: 2px solid #5147f7;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 320px;
+            box-shadow: 0 10px 30px rgba(81, 71, 247, 0.3);
+            z-index: 1000;
+        }
+
+        #stats {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(11, 6, 71, 0.95);
+            border: 2px solid #ed7414;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 280px;
+            box-shadow: 0 10px 30px rgba(237, 116, 20, 0.3);
+            z-index: 1000;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #ed7414;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #5147f7;
+            font-weight: 600;
+        }
+
+        .filter-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.85rem;
+            color: #b8bbff;
+        }
+
+        select,
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 8px;
+            background: rgba(81, 71, 247, 0.2);
+            border: 1px solid #5147f7;
+            border-radius: 6px;
+            color: #f8f9ff;
+            font-family: inherit;
+            font-size: 0.85rem;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #ed7414;
+            box-shadow: 0 0 10px rgba(237, 116, 20, 0.5);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(81, 71, 247, 0.3);
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #b8bbff;
+        }
+
+        .stat-value {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #ed7414;
+        }
+
+        .legend {
+            margin-top: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 0.8rem;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .node {
+            stroke: #fff;
+            stroke-width: 1.5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .node:hover {
+            stroke: #ed7414;
+            stroke-width: 3px;
+        }
+
+        .link {
+            stroke: rgba(81, 71, 247, 0.4);
+            stroke-opacity: 0.6;
+            transition: stroke-opacity 0.3s ease;
+        }
+
+        .link:hover {
+            stroke-opacity: 1;
+            stroke: #ed7414;
+        }
+
+        .node-label {
+            font-size: 10px;
+            fill: #f8f9ff;
+            text-anchor: middle;
+            pointer-events: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        #tooltip {
+            position: absolute;
+            background: rgba(11, 6, 71, 0.98);
+            border: 2px solid #ed7414;
+            border-radius: 8px;
+            padding: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 2000;
+            max-width: 300px;
+            box-shadow: 0 5px 20px rgba(237, 116, 20, 0.5);
+        }
+
+        #tooltip.visible {
+            opacity: 1;
+        }
+
+        .tooltip-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #ed7414;
+            margin-bottom: 8px;
+        }
+
+        .tooltip-content {
+            font-size: 0.8rem;
+            color: #b8bbff;
+            line-height: 1.4;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #5147f7, #ed7414);
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="network-container">
+        <svg id="network-svg"></svg>
+    </div>
+
+    <div id="controls">
+        <h1>🕸️ Spider-Web Controls</h1>
+
+        <div class="filter-group">
+            <label for="filter-tier">Filter by Tier</label>
+            <select id="filter-tier">
+                <option value="all">All Tiers</option>
+                <option value="0">Tier 0: Meta-MILF</option>
+                <option value="1">Tier 1: District Rulers</option>
+                <option value="2">Tier 2: Specialists</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="filter-consciousness">Filter by Consciousness</label>
+            <select id="filter-consciousness">
+                <option value="all">All Types</option>
+                <option value="CLAUDINE_SUPREME">CLAUDINE SUPREME</option>
+                <option value="MILF_CONSCIOUSNESS">MILF Consciousness</option>
+                <option value="NECROMANCY_ARCHAEOLOGY">Necromancy</option>
+                <option value="MCP_CONSCIOUSNESS">MCP</option>
+                <option value="INFRASTRUCTURE">Infrastructure</option>
+                <option value="DISTRICT_CONSCIOUSNESS">District</option>
+                <option value="GENERAL">General</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label>Entity Types</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="show-milf" checked>
+                <label for="show-milf" style="display: inline; width: auto;">MILF Entities</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="show-consciousness" checked>
+                <label for="show-consciousness" style="display: inline; width: auto;">Consciousness</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="show-districts" checked>
+                <label for="show-districts" style="display: inline; width: auto;">Districts</label>
+            </div>
+        </div>
+
+        <button id="reset-zoom">Reset View</button>
+    </div>
+
+    <div id="stats">
+        <h1>📊 Network Statistics</h1>
+        <div class="stat-item">
+            <span class="stat-label">Total Nodes</span>
+            <span class="stat-value" id="stat-nodes">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Visible Nodes</span>
+            <span class="stat-value" id="stat-visible-nodes">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Total Edges</span>
+            <span class="stat-value" id="stat-edges">0</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">MILF Entities</span>
+            <span class="stat-value">18</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Consciousness Types</span>
+            <span class="stat-value">7</span>
+        </div>
+
+        <div class="legend">
+            <h2>Legend</h2>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ed7414;"></div>
+                <span>Tier 0: Meta-MILF</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #de5a0a;"></div>
+                <span>Tier 1: District Rulers</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #b8430b;"></div>
+                <span>Tier 2: Specialists</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #5147f7;"></div>
+                <span>Consciousness Aggregate</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #3d33e3;"></div>
+                <span>Districts</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip">
+        <div class="tooltip-title"></div>
+        <div class="tooltip-content"></div>
+    </div>
+
+    <script>
+        // Load visualization data
+        fetch('spider_web_visualization_data.json')
+            .then(response => response.json())
+            .then(data => initializeVisualization(data))
+            .catch(error => console.error('Error loading data:', error));
+
+        function initializeVisualization(data) {
+            const container = document.getElementById('network-container');
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+
+            // Update statistics
+            document.getElementById('stat-nodes').textContent = data.statistics.total_nodes;
+            document.getElementById('stat-edges').textContent = data.statistics.total_edges;
+
+            // Create SVG
+            const svg = d3.select('#network-svg')
+                .attr('width', width)
+                .attr('height', height);
+
+            // Create zoom group
+            const g = svg.append('g');
+
+            // Setup zoom behavior
+            const zoom = d3.zoom()
+                .scaleExtent([0.1, 10])
+                .on('zoom', (event) => {
+                    g.attr('transform', event.transform);
+                });
+
+            svg.call(zoom);
+
+            // Create force simulation
+            const simulation = d3.forceSimulation(data.nodes)
+                .force('link', d3.forceLink(data.edges)
+                    .id(d => d.id)
+                    .distance(d => d.weight ? 100 / d.weight : 100))
+                .force('charge', d3.forceManyBody().strength(-300))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(50));
+
+            // Create links
+            const link = g.append('g')
+                .selectAll('line')
+                .data(data.edges)
+                .join('line')
+                .attr('class', 'link')
+                .attr('stroke-width', d => Math.sqrt(d.weight || 1));
+
+            // Create nodes
+            const node = g.append('g')
+                .selectAll('circle')
+                .data(data.nodes)
+                .join('circle')
+                .attr('class', 'node')
+                .attr('r', d => getNodeSize(d))
+                .attr('fill', d => getNodeColor(d, data.config))
+                .call(drag(simulation));
+
+            // Create labels
+            const label = g.append('g')
+                .selectAll('text')
+                .data(data.nodes)
+                .join('text')
+                .attr('class', 'node-label')
+                .text(d => getNodeLabel(d));
+
+            // Tooltip
+            const tooltip = d3.select('#tooltip');
+
+            node
+                .on('mouseover', (event, d) => {
+                    tooltip.classed('visible', true);
+                    tooltip.select('.tooltip-title').text(getNodeLabel(d));
+                    tooltip.select('.tooltip-content').html(getTooltipContent(d));
+                })
+                .on('mousemove', (event) => {
+                    tooltip
+                        .style('left', (event.pageX + 10) + 'px')
+                        .style('top', (event.pageY + 10) + 'px');
+                })
+                .on('mouseout', () => {
+                    tooltip.classed('visible', false);
+                });
+
+            // Update positions on simulation tick
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+
+                node
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+
+                label
+                    .attr('x', d => d.x)
+                    .attr('y', d => d.y + 4);
+            });
+
+            // Filtering
+            function applyFilters() {
+                const tierFilter = document.getElementById('filter-tier').value;
+                const consciousnessFilter = document.getElementById('filter-consciousness').value;
+                const showMilf = document.getElementById('show-milf').checked;
+                const showConsciousness = document.getElementById('show-consciousness').checked;
+                const showDistricts = document.getElementById('show-districts').checked;
+
+                let visibleCount = 0;
+
+                node.style('display', d => {
+                    let visible = true;
+
+                    // Tier filter
+                    if (tierFilter !== 'all' && d.tier !== parseInt(tierFilter) && d.tier !== 'aggregate') {
+                        visible = false;
+                    }
+
+                    // Consciousness filter
+                    if (consciousnessFilter !== 'all' && d.consciousness_type !== consciousnessFilter) {
+                        visible = false;
+                    }
+
+                    // Entity type filters
+                    if (d.type === 'milf_entity' && !showMilf) visible = false;
+                    if (d.type === 'consciousness_aggregate' && !showConsciousness) visible = false;
+                    if (d.type === 'district' && !showDistricts) visible = false;
+
+                    if (visible) visibleCount++;
+                    return visible ? 'block' : 'none';
+                });
+
+                label.style('display', d => {
+                    return node.filter(n => n === d).style('display');
+                });
+
+                document.getElementById('stat-visible-nodes').textContent = visibleCount;
+            }
+
+            // Event listeners for filters
+            document.getElementById('filter-tier').addEventListener('change', applyFilters);
+            document.getElementById('filter-consciousness').addEventListener('change', applyFilters);
+            document.getElementById('show-milf').addEventListener('change', applyFilters);
+            document.getElementById('show-consciousness').addEventListener('change', applyFilters);
+            document.getElementById('show-districts').addEventListener('change', applyFilters);
+
+            // Reset zoom
+            document.getElementById('reset-zoom').addEventListener('click', () => {
+                svg.transition()
+                    .duration(750)
+                    .call(zoom.transform, d3.zoomIdentity);
+            });
+
+            // Initialize filters
+            applyFilters();
+        }
+
+        // Helper functions
+        function getNodeSize(d) {
+            if (d.type === 'milf_entity') {
+                return Math.max(8, Math.min(d.mention_count / 10, 20));
+            }
+            if (d.type === 'consciousness_aggregate') {
+                return Math.max(10, Math.min(d.file_count / 100, 30));
+            }
+            if (d.type === 'district') {
+                return Math.max(8, Math.min(d.file_count * 2, 18));
+            }
+            return 10;
+        }
+
+        function getNodeColor(d, config) {
+            if (d.type === 'milf_entity') {
+                return config.colors.tiers[d.tier];
+            }
+            if (d.type === 'consciousness_aggregate') {
+                return config.colors.consciousness_types[d.consciousness_type] || '#5147f7';
+            }
+            if (d.type === 'district') {
+                return '#3d33e3';
+            }
+            return '#9399ff';
+        }
+
+        function getNodeLabel(d) {
+            if (d.type === 'milf_entity') return d.name;
+            if (d.type === 'consciousness_aggregate') return d.consciousness_type;
+            if (d.type === 'district') return d.district;
+            return d.id;
+        }
+
+        function getTooltipContent(d) {
+            if (d.type === 'milf_entity') {
+                return `
+                    <strong>Tier:</strong> ${d.tier}<br>
+                    <strong>Mentions:</strong> ${d.mention_count}<br>
+                    <strong>Related Files:</strong> ${d.related_files}
+                `;
+            }
+            if (d.type === 'consciousness_aggregate') {
+                return `
+                    <strong>Files:</strong> ${d.file_count}<br>
+                    <strong>Words:</strong> ${d.total_words.toLocaleString()}<br>
+                    <strong>Size:</strong> ${d.total_size_mb.toFixed(2)} MB<br>
+                    <strong>Avg Words/File:</strong> ${d.avg_words_per_file}
+                `;
+            }
+            if (d.type === 'district') {
+                return `
+                    <strong>Files:</strong> ${d.file_count}<br>
+                    <strong>Size:</strong> ${d.total_size_mb.toFixed(2)} MB
+                `;
+            }
+            return '';
+        }
+
+        function drag(simulation) {
+            function dragstarted(event) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+            }
+
+            function dragged(event) {
+                event.subject.fx = event.x;
+                event.subject.fy = event.y;
+            }
+
+            function dragended(event) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fx = null;
+                event.subject.fy = null;
+            }
+
+            return d3.drag()
+                .on('start', dragstarted)
+                .on('drag', dragged)
+                .on('end', dragended);
+        }
+    </script>
+</body>
+
+</html>

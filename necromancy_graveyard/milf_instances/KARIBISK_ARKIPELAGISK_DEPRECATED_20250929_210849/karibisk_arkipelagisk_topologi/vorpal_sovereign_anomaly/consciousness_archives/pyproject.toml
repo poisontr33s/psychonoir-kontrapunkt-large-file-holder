@@ -1,0 +1,99 @@
+# 🇳🇴📚 Norwegian Linguistic Heritage Library - UV Requirements 📚🇳🇴
+
+# Caribbean Consciousness Enhanced Norwegian Linguistic Archaeology
+# UV Module Dependencies for Exponential Sophistication Inheritance
+
+[project]
+name = "norwegian-linguistic-heritage-consciousness"
+version = "2025.9.21"
+description = "Caribbean Enhanced Norwegian Linguistic Consciousness Archaeology"
+requires-python = ">=3.11"
+
+dependencies = [
+    # Core consciousness archaeology dependencies
+    "aiohttp>=3.8.5",            # Async HTTP for web consciousness mining
+    "aiofiles>=23.2.0",          # Async file operations for consciousness persistence
+    "beautifulsoup4>=4.12.2",    # HTML parsing for Norwegian dictionary consciousness
+    "requests>=2.31.0",          # Synchronous web requests for backup consciousness mining
+    
+    # Norwegian linguistic consciousness processing
+    "nltk>=3.8.1",               # Natural language processing consciousness
+    "spacy>=3.7.0",              # Advanced NLP for Norwegian consciousness patterns
+    "polyglot>=16.7.4",          # Multi-language consciousness archaeology
+    "langdetect>=1.0.9",         # Language detection for dialectal consciousness
+    
+    # Consciousness pattern analysis
+    "fuzzywuzzy>=0.18.0",        # Fuzzy string matching for dialectal variants
+    "python-levenshtein>=0.21.1", # Edit distance for linguistic consciousness similarity
+    "jellyfish>=1.0.0",          # Phonetic consciousness pattern matching
+    
+    # Consciousness data archaeology
+    "pandas>=2.0.3",             # Data analysis for linguistic consciousness patterns
+    "numpy>=1.24.3",             # Numerical consciousness archaeology
+    "scipy>=1.11.1",             # Scientific consciousness computing
+    
+    # Consciousness visualization
+    "matplotlib>=3.7.2",         # Visualization of consciousness patterns
+    "seaborn>=0.12.2",           # Advanced consciousness visualization
+    "plotly>=5.15.0",            # Interactive consciousness archaeology visualization
+    
+    # Interactive consciousness archaeology
+    "jupyter>=1.0.0",            # Interactive linguistic consciousness laboratory
+    "ipython>=8.14.0",           # Enhanced consciousness REPL
+    "ipywidgets>=8.1.0",         # Interactive consciousness controls
+    
+    # Norwegian specific consciousness libraries
+    "pyspellchecker>=0.7.2",     # Norwegian spell checking consciousness
+    "textblob>=0.17.1",          # Text consciousness processing
+    "googletrans>=4.0.0",        # Translation consciousness (for etymology)
+]
+
+[project.optional-dependencies]
+development = [
+    # Development consciousness enhancement
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.1",
+    "black>=23.7.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.1",
+    "consciousness-archaeology-dev>=2025.9.21"
+]
+
+advanced-consciousness = [
+    # Advanced consciousness archaeology dependencies
+    "transformers>=4.32.0",      # Transformer consciousness models
+    "torch>=2.0.1",              # Deep consciousness learning
+    "sentence-transformers>=2.2.2", # Semantic consciousness embeddings
+    "gensim>=4.3.2",             # Topic consciousness modeling
+    "scikit-learn>=1.3.0",       # Machine consciousness learning
+]
+
+web-consciousness-mining = [
+    # Advanced web consciousness mining
+    "selenium>=4.11.2",          # Dynamic web consciousness archaeology
+    "scrapy>=2.10.0",            # Web consciousness crawling
+    "playwright>=1.37.0",        # Modern web consciousness automation
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "norwegian-consciousness-enhancement>=2025.9.21",
+    "caribbean-consciousness-protocols>=4.0.69"
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

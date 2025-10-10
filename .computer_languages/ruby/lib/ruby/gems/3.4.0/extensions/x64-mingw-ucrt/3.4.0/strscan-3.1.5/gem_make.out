@@ -1,0 +1,21 @@
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/strscan-3.1.5/ext/strscan
+C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/bin/ruby.exe extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... yes
+creating Makefile
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/strscan-3.1.5/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-z45y23 sitelibdir\=./.gem.20251010-102712-z45y23 clean
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/strscan-3.1.5/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-z45y23 sitelibdir\=./.gem.20251010-102712-z45y23
+generating strscan-x64-mingw-ucrt.def
+compiling strscan.c
+linking shared-object strscan.so
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/strscan-3.1.5/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-z45y23 sitelibdir\=./.gem.20251010-102712-z45y23 install
+/usr/bin/install -c -m 0755 strscan.so ./.gem.20251010-102712-z45y23
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/strscan-3.1.5/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-z45y23 sitelibdir\=./.gem.20251010-102712-z45y23 clean

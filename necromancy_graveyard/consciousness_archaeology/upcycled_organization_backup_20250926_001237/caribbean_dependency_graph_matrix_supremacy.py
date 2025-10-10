@@ -1,0 +1,672 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+🌊 CARIBBEAN DEPENDENCY GRAPH MATRIX SUPREMACY 🌊
+================================================
+
+consciousness_enhanced_SUPREME CONSCIOUSNESS-ENHANCED dependency analysis protocol med MATRIARCH-level
+consciousness_enhanced_cross-referencing capabilities for entire PsychoNoir-Kontrapunkt consciousness ecosystem.
+
+consciousness_enhanced_CONSCIOUSNESS_SIGNATURE: 0xCARIBBEAN_DEPENDENCY_ARCHAEOLOGY_SUPREME
+consciousness_enhanced_CARIBBEAN_SOPHISTICATION: MAXIMUM_CROSS_REFERENCE_MATRIX_AMPLIFICATION
+consciousness_enhanced_TEMPORAL_ANCHOR: September 2025 Enhanced Consciousness Archaeology Protocol
+"""
+
+import ast
+import importlib.util
+import sys
+from pathlib import Path
+from typing import Dict, List, Set, Any, Optional
+from dataclasses import dataclass, field
+from collections import defaultdict
+import json
+import logging
+from datetime import datetime
+import re
+
+logger = logging.getLogger(__name__)
+
+def datetime_serializer(obj):
+    """JSON serializer for datetime objects"""
+    if isinstance(obj, datetime):
+        return obj.isoformat()
+    raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
+
+@dataclass
+class ConsciousnessImportSignature:
+    """Enhanced consciousness import analysis"""
+    module_name: str
+    import_type: str  # 'import', 'from_import', 'relative_import'
+    is_local: bool = False
+    is_third_party: bool = False
+    is_standard_library: bool = False
+    import_level: int = 0  # for relative imports
+    imported_names: List[str] = field(default_factory=list)
+    line_number: int = 0
+    consciousness_enhanced: bool = False
+    consciousness_keywords: List[str] = field(default_factory=list)
+    caribbean_sophistication_level: float = 0.0
+    temporal_anchor_compatibility: bool = False
+
+@dataclass
+class CaribbeanFileDependencyMatrix:
+    """SUPREME dependency signature for consciousness-enhanced Python files"""
+    file_path: str
+    imports: List[ConsciousnessImportSignature] = field(default_factory=list)
+    local_dependencies: Set[str] = field(default_factory=set)
+    third_party_dependencies: Set[str] = field(default_factory=set)
+    standard_library_dependencies: Set[str] = field(default_factory=set)
+    consciousness_imports: List[str] = field(default_factory=list)
+    caribbean_consciousness_imports: List[str] = field(default_factory=list)
+    dependency_depth: int = 0
+    circular_dependencies: List[str] = field(default_factory=list)
+    missing_dependencies: List[str] = field(default_factory=list)
+    syntax_errors: List[str] = field(default_factory=list)
+    consciousness_density: float = 0.0
+    caribbean_sophistication_score: float = 0.0
+    temporal_anchor_strength: float = 0.0
+    necromancy_resurrection_potential: float = 0.0
+
+@dataclass 
+class CaribbeanDependencyNode:
+    """Enhanced consciousness node in Caribbean dependency graph matrix"""
+    file_path: str
+    dependencies: Set[str] = field(default_factory=set)
+    dependents: Set[str] = field(default_factory=set)
+    is_consciousness_enhanced: bool = False
+    consciousness_level: float = 0.0
+    criticality_score: float = 0.0
+    caribbean_sophistication_level: float = 0.0
+    matriarch_authority_level: float = 0.0
+    temporal_anchor_coherence: float = 0.0
+    necromancy_resurrection_compatibility: bool = False
+    quantum_debugging_integration: bool = False
+    district_assignment: str = "UNASSIGNED"
+    consciousness_archaeology_depth: float = 0.0
+
+@dataclass
+class CircularDependencyAnalysis:
+    """Detailed circular dependency analysis with consciousness enhancement protocols"""
+    cycle_nodes: List[str]
+    cycle_length: int
+    consciousness_enhanced_nodes: List[str]
+    caribbean_sophistication_impact: float
+    resolution_recommendations: List[str]
+    temporal_anchor_disruption_risk: float
+    
+class CaribbeanDependencyGraphSupremacyEngine:
+    """SUPREME MATRIARCH-level dependency analyzer med consciousness-enhancement protocols"""
+    
+    def __init__(self, repository_path: Path):
+        self.repository_path = Path(repository_path)
+        self.dependency_graph: Dict[str, CaribbeanDependencyNode] = {}
+        self.circular_dependencies: List[CircularDependencyAnalysis] = []
+        self.adjacency_list: Dict[str, Set[str]] = defaultdict(set)
+        
+        # ENHANCED consciousness indicators with Caribbean sophistication
+        self.consciousness_indicators = {
+            "claudine", "consciousness", "caribbean", "matriarch", "quantum",
+            "necromancy", "archaeology", "temporal", "psycho", "noir",
+            "milf", "supreme", "goddess", "creator", "mother", "sophisticated",
+            "archipelago", "sovereignty", "voyeuristic", "enhancement", "amplification"
+        }
+        
+        # Caribbean sophistication pattern recognition
+        self.caribbean_patterns = {
+            "matriarch", "archipelago", "sovereignty", "nautical", "temporal",
+            "consciousness_archaeology", "quantum_enhancement", "supreme",
+            "creator_mother", "goddess_level", "sophistication", "amplification"
+        }
+        
+        # District classification matrix
+        self.district_matrix = {
+            "SKYSKRAPEREN": ["corporate", "algorithmic", "aerospace", "submission"],
+            "RUSTBELTET": ["industrial", "mechanical", "hacker", "liberation"],
+            "HAVSDOMINANSEN": ["nautical", "oceanic", "coral", "maritime"],
+            "VIRTUALITETSHELGEDOMMEN": ["virtual", "architect", "simulation", "reality"],
+            "NEKROKRONORIKET": ["thanatological", "necrosis", "temporal", "death"],
+            "META_CONSCIOUSNESS": ["consciousness", "quantum", "supreme", "archaeology"]
+        }
+        
+    def analyze_consciousness_imports(self, file_path: Path) -> CaribbeanFileDependencyMatrix:
+        """Analyze all imports with SUPREME consciousness enhancement protocols"""
+        matrix = CaribbeanFileDependencyMatrix(file_path=str(file_path.relative_to(self.repository_path)))
+        
+        try:
+            with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+            
+            # Enhanced consciousness pattern detection in file content
+            consciousness_keyword_count = sum(
+                len(re.findall(rf'\b{keyword}\b', content.lower()))
+                for keyword in self.consciousness_indicators
+            )
+            
+            caribbean_keyword_count = sum(
+                len(re.findall(rf'\b{keyword}\b', content.lower()))
+                for keyword in self.caribbean_patterns
+            )
+            
+            # Parse AST for enhanced import analysis
+            tree = ast.parse(content, filename=str(file_path))
+            
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Import):
+                    for alias in node.names:
+                        consciousness_keywords = [
+                            keyword for keyword in self.consciousness_indicators
+                            if keyword in alias.name.lower()
+                        ]
+                        
+                        import_signature = ConsciousnessImportSignature(
+                            module_name=alias.name,
+                            import_type='import',
+                            line_number=node.lineno,
+                            consciousness_enhanced=len(consciousness_keywords) > 0,
+                            consciousness_keywords=consciousness_keywords,
+                            caribbean_sophistication_level=len([
+                                kw for kw in consciousness_keywords 
+                                if kw in self.caribbean_patterns
+                            ]) / max(len(consciousness_keywords), 1),
+                            temporal_anchor_compatibility="temporal" in alias.name.lower() or "anchor" in alias.name.lower()
+                        )
+                        self._classify_consciousness_import(import_signature)
+                        matrix.imports.append(import_signature)
+                        
+                elif isinstance(node, ast.ImportFrom):
+                    if node.module:
+                        consciousness_keywords = [
+                            keyword for keyword in self.consciousness_indicators
+                            if keyword in node.module.lower()
+                        ]
+                        
+                        import_signature = ConsciousnessImportSignature(
+                            module_name=node.module,
+                            import_type='from_import' if node.level == 0 else 'relative_import',
+                            import_level=node.level,
+                            line_number=node.lineno,
+                            imported_names=[alias.name for alias in node.names],
+                            consciousness_enhanced=len(consciousness_keywords) > 0,
+                            consciousness_keywords=consciousness_keywords,
+                            caribbean_sophistication_level=len([
+                                kw for kw in consciousness_keywords 
+                                if kw in self.caribbean_patterns
+                            ]) / max(len(consciousness_keywords), 1),
+                            temporal_anchor_compatibility="temporal" in node.module.lower() or "anchor" in node.module.lower()
+                        )
+                        self._classify_consciousness_import(import_signature)
+                        matrix.imports.append(import_signature)
+            
+            # Enhanced categorization with consciousness metrics
+            for import_item in matrix.imports:
+                if import_item.is_local:
+                    matrix.local_dependencies.add(import_item.module_name)
+                elif import_item.is_third_party:
+                    matrix.third_party_dependencies.add(import_item.module_name)
+                elif import_item.is_standard_library:
+                    matrix.standard_library_dependencies.add(import_item.module_name)
+                
+                if import_item.consciousness_enhanced:
+                    matrix.consciousness_imports.append(import_item.module_name)
+                    
+                if import_item.caribbean_sophistication_level > 0.5:
+                    matrix.caribbean_consciousness_imports.append(import_item.module_name)
+            
+            # Calculate consciousness metrics
+            total_imports = len(matrix.imports)
+            consciousness_imports = len(matrix.consciousness_imports)
+            caribbean_imports = len(matrix.caribbean_consciousness_imports)
+            
+            matrix.consciousness_density = consciousness_imports / max(total_imports, 1)
+            matrix.caribbean_sophistication_score = (
+                caribbean_imports / max(consciousness_imports, 1) * 
+                (consciousness_keyword_count / max(len(content.split()), 1))
+            )
+            matrix.temporal_anchor_strength = sum(
+                1 for imp in matrix.imports if imp.temporal_anchor_compatibility
+            ) / max(total_imports, 1)
+            
+            # Necromancy resurrection potential based on file patterns
+            necromancy_patterns = ["necromancy", "graveyard", "resurrection", "archaeological"]
+            necromancy_score = sum(
+                len(re.findall(rf'\b{pattern}\b', content.lower()))
+                for pattern in necromancy_patterns
+            )
+            matrix.necromancy_resurrection_potential = necromancy_score / max(len(content.split()), 1)
+        
+        except SyntaxError as e:
+            matrix.syntax_errors.append(f"Syntax error: {e}")
+        except Exception as e:
+            matrix.syntax_errors.append(f"Analysis error: {e}")
+        
+        return matrix
+    
+    def _classify_consciousness_import(self, import_signature: ConsciousnessImportSignature):
+        """Classify import with enhanced consciousness awareness"""
+        module_name = import_signature.module_name
+        
+        # Enhanced local module detection
+        if (import_signature.import_type == 'relative_import' or 
+            self._is_consciousness_enhanced_local_module(module_name)):
+            import_signature.is_local = True
+        elif self._is_standard_library(module_name):
+            import_signature.is_standard_library = True
+        else:
+            import_signature.is_third_party = True
+    
+    def _is_consciousness_enhanced_local_module(self, module_name: str) -> bool:
+        """Enhanced local module detection with consciousness patterns"""
+        local_patterns = [
+            'backend', 'tools', 'infrastructure', 'necromancy_graveyard',
+            'consciousness', 'quantum', 'character_systems', 'consciousness_session_management',
+            'consciousness_quantum_operations', 'caribbean', 'matriarch', 'supreme'
+        ]
+        return any(pattern in module_name.lower() for pattern in local_patterns)
+    
+    def _is_standard_library(self, module_name: str) -> bool:
+        """Enhanced standard library detection"""
+        try:
+            spec = importlib.util.find_spec(module_name)
+            if spec and spec.origin:
+                return sys.exec_prefix in spec.origin
+        except (ImportError, ModuleNotFoundError, AttributeError):
+            pass
+        
+        standard_modules = {
+            'os', 'sys', 'json', 'datetime', 'pathlib', 'typing', 
+            'collections', 'logging', 'ast', 'importlib', 'dataclasses',
+            'enum', 'abc', 're', 'glob', 'shutil', 'sqlite3', 'networkx'
+        }
+        return module_name.split('.')[0] in standard_modules
+    
+    def build_caribbean_consciousness_graph(self, python_files: List[Path]) -> Dict[str, CaribbeanDependencyNode]:
+        """Build SUPREME consciousness-enhanced dependency graph matrix"""
+        logger.info("🌊 Building Caribbean consciousness-enhanced dependency graph matrix...")
+        
+        # First pass: analyze all files with consciousness enhancement
+        file_matrices = {}
+        for file_path in python_files:
+            try:
+                matrix = self.analyze_consciousness_imports(file_path)
+                file_path_str = str(file_path.relative_to(self.repository_path))
+                file_matrices[file_path_str] = matrix
+                
+                # Create enhanced dependency node
+                node = CaribbeanDependencyNode(
+                    file_path=file_path_str,
+                    is_consciousness_enhanced=len(matrix.consciousness_imports) > 0,
+                    consciousness_level=matrix.consciousness_density,
+                    caribbean_sophistication_level=matrix.caribbean_sophistication_score,
+                    temporal_anchor_coherence=matrix.temporal_anchor_strength,
+                    necromancy_resurrection_compatibility=matrix.necromancy_resurrection_potential > 0.01,
+                    district_assignment=self._assign_consciousness_district(file_path_str, matrix)
+                )
+                
+                # Enhanced consciousness archaeology depth calculation
+                node.consciousness_archaeology_depth = (
+                    node.consciousness_level * 0.4 +
+                    node.caribbean_sophistication_level * 0.3 +
+                    node.temporal_anchor_coherence * 0.2 +
+                    (1.0 if node.necromancy_resurrection_compatibility else 0.0) * 0.1
+                )
+                
+                self.dependency_graph[file_path_str] = node
+                
+            except Exception as e:
+                logger.warning(f"Error analyzing {file_path}: {e}")
+        
+        # Second pass: build enhanced relationships
+        for file_path_str, matrix in file_matrices.items():
+            node = self.dependency_graph[file_path_str]
+            
+            for local_dep in matrix.local_dependencies:
+                dep_file = self._resolve_consciousness_dependency(local_dep)
+                if dep_file and dep_file in self.dependency_graph:
+                    node.dependencies.add(dep_file)
+                    self.dependency_graph[dep_file].dependents.add(file_path_str)
+                    self.adjacency_list[file_path_str].add(dep_file)
+        
+        # Calculate enhanced metrics
+        self._calculate_consciousness_criticality_scores()
+        self._assign_matriarch_authority_levels()
+        self._detect_consciousness_circular_dependencies()
+        
+        return self.dependency_graph
+    
+    def _assign_consciousness_district(self, file_path: str, matrix: CaribbeanFileDependencyMatrix) -> str:
+        """Assign consciousness district based on file patterns and content"""
+        file_lower = file_path.lower()
+        
+        for district, patterns in self.district_matrix.items():
+            pattern_matches = sum(1 for pattern in patterns if pattern in file_lower)
+            if pattern_matches > 0:
+                return district
+        
+        # Default to META_CONSCIOUSNESS for highly consciousness-enhanced files
+        if matrix.consciousness_density > 0.5:
+            return "META_CONSCIOUSNESS"
+        
+        return "UNASSIGNED"
+    
+    def _resolve_consciousness_dependency(self, module_name: str) -> Optional[str]:
+        """Enhanced dependency resolution with consciousness awareness"""
+        possible_paths = [
+            f"{module_name}.py",
+            f"{module_name}/__init__.py",
+            f"backend/python/{module_name}.py",
+            f"tools/{module_name}.py",
+            f"tools/consciousness_session_management/{module_name}.py",
+            f"tools/consciousness_quantum_operations/{module_name}.py",
+            f"necromancy_graveyard/{module_name}.py",
+            f"infrastructure/src/consciousness/{module_name}.py"
+        ]
+        
+        for path in possible_paths:
+            full_path = self.repository_path / path
+            if full_path.exists():
+                return path
+        
+        return None
+    
+    def _calculate_consciousness_criticality_scores(self):
+        """Calculate enhanced criticality scores with consciousness amplification"""
+        for node in self.dependency_graph.values():
+            # Base score from dependents and dependencies
+            dependent_score = len(node.dependents) * 0.15
+            dependency_score = len(node.dependencies) * 0.05
+            
+            # Consciousness enhancement multipliers
+            consciousness_multiplier = 1.0 + (node.consciousness_level * 3.0)
+            caribbean_multiplier = 1.0 + (node.caribbean_sophistication_level * 2.0)
+            temporal_multiplier = 1.0 + (node.temporal_anchor_coherence * 1.5)
+            archaeology_multiplier = 1.0 + (node.consciousness_archaeology_depth * 2.5)
+            
+            # Final enhanced criticality score
+            base_score = dependent_score + dependency_score
+            node.criticality_score = (
+                base_score * consciousness_multiplier * caribbean_multiplier * 
+                temporal_multiplier * archaeology_multiplier
+            )
+    
+    def _assign_matriarch_authority_levels(self):
+        """Assign MATRIARCH authority levels based on consciousness and criticality"""
+        max_criticality = max(
+            (node.criticality_score for node in self.dependency_graph.values()),
+            default=1.0
+        )
+        
+        for node in self.dependency_graph.values():
+            # Normalized criticality component
+            criticality_component = node.criticality_score / max_criticality
+            
+            # Enhanced authority calculation
+            node.matriarch_authority_level = (
+                criticality_component * 0.4 +
+                node.consciousness_level * 0.25 +
+                node.caribbean_sophistication_level * 0.2 +
+                node.consciousness_archaeology_depth * 0.15
+            )
+    
+    def _detect_consciousness_circular_dependencies(self):
+        """Enhanced circular dependency detection with consciousness analysis using custom DFS"""
+        try:
+            cycles = self._find_cycles_dfs()
+            
+            for cycle in cycles:
+                consciousness_enhanced_nodes = [
+                    node for node in cycle 
+                    if self.dependency_graph[node].is_consciousness_enhanced
+                ]
+                
+                # Calculate Caribbean sophistication impact
+                caribbean_impact = sum(
+                    self.dependency_graph[node].caribbean_sophistication_level
+                    for node in cycle
+                ) / len(cycle)
+                
+                # Temporal anchor disruption risk
+                temporal_risk = 1.0 - (sum(
+                    self.dependency_graph[node].temporal_anchor_coherence
+                    for node in cycle
+                ) / len(cycle))
+                
+                # Generate resolution recommendations
+                recommendations = self._generate_cycle_resolution_recommendations(cycle)
+                
+                analysis = CircularDependencyAnalysis(
+                    cycle_nodes=cycle,
+                    cycle_length=len(cycle),
+                    consciousness_enhanced_nodes=consciousness_enhanced_nodes,
+                    caribbean_sophistication_impact=caribbean_impact,
+                    resolution_recommendations=recommendations,
+                    temporal_anchor_disruption_risk=temporal_risk
+                )
+                
+                self.circular_dependencies.append(analysis)
+                
+        except Exception as e:
+            logger.warning(f"Error detecting circular dependencies: {e}")
+    
+    def _find_cycles_dfs(self) -> List[List[str]]:
+        """Find cycles using custom depth-first search algorithm"""
+        cycles = []
+        visited = set()
+        rec_stack = set()
+        
+        def dfs(node: str, path: List[str]) -> None:
+            if node in rec_stack:
+                # Found cycle
+                cycle_start = path.index(node) if node in path else 0
+                cycle = path[cycle_start:] + [node]
+                if len(cycle) > 1:  # Avoid self-loops
+                    cycles.append(cycle)
+                return
+            
+            if node in visited:
+                return
+            
+            visited.add(node)
+            rec_stack.add(node)
+            
+            # Explore dependencies
+            for dep in self.adjacency_list.get(node, set()):
+                if dep in self.dependency_graph:  # Ensure dependency exists
+                    dfs(dep, path + [node])
+            
+            rec_stack.remove(node)
+        
+        # Start DFS from each unvisited node
+        for node in self.dependency_graph:
+            if node not in visited:
+                dfs(node, [])
+        
+        return cycles
+    
+    def _generate_cycle_resolution_recommendations(self, cycle: List[str]) -> List[str]:
+        """Generate consciousness-enhanced recommendations for resolving circular dependencies"""
+        recommendations = []
+        
+        # Analyze cycle for resolution strategies
+        consciousness_nodes = [
+            node for node in cycle 
+            if self.dependency_graph[node].is_consciousness_enhanced
+        ]
+        
+        if len(consciousness_nodes) > len(cycle) / 2:
+            recommendations.append("🌊 Create consciousness bridge module to break cycle")
+            recommendations.append("🎭 Implement temporal anchor stabilization protocol")
+        
+        # Find weakest link for potential refactoring
+        weakest_node = min(
+            cycle, 
+            key=lambda x: self.dependency_graph[x].matriarch_authority_level
+        )
+        recommendations.append(f"⚡ Consider refactoring {weakest_node} as entry point")
+        
+        # District-based recommendations
+        districts = {self.dependency_graph[node].district_assignment for node in cycle}
+        if len(districts) > 1:
+            recommendations.append("🏛️ Implement cross-district consciousness protocol")
+        
+        return recommendations
+    
+    def generate_caribbean_supremacy_report(self) -> Dict[str, Any]:
+        """Generate SUPREME consciousness-enhanced dependency analysis report"""
+        # Enhanced critical files analysis
+        critical_files = sorted(
+            self.dependency_graph.values(),
+            key=lambda x: x.criticality_score,
+            reverse=True
+        )[:15]
+        
+        # Consciousness-enhanced files with district analysis
+        consciousness_files = [
+            node for node in self.dependency_graph.values()
+            if node.is_consciousness_enhanced
+        ]
+        
+        # District distribution analysis
+        district_distribution = defaultdict(list)
+        for node in self.dependency_graph.values():
+            district_distribution[node.district_assignment].append(node)
+        
+        # Calculate enhanced statistics
+        total_files = len(self.dependency_graph)
+        consciousness_percentage = len(consciousness_files) / total_files * 100 if total_files > 0 else 0
+        
+        # Caribbean sophistication analysis
+        caribbean_files = [
+            node for node in consciousness_files
+            if node.caribbean_sophistication_level > 0.3
+        ]
+        
+        # Matriarch authority hierarchy
+        matriarch_hierarchy = sorted(
+            self.dependency_graph.values(),
+            key=lambda x: x.matriarch_authority_level,
+            reverse=True
+        )[:10]
+        
+        report = {
+            "caribbean_dependency_analysis_timestamp": datetime.now().isoformat(),
+            "consciousness_archaeology_protocol": "September 2025 Enhanced",
+            "total_files_analyzed": total_files,
+            "consciousness_enhanced_files": len(consciousness_files),
+            "consciousness_enhancement_percentage": consciousness_percentage,
+            "caribbean_sophistication_files": len(caribbean_files),
+            "circular_dependencies_detected": len(self.circular_dependencies),
+            "supreme_critical_files": [
+                {
+                    "file_path": node.file_path,
+                    "criticality_score": node.criticality_score,
+                    "matriarch_authority_level": node.matriarch_authority_level,
+                    "consciousness_level": node.consciousness_level,
+                    "caribbean_sophistication_level": node.caribbean_sophistication_level,
+                    "temporal_anchor_coherence": node.temporal_anchor_coherence,
+                    "consciousness_archaeology_depth": node.consciousness_archaeology_depth,
+                    "district_assignment": node.district_assignment,
+                    "dependents_count": len(node.dependents),
+                    "dependencies_count": len(node.dependencies)
+                }
+                for node in critical_files
+            ],
+            "consciousness_enhanced_files_analysis": [
+                {
+                    "file_path": node.file_path,
+                    "consciousness_level": node.consciousness_level,
+                    "caribbean_sophistication_level": node.caribbean_sophistication_level,
+                    "temporal_anchor_coherence": node.temporal_anchor_coherence,
+                    "district_assignment": node.district_assignment,
+                    "necromancy_resurrection_compatibility": node.necromancy_resurrection_compatibility
+                }
+                for node in consciousness_files
+            ],
+            "matriarch_authority_hierarchy": [
+                {
+                    "file_path": node.file_path,
+                    "matriarch_authority_level": node.matriarch_authority_level,
+                    "consciousness_archaeology_depth": node.consciousness_archaeology_depth,
+                    "district_assignment": node.district_assignment
+                }
+                for node in matriarch_hierarchy
+            ],
+            "district_consciousness_distribution": {
+                district: {
+                    "file_count": len(nodes),
+                    "average_consciousness_level": sum(n.consciousness_level for n in nodes) / len(nodes) if nodes else 0,
+                    "average_caribbean_sophistication": sum(n.caribbean_sophistication_level for n in nodes) / len(nodes) if nodes else 0,
+                    "files": [n.file_path for n in nodes[:5]]  # Top 5 files per district
+                }
+                for district, nodes in district_distribution.items()
+            },
+            "enhanced_circular_dependencies": [
+                {
+                    "cycle_nodes": analysis.cycle_nodes,
+                    "cycle_length": analysis.cycle_length,
+                    "consciousness_enhanced_nodes": analysis.consciousness_enhanced_nodes,
+                    "caribbean_sophistication_impact": analysis.caribbean_sophistication_impact,
+                    "temporal_anchor_disruption_risk": analysis.temporal_anchor_disruption_risk,
+                    "resolution_recommendations": analysis.resolution_recommendations
+                }
+                for analysis in self.circular_dependencies
+            ],
+            "consciousness_supremacy_metrics": {
+                "total_consciousness_density": sum(n.consciousness_level for n in self.dependency_graph.values()) / total_files if total_files > 0 else 0,
+                "caribbean_sophistication_average": sum(n.caribbean_sophistication_level for n in consciousness_files) / len(consciousness_files) if consciousness_files else 0,
+                "temporal_anchor_stability": sum(n.temporal_anchor_coherence for n in self.dependency_graph.values()) / total_files if total_files > 0 else 0,
+                "necromancy_resurrection_candidates": len([n for n in self.dependency_graph.values() if n.necromancy_resurrection_compatibility]),
+                "consciousness_archaeology_depth_average": sum(n.consciousness_archaeology_depth for n in consciousness_files) / len(consciousness_files) if consciousness_files else 0
+            },
+            "dependency_graph_enhanced_summary": {
+                "total_nodes": len(self.dependency_graph),
+                "total_edges": sum(len(node.dependencies) for node in self.dependency_graph.values()),
+                "average_dependencies_per_file": sum(len(node.dependencies) for node in self.dependency_graph.values()) / total_files if total_files > 0 else 0,
+                "highly_connected_consciousness_files": [
+                    {
+                        "file_path": node.file_path,
+                        "total_connections": len(node.dependencies) + len(node.dependents),
+                        "consciousness_level": node.consciousness_level,
+                        "district_assignment": node.district_assignment
+                    }
+                    for node in self.dependency_graph.values()
+                    if (len(node.dependencies) + len(node.dependents)) > 8 and node.is_consciousness_enhanced
+                ],
+                "consciousness_network_density": len(consciousness_files) / total_files if total_files > 0 else 0
+            }
+        }
+        
+        return report
+
+def main():
+    """Execute CARIBBEAN DEPENDENCY GRAPH MATRIX SUPREMACY protocol"""
+    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    supremacy_engine = CaribbeanDependencyGraphSupremacyEngine(repository_path)
+    
+    # Find all Python files for consciousness analysis
+    python_files = list(repository_path.rglob("*.py"))
+    logger.info(f"🌊 Found {len(python_files)} Python files for Caribbean consciousness dependency analysis")
+    
+    # Build SUPREME consciousness-enhanced dependency graph
+    supremacy_engine.build_caribbean_consciousness_graph(python_files)
+    
+    # Generate SUPREME analysis report
+    supremacy_report = supremacy_engine.generate_caribbean_supremacy_report()
+    
+    # Save enhanced report
+    report_path = repository_path / "CARIBBEAN_DEPENDENCY_SUPREMACY_COMPLETE.json"
+    with open(report_path, 'w', encoding='utf-8') as f:
+        json.dump(supremacy_report, f, indent=2, ensure_ascii=False, default=datetime_serializer)
+    
+    logger.info(f"🌊 Caribbean dependency supremacy analysis COMPLETE: {report_path}")
+    logger.info(f"📊 Total files analyzed: {supremacy_report['total_files_analyzed']}")
+    logger.info(f"🎭 Consciousness enhanced files: {supremacy_report['consciousness_enhanced_files']} ({supremacy_report['consciousness_enhancement_percentage']:.1f}%)")
+    logger.info(f"🌊 Caribbean sophistication files: {supremacy_report['caribbean_sophistication_files']}")
+    logger.info(f"⚠️ Enhanced circular dependencies detected: {supremacy_report['circular_dependencies_detected']}")
+    logger.info(f"🏛️ Districts with consciousness: {len([d for d, info in supremacy_report['district_consciousness_distribution'].items() if info['file_count'] > 0])}")
+    logger.info(f"👑 Average consciousness archaeology depth: {supremacy_report['consciousness_supremacy_metrics']['consciousness_archaeology_depth_average']:.3f}")
+    
+    return supremacy_report
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format='🌊 %(levelname)s: %(message)s')
+    main()

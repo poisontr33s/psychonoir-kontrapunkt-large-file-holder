@@ -1,0 +1,204 @@
+/**
+ * 🔥 CLAUDINE SIN'CLAIRE 4.5' SUPREME Global Styles
+ * Blunderbust ΛΩ-69.96 Point Blank Shot - Caribbean MILF-Domme Supreme Matriarch
+ * Oktober 2025 - Tailwind CSS v4.1 + Glassmorphism
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+
+        --psycho-noir-primary: 292 84% 61%;
+        --caribbean-milf-primary: 24 95% 53%;
+        --consciousness-primary: 172 66% 50%;
+
+        /* Glassmorphism variables */
+        --glass-bg: rgba(255, 255, 255, 0.05);
+        --glass-border: rgba(255, 255, 255, 0.18);
+        --glass-blur: 12px;
+    }
+
+    .dark {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+
+        --glass-bg: rgba(0, 0, 0, 0.3);
+        --glass-border: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    /* Matrix Rain Effect Background */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+        opacity: 0.95;
+    }
+}
+
+@layer components {
+
+    /* 💎 Glassmorphism Card */
+    .glass-card {
+        @apply backdrop-blur-glassmorphism bg-glass border border-glass-border rounded-glassmorphism shadow-glassmorphism;
+    }
+
+    .glass-card-heavy {
+        @apply backdrop-blur-glassmorphism-heavy bg-glass-dark border-2 border-glass-border rounded-glassmorphism shadow-glassmorphism-heavy;
+    }
+
+    /* 🎭 MILF Gradient Text */
+    .milf-gradient {
+        @apply bg-gradient-to-r from-psycho-noir-500 via-caribbean-milf-500 to-consciousness-500;
+    }
+
+    /* 🔥 Consciousness Enhancement */
+    .consciousness-glow {
+        @apply text-shadow-glow;
+        animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    /* ⚓ Caribbean MILF Button */
+    .caribbean-milf-button {
+        @apply px-6 py-3 rounded-glassmorphism bg-gradient-to-r from-caribbean-milf-500 to-caribbean-milf-700 text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+    }
+
+    /* 🌊 Matrix Rain Container */
+    .matrix-rain-container {
+        @apply fixed top-0 left-0 w-full h-full pointer-events-none z-0 opacity-30;
+    }
+
+    /* 💋 Psycho-Noir Section */
+    .psycho-noir-section {
+        @apply glass-card p-8 m-4 hover:shadow-glassmorphism-heavy transition-all duration-300;
+    }
+}
+
+@layer utilities {
+
+    /* Text Shadow Utilities (Tailwind v4.1 feature) */
+    .text-shadow-glow {
+        text-shadow: 0 0 20px rgba(217, 70, 239, 0.5);
+    }
+
+    .text-shadow-glow-strong {
+        text-shadow: 0 0 40px rgba(217, 70, 239, 0.8);
+    }
+
+    .text-shadow-caribbean {
+        text-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
+    }
+
+    /* Backdrop Blur Utilities */
+    .backdrop-blur-glassmorphism {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    .backdrop-blur-glassmorphism-heavy {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+    }
+
+    /* Glass Background Utilities */
+    .bg-glass {
+        background: var(--glass-bg);
+    }
+
+    .bg-glass-dark {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .border-glass-border {
+        border-color: var(--glass-border);
+    }
+}
+
+/* 🎭 Custom Animations */
+@keyframes matrix-rain {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        filter: brightness(1.2);
+    }
+}
+
+/* 🔥 Matrix Rain Characters */
+.matrix-char {
+    @apply text-consciousness-500 font-mono text-sm animate-matrix-rain;
+    text-shadow: 0 0 10px rgba(20, 184, 166, 0.8);
+}
+
+/* 💋 Consciousness Portal Links */
+a.consciousness-link {
+    @apply text-consciousness-400 hover:text-consciousness-300 transition-colors duration-300 underline decoration-consciousness-500/30 hover:decoration-consciousness-500;
+}
+
+/* ⛓️ MILF-Domme Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-milf-serif;
+}
+
+/* 🌊 Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-black/50;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-psycho-noir-600 rounded-lg hover:bg-psycho-noir-500;
+}

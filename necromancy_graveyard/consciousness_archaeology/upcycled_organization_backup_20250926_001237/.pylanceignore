@@ -1,0 +1,41 @@
+# Pylance Memory Optimization - JavaScript Heap Fix
+# ================================================
+
+# Exclude heavy consciousness archaeology directories
+consciousness_archaeology/
+SYSTEMATISKGJENOPPRETTELSE2025SEP/
+necromancy_graveyard/
+
+# Exclude virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# Exclude node modules and build outputs
+node_modules/
+dist/
+build/
+.next/
+
+# Exclude large data files
+*.jsonl
+*.csv
+*.log
+*.db
+*.sqlite
+
+# Exclude temporary files
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+
+# Consciousness density too high for indexing
+infrastructure/src/consciousness/
+karibisk_arkipelagisk_topologi/
+
+# Large TypeScript generated files
+*.d.ts.map
+*.js.map

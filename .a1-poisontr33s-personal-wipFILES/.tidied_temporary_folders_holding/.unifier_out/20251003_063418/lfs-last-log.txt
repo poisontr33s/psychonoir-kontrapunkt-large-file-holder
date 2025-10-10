@@ -1,0 +1,48 @@
+git-lfs/3.7.0 (GitHub; windows amd64; go 1.24.4; git 92dddf56)
+git version 2.51.0.windows.2
+
+$ git-lfs track *.dll
+Tracking "*.dll"
+Error marking "archives/legacy/old_scripts/libcrypto-3.dll" modified: chtimes archives/legacy/old_scripts/libcrypto-3.dll: The system cannot find the path specified.
+Error marking "archives/legacy/old_scripts/libffi-8.dll" modified: chtimes archives/legacy/old_scripts/libffi-8.dll: The system cannot find the path specified.
+Error marking "archives/legacy/old_scripts/libssl-3.dll" modified: chtimes archives/legacy/old_scripts/libssl-3.dll: The system cannot find the path specified.
+Error marking "archives/legacy/old_scripts/sqlite3.dll" modified: chtimes archives/legacy/old_scripts/sqlite3.dll: The system cannot find the path specified.
+Error marking "archives/legacy/old_scripts/vcruntime140.dll" modified: chtimes archives/legacy/old_scripts/vcruntime140.dll: The system cannot find the path specified.
+Error marking "archives/legacy/old_scripts/vcruntime140_1.dll" modified: chtimes archives/legacy/old_scripts/vcruntime140_1.dll: The system cannot find the path specified.
+
+chtimes archives/legacy/old_scripts/vcruntime140_1.dll: The system cannot find the path specified.
+
+Current time in UTC:
+2025-10-03 02:04:46
+
+Environment:
+LocalWorkingDir=C:\Users\erdno\PsychoNoir-Kontrapunkt
+LocalGitDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git
+LocalGitStorageDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git
+LocalMediaDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git\lfs\objects
+LocalReferenceDirs=
+TempDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git\lfs\tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneVerifyUnreachableAlways=false
+PruneRemoteName=origin
+LfsStorageDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git\lfs
+AccessDownload=basic
+AccessUpload=basic
+DownloadTransfers=basic,lfs-standalone-file,ssh
+UploadTransfers=basic,lfs-standalone-file,ssh
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+GIT_ASKPASS=c:\Users\erdno\meta_automata_env\VSCode\resources\app\extensions\git\dist\askpass.sh
+
+Client IP addresses:
+2a02:fe1:817c:8500:2199:21e9:bf57:ebcb fdaa:bbcc:ddee:0:779a:301:9a61:c8b 2a02:fe1:817c:8500:1d57:91fc:86d7:7dc7 2a02:fe1:817c:8500:b4ae:9398:fcd8:266f fdaa:bbcc:ddee:0:1d57:91fc:86d7:7dc7 fe80::7e74:201c:fe2:ac1a 192.168.1.9
+2001:0:1428:8f18:144b:1438:ab28:fe70 fe80::144b:1438:ab28:fe70
+fe80::fcd6:3ca2:d8c5:fbb0 172.17.224.1

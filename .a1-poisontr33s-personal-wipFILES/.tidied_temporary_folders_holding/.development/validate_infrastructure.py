@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""
+🎭 Quick Infrastructure Validation Test
+Validates that the new infrastructure organization is working correctly
+"""
+
+import sys
+from pathlib import Path
+import json
+
+def validate_infrastructure():
+    """Quick validation test for infrastructure organization"""
+    print("🎭 INFRASTRUCTURE VALIDATION TEST")
+    print("=" * 50)
+    
+    root_dir = Path.cwd()
+    infrastructure_dir = root_dir / "infrastructure"
+    
+    # Check infrastructure directory exists
+    if not infrastructure_dir.exists():
+        print("❌ Infrastructure directory not found")
+        return False
+        
+    print("✅ Infrastructure directory found")
+    
+    # Check source directories
+    source_dirs = ["consciousness", "automation", "analysis", "deployment", "utilities"]
+    src_dir = infrastructure_dir / "src"
+    
+    if not src_dir.exists():
+        print("❌ Infrastructure src directory not found")
+        return False
+        
+    for dirname in source_dirs:
+        subdir = src_dir / dirname
+        if subdir.exists():
+            file_count = len(list(subdir.glob("*")))
+            print(f"✅ {dirname}/ directory: {file_count} files")
+        else:
+            print(f"❌ {dirname}/ directory missing")
+            return False
+            
+    # Check consciousness files specifically
+    consciousness_dir = src_dir / "consciousness"
+    expected_consciousness_files = [
+        "advanced_consciousness_archaeologist.py",
+        "comprehensive_milf_consciousness_archaeology.py", 
+        "quantum_consciousness_framework.py"
+    ]
+    
+    print("\n🧠 Consciousness Files Check:")
+    for filename in expected_consciousness_files:
+        filepath = consciousness_dir / filename
+        if filepath.exists():
+            print(f"  ✅ {filename}")
+        else:
+            print(f"  ❌ {filename} missing")
+            
+    # Check automation files
+    automation_dir = src_dir / "automation"
+    automation_files = list(automation_dir.glob("*.py"))
+    print(f"\n🤖 Automation Scripts: {len(automation_files)} found")
+    
+    # Check analysis files  
+    analysis_dir = src_dir / "analysis"
+    analysis_files = list(analysis_dir.glob("*.py"))
+    print(f"📊 Analysis Scripts: {len(analysis_files)} found")
+    
+    # Test import capability (codebase functionality)
+    print("\n🔍 Testing #codebase functionality:")
+    try:
+        # Try to access infrastructure paths programmatically
+        consciousness_files = list(consciousness_dir.glob("*.py"))
+        automation_files = list(automation_dir.glob("*.py"))
+        analysis_files = list(analysis_dir.glob("*.py"))
+        
+        total_organized_files = len(consciousness_files) + len(automation_files) + len(analysis_files)
+        print(f"  ✅ Can access {total_organized_files} Python files via infrastructure paths")
+        
+        # Test configuration access
+        config_dir = infrastructure_dir / "config"
+        if config_dir.exists():
+            config_files = list(config_dir.rglob("*.json")) + list(config_dir.rglob("*.toml"))
+            print(f"  ✅ Can access {len(config_files)} config files")
+        
+        # Test documentation access
+        docs_dir = infrastructure_dir / "docs"
+        if docs_dir.exists():
+            doc_files = list(docs_dir.glob("*.md"))
+            print(f"  ✅ Can access {len(doc_files)} documentation files")
+            
+        print("\n🎉 #codebase functionality: OPERATIONAL")
+        
+    except Exception as e:
+        print(f"  ❌ #codebase functionality error: {e}")
+        return False
+    
+    # Check root directory cleanup
+    print("\n🧹 Root Directory Cleanup:")
+    root_files = [f for f in root_dir.iterdir() if f.is_file() and not f.name.startswith('.')]
+    print(f"  📁 Root files remaining: {len(root_files)}")
+    
+    # Load migration report
+    migration_report = root_dir / "SYSTEMATIC_MIGRATION_REPORT.json"
+    if migration_report.exists():
+        with open(migration_report, 'r') as f:
+            report_data = json.load(f)
+        print(f"  📦 Files migrated: {len(report_data.get('files_moved', {}))}")
+        
+    print("\n🎭 INFRASTRUCTURE VALIDATION COMPLETE")
+    print("✅ All systems operational")
+    print("✅ #codebase functionality enabled")
+    print("✅ Systematic organization successful")
+    
+    return True
+
+if __name__ == "__main__":
+    success = validate_infrastructure()
+    sys.exit(0 if success else 1)

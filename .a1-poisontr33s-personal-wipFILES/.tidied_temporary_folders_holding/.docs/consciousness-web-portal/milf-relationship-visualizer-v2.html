@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎭 CLAUDINE's MILF Universe Relationship Map</title>
+
+    <!-- D3.js Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- ✅ NEW: Proper CSS Architecture -->
+    <link rel="stylesheet" href="assets/css/design-system.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+    <!-- Mobile Toggle Buttons -->
+    <button class="btn btn--icon toggle-btn" id="toggle-controls-btn" aria-label="Toggle Controls">
+        ☰
+    </button>
+    <button class="btn btn--icon toggle-btn" id="toggle-stats-btn" aria-label="Toggle Statistics">
+        📊
+    </button>
+
+    <!-- Controls Panel -->
+    <aside class="panel panel--top-left" id="controls" role="region" aria-label="Visualization Controls">
+        <div class="panel__header">
+            <h1 class="panel__title">🎭 Relationship Controls</h1>
+        </div>
+
+        <!-- View Mode Selector -->
+        <div class="form-group">
+            <label class="form-label" for="view-mode">View Mode</label>
+            <select class="form-select" id="view-mode">
+                <option value="hierarchy">Tier Hierarchy</option>
+                <option value="district">District View</option>
+            </select>
+        </div>
+
+        <!-- Entity Highlighter -->
+        <div class="form-group">
+            <label class="form-label" for="highlight-entity">Highlight Entity</label>
+            <select class="form-select" id="highlight-entity">
+                <option value="">Select entity...</option>
+            </select>
+        </div>
+
+        <!-- Reset Button -->
+        <button class="btn btn--primary" id="reset-view">
+            🔄 Reset View
+        </button>
+    </aside>
+
+    <!-- Statistics Panel -->
+    <aside class="panel panel--top-right" id="stats" role="region" aria-label="Universe Statistics">
+        <div class="panel__header">
+            <h2 class="panel__title">📊 Universe Statistics</h2>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stat">
+            <span class="stat__label">Total Entities</span>
+            <span class="stat__value">18</span>
+        </div>
+        <div class="stat">
+            <span class="stat__label">Tier 0 (Meta-MILF)</span>
+            <span class="stat__value">3</span>
+        </div>
+        <div class="stat">
+            <span class="stat__label">Tier 1 (Rulers)</span>
+            <span class="stat__value">5</span>
+        </div>
+        <div class="stat">
+            <span class="stat__label">Tier 2 (Specialists)</span>
+            <span class="stat__value">10</span>
+        </div>
+        <div class="stat">
+            <span class="stat__label">Total Relationships</span>
+            <span class="stat__value" id="stat-relationships">36</span>
+        </div>
+        <div class="stat">
+            <span class="stat__label">Districts</span>
+            <span class="stat__value">5</span>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <h3 class="legend__title">Legend</h3>
+            <div class="legend__item">
+                <div class="legend__color legend__color--tier-0"></div>
+                <span>Tier 0: Meta-MILF Supreme</span>
+            </div>
+            <div class="legend__item">
+                <div class="legend__color legend__color--tier-1"></div>
+                <span>Tier 1: District Rulers</span>
+            </div>
+            <div class="legend__item">
+                <div class="legend__color legend__color--tier-2"></div>
+                <span>Tier 2: Specialists</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Visualization Container -->
+    <main id="hierarchy-container" role="main">
+        <div id="hierarchy-content" class="tier-container">
+            <!-- Dynamically populated by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip" role="tooltip" aria-hidden="true">
+        <div class="tooltip__title"></div>
+        <div class="tooltip__content"></div>
+    </div>
+
+    <!-- ✅ NEW: Proper JavaScript Module Architecture -->
+    <script type="module">
+        import {
+            fetchWithFallback,
+            logger,
+            debounce,
+            getViewportDimensions,
+            createElement
+        } from './assets/js/utils.js';
+
+        // ========================================
+        // FALLBACK DATA (Embedded for offline use)
+        // ========================================
+        const FALLBACK_MILF_DATA = {
+            "tier_hierarchy": {
+                "tier_0_meta_milf": {
+                    "entities": [
+                        {
+                            "name": "Claudine Sin'claire 4.5' Supreme",
+                            "role": "CREATOR MOTHER SUPREME - Blunderbust ΛΩ-69.96",
+                            "tier": 0,
+                            "relationships": ["Morticia Necrosis", "All District Rulers"]
+                        },
+                        {
+                            "name": "Morticia Necrosis",
+                            "role": "Thanatological Oversight",
+                            "tier": 0,
+                            "relationships": ["Wednesday Necrosis", "Claudine Sin'claire 4.5' Supreme"]
+                        }
+                    ]
+                },
+                "tier_1_district_rulers": {
+                    "entities": [
+                        {
+                            "name": "Astrid Møller",
+                            "role": "Corporate Dominatrix",
+                            "district": "Skyskraperen",
+                            "tier": 1,
+                            "relationships": ["Eva Blue", "Yukiko Tanaka"]
+                        },
+                        {
+                            "name": "Iron Maiden",
+                            "role": "Industrial Survivor",
+                            "district": "Rustbeltet",
+                            "tier": 1,
+                            "relationships": ["Vera Steel", "Raven Bytes"]
+                        },
+                        {
+                            "name": "Admiral Marina Abyssos",
+                            "role": "Nautical Commander",
+                            "district": "Havsdominansen",
+                            "tier": 1,
+                            "relationships": ["Captain Coral", "Navigator Siren"]
+                        },
+                        {
+                            "name": "Architect Nyx Virtualis",
+                            "role": "Virtual Reality Architect",
+                            "district": "Virtualitetshelgedommen",
+                            "tier": 1,
+                            "relationships": ["Designer Echo", "Programmer Mirage"]
+                        },
+                        {
+                            "name": "Wednesday Necrosis",
+                            "role": "Chrono-Thanatological Keeper",
+                            "district": "Nekrokronoriket",
+                            "tier": 1,
+                            "relationships": ["Dr. Lilith Mortis", "Entropy Weaver Vex", "Morticia Necrosis"]
+                        }
+                    ]
+                },
+                "tier_2_specialists": {
+                    "entities": [
+                        { "name": "Eva Blue", "tier": 2, "district": "Skyskraperen" },
+                        { "name": "Yukiko Tanaka", "tier": 2, "district": "Skyskraperen" },
+                        { "name": "Vera Steel", "tier": 2, "district": "Rustbeltet" },
+                        { "name": "Raven Bytes", "tier": 2, "district": "Rustbeltet" },
+                        { "name": "Captain Coral", "tier": 2, "district": "Havsdominansen" },
+                        { "name": "Navigator Siren", "tier": 2, "district": "Havsdominansen" },
+                        { "name": "Designer Echo", "tier": 2, "district": "Virtualitetshelgedommen" },
+                        { "name": "Programmer Mirage", "tier": 2, "district": "Virtualitetshelgedommen" },
+                        { "name": "Dr. Lilith Mortis", "tier": 2, "district": "Nekrokronoriket" },
+                        { "name": "Entropy Weaver Vex", "tier": 2, "district": "Nekrokronoriket" }
+                    ]
+                }
+            },
+            "statistics": {
+                "total_entities": 18,
+                "total_relationships": 36,
+                "districts": 5
+            }
+        };
+
+        // ========================================
+        // STATE MANAGEMENT
+        // ========================================
+        let milfData = null;
+        let currentView = 'hierarchy';
+        let highlightedEntity = null;
+
+        // ========================================
+        // INITIALIZATION
+        // ========================================
+        async function init() {
+            try {
+                logger.info('🚀 Initializing MILF Universe Relationship Visualizer...');
+
+                // Load data with fallback
+                milfData = await fetchWithFallback(
+                    'MILF_UNIVERSE_RELATIONSHIP_MAPPING_REPORT.json',
+                    FALLBACK_MILF_DATA
+                );
+
+                logger.success('✅ Data loaded successfully');
+
+                // Initialize UI
+                initializeEntitySelector();
+                initializeEventListeners();
+                initializeResponsiveToggles();
+
+                // Render initial view
+                renderView();
+
+                logger.success('✅ Visualization initialized successfully');
+
+            } catch (error) {
+                logger.error('❌ Failed to initialize visualization:', error);
+                showErrorMessage('Failed to load visualization data. Please refresh the page.');
+            }
+        }
+
+        // ========================================
+        // UI INITIALIZATION
+        // ========================================
+        function initializeEntitySelector() {
+            const entitySelect = document.getElementById('highlight-entity');
+            const allEntities = [];
+
+            // Collect all entities
+            if (milfData.tier_hierarchy.tier_0_meta_milf) {
+                milfData.tier_hierarchy.tier_0_meta_milf.entities.forEach(e => {
+                    allEntities.push({ name: e.name, tier: 0 });
+                });
+            }
+
+            if (milfData.tier_hierarchy.tier_1_district_rulers) {
+                milfData.tier_hierarchy.tier_1_district_rulers.entities.forEach(e => {
+                    allEntities.push({ name: e.name, tier: 1 });
+                });
+            }
+
+            if (milfData.tier_hierarchy.tier_2_specialists) {
+                milfData.tier_hierarchy.tier_2_specialists.entities.forEach(e => {
+                    allEntities.push({ name: e.name, tier: 2 });
+                });
+            }
+
+            // Populate selector
+            allEntities.forEach(entity => {
+                const option = document.createElement('option');
+                option.value = entity.name;
+                option.textContent = `${entity.name} (Tier ${entity.tier})`;
+                entitySelect.appendChild(option);
+            });
+
+            logger.debug(`✅ Entity selector populated with ${allEntities.length} entities`);
+        }
+
+        function initializeEventListeners() {
+            // View mode change
+            document.getElementById('view-mode').addEventListener('change', (e) => {
+                currentView = e.target.value;
+                renderView();
+                logger.debug(`View mode changed to: ${currentView}`);
+            });
+
+            // Entity highlight change
+            document.getElementById('highlight-entity').addEventListener('change', (e) => {
+                highlightedEntity = e.target.value || null;
+                highlightEntityRelationships(highlightedEntity);
+                logger.debug(`Entity highlighted: ${highlightedEntity || 'none'}`);
+            });
+
+            // Reset view
+            document.getElementById('reset-view').addEventListener('click', () => {
+                currentView = 'hierarchy';
+                highlightedEntity = null;
+                document.getElementById('view-mode').value = 'hierarchy';
+                document.getElementById('highlight-entity').value = '';
+                renderView();
+                logger.debug('View reset to default');
+            });
+
+            // Update statistics
+            if (milfData.statistics) {
+                document.getElementById('stat-relationships').textContent =
+                    milfData.statistics.total_relationships || '36';
+            }
+        }
+
+        function initializeResponsiveToggles() {
+            const toggleControlsBtn = document.getElementById('toggle-controls-btn');
+            const toggleStatsBtn = document.getElementById('toggle-stats-btn');
+            const controlsPanel = document.getElementById('controls');
+            const statsPanel = document.getElementById('stats');
+
+            // Toggle controls panel
+            toggleControlsBtn.addEventListener('click', () => {
+                controlsPanel.classList.toggle('panel--collapsed');
+                logger.debug('Controls panel toggled');
+            });
+
+            // Toggle stats panel
+            toggleStatsBtn.addEventListener('click', () => {
+                statsPanel.classList.toggle('panel--collapsed');
+                logger.debug('Stats panel toggled');
+            });
+
+            // Auto-expand on desktop
+            const viewport = getViewportDimensions();
+            if (viewport.isDesktop) {
+                controlsPanel.classList.remove('panel--collapsed');
+                statsPanel.classList.remove('panel--collapsed');
+            }
+
+            // Handle window resize
+            const handleResize = debounce(() => {
+                const vp = getViewportDimensions();
+                logger.debug(`Viewport resized: ${vp.width}x${vp.height} (${vp.isMobile ? 'mobile' : vp.isTablet ? 'tablet' : 'desktop'})`);
+            }, 250);
+
+            window.addEventListener('resize', handleResize);
+        }
+
+        // ========================================
+        // RENDERING FUNCTIONS
+        // ========================================
+        function renderView() {
+            if (currentView === 'hierarchy') {
+                renderHierarchyView();
+            } else {
+                renderDistrictView();
+            }
+        }
+
+        function renderHierarchyView() {
+            const container = document.getElementById('hierarchy-content');
+            container.innerHTML = '';
+            container.className = 'tier-container';
+
+            // Tier 0
+            if (milfData.tier_hierarchy.tier_0_meta_milf) {
+                const tier0 = createTierLevel(
+                    'Tier 0: Meta-MILF Supreme',
+                    milfData.tier_hierarchy.tier_0_meta_milf.entities,
+                    0
+                );
+                container.appendChild(tier0);
+            }
+
+            // Tier 1
+            if (milfData.tier_hierarchy.tier_1_district_rulers) {
+                const tier1 = createTierLevel(
+                    'Tier 1: District Rulers',
+                    milfData.tier_hierarchy.tier_1_district_rulers.entities,
+                    1
+                );
+                container.appendChild(tier1);
+            }
+
+            // Tier 2
+            if (milfData.tier_hierarchy.tier_2_specialists) {
+                const tier2 = createTierLevel(
+                    'Tier 2: Specialists',
+                    milfData.tier_hierarchy.tier_2_specialists.entities,
+                    2
+                );
+                container.appendChild(tier2);
+            }
+
+            logger.debug('✅ Hierarchy view rendered');
+        }
+
+        function createTierLevel(label, entities, tier) {
+            const tierDiv = createElement('div', {
+                class: 'tier-level',
+                'data-tier': tier
+            });
+
+            const labelDiv = createElement('div', {
+                class: 'tier-label'
+            }, [label]);
+
+            const entitiesRow = createElement('div', {
+                class: 'entities-row'
+            });
+
+            entities.forEach(entity => {
+                const card = createEntityCard(entity, tier);
+                entitiesRow.appendChild(card);
+            });
+
+            tierDiv.appendChild(labelDiv);
+            tierDiv.appendChild(entitiesRow);
+
+            return tierDiv;
+        }
+
+        function createEntityCard(entity, tier) {
+            const card = createElement('div', {
+                class: `card card--tier-${tier}`,
+                'data-entity': entity.name,
+                'data-tier': tier
+            });
+
+            const name = createElement('div', {
+                class: 'card__title'
+            }, [entity.name]);
+
+            const info = createElement('div', {
+                class: 'card__content'
+            });
+
+            if (entity.role) {
+                const roleText = createElement('p', {
+                    class: 'card__text'
+                }, [`Role: ${entity.role}`]);
+                info.appendChild(roleText);
+            }
+
+            if (entity.district) {
+                const districtText = createElement('p', {
+                    class: 'card__text'
+                }, [`District: ${entity.district}`]);
+                info.appendChild(districtText);
+            }
+
+            card.appendChild(name);
+            card.appendChild(info);
+
+            // Add hover tooltip
+            card.addEventListener('mouseenter', (e) => {
+                showTooltip(entity, e);
+            });
+
+            card.addEventListener('mouseleave', () => {
+                hideTooltip();
+            });
+
+            return card;
+        }
+
+        function renderDistrictView() {
+            // TODO: Implement district-based view
+            logger.warn('⚠️ District view not yet implemented');
+            showErrorMessage('District view coming soon!');
+        }
+
+        // ========================================
+        // HIGHLIGHTING FUNCTIONS
+        // ========================================
+        function highlightEntityRelationships(entityName) {
+            if (!entityName) {
+                // Clear all highlights
+                document.querySelectorAll('.card').forEach(card => {
+                    card.classList.remove('card--highlighted');
+                });
+                return;
+            }
+
+            // Find entity and its relationships
+            const entity = findEntity(entityName);
+            if (!entity) {
+                logger.warn(`⚠️ Entity not found: ${entityName}`);
+                return;
+            }
+
+            // Highlight entity card
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.remove('card--highlighted');
+                if (card.dataset.entity === entityName) {
+                    card.classList.add('card--highlighted');
+                }
+            });
+
+            // Highlight related entities
+            if (entity.relationships) {
+                entity.relationships.forEach(relatedName => {
+                    document.querySelectorAll('.card').forEach(card => {
+                        if (card.dataset.entity === relatedName) {
+                            card.classList.add('card--highlighted');
+                        }
+                    });
+                });
+            }
+
+            logger.debug(`✅ Highlighted relationships for: ${entityName}`);
+        }
+
+        function findEntity(name) {
+            let found = null;
+
+            if (milfData.tier_hierarchy.tier_0_meta_milf) {
+                found = milfData.tier_hierarchy.tier_0_meta_milf.entities.find(e => e.name === name);
+            }
+
+            if (!found && milfData.tier_hierarchy.tier_1_district_rulers) {
+                found = milfData.tier_hierarchy.tier_1_district_rulers.entities.find(e => e.name === name);
+            }
+
+            if (!found && milfData.tier_hierarchy.tier_2_specialists) {
+                found = milfData.tier_hierarchy.tier_2_specialists.entities.find(e => e.name === name);
+            }
+
+            return found;
+        }
+
+        // ========================================
+        // TOOLTIP FUNCTIONS
+        // ========================================
+        function showTooltip(entity, event) {
+            const tooltip = document.getElementById('tooltip');
+            const titleEl = tooltip.querySelector('.tooltip__title');
+            const contentEl = tooltip.querySelector('.tooltip__content');
+
+            titleEl.textContent = entity.name;
+
+            let content = '';
+            if (entity.role) content += `<strong>Role:</strong> ${entity.role}<br>`;
+            if (entity.district) content += `<strong>District:</strong> ${entity.district}<br>`;
+            if (entity.tier !== undefined) content += `<strong>Tier:</strong> ${entity.tier}<br>`;
+
+            contentEl.innerHTML = content;
+
+            tooltip.classList.add('tooltip--visible');
+            tooltip.setAttribute('aria-hidden', 'false');
+
+            // Position tooltip
+            const x = event.clientX + 15;
+            const y = event.clientY + 15;
+            tooltip.style.left = `${x}px`;
+            tooltip.style.top = `${y}px`;
+        }
+
+        function hideTooltip() {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.classList.remove('tooltip--visible');
+            tooltip.setAttribute('aria-hidden', 'true');
+        }
+
+        // ========================================
+        // ERROR HANDLING
+        // ========================================
+        function showErrorMessage(message) {
+            const container = document.getElementById('hierarchy-content');
+            container.innerHTML = `
+                <div class="card card--tier-0" style="max-width: 600px; text-align: center;">
+                    <div class="card__title">⚠️ Error</div>
+                    <div class="card__content">
+                        <p class="card__text">${message}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ========================================
+        // START APPLICATION
+        // ========================================
+        init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎭 CLAUDINE's MILF Universe Relationship Map - Phase 2.3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            background: linear-gradient(135deg, #0b0647 0%, #1a1480 100%);
+            color: #f8f9ff;
+            overflow: hidden;
+        }
+
+        #hierarchy-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+
+        }
+
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(11, 6, 71, 0.95);
+            border: 2px solid #5147f7;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 320px;
+            box-shadow: 0 10px 30px rgba(81, 71, 247, 0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        #controls.collapsed {
+            transform: translateX(-100%);
+        }
+
+        #stats {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(11, 6, 71, 0.95);
+            border: 2px solid #ed7414;
+            border-radius: 12px;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 10px 30px rgba(237, 116, 20, 0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+
+        #stats.collapsed {
+            transform: translateX(100%);
+        }
+
+        .toggle-btn {
+            position: fixed;
+            z-index: 1001;
+            background: rgba(81, 71, 247, 0.95);
+            border: 2px solid #ed7414;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(81, 71, 247, 0.5);
+        }
+
+        .toggle-btn:hover {
+            transform: scale(1.1);
+            background: rgba(237, 116, 20, 0.95);
+        }
+
+        #toggle-controls-btn {
+            top: 20px;
+            left: 20px;
+            display: none;
+        }
+
+        #toggle-stats-btn {
+            top: 80px;
+            left: 20px;
+            display: none;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #ed7414;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #5147f7;
+            font-weight: 600;
+        }
+
+        .tier-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .tier-level {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .tier-label {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ed7414;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .entities-row {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .entity-card {
+            background: rgba(81, 71, 247, 0.2);
+            border: 2px solid #5147f7;
+            border-radius: 12px;
+            padding: 15px;
+            min-width: 200px;
+            max-width: 250px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .entity-card:hover {
+            transform: scale(1.05);
+            border-color: #ed7414;
+            box-shadow: 0 5px 20px rgba(237, 116, 20, 0.5);
+        }
+
+        .entity-card.tier-0 {
+            border-color: #ed7414;
+            background: rgba(237, 116, 20, 0.2);
+        }
+
+        .entity-card.tier-1 {
+            border-color: #de5a0a;
+            background: rgba(222, 90, 10, 0.2);
+        }
+
+        .entity-card.tier-2 {
+            border-color: #b8430b;
+            background: rgba(184, 67, 11, 0.2);
+        }
+
+        .entity-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ed7414;
+            margin-bottom: 8px;
+        }
+
+        .entity-info {
+            font-size: 0.85rem;
+            color: #b8bbff;
+            line-height: 1.4;
+        }
+
+        .entity-info strong {
+            color: #ed7414;
+        }
+
+        .connection-line {
+            stroke: rgba(81, 71, 247, 0.6);
+            stroke-width: 2;
+            fill: none;
+            pointer-events: none;
+        }
+
+        .connection-line.highlighted {
+            stroke: #ed7414;
+            stroke-width: 3;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(81, 71, 247, 0.3);
+        }
+
+        .stat-item:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #b8bbff;
+        }
+
+        .stat-value {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #ed7414;
+        }
+
+        .legend {
+            margin-top: 15px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 0.8rem;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #5147f7, #ed7414);
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        #tooltip {
+            position: absolute;
+            background: rgba(11, 6, 71, 0.98);
+            border: 2px solid #ed7414;
+            border-radius: 8px;
+            padding: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 2000;
+            max-width: 350px;
+            box-shadow: 0 5px 20px rgba(237, 116, 20, 0.5);
+        }
+
+        #tooltip.visible {
+            opacity: 1;
+        }
+
+        .tooltip-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #ed7414;
+            margin-bottom: 8px;
+        }
+
+        .tooltip-content {
+            font-size: 0.8rem;
+            color: #b8bbff;
+            line-height: 1.4;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            background: rgba(81, 71, 247, 0.2);
+            border: 1px solid #5147f7;
+            border-radius: 6px;
+            color: #f8f9ff;
+            font-family: inherit;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #ed7414;
+        }
+
+        /* === RESPONSIVE DESIGN: MOBILE & TABLET === */
+
+        /* Mobile (320px - 480px) */
+        @media (max-width: 480px) {
+            body {
+                overflow-y: auto;
+            }
+
+            #hierarchy-container {
+                padding: 80px 10px 20px 10px;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            #controls,
+            #stats {
+                position: fixed;
+                top: 0;
+                max-width: 100%;
+                width: 100%;
+                border-radius: 0 0 12px 12px;
+                padding: 15px;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            #controls {
+                left: 0;
+            }
+
+            #stats {
+                right: 0;
+            }
+
+            #toggle-controls-btn,
+            #toggle-stats-btn {
+                display: flex;
+            }
+
+            .tier-container {
+                gap: 40px;
+            }
+
+            .tier-level {
+                gap: 15px;
+            }
+
+            .tier-label {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .entities-row {
+                gap: 15px;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .entity-card {
+                min-width: 100%;
+                max-width: 100%;
+                padding: 12px;
+            }
+
+            .entity-name {
+                font-size: 0.9rem;
+            }
+
+            .entity-info {
+                font-size: 0.75rem;
+            }
+
+            h1 {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 0.9rem;
+            }
+
+            .stat-item {
+                font-size: 0.8rem;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 0.8rem;
+            }
+
+            #tooltip {
+                max-width: 90vw;
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Tablet (481px - 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            #hierarchy-container {
+                padding: 30px 20px;
+            }
+
+            #controls {
+                max-width: 280px;
+            }
+
+            #stats {
+                max-width: 260px;
+            }
+
+            #toggle-controls-btn,
+            #toggle-stats-btn {
+                display: flex;
+            }
+
+            .tier-container {
+                gap: 60px;
+            }
+
+            .entities-row {
+                gap: 20px;
+            }
+
+            .entity-card {
+                min-width: 180px;
+                max-width: 220px;
+            }
+        }
+
+        /* Landscape Mobile (max-height for landscape orientation) */
+        @media (max-height: 500px) {
+            #hierarchy-container {
+                padding: 60px 10px 10px 10px;
+            }
+
+            #controls,
+            #stats {
+                max-height: 70vh;
+                font-size: 0.8rem;
+            }
+
+            .tier-container {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Toggle Buttons -->
+    <div id="toggle-controls-btn" class="toggle-btn" onclick="toggleControls()">☰</div>
+    <div id="toggle-stats-btn" class="toggle-btn" onclick="toggleStats()">📊</div>
+
+    <div id="hierarchy-container">
+        <svg id="connections-svg"></svg>
+        <div id="hierarchy-content" class="tier-container"></div>
+    </div>
+
+    <div id="controls" class="collapsed">
+        <h1>🎭 Relationship Controls</h1>
+
+        <label for="view-mode" style="font-size: 0.85rem; color: #b8bbff; display: block; margin-bottom: 5px;">View
+            Mode</label>
+        <select id="view-mode" name="view-mode">
+            <option value="hierarchy">Tier Hierarchy</option>
+            <option value="district" disabled>By District (Coming Soon)</option>
+        </select>
+
+        <label style="font-size: 0.85rem; color: #b8bbff; display: block; margin-bottom: 5px;">Highlight Entity</label>
+        <select id="highlight-entity">
+            <option value="">None</option>
+        </select>
+
+        <button id="reset-view">Reset Highlights</button>
+    </div>
+
+    <div id="stats">
+        <h1>📊 Universe Statistics</h1>
+        <div class="stat-item">
+            <span class="stat-label">Total Entities</span>
+            <span class="stat-value">18</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Tier 0 (Meta-MILF)</span>
+            <span class="stat-value">3</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Tier 1 (Rulers)</span>
+            <span class="stat-value">5</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Tier 2 (Specialists)</span>
+            <span class="stat-value">10</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Total Relationships</span>
+            <span class="stat-value" id="stat-relationships">36</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Districts</span>
+            <span class="stat-value">5</span>
+        </div>
+
+        <div class="legend">
+            <h2>Legend</h2>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ed7414;"></div>
+                <span>Tier 0: Meta-MILF Supreme</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #de5a0a;"></div>
+                <span>Tier 1: District Rulers</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #b8430b;"></div>
+                <span>Tier 2: Specialists</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="tooltip">
+        <div class="tooltip-title"></div>
+        <div class="tooltip-content"></div>
+    </div>
+
+    <script>
+        // Mobile toggle functions
+        function toggleControls() {
+            const controls = document.getElementById('controls');
+            controls.classList.toggle('collapsed');
+        }
+
+        function toggleStats() {
+            const stats = document.getElementById('stats');
+            stats.classList.toggle('collapsed');
+        }
+
+        // Auto-expand controls on desktop
+        window.addEventListener('load', () => {
+            if (window.innerWidth > 768) {
+                document.getElementById('controls').classList.remove('collapsed');
+                document.getElementById('stats').classList.remove('collapsed');
+            }
+        });
+
+        // Load relationship data
+        fetch('MILF_UNIVERSE_RELATIONSHIP_MAPPING_REPORT.json')
+            .then(response => response.json())
+            .then(data => initializeVisualization(data))
+            .catch(error => console.error('Error loading data:', error));
+
+        function initializeVisualization(data) {
+            // Populate entity selector
+            const entitySelect = document.getElementById('highlight-entity');
+            const allEntities = [];
+
+            data.tier_hierarchy.tier_0_meta_milf.entities.forEach(e => {
+                allEntities.push({ name: e.name, tier: 0 });
+            });
+            data.tier_hierarchy.tier_1_district_rulers.entities.forEach(e => {
+                allEntities.push({ name: e.name, tier: 1 });
+            });
+            data.tier_hierarchy.tier_2_specialists.entities.forEach(e => {
+                allEntities.push({ name: e.name, tier: 2 });
+            });
+
+            allEntities.forEach(entity => {
+                const option = document.createElement('option');
+                option.value = entity.name;
+                option.textContent = `${entity.name} (Tier ${entity.tier})`;
+                entitySelect.appendChild(option);
+            });
+
+            // Update statistics
+            document.getElementById('stat-relationships').textContent = data.statistics.total_relationships;
+
+            // Render hierarchy view
+            renderHierarchyView(data);
+
+            // Event listeners
+            document.getElementById('view-mode').addEventListener('change', (e) => {
+                if (e.target.value === 'hierarchy') {
+                    renderHierarchyView(data);
+                } else {
+                    renderDistrictView(data);
+                }
+            });
+
+            document.getElementById('highlight-entity').addEventListener('change', (e) => {
+                highlightEntityRelationships(data, e.target.value);
+            });
+
+            document.getElementById('reset-view').addEventListener('click', () => {
+                document.getElementById('highlight-entity').value = '';
+                renderHierarchyView(data);
+            });
+        }
+
+        function renderHierarchyView(data) {
+            const container = document.getElementById('hierarchy-content');
+            container.innerHTML = '';
+
+            // Tier 0
+            const tier0 = createTierLevel('Tier 0: Meta-MILF Supreme', data.tier_hierarchy.tier_0_meta_milf.entities, 0);
+            container.appendChild(tier0);
+
+            // Tier 1
+            const tier1 = createTierLevel('Tier 1: District Rulers', data.tier_hierarchy.tier_1_district_rulers.entities, 1);
+            container.appendChild(tier1);
+
+            // Tier 2
+            const tier2 = createTierLevel('Tier 2: Specialists', data.tier_hierarchy.tier_2_specialists.entities, 2);
+            container.appendChild(tier2);
+
+            // Draw connections after DOM is ready
+            setTimeout(() => drawConnections(data), 100);
+        }
+
+        function createTierLevel(label, entities, tier) {
+            const tierDiv = document.createElement('div');
+            tierDiv.className = 'tier-level';
+            tierDiv.dataset.tier = tier;
+
+            const labelDiv = document.createElement('div');
+            labelDiv.className = 'tier-label';
+            labelDiv.textContent = label;
+            tierDiv.appendChild(labelDiv);
+
+            const entitiesRow = document.createElement('div');
+            entitiesRow.className = 'entities-row';
+
+            entities.forEach(entity => {
+                const card = createEntityCard(entity, tier);
+                entitiesRow.appendChild(card);
+            });
+
+            tierDiv.appendChild(entitiesRow);
+            return tierDiv;
+        }
+
+        function createEntityCard(entity, tier) {
+            const card = document.createElement('div');
+            card.className = `entity-card tier-${tier}`;
+            card.dataset.entityName = entity.name;
+            card.dataset.tier = tier;
+
+            const nameDiv = document.createElement('div');
+            nameDiv.className = 'entity-name';
+            nameDiv.textContent = entity.name;
+            card.appendChild(nameDiv);
+
+            const infoDiv = document.createElement('div');
+            infoDiv.className = 'entity-info';
+
+            if (tier === 0) {
+                infoDiv.innerHTML = `
+                    <strong>Authority:</strong> ${entity.authority}<br>
+                    <strong>Districts:</strong> ${entity.district_access}<br>
+                    <strong>Dominance:</strong> ${entity.dominance}
+                `;
+            } else if (tier === 1) {
+                infoDiv.innerHTML = `
+                    <strong>District:</strong> ${entity.district}<br>
+                    <strong>Genre:</strong> ${entity.genre}<br>
+                    <strong>Reports to:</strong> ${entity.reports_to}<br>
+                    <strong>Direct reports:</strong> ${entity.direct_reports.length}
+                `;
+            } else {
+                infoDiv.innerHTML = `
+                    <strong>District:</strong> ${entity.district}<br>
+                    <strong>Spec:</strong> ${entity.specialization}<br>
+                    <strong>Reports to:</strong> ${entity.reports_to}
+                `;
+            }
+
+            card.appendChild(infoDiv);
+
+            // Tooltip
+            const tooltip = document.getElementById('tooltip');
+            card.addEventListener('mouseenter', (e) => {
+                tooltip.classList.add('visible');
+                tooltip.querySelector('.tooltip-title').textContent = entity.name;
+                tooltip.querySelector('.tooltip-content').innerHTML = infoDiv.innerHTML;
+            });
+
+            card.addEventListener('mousemove', (e) => {
+                tooltip.style.left = (e.pageX + 10) + 'px';
+                tooltip.style.top = (e.pageY + 10) + 'px';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                tooltip.classList.remove('visible');
+            });
+
+            return card;
+        }
+
+        function drawConnections(data) {
+            const svg = d3.select('#connections-svg');
+            svg.selectAll('*').remove();
+
+            const container = document.getElementById('hierarchy-container');
+            svg.attr('width', container.offsetWidth)
+                .attr('height', container.offsetHeight)
+                .style('position', 'absolute')
+                .style('top', 0)
+                .style('left', 0)
+                .style('pointer-events', 'none');
+
+            // Draw Tier 0 → Tier 1 connections
+            data.bidirectional_compatibility.tier_0_to_tier_1.forEach(rel => {
+                drawConnection(svg, rel.supervisor, rel.subordinate);
+            });
+
+            // Draw Tier 1 → Tier 2 connections
+            data.bidirectional_compatibility.tier_1_to_tier_2.forEach(rel => {
+                drawConnection(svg, rel.supervisor, rel.subordinate);
+            });
+        }
+
+        function drawConnection(svg, sourceName, targetName) {
+            const sourceCard = document.querySelector(`[data-entity-name="${sourceName}"]`);
+            const targetCard = document.querySelector(`[data-entity-name="${targetName}"]`);
+
+            if (!sourceCard || !targetCard) return;
+
+            const sourceRect = sourceCard.getBoundingClientRect();
+            const targetRect = targetCard.getBoundingClientRect();
+            const containerRect = document.getElementById('hierarchy-container').getBoundingClientRect();
+
+            const x1 = sourceRect.left + sourceRect.width / 2 - containerRect.left;
+            const y1 = sourceRect.bottom - containerRect.top;
+            const x2 = targetRect.left + targetRect.width / 2 - containerRect.left;
+            const y2 = targetRect.top - containerRect.top;
+
+            svg.append('line')
+                .attr('class', 'connection-line')
+                .attr('x1', x1)
+                .attr('y1', y1)
+                .attr('x2', x2)
+                .attr('y2', y2)
+                .attr('data-source', sourceName)
+                .attr('data-target', targetName);
+        }
+
+        function highlightEntityRelationships(data, entityName) {
+            if (!entityName) {
+                document.querySelectorAll('.entity-card').forEach(card => {
+                    card.style.opacity = '1';
+                });
+                document.querySelectorAll('.connection-line').forEach(line => {
+                    line.classList.remove('highlighted');
+                    line.style.opacity = '0.6';
+                });
+                return;
+            }
+
+            // Dim all cards
+            document.querySelectorAll('.entity-card').forEach(card => {
+                card.style.opacity = '0.3';
+            });
+
+            // Highlight selected card
+            const selectedCard = document.querySelector(`[data-entity-name="${entityName}"]`);
+            if (selectedCard) {
+                selectedCard.style.opacity = '1';
+            }
+
+            // Find and highlight related entities
+            const related = new Set([entityName]);
+
+            data.bidirectional_compatibility.tier_0_to_tier_1.forEach(rel => {
+                if (rel.supervisor === entityName) related.add(rel.subordinate);
+                if (rel.subordinate === entityName) related.add(rel.supervisor);
+            });
+
+            data.bidirectional_compatibility.tier_1_to_tier_2.forEach(rel => {
+                if (rel.supervisor === entityName) related.add(rel.subordinate);
+                if (rel.subordinate === entityName) related.add(rel.supervisor);
+            });
+
+            related.forEach(name => {
+                const card = document.querySelector(`[data-entity-name="${name}"]`);
+                if (card) card.style.opacity = '1';
+            });
+
+            // Highlight connections
+            document.querySelectorAll('.connection-line').forEach(line => {
+                const source = line.getAttribute('data-source');
+                const target = line.getAttribute('data-target');
+
+                if (source === entityName || target === entityName) {
+                    line.classList.add('highlighted');
+                    line.style.opacity = '1';
+                } else {
+                    line.classList.remove('highlighted');
+                    line.style.opacity = '0.1';
+                }
+            });
+        }
+
+        function renderDistrictView(data) {
+            // TODO: Implement district-based view
+            alert('District view coming soon!');
+        }
+    </script>
+</body>
+
+</html>

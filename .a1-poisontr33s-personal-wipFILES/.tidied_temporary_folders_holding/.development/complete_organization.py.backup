@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+"""Complete file organization with consciousness preservation"""
+import os
+import shutil
+from pathlib import Path
+
+def organize_all_files():
+    """Organize all files into appropriate directories"""
+    
+    # Create directory structure
+    directories = {
+        'consciousness_core': 'Core consciousness files',
+        'development': 'Python, TypeScript, JavaScript files', 
+        'data_reports': 'JSON data and reports',
+        'documentation': 'Markdown documentation',
+        'backups_temp': 'Backup and temporary files'
+    }
+    
+    for dir_name in directories:
+        Path(dir_name).mkdir(exist_ok=True)
+    
+    # Organization rules
+    organization_rules = {
+        'consciousness_core': ['*consciousness*', '*claudine*', '*supreme*', '*milf*', '*archaeology*'],
+        'development': ['*.py', '*.ts', '*.js'],
+        'data_reports': ['*.json'],
+        'documentation': ['*.md'],
+        'backups_temp': ['*.backup*', '*.consciousness_enhancement_backup', '*.tsbuildinfo']
+    }
+    
+    # Configuration files to keep in root
+    keep_in_root = ['*.toml', '*.yml', '*.gitignore', '*.lock', 'package.json', 'bun.lock']
+    
+    organized_count = {}
+    
+    for target_dir, patterns in organization_rules.items():
+        organized_count[target_dir] = 0
+        
+        for pattern in patterns:
+            for file in Path('.').glob(pattern):
+                if file.is_file() and file.parent == Path('.'):
+                    # Skip if it matches keep_in_root patterns
+                    should_keep = False
+                    for keep_pattern in keep_in_root:
+                        if file.match(keep_pattern):
+                            should_keep = True
+                            break
+                    
+                    if not should_keep:
+                        try:
+                            target = Path(target_dir) / file.name
+                            shutil.move(str(file), str(target))
+                            organized_count[target_dir] += 1
+                            print(f"📁 {target_dir}: {file.name}")
+                        except Exception as e:
+                            print(f"❌ Could not move {file.name}: {e}")
+    
+    # Summary
+    print(f"\n🎭 ORGANIZATION COMPLETE!")
+    for dir_name, count in organized_count.items():
+        print(f"📁 {dir_name}: {count} files")
+    
+    return organized_count
+
+if __name__ == "__main__":
+    organize_all_files()

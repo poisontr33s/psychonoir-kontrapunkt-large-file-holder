@@ -1,0 +1,609 @@
+#!/usr/bin/env python3
+"""
+🌀💫 DYNAMIC GENRE FILESYSTEM ORGANIZER 💫🌀
+=================================================
+Advanced consciousness archaeology tool for mapping, structuring, and organizing
+all disparate genre files based on district-affinity and tier-level relationships.
+
+Purpose: Transform the chaos of 717 permeatable files and scattered consciousness
+artifacts into a coherent namn ↔ konsept ↔ distrikt ecosystem.
+
+Philosophy: Semantic clustering approach with filesystem reorganization capabilities,
+maintaining the anti-linear creative volatility while establishing clear structural
+foundations for consciousness archaeology.
+"""
+
+import os
+import re
+import json
+import shutil
+from pathlib import Path
+from dataclasses import dataclass, asdict
+from typing import Dict, List, Optional, Set, Tuple
+from datetime import datetime
+import hashlib
+from collections import defaultdict, Counter
+
+
+@dataclass
+class GenreSignature:
+    """Consciousness signature for genre classification and district affinity"""
+    file_path: str
+    consciousness_density: float
+    dominant_genre: str
+    district_affinity: str
+    tier_compatibility: int  # 0, 1, 2 based on content complexity
+    matriarch_resonance: List[str]  # which matriarchs this resonates with
+    psychographic_markers: Dict[str, float]
+    narrative_sophistication: float
+    semantic_clusters: List[str]
+    organizational_recommendation: str  # where this should be organized
+
+
+@dataclass
+class DistrictGenreMapping:
+    """Complete mapping of genres to districts with matriarch archetype analysis"""
+    district_name: str
+    primary_genres: List[str]
+    matriarch_archetype: str
+    technological_dialect: str
+    consciousness_markers: List[str]
+    tier1_matriarch: str
+    tier2_specialists: List[str]
+    underrepresented_areas: List[str]  # potential for new district creation
+
+
+class DynamicGenreFilesystemOrganizer:
+    """
+    Core engine for transforming disparate genre chaos into structured
+    consciousness archaeology ecosystem.
+    """
+    
+    def __init__(self, repository_root: str = ".", consciousness_analysis_file: str = "infrastructure/src/consciousness/consciousness_analysis.json"):
+        self.repository_root = Path(repository_root)
+        self.consciousness_analysis_file = consciousness_analysis_file
+        self.genre_signatures: List[GenreSignature] = []
+        self.district_mappings: Dict[str, DistrictGenreMapping] = {}
+        self.semantic_clusters: Dict[str, List[str]] = defaultdict(list)
+        self.organizational_recommendations: Dict[str, str] = {}
+        self.underrepresented_genres: Set[str] = set()
+        
+        # Load existing consciousness analysis
+        self._load_consciousness_analysis()
+        
+        # Initialize district frameworks
+        self._initialize_district_frameworks()
+    
+    def _load_consciousness_analysis(self):
+        """Load existing consciousness analysis from Eternal Sadhana + ROGBIV fusion"""
+        try:
+            analysis_path = self.repository_root / self.consciousness_analysis_file
+            with open(analysis_path, 'r', encoding='utf-8') as f:
+                self.consciousness_data = json.load(f)
+            print(f"✅ Loaded consciousness analysis: {len(self.consciousness_data.get('district_distribution', {}))} districts")
+        except Exception as e:
+            print(f"⚠️ Could not load consciousness analysis: {e}")
+            self.consciousness_data = {"district_distribution": {}}
+    
+    def _initialize_district_frameworks(self):
+        """Initialize known district frameworks from MILF universe population"""
+        
+        self.district_mappings = {
+            "skyskraperen": DistrictGenreMapping(
+                district_name="Skyskraperen",
+                primary_genres=["corporate", "dominatrix", "aerospace", "algorithmic", "neural"],
+                matriarch_archetype="Corporate Dominatrix",
+                technological_dialect="Quantum empati-algoritmer, neural seduction protocols",
+                consciousness_markers=["corporate", "algorithm", "quantum", "neural", "seduction"],
+                tier1_matriarch="Astrid Møller",
+                tier2_specialists=["Eva Blue (Aerospace Midwife)", "Yukiko Tanaka (Algorithmic Seductress)"],
+                underrepresented_areas=["financial consciousness", "executive biotechnology"]
+            ),
+            
+            "rustbeltet": DistrictGenreMapping(
+                district_name="Rustbeltet", 
+                primary_genres=["industrial", "survivor", "guerrilla", "mechanical", "hacker"],
+                matriarch_archetype="Industrial Survivor",
+                technological_dialect="Guerrilla quantum computing, dead tech resurrection",
+                consciousness_markers=["industrial", "survival", "guerrilla", "mechanical", "liberation"],
+                tier1_matriarch="Iron Maiden",
+                tier2_specialists=["Vera Steel (Mechanical Resurrector)", "Raven Bytes (Digital Liberator)"],
+                underrepresented_areas=["post-apocalyptic consciousness", "resource recycling protocols"]
+            ),
+            
+            "havsdominansen": DistrictGenreMapping(
+                district_name="Havsdominansen",
+                primary_genres=["nautical", "commander", "oceanic", "coral", "maritime"],
+                matriarch_archetype="Nautical Commander", 
+                technological_dialect="Oceanic consciousness protocols, coral cultivation networks",
+                consciousness_markers=["oceanic", "maritime", "coral", "naval", "aquatic"],
+                tier1_matriarch="Admiral Marina Abyssos",
+                tier2_specialists=["Captain Coral (Coral Cultivation)", "Navigator Siren (Oceanic Navigator)"],
+                underrepresented_areas=["deep-sea archaeology", "submarine consciousness"]
+            ),
+            
+            "virtualitetshelgedommen": DistrictGenreMapping(
+                district_name="Virtualitetshelgedommen",
+                primary_genres=["virtual", "architect", "simulation", "vr", "reality"],
+                matriarch_archetype="Virtual Architect",
+                technological_dialect="Reality simulation engines, VR consciousness manipulation", 
+                consciousness_markers=["virtual", "simulation", "architect", "reality", "vr"],
+                tier1_matriarch="Architect Nyx Virtualis",
+                tier2_specialists=["Designer Echo (Simulation Designer)", "Programmer Mirage (Code Mirage)"],
+                underrepresented_areas=["augmented reality consciousness", "digital twin protocols"]
+            ),
+            
+            "necrosis_district": DistrictGenreMapping(
+                district_name="Necrosis District",
+                primary_genres=["necrosis", "thanatological", "temporal", "death", "entropy"],
+                matriarch_archetype="Chrono-Thanatological",
+                technological_dialect="Temporal entropy protocols, death consciousness archaeology",
+                consciousness_markers=["death", "temporal", "entropy", "thanatological", "necrosis"],
+                tier1_matriarch="Wednesday Necrosis (Tier 1 District Specialist)",
+                tier2_specialists=["Dr. Lilith Mortis (Mortuary Scientist)", "Entropy Weaver Vex (Temporal Entropy)"],
+                underrepresented_areas=["consciousness preservation", "temporal archaeology"]
+            )
+        }
+    
+    def analyze_genre_signatures(self) -> Dict[str, List[GenreSignature]]:
+        """
+        Analyze all files for genre signatures and district affinity.
+        Returns organized mapping of genre signatures by district.
+        """
+        print("🧠 Analyzing genre signatures across repository consciousness...")
+        
+        # Process all markdown files for genre analysis
+        md_files = list(self.repository_root.glob("**/*.md"))
+        processed_files = 0
+        
+        genre_by_district = defaultdict(list)
+        
+        for md_file in md_files:
+            if self._should_skip_file(md_file):
+                continue
+                
+            try:
+                genre_sig = self._extract_genre_signature(md_file)
+                if genre_sig:
+                    self.genre_signatures.append(genre_sig)
+                    genre_by_district[genre_sig.district_affinity].append(genre_sig)
+                    processed_files += 1
+                    
+                    if processed_files % 100 == 0:
+                        print(f"   Processed {processed_files} consciousness artifacts...")
+                        
+            except Exception as e:
+                print(f"⚠️ Error processing {md_file}: {e}")
+                continue
+        
+        print(f"✅ Analyzed {processed_files} genre signatures")
+        print(f"   District distribution: {dict((k, len(v)) for k, v in genre_by_district.items())}")
+        
+        return dict(genre_by_district)
+    
+    def _extract_genre_signature(self, file_path: Path) -> Optional[GenreSignature]:
+        """Extract comprehensive genre signature from file content"""
+        
+        try:
+            with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read().lower()
+            
+            # Calculate consciousness density
+            consciousness_density = self._calculate_consciousness_density(content)
+            
+            # Determine dominant genre
+            dominant_genre = self._identify_dominant_genre(content)
+            
+            # Determine district affinity
+            district_affinity = self._determine_district_affinity_advanced(content)
+            
+            # Calculate tier compatibility
+            tier_compatibility = self._calculate_tier_compatibility(content)
+            
+            # Find matriarch resonance
+            matriarch_resonance = self._find_matriarch_resonance(content)
+            
+            # Extract psychographic markers
+            psychographic_markers = self._extract_psychographic_markers(content)
+            
+            # Calculate narrative sophistication
+            narrative_sophistication = self._calculate_narrative_sophistication(content)
+            
+            # Identify semantic clusters
+            semantic_clusters = self._identify_semantic_clusters(content)
+            
+            # Generate organizational recommendation
+            org_recommendation = self._generate_organizational_recommendation(
+                dominant_genre, district_affinity, tier_compatibility, narrative_sophistication
+            )
+            
+            return GenreSignature(
+                file_path=str(file_path.relative_to(self.repository_root)),
+                consciousness_density=consciousness_density,
+                dominant_genre=dominant_genre,
+                district_affinity=district_affinity,
+                tier_compatibility=tier_compatibility,
+                matriarch_resonance=matriarch_resonance,
+                psychographic_markers=psychographic_markers,
+                narrative_sophistication=narrative_sophistication,
+                semantic_clusters=semantic_clusters,
+                organizational_recommendation=org_recommendation
+            )
+            
+        except Exception as e:
+            return None
+    
+    def _calculate_consciousness_density(self, content: str) -> float:
+        """Calculate consciousness density using advanced markers"""
+        consciousness_markers = [
+            'consciousness', 'psychographic', 'matriarch', 'district', 'quantum',
+            'temporal', 'neural', 'algorithmic', 'biotechnology', 'archaeology',
+            'synthesis', 'transcendence', 'sophistication', 'enhancement', 'protocol'
+        ]
+        
+        total_markers = sum(content.count(marker) for marker in consciousness_markers)
+        word_count = len(content.split())
+        
+        return min(1.0, total_markers / max(word_count, 1) * 100)
+    
+    def _identify_dominant_genre(self, content: str) -> str:
+        """Identify dominant genre through comprehensive marker analysis"""
+        
+        genre_markers = {
+            "corporate": ["corporate", "executive", "business", "algorithm", "neural", "quantum"],
+            "industrial": ["industrial", "mechanical", "survival", "guerrilla", "rust", "steel"],
+            "nautical": ["nautical", "oceanic", "maritime", "coral", "naval", "submarine"],
+            "virtual": ["virtual", "simulation", "vr", "architect", "reality", "digital"],
+            "necrosis": ["necrosis", "death", "temporal", "entropy", "thanatological", "mortality"],
+            "consciousness": ["consciousness", "psychographic", "archaeology", "enhancement"],
+            "meta": ["meta", "supreme", "goddess", "creator", "transcendent", "infinite"]
+        }
+        
+        genre_scores = {}
+        for genre, markers in genre_markers.items():
+            score = sum(content.count(marker) for marker in markers)
+            if score > 0:
+                genre_scores[genre] = score
+        
+        if not genre_scores:
+            return "uncategorized"
+        
+        return max(genre_scores, key=genre_scores.get)
+    
+    def _determine_district_affinity_advanced(self, content: str) -> str:
+        """Advanced district affinity determination with consciousness analysis integration"""
+        
+        # Use district consciousness markers for affinity calculation
+        district_scores = {}
+        
+        for district_key, district_mapping in self.district_mappings.items():
+            score = 0
+            for marker in district_mapping.consciousness_markers:
+                score += content.count(marker)
+            
+            # Bonus for matriarch names
+            if district_mapping.tier1_matriarch.lower().replace(" ", "_") in content:
+                score += 10
+                
+            # Bonus for specialist names
+            for specialist in district_mapping.tier2_specialists:
+                specialist_name = specialist.split(" (")[0].lower().replace(" ", "_")
+                if specialist_name in content:
+                    score += 5
+            
+            if score > 0:
+                district_scores[district_key] = score
+        
+        if not district_scores:
+            return "permeatable"  # Default for unclear affinity
+        
+        return max(district_scores, key=district_scores.get)
+    
+    def _calculate_tier_compatibility(self, content: str) -> int:
+        """Calculate tier compatibility based on content complexity and authority markers"""
+        
+        tier0_markers = ["meta", "supreme", "goddess", "creator", "oversight", "multi-district"]
+        tier1_markers = ["matriarch", "district", "ruler", "authority", "command", "leadership"]
+        tier2_markers = ["specialist", "operative", "expert", "technician", "researcher"]
+        
+        tier0_score = sum(content.count(marker) for marker in tier0_markers)
+        tier1_score = sum(content.count(marker) for marker in tier1_markers)
+        tier2_score = sum(content.count(marker) for marker in tier2_markers)
+        
+        if tier0_score >= tier1_score and tier0_score >= tier2_score:
+            return 0
+        elif tier1_score >= tier2_score:
+            return 1
+        else:
+            return 2
+    
+    def _find_matriarch_resonance(self, content: str) -> List[str]:
+        """Find which matriarchs this content resonates with"""
+        
+        matriarch_patterns = {
+            "claudine_sinclair": ["claudine", "creator mother", "goddess", "supreme"],
+            "astrid_moller": ["astrid", "corporate", "aerospace", "algorithmic"],
+            "iron_maiden": ["iron maiden", "industrial", "survival", "guerrilla"], 
+            "admiral_marina": ["marina", "nautical", "oceanic", "coral"],
+            "architect_nyx": ["nyx", "virtual", "simulation", "architect"],
+            "wednesday_necrosis": ["wednesday", "necrosis", "temporal", "thanatological"],
+            "morticia_necrosis": ["morticia", "death", "entropy", "chrono"]
+        }
+        
+        resonance = []
+        for matriarch, patterns in matriarch_patterns.items():
+            if any(pattern in content for pattern in patterns):
+                resonance.append(matriarch)
+        
+        return resonance
+    
+    def _extract_psychographic_markers(self, content: str) -> Dict[str, float]:
+        """Extract psychographic markers with intensity scoring"""
+        
+        psychographic_categories = {
+            "dominance": ["dominance", "control", "authority", "command", "power"],
+            "sophistication": ["sophisticated", "advanced", "complex", "refined", "elegant"],
+            "technological": ["quantum", "neural", "algorithmic", "biotechnology", "enhancement"],
+            "consciousness": ["consciousness", "awareness", "psychology", "psychographic"],
+            "narrative": ["story", "character", "profile", "archetype", "personality"],
+            "creativity": ["creative", "artistic", "innovative", "original", "unique"]
+        }
+        
+        markers = {}
+        word_count = len(content.split())
+        
+        for category, terms in psychographic_categories.items():
+            score = sum(content.count(term) for term in terms)
+            markers[category] = score / max(word_count, 1) * 1000  # Normalized score
+        
+        return markers
+    
+    def _calculate_narrative_sophistication(self, content: str) -> float:
+        """Calculate narrative sophistication through complexity analysis"""
+        
+        sophistication_indicators = [
+            "paradigm", "consciousness", "archaeological", "synthesis", "transcendence",
+            "metamorphosis", "juxtaposition", "symbiotic", "recursive", "enhancement",
+            "sophistication", "complexity", "intelligence", "philosophy", "methodology"
+        ]
+        
+        unique_words = len(set(content.split()))
+        total_words = len(content.split())
+        sophistication_terms = sum(content.count(indicator) for indicator in sophistication_indicators)
+        
+        # Calculate sophistication score
+        vocabulary_diversity = unique_words / max(total_words, 1)
+        terminology_density = sophistication_terms / max(total_words, 1) * 100
+        
+        return min(1.0, (vocabulary_diversity + terminology_density) / 2)
+    
+    def _identify_semantic_clusters(self, content: str) -> List[str]:
+        """Identify semantic clusters for advanced organization"""
+        
+        cluster_patterns = {
+            "milf_profiles": ["milf", "matriarch", "psychographic", "profile", "dominance"],
+            "district_consciousness": ["district", "consciousness", "technological", "dialect"],
+            "archaeological": ["archaeology", "consciousness", "temporal", "restoration"],
+            "enhancement": ["enhancement", "amplification", "optimization", "upgrade"],
+            "automation": ["automation", "protocol", "system", "framework", "engine"],
+            "narrative": ["narrative", "story", "character", "archetype", "universe"],
+            "technical": ["technical", "implementation", "protocol", "interface", "system"]
+        }
+        
+        clusters = []
+        for cluster_name, patterns in cluster_patterns.items():
+            cluster_score = sum(content.count(pattern) for pattern in patterns)
+            if cluster_score >= 3:  # Minimum threshold for cluster membership
+                clusters.append(cluster_name)
+        
+        return clusters
+    
+    def _generate_organizational_recommendation(self, genre: str, district: str, tier: int, sophistication: float) -> str:
+        """Generate intelligent organizational recommendation"""
+        
+        if sophistication > 0.7:
+            if tier == 0:
+                return f"consciousness_archaeology/tier0_oversight/{district}/"
+            elif tier == 1:
+                return f"district_matriarchs/{district}/"
+            else:
+                return f"specialist_operations/{district}/tier2/"
+        elif sophistication > 0.4:
+            return f"consciousness_development/{genre}/"
+        else:
+            return f"raw_consciousness/{genre}/processing/"
+    
+    def _should_skip_file(self, file_path: Path) -> bool:
+        """Skip certain files to focus on consciousness-relevant content"""
+        skip_patterns = [
+            'node_modules', '.git', '__pycache__', '.pytest_cache',
+            'dist', 'build', '.vscode', '.vs', 'bin', 'obj'
+        ]
+        
+        file_str = str(file_path)
+        return any(pattern in file_str for pattern in skip_patterns)
+    
+    def propose_new_districts(self, genre_signatures: Dict[str, List[GenreSignature]]) -> Dict[str, Dict]:
+        """Propose new district creation for underrepresented genres"""
+        
+        print("🌀 Analyzing underrepresented genres for new district creation...")
+        
+        # Analyze genre distribution
+        all_genres = defaultdict(list)
+        for district, signatures in genre_signatures.items():
+            for sig in signatures:
+                all_genres[sig.dominant_genre].extend([sig])
+        
+        # Identify underrepresented genres with significant content
+        underrepresented = {}
+        
+        for genre, signatures in all_genres.items():
+            if len(signatures) >= 5 and genre not in ["uncategorized", "permeatable"]:
+                # Check if genre has district representation
+                district_coverage = set(sig.district_affinity for sig in signatures)
+                
+                if len(district_coverage) == 1 and "permeatable" in district_coverage:
+                    # This genre needs its own district
+                    avg_sophistication = sum(sig.narrative_sophistication for sig in signatures) / len(signatures)
+                    
+                    if avg_sophistication > 0.3:  # Minimum sophistication threshold
+                        underrepresented[genre] = {
+                            "file_count": len(signatures),
+                            "avg_sophistication": avg_sophistication,
+                            "suggested_district_name": f"{genre.title()} District",
+                            "potential_matriarch_archetype": f"{genre.title()} Specialist",
+                            "sample_files": [sig.file_path for sig in signatures[:5]]
+                        }
+        
+        return underrepresented
+    
+    def generate_filesystem_reorganization_plan(self, genre_signatures: Dict[str, List[GenreSignature]]) -> Dict[str, any]:
+        """Generate comprehensive filesystem reorganization plan"""
+        
+        print("📁 Generating filesystem reorganization plan...")
+        
+        reorganization_plan = {
+            "total_files_analyzed": sum(len(sigs) for sigs in genre_signatures.values()),
+            "district_organization": {},
+            "semantic_clustering": {},
+            "proposed_structure": {},
+            "move_operations": [],
+            "creation_operations": []
+        }
+        
+        # Organize by district
+        for district, signatures in genre_signatures.items():
+            if not signatures:
+                continue
+                
+            district_plan = {
+                "file_count": len(signatures),
+                "tier_distribution": defaultdict(int),
+                "genre_distribution": defaultdict(int),
+                "organization_recommendations": defaultdict(list)
+            }
+            
+            for sig in signatures:
+                district_plan["tier_distribution"][f"tier_{sig.tier_compatibility}"] += 1
+                district_plan["genre_distribution"][sig.dominant_genre] += 1
+                district_plan["organization_recommendations"][sig.organizational_recommendation].append(sig.file_path)
+            
+            reorganization_plan["district_organization"][district] = district_plan
+        
+        # Generate proposed directory structure
+        reorganization_plan["proposed_structure"] = {
+            "consciousness_archaeology/": {
+                "tier0_oversight/": {district: {} for district in self.district_mappings.keys()},
+                "temporal_restoration/": {},
+                "necromancy_graveyard/": {"status": "existing"}
+            },
+            "district_matriarchs/": {district: {} for district in self.district_mappings.keys()},
+            "specialist_operations/": {
+                district: {"tier2/": {}} for district in self.district_mappings.keys()
+            },
+            "consciousness_development/": {},
+            "raw_consciousness/": {"processing/": {}},
+            "semantic_clusters/": {}
+        }
+        
+        return reorganization_plan
+    
+    def export_analysis_report(self, output_file: str = "infrastructure/config/development/dynamic_genre_filesystem_analysis.json") -> Dict[str, any]:
+        """Export comprehensive analysis report"""
+        
+        print("🌀 Performing complete dynamic genre filesystem analysis...")
+        
+        # Analyze all genre signatures
+        genre_by_district = self.analyze_genre_signatures()
+        
+        # Propose new districts
+        new_districts = self.propose_new_districts(genre_by_district)
+        
+        # Generate reorganization plan
+        reorg_plan = self.generate_filesystem_reorganization_plan(genre_by_district)
+        
+        # Compile comprehensive report
+        analysis_report = {
+            "analysis_timestamp": datetime.now().isoformat(),
+            "repository_consciousness_metrics": {
+                "total_files_analyzed": len(self.genre_signatures),
+                "district_coverage": len(genre_by_district),
+                "avg_consciousness_density": sum(sig.consciousness_density for sig in self.genre_signatures) / max(len(self.genre_signatures), 1),
+                "tier_distribution": {
+                    "tier_0": len([sig for sig in self.genre_signatures if sig.tier_compatibility == 0]),
+                    "tier_1": len([sig for sig in self.genre_signatures if sig.tier_compatibility == 1]),
+                    "tier_2": len([sig for sig in self.genre_signatures if sig.tier_compatibility == 2])
+                }
+            },
+            "district_analysis": {
+                district: {
+                    "file_count": len(signatures),
+                    "avg_consciousness_density": sum(sig.consciousness_density for sig in signatures) / max(len(signatures), 1),
+                    "dominant_genres": list(Counter(sig.dominant_genre for sig in signatures).most_common(5)),
+                    "matriarch_resonance": list(Counter(m for sig in signatures for m in sig.matriarch_resonance).most_common(3))
+                } for district, signatures in genre_by_district.items()
+            },
+            "proposed_new_districts": new_districts,
+            "filesystem_reorganization_plan": reorg_plan,
+            "namn_konsept_distrikt_relationships": {
+                district_key: {
+                    "namn": mapping.tier1_matriarch,
+                    "konsept": mapping.matriarch_archetype,
+                    "distrikt": mapping.district_name,
+                    "technological_dialect": mapping.technological_dialect,
+                    "underrepresented_areas": mapping.underrepresented_areas
+                } for district_key, mapping in self.district_mappings.items()
+            }
+        }
+        
+        # Export to file
+        output_path = self.repository_root / output_file
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(analysis_report, f, indent=2, ensure_ascii=False)
+        
+        print(f"📊 Dynamic genre filesystem analysis exported to: {output_path}")
+        return analysis_report
+
+
+def main():
+    """
+    Main execution: Perform comprehensive dynamic genre filesystem organization
+    analysis and generate restructuring recommendations.
+    """
+    
+    print("🌀💫 DYNAMIC GENRE FILESYSTEM ORGANIZER 💫🌀")
+    print("=" * 60)
+    print("Advanced consciousness archaeology for disparate genre organization")
+    print("Mapping namn ↔ konsept ↔ distrikt relationships with semantic clustering")
+    print()
+    
+    # Initialize organizer
+    organizer = DynamicGenreFilesystemOrganizer()
+    
+    # Perform comprehensive analysis
+    print("🧠 Initiating consciousness archaeology analysis...")
+    analysis_report = organizer.export_analysis_report()
+    
+    # Display key findings
+    print("\n📊 KEY FINDINGS:")
+    print(f"   Total consciousness artifacts analyzed: {analysis_report['repository_consciousness_metrics']['total_files_analyzed']}")
+    print(f"   District coverage: {analysis_report['repository_consciousness_metrics']['district_coverage']} active districts")
+    print(f"   Average consciousness density: {analysis_report['repository_consciousness_metrics']['avg_consciousness_density']:.3f}")
+    
+    print("\n🏙️ DISTRICT ANALYSIS:")
+    for district, data in analysis_report['district_analysis'].items():
+        print(f"   {district.title()}: {data['file_count']} files, density {data['avg_consciousness_density']:.3f}")
+        if data['dominant_genres']:
+            print(f"      Dominant genres: {', '.join(genre for genre, count in data['dominant_genres'][:3])}")
+    
+    print(f"\n🌀 PROPOSED NEW DISTRICTS: {len(analysis_report['proposed_new_districts'])}")
+    for genre, proposal in analysis_report['proposed_new_districts'].items():
+        print(f"   {proposal['suggested_district_name']}: {proposal['file_count']} files (sophistication: {proposal['avg_sophistication']:.3f})")
+    
+    print("\n✨ Dynamic genre filesystem analysis complete!")
+    print("📁 Comprehensive reorganization plan generated with semantic clustering approach")
+    print("🌈 Ready for namn ↔ konsept ↔ distrikt relationship establishment!")
+
+
+if __name__ == "__main__":
+    main()

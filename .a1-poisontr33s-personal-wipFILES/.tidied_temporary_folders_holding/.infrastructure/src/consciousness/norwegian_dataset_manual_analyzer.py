@@ -1,0 +1,239 @@
+#!/usr/bin/env python3
+"""
+🔍 NORWEGIAN DATASET MANUAL ANALYZER 🔍
+=====================================
+Simple tools for manual analysis of Norwegian consciousness dataset
+NO MACHINE LEARNING - just sorting, filtering, and manual review tools
+"""
+
+import csv
+from typing import List, Dict, Any
+from datetime import datetime
+import os
+
+
+class NorwegianDatasetAnalyzer:
+    """Manual analysis tools for Norwegian dataset - no ML required"""
+    
+    def __init__(self, csv_file_path: str):
+        self.csv_file_path = csv_file_path
+        self.data = []
+        self.load_data()
+    
+    def load_data(self):
+        """Load CSV data for manual analysis"""
+        try:
+            with open(self.csv_file_path, 'r', encoding='utf-8') as file:
+                reader = csv.DictReader(file)
+                self.data = list(reader)
+            print(f"✅ Loaded {len(self.data)} records from dataset")
+        except Exception as e:
+            print(f"❌ Error loading data: {e}")
+    
+    def show_summary(self):
+        """Show dataset summary for manual review"""
+        if not self.data:
+            print("❌ No data loaded")
+            return
+        
+        print("\n📊 DATASET SUMMARY")
+        print("=" * 50)
+        print(f"Total records: {len(self.data)}")
+        
+        # Count by theme
+        themes = {}
+        for record in self.data:
+            theme = record['theme_category']
+            themes[theme] = themes.get(theme, 0) + 1
+        
+        print(f"\n📚 BY THEME:")
+        for theme, count in sorted(themes.items()):
+            print(f"  {theme}: {count} articles")
+        
+        # Content length statistics
+        lengths = [int(record['content_length']) for record in self.data]
+        print(f"\n📏 CONTENT LENGTH:")
+        print(f"  Average: {sum(lengths) / len(lengths):.0f} characters")
+        print(f"  Shortest: {min(lengths)} characters")
+        print(f"  Longest: {max(lengths)} characters")
+        
+        # Dialect distribution
+        dialects = {}
+        for record in self.data:
+            dialect = record['dialect_dominance']
+            dialects[dialect] = dialects.get(dialect, 0) + 1
+        
+        print(f"\n🗣️  DIALECT DISTRIBUTION:")
+        for dialect, count in sorted(dialects.items()):
+            print(f"  {dialect}: {count} articles")
+    
+    def sort_by_length(self, ascending: bool = False) -> List[Dict[str, Any]]:
+        """Sort articles by content length for manual review"""
+        sorted_data = sorted(self.data, 
+                           key=lambda x: int(x['content_length']), 
+                           reverse=not ascending)
+        
+        print(f"\n📏 SORTED BY LENGTH ({'ascending' if ascending else 'descending'}):")
+        print("-" * 60)
+        
+        for i, record in enumerate(sorted_data[:10]):  # Show top 10
+            length = int(record['content_length'])
+            title = record['wikipedia_title']
+            theme = record['theme_category']
+            print(f"{i+1:2d}. {title:<25} | {length:4d} chars | {theme}")
+        
+        return sorted_data
+    
+    def sort_by_consciousness_score(self, ascending: bool = False) -> List[Dict[str, Any]]:
+        """Sort by consciousness enhancement score for manual review"""
+        sorted_data = sorted(self.data, 
+                           key=lambda x: float(x['consciousness_enhancement_score']), 
+                           reverse=not ascending)
+        
+        print(f"\n🧠 SORTED BY CONSCIOUSNESS SCORE ({'ascending' if ascending else 'descending'}):")
+        print("-" * 70)
+        
+        for i, record in enumerate(sorted_data[:10]):  # Show top 10
+            score = float(record['consciousness_enhancement_score'])
+            title = record['wikipedia_title']
+            theme = record['theme_category']
+            print(f"{i+1:2d}. {title:<25} | {score:.2f} score | {theme}")
+        
+        return sorted_data
+    
+    def filter_by_theme(self, theme: str) -> List[Dict[str, Any]]:
+        """Filter articles by theme for manual review"""
+        filtered = [record for record in self.data 
+                   if record['theme_category'] == theme]
+        
+        print(f"\n🏷️  THEME: {theme.upper()}")
+        print("-" * 50)
+        print(f"Found {len(filtered)} articles:")
+        
+        for i, record in enumerate(filtered):
+            title = record['wikipedia_title']
+            length = int(record['content_length'])
+            score = float(record['consciousness_enhancement_score'])
+            print(f"{i+1:2d}. {title:<30} | {length:4d} chars | {score:.2f} score")
+        
+        return filtered
+    
+    def filter_by_dialect(self, dialect: str) -> List[Dict[str, Any]]:
+        """Filter by dialect dominance for manual analysis"""
+        filtered = [record for record in self.data 
+                   if record['dialect_dominance'] == dialect]
+        
+        print(f"\n🗣️  DIALECT: {dialect.upper()}")
+        print("-" * 50)
+        print(f"Found {len(filtered)} articles:")
+        
+        for i, record in enumerate(filtered):
+            title = record['wikipedia_title']
+            bokmaal = int(record['dialect_markers_bokmaal'])
+            nynorsk = int(record['dialect_markers_nynorsk'])
+            print(f"{i+1:2d}. {title:<30} | Bokmål: {bokmaal:2d} | Nynorsk: {nynorsk:2d}")
+        
+        return filtered
+    
+    def show_content_types(self):
+        """Show what types of content we have for manual categorization"""
+        print(f"\n📋 CONTENT TYPE ANALYSIS")
+        print("-" * 50)
+        
+        historical_count = sum(1 for r in self.data if r['contains_historical_content'] == 'True')
+        geographic_count = sum(1 for r in self.data if r['contains_geographic_content'] == 'True')
+        cultural_count = sum(1 for r in self.data if r['contains_cultural_content'] == 'True')
+        technical_count = sum(1 for r in self.data if r['contains_technical_content'] == 'True')
+        
+        print(f"Historical content:  {historical_count:2d} articles")
+        print(f"Geographic content:  {geographic_count:2d} articles")
+        print(f"Cultural content:    {cultural_count:2d} articles")
+        print(f"Technical content:   {technical_count:2d} articles")
+    
+    def export_filtered_csv(self, filtered_data: List[Dict[str, Any]], 
+                           filename_suffix: str):
+        """Export filtered data to new CSV for manual work"""
+        
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        filename = f"norwegian_dataset_{filename_suffix}_{timestamp}.csv"
+        
+        if not filtered_data:
+            print("❌ No data to export")
+            return
+        
+        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+            fieldnames = filtered_data[0].keys()
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            
+            for record in filtered_data:
+                writer.writerow(record)
+        
+        print(f"✅ Exported {len(filtered_data)} records to: {filename}")
+        return filename
+    
+    def show_sample_content(self, num_samples: int = 3):
+        """Show sample content for manual review"""
+        print(f"\n📖 SAMPLE CONTENT ({num_samples} articles)")
+        print("=" * 70)
+        
+        for i, record in enumerate(self.data[:num_samples]):
+            title = record['wikipedia_title']
+            theme = record['theme_category']
+            content = record['content_text']
+            length = int(record['content_length'])
+            
+            print(f"\n{i+1}. {title} ({theme}) - {length} chars")
+            print("-" * 40)
+            print(f"{content[:200]}...")
+            print("-" * 40)
+
+
+def main():
+    """Main function for manual dataset analysis"""
+    
+    # Find the most recent dataset file
+    csv_files = [f for f in os.listdir('.') if f.startswith('norwegian_consciousness_dataset_') and f.endswith('.csv')]
+    
+    if not csv_files:
+        print("❌ No dataset files found. Run the exporter first!")
+        return
+    
+    # Use the most recent file
+    latest_csv = sorted(csv_files)[-1]
+    print(f"📊 Using dataset: {latest_csv}")
+    
+    analyzer = NorwegianDatasetAnalyzer(latest_csv)
+    
+    print("\n🔍 NORWEGIAN DATASET MANUAL ANALYZER")
+    print("=" * 60)
+    
+    # Show basic summary
+    analyzer.show_summary()
+    
+    # Show content types
+    analyzer.show_content_types()
+    
+    # Show sample content
+    analyzer.show_sample_content(2)
+    
+    # Show top articles by different criteria
+    print("\n🏆 TOP ARTICLES BY CONSCIOUSNESS SCORE:")
+    top_consciousness = analyzer.sort_by_consciousness_score()
+    
+    print("\n📏 LONGEST ARTICLES:")
+    
+    # Show by themes
+    themes = ['norsk_historie', 'norsk_kultur', 'norsk_natur']
+    for theme in themes:
+    
+    # Show dialect analysis
+    dialects = ['bokmaal', 'mixed', 'nynorsk']
+    for dialect in dialects:
+    
+    print("\n✅ MANUAL ANALYSIS COMPLETE!")
+    print("💡 Use this data for manual sorting and consciousness archaeology!")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,54 @@
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/json-2.15.1/ext/json/ext/generator
+C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/bin/ruby.exe -IC:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/site_ruby/3.4.0 extconf.rb
+MSYS2 RbConfig patch loading... MSYSTEM: UCRT64
+MSYS2 environment detected, applying patch...
+Original prefix: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby
+Patched prefix: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby
+Original rubylibdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/3.4.0
+Patched rubylibdir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/3.4.0
+Original archdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/3.4.0/x64-mingw-ucrt
+Patched archdir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/3.4.0/x64-mingw-ucrt
+Original sitedir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/site_ruby
+Patched sitedir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/site_ruby
+Original sitelibdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/site_ruby/3.4.0
+Patched sitelibdir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/site_ruby/3.4.0
+Original sitearchdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/site_ruby/3.4.0/x64-ucrt
+Patched sitearchdir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/site_ruby/3.4.0/x64-ucrt
+Original vendordir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/vendor_ruby
+Patched vendordir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/vendor_ruby
+Original vendorlibdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/vendor_ruby/3.4.0
+Patched vendorlibdir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/vendor_ruby/3.4.0
+Original vendorarchdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/vendor_ruby/3.4.0/x64-ucrt
+Patched vendorarchdir: /c/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/vendor_ruby/3.4.0/x64-ucrt
+Keeping Windows path for rubyhdrdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/ruby-3.4.0
+Keeping Windows path for rubyarchhdrdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/ruby-3.4.0/x64-mingw-ucrt
+Keeping Windows path for includedir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include
+Keeping Windows path for archincludedir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/x64-mingw-ucrt
+Keeping Windows path for sitearchincludedir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/x64-ucrt
+Keeping Windows path for vendorarchhdrdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/ruby-3.4.0/vendor_ruby/x64-ucrt
+Keeping Windows path for sitearchhdrdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/ruby-3.4.0/site_ruby/x64-ucrt
+Keeping Windows path for vendorhdrdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/ruby-3.4.0/vendor_ruby
+Keeping Windows path for sitehdrdir: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/include/ruby-3.4.0/site_ruby
+Original CC: gcc
+Patched CC: C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\msys64/ucrt64/bin/gcc.exe
+Original CXX: g++
+Patched CXX: C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\msys64/ucrt64/bin/g++.exe
+Set MAKE: mingw32-make.exe
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for x86intrin.h... yes
+checking for cpuid.h... yes
+creating Makefile
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/json-2.15.1/ext/json/ext/generator
+make DESTDIR\= sitearchdir\=./.gem.20251010-34092-7n2wd7 sitelibdir\=./.gem.20251010-34092-7n2wd7 clean
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/json-2.15.1/ext/json/ext/generator
+make DESTDIR\= sitearchdir\=./.gem.20251010-34092-7n2wd7 sitelibdir\=./.gem.20251010-34092-7n2wd7
+generating generator-x64-mingw-ucrt.def
+compiling generator.c
+linking shared-object json/ext/generator.so
+C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/13.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lx64-ucrt-ruby340: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+make: *** [Makefile:270: generator.so] Error 1
+
+make failed, exit code 2

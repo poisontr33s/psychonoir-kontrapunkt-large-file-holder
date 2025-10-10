@@ -1,0 +1,16 @@
+archives/legacy/old_scripts/hooker_system.exe
+archives/legacy/old_scripts/libcrypto-3.dll
+archives/legacy/old_scripts/libffi-8.dll
+archives/legacy/old_scripts/libssl-3.dll
+archives/legacy/old_scripts/sqlite3.dll
+archives/legacy/old_scripts/vcruntime140_1.dll
+archives/legacy/old_scripts/vcruntime140.dll
+consciousness_archaeology_nexus.db
+consciousness_patterns.db
+consciousness_protection_lock.db
+error_trend_analysis.db
+mcp_consciousness_bridge_integration.db
+temporal_consciousness_bridging.db
+ultimate_tao_integration.db
+vscode_consciousness_chat.db
+wordosaurus_consciousness_archaeology.db

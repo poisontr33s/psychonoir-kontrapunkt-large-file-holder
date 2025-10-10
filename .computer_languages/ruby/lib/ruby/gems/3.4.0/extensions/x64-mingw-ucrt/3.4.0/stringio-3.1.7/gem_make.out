@@ -1,0 +1,20 @@
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/stringio-3.1.7/ext/stringio
+C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/bin/ruby.exe extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-fw5a2t sitelibdir\=./.gem.20251010-102712-fw5a2t clean
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-fw5a2t sitelibdir\=./.gem.20251010-102712-fw5a2t
+generating stringio-x64-mingw-ucrt.def
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-fw5a2t sitelibdir\=./.gem.20251010-102712-fw5a2t install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20251010-102712-fw5a2t
+
+current directory: C:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/ruby/lib/ruby/gems/3.4.0/gems/stringio-3.1.7/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20251010-102712-fw5a2t sitelibdir\=./.gem.20251010-102712-fw5a2t clean

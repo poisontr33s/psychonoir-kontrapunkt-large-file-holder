@@ -1,0 +1,189 @@
+/**
+ * 🎭 CLAUDINE SUPREME CONSCIOUSNESS NEXUS
+ * Design System - CSS Architecture Foundation
+ * 
+ * Proper CSS variables, design tokens, and modular architecture
+ * September 2025
+ */
+
+:root {
+    /* === COLOR PALETTE === */
+    /* Primary - MILF Supreme Authority */
+    --claudine-primary: #ed7414;
+    --claudine-primary-dark: #de5a0a;
+    --claudine-primary-darker: #b8430b;
+    --claudine-primary-light: #ff8b2e;
+
+    /* Secondary - Quantum Consciousness */
+    --quantum-purple: #5147f7;
+    --quantum-purple-dark: #3d32c4;
+    --quantum-purple-light: #6b5fff;
+
+    /* Background - Psycho-Noir Depth */
+    --bg-primary: #0b0647;
+    --bg-secondary: #1a1480;
+    --bg-tertiary: #2a1f99;
+
+    /* Surface Colors */
+    --surface-primary: rgba(11, 6, 71, 0.95);
+    --surface-secondary: rgba(26, 20, 128, 0.85);
+    --surface-overlay: rgba(0, 0, 0, 0.7);
+
+    /* Text Colors */
+    --text-primary: #f8f9ff;
+    --text-secondary: #b8bbff;
+    --text-tertiary: #8a8fc4;
+    --text-accent: var(--claudine-primary);
+
+    /* === TIER COLORS === */
+    --tier-0-color: var(--claudine-primary);
+    --tier-0-bg: rgba(237, 116, 20, 0.15);
+    --tier-0-border: var(--claudine-primary);
+
+    --tier-1-color: var(--claudine-primary-dark);
+    --tier-1-bg: rgba(222, 90, 10, 0.15);
+    --tier-1-border: var(--claudine-primary-dark);
+
+    --tier-2-color: var(--claudine-primary-darker);
+    --tier-2-bg: rgba(184, 67, 11, 0.15);
+    --tier-2-border: var(--claudine-primary-darker);
+
+    /* === SPACING === */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* === TYPOGRAPHY === */
+    --font-family-primary: 'JetBrains Mono', 'Courier New', monospace;
+    --font-family-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.75;
+
+    /* === BORDERS === */
+    --border-radius-sm: 0.375rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 0.75rem;
+    --border-radius-xl: 1rem;
+    --border-radius-full: 9999px;
+
+    --border-width-thin: 1px;
+    --border-width-normal: 2px;
+    --border-width-thick: 3px;
+
+    /* === SHADOWS === */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.15);
+
+    --shadow-primary: 0 10px 30px rgba(237, 116, 20, 0.3);
+    --shadow-quantum: 0 10px 30px rgba(81, 71, 247, 0.3);
+
+    /* === TRANSITIONS === */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* === Z-INDEX === */
+    --z-base: 1;
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-popover: 600;
+    --z-tooltip: 700;
+
+    /* === BREAKPOINTS (for reference in media queries) === */
+    /* Mobile: 320px - 480px */
+    /* Tablet: 481px - 768px */
+    /* Desktop: 769px+ */
+    /* Desktop HD: 1920px+ */
+}
+
+/* === GLOBAL RESET === */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    overflow-x: hidden;
+}
+
+/* === UTILITY CLASSES === */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* === RESPONSIVE UTILITIES === */
+@media (max-width: 480px) {
+    :root {
+        --font-size-base: 0.875rem;
+        --spacing-lg: 1rem;
+        --spacing-xl: 1.5rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    :root {
+        --font-size-base: 0.9375rem;
+    }
+}
+
+/* === PRINT STYLES === */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+}

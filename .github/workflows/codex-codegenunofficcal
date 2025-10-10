@@ -1,2 +1,0 @@
-- name: OpenAI Codex Code Generator
-  uses: lemonberrylabs/openai-codex-action@v0.3.0

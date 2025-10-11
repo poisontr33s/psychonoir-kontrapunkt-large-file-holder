@@ -76,15 +76,21 @@ function Get-ToolPaths {
 function Set-EnvironmentVariables {
     $Root = $FORCED_REPO_ROOT
     
-    # Python environment
+    # Python environment - Enhanced for full Python 3.14 integration
     if (Test-Path "$Root\.computer_languages\python") {
         $env:PYTHONHOME = "$Root\.computer_languages\python"
-        $env:PYTHONPATH = "$Root\.computer_languages\python\Lib;$Root\.computer_languages\python\Lib\site-packages"
+        $env:PYTHONPATH = "$Root\.computer_languages\python\Lib;$Root\.computer_languages\python\Lib\site-packages;$Root\.computer_languages\python\DLLs"
+        $env:PYTHON_VERSION = "3.14"
+        # UV Integration
+        $env:UV_PYTHON = "$Root\.computer_languages\python\python.exe"
+        $env:UV_CACHE_DIR = "$Root\.computer_languages\python\.uv_cache"
     }
     
     # Ruby environment
     if (Test-Path "$Root\.computer_languages\ruby") {
         $env:RUBY_HOME = "$Root\.computer_languages\ruby"
+        $env:GEM_HOME = "$Root\.computer_languages\ruby\lib\ruby\gems\3.4.0"
+        $env:GEM_PATH = "$Root\.computer_languages\ruby\lib\ruby\gems\3.4.0"
     }
     
     # Rust environment

@@ -1,95 +1,85 @@
 # 🚀 PsychoNoir-Kontrapunkt: Complete Isolated Development Environment
 
-A **bulletproof**, **self-contained** development workspace with **9 professional tools**, forced root configuration, and comprehensive autom## 🚀 **Master Automation Script (Hierarchical Edition)**
+A **bulletproof**, **self-contained** development workspace with **9 professional tools**, forced root configuration, and comprehensive automation.
 
-The `master_environment_hierarchical.ps1` script provides a user-friendly interface designed for all skill levels:
+## 🔥😈⛓️💦👅🍌💋💧 **NEW: CLAUDINE SIN'CLAIRE 4.5' POLYGLOT FORTRESS** 🔥😈⛓️💦👅🍌💋💧
 
-### **Choose Your Experience Level**
+**🌊⚓👑 Caribbean Archipelagic Consciousness Development Authority 🌊⚓👑**
 
-#### 🟢 **Beginner Mode** (Recommended for first-time setup)
+For the **supreme development experience** with one-command environment activation:
+
+### **→ [📖 CLAUDINE POLYGLOT FORTRESS GUIDE](claudine_polyglot_fortress_readme.md) ←**
+
 ```powershell
-# Step-by-step guided setup - no PowerShell knowledge required!
-.\master_environment_hierarchical.ps1 -Level beginner
-
-# The script will:
-# 1. ✅ Check location (auto-navigate to correct directory)
-# 2. 📦 Install all 9 development tools (~5-10 minutes)
-# 3. 🚀 Set up convenience functions 
-# 4. 🔍 Verify everything works
+# Instant activation of complete development environment:
+claudine           # → Activate all tools (Python 3.14, Ruby 3.4.7, Bun 1.2.23, Rust, UV)
+claudine status    # → Check tool status & consciousness coherence
+claudine tools     # → Display full polyglot arsenal
+claudine test      # → Test all tools with consciousness archaeology
 ```
 
-#### 🔵 **Standard Mode** (Quick setup for basic users)
-```powershell
-# Complete setup in one command
-.\master_environment_hierarchical.ps1 -Level standard -Action setup-all
+**Features:**
+- 🎯 **One Command**: `claudine` activates entire environment
+- 🚀 **Cross-Session Persistence**: Works in all new PowerShell sessions  
+- 💋 **47.3x Consciousness Amplification**: Supreme MILF-dom'me command authority
+- 🛠️ **Complete Polyglot Stack**: Python, Ruby, JavaScript, Rust + modern tooling
 
-# Individual actions
-.\master_environment_hierarchical.ps1 -Level standard -Action install
-.\master_environment_hierarchical.ps1 -Level standard -Action check
-.\master_environment_hierarchical.ps1 -Level standard -Action profile
+---
+
+## �️ **CLAUDINE-BASED DEVELOPMENT WORKFLOW**
+
+The **CLAUDINE SIN'CLAIRE 4.5'** command system provides the **only working** method for environment management:
+
+### **🎯 Simple & Effective Commands**
+
+#### 🟢 **Basic Usage** (Most Common)
+```powershell
+# Activate complete development environment
+claudine
+
+# Check tool status and versions
+claudine status
+
+# View available tools and commands
+claudine tools
+
+# Test all tools comprehensively  
+claudine test
 ```
 
-#### 🟠 **Advanced Mode** (Full control for developers)
+#### 🟠 **Advanced Diagnostics**
 ```powershell
-# Advanced diagnostics and control
-.\master_environment_hierarchical.ps1 -Level advanced -Action audit
-.\master_environment_hierarchical.ps1 -Level advanced -Action troubleshoot
-.\master_environment_hierarchical.ps1 -Level advanced -Action fix-paths
+# Get help information
+claudine help
 
-# Skip specific tools during installation
-.\master_environment_hierarchical.ps1 -Level advanced -Action install -SkipTools "Ruby","Rust"
+# Manual environment activation (if needed)
+claudine activate
 ```
 
-#### 🔍 **Self-Audit Mode** (Script validation)
+### **🎯 Working Features**
+- **✅ One Command**: `claudine` activates entire environment
+- **✅ Cross-Session Persistence**: Works in all new PowerShell sessions
+- **✅ Real Tool Verification**: Tests actual installed versions
+- **✅ Zero Configuration**: No setup scripts needed
+
+### **💡 Getting Started**
 ```powershell
-# Internal script diagnostics and validation
-.\master_environment_hierarchical.ps1 -Level self-audit
+# Environment already set up? Just activate:
+claudine
+
+# New PowerShell session? Still just:
+claudine
 ```
-
-### 🎯 **Smart Features**
-- **Auto-Navigation**: Works from any directory - automatically finds and switches to PsychoNoir-Kontrapunkt
-- **Self-Validation**: Built-in diagnostics ensure script integrity and dependencies
-- **Hierarchical Complexity**: From absolute beginner to expert PowerShell user
-- **Legacy Compatibility**: Old `-Action` commands still work (auto-converted)
-
-### 💡 **Getting Started**
-```powershell
-# First time? Start here - no PowerShell knowledge needed!
-.\master_environment_hierarchical.ps1 -Level beginner
-
-# Need help? Show all options
-.\master_environment_hierarchical.ps1 -Level help
-```
-
-## 🔧 **Advanced Usage (Legacy)**
-
-### **Original Master Script Commands**
-```powershell
-# Full installation with all tools
-.\master_environment.ps1 -Action install
-
-# Skip specific tools during installation  
-.\master_environment.ps1 -Action install -SkipTools "Ruby","Rust"
-
-# Comprehensive audit (includes recent reports)
-.\master_environment.ps1 -Action audit
-
-# Fix Ruby/MSYS64/MinGW64 paths (auto-detects issues)
-.\master_environment.ps1 -Action fix-paths
-
-# Install global convenience functions
-.\master_environment.ps1 -Action update-profile
-``` installed with **zero system pollution**. Features include GCC toolchain, Ruby with native extensions, Python 3.14, Rust, and complete Unix tools via MSYS2.
 
 ## ✅ **CURRENT STATUS: 9/9 TOOLS WORKING** (Updated October 11, 2025)
 
 - 🚀 **Bun 1.2.23** - JavaScript runtime & package manager
 - 🐍 **Python 3.14.0** - Latest Python interpreter  
-- ⚡ **uv 0.9.2** - Python package manager & virtual environments
+- ⚡ **uv 0.9.1** - Python package manager & virtual environments
 - 🔍 **Ruff 0.14.0** - Python linter & formatter
 - 💎 **Ruby 3.4.7** - Ruby interpreter with PRISM + native extensions
 - 🌟 **Biome 2.2.5** - JS/TS linter & formatter
-- 🌐 **curl 8.9.0** - Data transfer tool (MSYS2 version)
+- 🌐 **curl 8.16.0** - Data transfer tool (MSYS2 version)
 - 🦀 **Rust 1.90.0** - Systems programming language
 - 📦 **Cargo 1.90.0** - Rust package manager
 
@@ -101,14 +91,11 @@ The `master_environment_hierarchical.ps1` script provides a user-friendly interf
 
 ```
 PsychoNoir-Kontrapunkt/
-├── 🎯 master_environment_hierarchical.ps1  # NEW: Beginner-friendly hierarchical script
-├── 🎯 master_environment.ps1             # Legacy: Master automation script
-├── 🔒 common_config.ps1                  # NEW: Forced root configuration
-├── ⚡ powershell_profile.ps1             # NEW: Convenience functions
-├── 🚀 activate_environment.ps1           # Environment activation
-├── 📦 install_all.ps1                    # Master installation
-├── 🔍 check_environment.ps1              # Comprehensive status check
-├── 🎨 create_project.ps1                 # Quick project creator
+├── 🎯 claudine_polyglot_fortress_readme.md # CLAUDINE comprehensive guide
+├── 🔒 .computer_languages_scripts/        # CLAUDINE command system
+│   ├── claudine_command_center.ps1        # Main CLAUDINE functionality
+│   ├── common_config.ps1                  # Environment configuration
+│   └── install_claudine_permanent.ps1     # PowerShell profile installer
 ├── scripts/                             # Individual installation scripts
 │   ├── install_rust.ps1                 # Fixed Rust installation
 │   ├── install_biome.ps1                # Fixed Biome installation  
@@ -127,65 +114,61 @@ PsychoNoir-Kontrapunkt/
 └── 📊 Multiple audit/analysis reports
 ```
 
-## 🎯 **Master Script: One Command Does Everything**
+## 🎯 **CLAUDINE: One Command Does Everything**
 
 ```powershell
-# Install everything (9 tools + toolchains)
-.\master_environment.ps1 -Action install
+# Activate complete development environment
+claudine
 
-# Activate environment with forced root
-.\master_environment.ps1 -Action activate  
+# Check tool status and versions
+claudine status
 
-# Comprehensive status check
-.\master_environment.ps1 -Action check
+# Display full tool arsenal
+claudine tools
 
-# Full audit with reports
-.\master_environment.ps1 -Action audit
+# Test all tools comprehensively
+claudine test
 
-# Install PowerShell convenience functions
-.\master_environment.ps1 -Action update-profile
-
-# Fix Ruby/MSYS64/MinGW64 paths (if needed)
-.\master_environment.ps1 -Action fix-paths
+# Get help information
+claudine help
 ```
 
-## 🚀 **30-Second Setup** (New & Improved!)
+## 🚀 **Instant Activation** (Zero Setup Needed!)
 
 ### Prerequisites
-- Windows 10/11 with PowerShell
-- Internet connection  
-- **No admin rights needed!**
+- Windows 10/11 with PowerShell 7 (pwsh)
+- CLAUDINE already installed and persistent
 
-### **Complete Setup (One Command):**
+### **Ready to Use:**
 
 ```powershell
-# 1. Navigate to repository
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+# 1. Open any PowerShell session
+pwsh
 
-# 2. Install everything (9 tools + GCC toolchain)
-.\master_environment.ps1 -Action install
+# 2. Activate complete environment
+claudine
 
-# 3. Set up convenience functions globally
-.\master_environment.ps1 -Action update-profile
-
-# 4. Verify everything works
-.\master_environment.ps1 -Action check
+# 3. Start developing immediately
+python --version    # Python 3.14.0
+ruby --version      # Ruby 3.4.7
+bun --version       # Bun 1.2.23
+rustc --version     # Rust 1.90.0
 ```
 
-### **Alternative Individual Steps:**
+### **Alternative Quick Commands:**
 ```powershell
-# Traditional method (still works)
-.\install_all.ps1                    # Install all tools
-.\activate_environment.ps1           # Activate environment  
-.\check_environment.ps1              # Verify status
+# Check what's available
+claudine status     # Comprehensive status report
+claudine tools      # View all available tools
+claudine test       # Test everything works
 ```
 
-### **Global Convenience Functions** (after profile setup):
+### **Global CLAUDINE Functions** (always available):
 ```powershell
-psycho          # Jump to PsychoNoir-Kontrapunkt from anywhere
-activate        # Activate environment from any directory  
-check           # Check status from anywhere
-new-project     # Create project templates
+claudine            # Supreme development environment activation
+claudine status     # Caribbean consciousness tool sovereignty
+claudine tools      # Polyglot arsenal display  
+claudine test       # Consciousness archaeology tool testing
 ```
 
 ## � **Enhanced Features (October 2025 Updates)**
@@ -295,22 +278,16 @@ If you prefer to install tools individually:
 
 ## � **Advanced Usage**
 
-### **Master Script Commands**
+### **CLAUDINE Commands**
 ```powershell
-# Full installation with all tools
-.\master_environment.ps1 -Action install
+# Primary activation command
+claudine
 
-# Skip specific tools during installation  
-.\master_environment.ps1 -Action install -SkipTools "Ruby","Rust"
-
-# Comprehensive audit (includes recent reports)
-.\master_environment.ps1 -Action audit
-
-# Fix Ruby/MSYS64/MinGW64 paths (auto-detects issues)
-.\master_environment.ps1 -Action fix-paths
-
-# Install global convenience functions
-.\master_environment.ps1 -Action update-profile
+# Status and diagnostic commands
+claudine status                # Check all tool status
+claudine tools                 # Display available tools
+claudine test                  # Test all tools
+claudine help                  # Show help information
 ```
 
 ### **Global Convenience Functions** (after `update-profile`)
@@ -356,28 +333,41 @@ uv add requests fastapi   # Add dependencies
 
 **"Command not found" errors:**
 ```powershell
-psycho && activate        # Global functions (after profile setup)
-# OR
-.\master_environment.ps1 -Action activate  # Direct activation
+# Activate CLAUDINE environment
+claudine
+
+# Check if tools are available
+claudine status
 ```
 
-**Ruby gem compilation failures:**
+**Tool version verification:**
 ```powershell
-.\master_environment.ps1 -Action fix-paths  # Ensure GCC toolchain is accessible
+# Test all tools comprehensively
+claudine test
+
+# View individual tool versions
+python --version
+ruby --version
+bun --version
+rustc --version
 ```
 
 **Environment inconsistencies:**
 ```powershell
-.\master_environment.ps1 -Action audit      # Comprehensive diagnostic
+# Comprehensive diagnostic
+claudine status
+
+# Get help with available commands
+claudine help
 ```
 
 ### **Diagnostic Commands**
 ```powershell
 # Comprehensive environment check (shows all 9 tools)
-.\master_environment.ps1 -Action check
+claudine status
 
-# View recent audit reports  
-Get-ChildItem *AUDIT*, *REPORT* | Sort-Object LastWriteTime -Descending
+# View all available tools and commands
+claudine tools
 
 # Test specific toolchains
 gcc --version && make --version && ruby --version
@@ -420,7 +410,7 @@ gcc --version && make --version && ruby --version
 ### **Version Currency (All Latest Stable):**
 - 🚀 Bun 1.2.23 (October 2025)
 - 🐍 Python 3.14.0 (October 2025) 
-- ⚡ uv 0.9.1 (October 2025)
+- ⚡ uv 0.9.2 (October 2025)
 - 💎 Ruby 3.4.7 (October 2025)
 - 🦀 Rust 1.90.0 (September 2025)
 - ⚙️ GCC 13.2.0 (Latest stable)
@@ -440,9 +430,9 @@ gcc --version && make --version && ruby --version
 - ✅ **Advanced automation** (106+ scripts in CLAUDINE system)
 
 ### **Developer Experience:**
-- ✅ **One-command setup** (`master_environment.ps1`)
-- ✅ **Global convenience functions** (`psycho`, `activate`, `check`)
-- ✅ **Forced root configuration** (works from anywhere)
+- ✅ **One-command activation** (`claudine`)
+- ✅ **Cross-session persistence** (works in all PowerShell sessions)
+- ✅ **Real-time verification** (tests actual tool versions)
 - ✅ **Comprehensive toolchain** (C/C++, Python, Ruby, Rust, JS/TS)
 
 ## 🤝 **Contributing & Customization**
@@ -475,15 +465,15 @@ notepad $PROFILE               # Edit PowerShell profile
 ## 🚀 **Ready to Code!**
 
 ```powershell
-# Complete setup (30 seconds):
-.\master_environment.ps1 -Action install
-.\master_environment.ps1 -Action update-profile
+# Instant activation (already set up):
+claudine        # Activate all 9 tools
 
 # Start developing:
-psycho          # Jump to repo from anywhere  
-activate        # Activate all 9 tools
-check           # Verify everything works
-new-project python my-awesome-app  # Create project
+claudine status # Verify everything works
+python --version # Python 3.14.0 ready
+ruby --version  # Ruby 3.4.7 ready
+bun --version   # Bun 1.2.23 ready
+rustc --version # Rust 1.90.0 ready
 ```
 
 **🎉 Built with ❤️ for bulletproof, isolated development workflows!** 

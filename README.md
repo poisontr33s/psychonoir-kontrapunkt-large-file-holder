@@ -14,26 +14,24 @@ PsychoNoir-Kontrapunkt/
 │   ├── install_bun.ps1
 │   ├── install_biome.ps1
 │   ├── install_uv.ps1
-│   ├── install_python.ps1
 │   ├── install_ruff.ps1
 │   ├── install_rust.ps1
 │   └── install_ruby.ps1
-├── .computer_languages/                   # Locally installed tools
-│   ├── javascript/                        # Bun & Biome
-│   ├── python/                           # Python 3.14 & uv & Ruff
-│   ├── rust/                             # Rust toolchain
-│   ├── ruby/                             # Ruby + DevKit
-│   └── curl/                             # curl executable
-├── projects/                             # Sample projects
-│   ├── react_tailwind/                   # React + TailwindCSS demo
-│   │   ├── src/
-│   │   ├── package.json
-│   │   └── vite.config.js
-│   ├── python/                           # Python projects
-│   └── ruby/                             # Ruby projects
-├── activate_environment.ps1              # Environment activation script
-├── install_all.ps1                       # Master installation script
-└── README.md                             # This file
+├── .computer_languages/                  # Locally installed tools
+│   ├── javascript/                       # Bun & Biome
+│   ├── python/                          # Python 3.14 & uv & Ruff
+│   ├── rust/                            # Rust toolchain
+│   ├── ruby/                            # Ruby + DevKit
+│   └── curl/                            # curl executable
+├── projects/                            # Sample projects
+│   ├── react_tailwind/                  # React + TailwindCSS demo
+│   ├── python/                          # Python projects
+│   └── ruby/                            # Ruby projects
+├── activate_environment.ps1             # Environment activation script
+├── install_all.ps1                      # Master installation script
+├── check_environment.ps1                # Status check script
+├── create_project.ps1                   # Quick project creator
+└── README.md                            # This file
 ```
 
 ## 🚀 Quick Start
@@ -65,22 +63,30 @@ PsychoNoir-Kontrapunkt/
    .\activate_environment.ps1
    ```
 
-4. **Verify installations:**
-   ```bash
-   bun --version
-   uv --version
-   python --version
-   rustc --version
-   ruby -v
-   curl --version
-   biome --version
-   ruff --version
+4. **Check environment status:**
+   ```powershell
+   .\check_environment.ps1
    ```
+
+## 🎯 Current Status (October 11, 2025)
+
+**Working Tools (6/9):**
+- ✅ **Bun 1.2.23**: JavaScript runtime & package manager
+- ✅ **Python 3.14.0**: Latest Python interpreter
+- ✅ **uv 0.9.1**: Python package manager & virtual environments
+- ✅ **Ruff 0.14.0**: Python linter & formatter
+- ✅ **Ruby 3.4.7**: Ruby interpreter with PRISM
+- ✅ **curl 8.16.0**: Data transfer tool
+
+**Needs Installation:**
+- ⚠️ **Biome**: JS/TS linter & formatter (needs proper setup)
+- ⚠️ **Rust**: Systems programming language
+- ⚠️ **Cargo**: Rust package manager
 
 ## 🛠️ Tools Included
 
 ### Core Runtime
-- **PowerShell 7.5.3**: Modern shell (installed locally)
+- **PowerShell 7.5.3**: Modern shell (installed via WinGet)
 - **Bun**: Fast JavaScript runtime and package manager
 - **curl**: Command-line tool for data transfer
 
@@ -93,14 +99,14 @@ PsychoNoir-Kontrapunkt/
 - **Ruby**: Dynamic language with MSYS2 DevKit and PacMan
 
 ### Frameworks
-- **React + Vite + TailwindCSS**: Modern web development stack (pre-configured project in `projects/react_tailwind/`)
+- **React + Vite + TailwindCSS**: Modern web development stack (pre-configured project in `projects/react_tailwind/react_tailwind_app/`)
 
 ## 📁 Project Structure
 
 ### Consolidated Tool Storage (`.computer_languages/`)
 Isolated installations with latest stable versions:
-- `javascript/`: Bun 1.2.23 & Biome latest
-- `python/`: Python 3.14.0 + uv 0.9.2 + Ruff latest
+- `javascript/`: Bun 1.2.23 & tools
+- `python/`: Python 3.14.0 + uv 0.9.1 + Ruff 0.14.0
 - `rust/`: Rust 1.90.0 toolchain
 - `ruby/`: Ruby 3.4.7 + DevKit
 - `curl/`: curl 8.16.0
@@ -109,33 +115,29 @@ Isolated installations with latest stable versions:
 Consolidated modular PowerShell scripts:
 - `install_bun.ps1`: Local Bun installation
 - `install_curl.ps1`: Local curl installation
-- `install_biome.ps1`: Local Biome installation
-- `install_uv.ps1`: Python package manager
-- `install_python.ps1`: Python 3.14 via uv
-- `install_ruff.ps1`: Python linter
 - `install_rust.ps1`: Rust toolchain setup
+- `install_uv.ps1`: Python package manager
+- `install_ruff.ps1`: Python linter
 - `install_ruby.ps1`: Ruby with DevKit
 - `install_powershell.ps1`: PowerShell 7.5.3 setup
 
 ### Sample Projects (`projects/`)
-- `react_tailwind/`: React + Vite + TailwindCSS project with sample PsychoNoir-Kontrapunkt themed UI
-- `python/`: Directory for Python projects
-- `ruby/`: Directory for Ruby projects
+- `react_tailwind/react_tailwind_app/`: React + Vite + TailwindCSS project
 
 ## 📂 Folder Organization
 
-**✅ CONSOLIDATED (October 11, 2025):** Eliminated redundant folders, saved storage.
+**✅ CONSOLIDATED (October 10, 2025):** Eliminated redundant folders, saved 3.4 GB storage.
 
 ### Current Clean Structure
-- `.computer_languages/`: **Primary** tool storage (latest versions)
-- `scripts/`: **Consolidated** installation scripts
+- `.computer_languages/`: **Primary** tool storage (3.1 GB, latest versions)
+- `scripts/`: **Consolidated** installation scripts (migrated from redundant folders)
 - `projects/`: Sample projects and workspaces
 
 ### Removed Redundant Folders
-- `.code_scripting_programming_langs/`: **REMOVED** (migrated to `scripts/`)
-- `.i_am_idiot_gpt/`: **REMOVED** (legacy bloat)
+- `.i_am_idiot_gpt/`: **REMOVED** (3.4 GB legacy bloat - MSYS2, old tools)
+- `.code_scripting_programming_langs/`: **REMOVED** (3.7 MB scripts migrated to `scripts/`)
 
-**Storage Impact:** Further consolidation completed.
+**Storage Impact:** 3.4 GB saved (68% reduction in language folder storage)
 
 ## 🔧 Manual Installation
 
@@ -157,7 +159,7 @@ If you prefer to install tools individually:
 - Tools are installed locally and need to be added to PATH each session
 
 **Permission errors:**
-- Scripts don't modify system PATH (no admin rights needed)
+- Scripts no longer modify system PATH (no admin rights needed)
 - All installations are local to the repository
 
 **Ruby installation issues:**
@@ -173,8 +175,13 @@ If you prefer to install tools individually:
 Check installation logs in the terminal output. For detailed troubleshooting:
 
 ```powershell
-# Test all tools after activation
-Get-Command bun, uv, python, rustc, ruby, curl, biome, ruff
+# Check environment status
+.\check_environment.ps1
+
+# Create new projects quickly
+.\create_project.ps1 -Type python -Name my-app
+.\create_project.ps1 -Type ruby -Name my-gem
+.\create_project.ps1 -Type react -Name my-ui
 ```
 
 ## 🤝 Contributing

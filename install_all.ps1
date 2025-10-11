@@ -1,75 +1,118 @@
-# Master installation script for PsychoNoir-Kontrapunkt development environment
-# Installs all tools locally in the repository
+# PsychoNoir-Kontrapunkt Master Installation Script
+# Installs all development tools locally in the repository
 
 param(
     [string[]]$SkipTools = @(),
-    [switch]$Force
+    [switch]$Force = $false
 )
 
-$ErrorActionPreference = "Stop"
-
-# Get the repository root directory
-$RepoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-$ScriptsDir = Join-Path $RepoRoot "scripts"
-
-Write-Host "=== PsychoNoir-Kontrapunkt Development Environment Installer ===" -ForegroundColor Cyan
-Write-Host "Repository: $RepoRoot" -ForegroundColor Gray
+Write-Host "🎯 PsychoNoir-Kontrapunkt: Isolated Development Environment Setup" -ForegroundColor Cyan
+Write-Host "=================================================================" -ForegroundColor Cyan
 Write-Host ""
 
-# Define tools to install
-$Tools = @(
-    @{ Name = "curl"; Script = "install_curl.ps1"; Description = "Command-line tool for data transfer" },
-    @{ Name = "powershell"; Script = "install_powershell.ps1"; Description = "PowerShell 7.5.3 runtime" },
-    @{ Name = "bun"; Script = "install_bun.ps1"; Description = "Fast JavaScript runtime and package manager" },
-    @{ Name = "biome"; Script = "install_biome.ps1"; Description = "Lightning-fast linter and formatter for JS/TS" },
-    @{ Name = "uv"; Script = "install_uv.ps1"; Description = "Python package manager and virtual environment tool" },
-    @{ Name = "python"; Script = "install_python.ps1"; Description = "Python 3.14 with uv management" },
-    @{ Name = "ruff"; Script = "install_ruff.ps1"; Description = "Fast Python linter and formatter" },
-    @{ Name = "rust"; Script = "install_rust.ps1"; Description = "Rust toolchain with Cargo" },
-    @{ Name = "ruby"; Script = "install_ruby.ps1"; Description = "Ruby with DevKit" }
-)
+# Get the repository root directory
+$RepoRoot = $PSScriptRoot
+$ScriptsPath = Join-Path $RepoRoot "scripts"
 
-# Filter out skipped tools
-$ToolsToInstall = $Tools | Where-Object { $_.Name -notin $SkipTools }
-
-Write-Host "Tools to install: $($ToolsToInstall.Count)" -ForegroundColor Green
-if ($SkipTools.Count -gt 0) {
-    Write-Host "Skipping: $($SkipTools -join ', ')" -ForegroundColor Yellow
+# Define all available tools and their installation scripts
+$Tools = @{
+    "PowerShell" = "install_powershell.ps1"
+    "Curl"       = "install_curl.ps1"
+    "Bun"        = "install_bun.ps1"
+    "Biome"      = "install_biome.ps1"
+    "UV"         = "install_uv.ps1"
+    "Python"     = "install_python.ps1"
+    "Ruff"       = "install_ruff.ps1"
+    "Rust"       = "install_rust.ps1"
+    "Ruby"       = "install_ruby.ps1"
 }
+
+# Installation counters
+$SuccessCount = 0
+$FailCount = 0
+$SkipCount = 0
+
+Write-Host "📋 Installation Plan:" -ForegroundColor White
+foreach ($Tool in $Tools.Keys) {
+    if ($SkipTools -contains $Tool) {
+        Write-Host "  ⏭️  $Tool (SKIPPED)" -ForegroundColor Yellow
+        $SkipCount++
+    }
+    else {
+        Write-Host "  ✅ $Tool" -ForegroundColor Green
+    }
+}
+Write-Host ""
+
+# Confirmation prompt
+if (-not $Force) {
+    $Confirm = Read-Host "Continue with installation? (y/N)"
+    if ($Confirm -notmatch '^[Yy]') {
+        Write-Host "❌ Installation cancelled." -ForegroundColor Red
+        exit 1
+    }
+}
+
+Write-Host "🚀 Starting installation..." -ForegroundColor Cyan
 Write-Host ""
 
 # Install each tool
-foreach ($Tool in $ToolsToInstall) {
-    $ScriptPath = Join-Path $ScriptsDir $Tool.Script
-
-    if (!(Test-Path $ScriptPath)) {
-        Write-Host "Warning: $($Tool.Script) not found, skipping $($Tool.Name)" -ForegroundColor Yellow
+foreach ($Tool in $Tools.Keys) {
+    if ($SkipTools -contains $Tool) {
+        Write-Host "⏭️  Skipping $Tool" -ForegroundColor Yellow
         continue
     }
-
-    Write-Host "Installing $($Tool.Name): $($Tool.Description)..." -ForegroundColor Green
-
+    
+    $ScriptPath = Join-Path $ScriptsPath $Tools[$Tool]
+    
+    Write-Host "🔧 Installing $Tool..." -ForegroundColor Cyan
+    
+    if (-not (Test-Path $ScriptPath)) {
+        Write-Host "   ❌ Script not found: $ScriptPath" -ForegroundColor Red
+        $FailCount++
+        continue
+    }
+    
     try {
         & $ScriptPath
-        Write-Host "✓ $($Tool.Name) installed successfully" -ForegroundColor Green
-    }
-    catch {
-        Write-Host "✗ Failed to install $($Tool.Name): $($_.Exception.Message)" -ForegroundColor Red
-        if (!$Force) {
-            Write-Host "Use -Force to continue with remaining installations" -ForegroundColor Yellow
-            exit 1
+        if ($LASTEXITCODE -eq 0 -or $null -eq $LASTEXITCODE) {
+            Write-Host "   ✅ $Tool installed successfully" -ForegroundColor Green
+            $SuccessCount++
+        }
+        else {
+            Write-Host "   ❌ $Tool installation failed (Exit code: $LASTEXITCODE)" -ForegroundColor Red
+            $FailCount++
         }
     }
-
+    catch {
+        Write-Host "   ❌ $Tool installation failed: $($_.Exception.Message)" -ForegroundColor Red
+        $FailCount++
+    }
+    
     Write-Host ""
 }
 
-Write-Host "=== Installation Complete ===" -ForegroundColor Cyan
-Write-Host "Run '.\activate_environment.ps1' to set up your development environment!" -ForegroundColor Green
+# Installation summary
+Write-Host "📊 Installation Summary:" -ForegroundColor Cyan
+Write-Host "========================" -ForegroundColor Cyan
+Write-Host "✅ Successful: $SuccessCount" -ForegroundColor Green
+Write-Host "❌ Failed:     $FailCount" -ForegroundColor Red
+Write-Host "⏭️  Skipped:    $SkipCount" -ForegroundColor Yellow
+Write-Host "📦 Total:      $($Tools.Count)" -ForegroundColor White
 Write-Host ""
 
-# Show next steps
-Write-Host "Next steps:" -ForegroundColor Yellow
-Write-Host "1. .\activate_environment.ps1    # Activate the environment" -ForegroundColor White
-Write-Host "2. Verify installations with the commands shown in the README" -ForegroundColor White
-Write-Host "3. Start developing in your isolated environment!" -ForegroundColor White
+if ($FailCount -eq 0) {
+    Write-Host "🎉 All installations completed successfully!" -ForegroundColor Green
+    Write-Host ""
+    Write-Host "🏁 Next Steps:" -ForegroundColor White
+    Write-Host "  1. Run: .\activate_environment.ps1" -ForegroundColor Gray
+    Write-Host "  2. Test: Get-Command bun, uv, python, rustc, ruby, curl" -ForegroundColor Gray
+    Write-Host "  3. Explore sample projects in ./projects/" -ForegroundColor Gray
+}
+else {
+    Write-Host "⚠️  Some installations failed. Check the logs above." -ForegroundColor Yellow
+    Write-Host "   You can re-run individual scripts from the ./scripts/ directory." -ForegroundColor Gray
+}
+
+Write-Host ""
+Write-Host "🛠️  Development environment ready in: $RepoRoot" -ForegroundColor Cyan

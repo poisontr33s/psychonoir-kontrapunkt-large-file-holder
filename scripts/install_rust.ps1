@@ -1,50 +1,54 @@
 # Install Rust locally in the repository
-# This script downloads and installs Rust to .computer_languages\rust\
+# This script downloads and installs Rust toolchain in .computer_languages/rust
 
-param(
-    [string]$Version = "stable"
-)
-
-$ErrorActionPreference = "Stop"
+Write-Host "🦀 Installing Rust locally..." -ForegroundColor Cyan
 
 # Get the repository root directory
-$RepoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-$InstallDir = Join-Path $RepoRoot ".computer_languages\rust"
+$RepoRoot = Split-Path -Parent $PSScriptRoot
+$RustDir = Join-Path $RepoRoot ".computer_languages\rust"
 
-Write-Host "Installing Rust $Version to $InstallDir..." -ForegroundColor Green
+# Create Rust directory
+New-Item -ItemType Directory -Path $RustDir -Force | Out-Null
 
-# Create installation directory
-New-Item -ItemType Directory -Path $InstallDir -Force | Out-Null
+# Set environment variables for local installation
+$env:CARGO_HOME = $RustDir
+$env:RUSTUP_HOME = Join-Path $RustDir "rustup"
 
-# Download and run rustup-init
-$InstallerUrl = "https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-gnu/rustup-init.exe"
-$InstallerPath = Join-Path $InstallDir "rustup-init.exe"
-
-Write-Host "Downloading Rust installer..." -ForegroundColor Yellow
-Invoke-WebRequest -Uri $InstallerUrl -OutFile $InstallerPath
-
-# Install Rust with custom directory
-Write-Host "Installing Rust..." -ForegroundColor Yellow
-$InstallArgs = "-y", "--default-toolchain", $Version, "--no-modify-path", "--default-host", "x86_64-pc-windows-gnu"
-Start-Process -FilePath $InstallerPath -ArgumentList $InstallArgs -Wait -NoNewWindow
-
-# Clean up installer
-Remove-Item $InstallerPath
-
-# Add Rust to PATH for this session
-$RustBinPath = Join-Path $InstallDir ".cargo\bin"
-if (Test-Path $RustBinPath) {
-    $env:PATH = "$RustBinPath;$env:PATH"
+try {
+    # Download rustup-init
+    $RustupUrl = "https://win.rustup.rs/x86_64"
+    $RustupPath = Join-Path $RustDir "rustup-init.exe"
+    
+    Write-Host "📥 Downloading rustup-init..." -ForegroundColor Gray
+    Invoke-WebRequest -Uri $RustupUrl -OutFile $RustupPath -UseBasicParsing
+    
+    # Install Rust with default settings
+    Write-Host "⚙️ Installing Rust toolchain..." -ForegroundColor Gray
+    & $RustupPath -y --default-toolchain stable --no-modify-path
+    
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "✅ Rust installed successfully!" -ForegroundColor Green
+        Write-Host "📁 Location: $RustDir" -ForegroundColor Gray
+        
+        # Test installation
+        $CargoPath = Join-Path $RustDir "bin\cargo.exe"
+        if (Test-Path $CargoPath) {
+            $Version = & $CargoPath --version
+            Write-Host "🎯 Version: $Version" -ForegroundColor Green
+        }
+    }
+    else {
+        Write-Host "❌ Rust installation failed" -ForegroundColor Red
+        exit 1
+    }
+    
+    # Clean up installer
+    Remove-Item $RustupPath -ErrorAction SilentlyContinue
+    
+}
+catch {
+    Write-Host "❌ Error installing Rust: $($_.Exception.Message)" -ForegroundColor Red
+    exit 1
 }
 
-Write-Host "Rust $Version installed successfully!" -ForegroundColor Green
-Write-Host "Location: $InstallDir\.cargo\bin\" -ForegroundColor Cyan
-
-# Test installation
-if (Get-Command rustc -ErrorAction SilentlyContinue) {
-    Write-Host "Rust version: $(rustc --version)" -ForegroundColor Cyan
-    Write-Host "Cargo version: $(cargo --version)" -ForegroundColor Cyan
-}
-else {
-    Write-Host "Warning: Rust commands not found in PATH. Run activate_environment.ps1 to add to PATH." -ForegroundColor Yellow
-}
+Write-Host "🦀 Rust installation complete!" -ForegroundColor Cyan

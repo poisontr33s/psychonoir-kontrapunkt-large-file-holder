@@ -1,33 +1,45 @@
 # Install Biome locally in the repository
-# This script downloads and installs Biome to .computer_languages\javascript\
+# This script downloads and installs Biome in .computer_languages/javascript
 
-param(
-    [string]$Version = "latest"
-)
-
-$ErrorActionPreference = "Stop"
+Write-Host "⚡ Installing Biome locally..." -ForegroundColor Cyan
 
 # Get the repository root directory
-$RepoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-$InstallDir = Join-Path $RepoRoot ".computer_languages\javascript"
+$RepoRoot = Split-Path -Parent $PSScriptRoot
+$BiomeDir = Join-Path $RepoRoot ".computer_languages\javascript"
 
-Write-Host "Installing Biome $Version to $InstallDir..." -ForegroundColor Green
+# Create JavaScript directory if it doesn't exist
+New-Item -ItemType Directory -Path $BiomeDir -Force | Out-Null
 
-# Create installation directory
-New-Item -ItemType Directory -Path $InstallDir -Force | Out-Null
-
-# Download Biome
-if ($Version -eq "latest") {
-    $DownloadUrl = "https://github.com/biomejs/biome/releases/latest/download/biome-windows-x64.exe"
+try {
+    # Download Biome CLI (correct URL format)
+    $BiomeUrl = "https://github.com/biomejs/biome/releases/latest/download/biome-win32-x64.exe"
+    $BiomePath = Join-Path $BiomeDir "biome.exe"
+    
+    Write-Host "📥 Downloading Biome CLI..." -ForegroundColor Gray
+    Invoke-WebRequest -Uri $BiomeUrl -OutFile $BiomePath -UseBasicParsing
+    
+    if (Test-Path $BiomePath) {
+        # Test installation
+        $Version = & $BiomePath --version
+        if ($LASTEXITCODE -eq 0) {
+            Write-Host "✅ Biome installed successfully!" -ForegroundColor Green
+            Write-Host "📁 Location: $BiomePath" -ForegroundColor Gray
+            Write-Host "🎯 Version: $Version" -ForegroundColor Green
+        }
+        else {
+            Write-Host "❌ Biome installation verification failed" -ForegroundColor Red
+            exit 1
+        }
+    }
+    else {
+        Write-Host "❌ Biome executable not found after download" -ForegroundColor Red
+        exit 1
+    }
+    
 }
-else {
-    $DownloadUrl = "https://github.com/biomejs/biome/releases/download/cli/v$Version/biome-windows-x64.exe"
+catch {
+    Write-Host "❌ Error installing Biome: $($_.Exception.Message)" -ForegroundColor Red
+    exit 1
 }
 
-$ExePath = Join-Path $InstallDir "biome.exe"
-
-Write-Host "Downloading Biome from $DownloadUrl..." -ForegroundColor Yellow
-Invoke-WebRequest -Uri $DownloadUrl -OutFile $ExePath
-
-Write-Host "Biome installed successfully!" -ForegroundColor Green
-Write-Host "Location: $InstallDir\biome.exe" -ForegroundColor Cyan
+Write-Host "⚡ Biome installation complete!" -ForegroundColor Cyan

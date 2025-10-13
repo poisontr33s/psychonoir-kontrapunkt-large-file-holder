@@ -31,41 +31,18 @@ dist/
 build/
 coverage/
 .pytest_cache/
+.ipynb_checkpoints/
 
-# Node/Bun/Gitattributes/Env/Gitignore/VsCode/Source Control Silence
-
-# ============================================================================
-# 🚨 MASSIVE PERFORMANCE FIX - IGNORE DEVELOPMENT ENVIRONMENTS
-# ============================================================================
-# These directories contain 100,000+ files and cause VS Code to freeze
-
-# ========== SCRIPT ORGANIZATION PROTECTION ==========
-# Organized structure: .computer_languages_scripts/ with typed subdirectories
-# .bat_scripts/, .c_scripts/, .cpp_scripts/, .jsons/, .mds/, .pws_scripts/, .py_scripts/, .rb_scripts/
-# 
-# STRATEGY: Allow tracking organized subdirectories but ignore root dumping of scripts
-# This prevents Git restore operations from overriding manual organization
-
-# Root script dumping prevention - these patterns ignore scripts that get dumped in root
-# (but allow them in organized subdirectories)
-/claudine*.ps1
-/claudine*.bat
-/structural_update_engine.ps1
-/setup_*.ps1
-/system_*.ps1
-/*_path*.ps1
-/cleanup_*.ps1
-/fix_*.ps1
-/test_*.ps1
-
-# Keep the organized structure trackable
-!.computer_languages_scripts/
+# Too much clutter in root - ignore these entire directories
+.poly_gluttony_scripts_files_orgy
 
 # Workspace isolation environments
 .poly_gluttony/
 
 # Personal files
 .a1-poisontr33s-personal-wipFILES/
+.necromancy_graveyard/
+
 
 # Profile backups and duplicates
 *.backup

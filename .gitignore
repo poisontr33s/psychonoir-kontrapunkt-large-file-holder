@@ -1,0 +1,64 @@
+# Secrets and local env files
+.env
+.env.*
+!.env.example
+# Node/Bun
+node_modules/
+.bun/
+# Python
+__pycache__/
+*.pyc
+# VS Code local
+.vscode/*
+!.vscode/mcp.json
+!.vscode/settings.json
+# OS cruft
+.DS_Store
+Thumbs.db
+node_modules
+node_modules
+# Unified unifier defaults
+*.tmp
+*.bak
+*.swp
+*.swo
+*.log
+.venv/
+venv/
+.idea/
+.vscode/
+dist/
+build/
+coverage/
+.pytest_cache/
+
+# Node/Bun/Gitattributes/Env/Gitignore/VsCode/Source Control Silence
+
+# ============================================================================
+# 🚨 MASSIVE PERFORMANCE FIX - IGNORE DEVELOPMENT ENVIRONMENTS
+# ============================================================================
+# These directories contain 100,000+ files and cause VS Code to freeze
+
+# Development tool environments (65,000+ files)
+.computer_languages_scripts/
+
+# Workspace isolation environments
+.poly_gluttony/
+
+# Personal files
+.a1-poisontr33s-personal-wipFILES/
+
+# Profile backups and duplicates
+*.backup
+Microsoft.PowerShell_profile.ps1.backup
+
+# Cleanup and installation scripts (can be regenerated)
+claudine_systematic_install.ps1
+claudine_ultimate_clean.ps1
+optimized_profile.ps1
+
+# Source control changes tracking off:
+.bun
+.node_modules
+node_modules
+.env.example

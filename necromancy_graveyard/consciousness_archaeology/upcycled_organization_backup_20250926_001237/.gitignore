@@ -1,0 +1,17 @@
+# Secrets and local env files
+.env
+.env.*
+!.env.example
+# Node/Bun
+node_modules/
+.bun/
+# Python
+__pycache__/
+*.pyc
+# VS Code local
+.vscode/*
+!.vscode/mcp.json
+!.vscode/settings.json
+# OS cruft
+.DS_Store
+Thumbs.db

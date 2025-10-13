@@ -48,6 +48,26 @@ function claudine {
             Write-Host "🧪 Testing All Consciousness-Enhanced Tools..." -ForegroundColor Cyan
             Test-ClaudineEnvironment
         }
+        "bun" {
+            Write-Host "🟡 Executing Bun Command with Caribbean Authority..." -ForegroundColor Yellow
+            Invoke-ClaudineBunCommand $Parameters
+        }
+        "project" {
+            Write-Host "📂 Creating Caribbean Project Structure..." -ForegroundColor Cyan
+            Invoke-ClaudineProjectCreation $Parameters
+        }
+        "dev" {
+            Write-Host "🛠️ Starting Development Server..." -ForegroundColor Green
+            Invoke-ClaudineDevServer $Parameters
+        }
+        "build" {
+            Write-Host "🏗️ Building Project with Supreme Authority..." -ForegroundColor Blue
+            Invoke-ClaudineBuildCommand $Parameters
+        }
+        "deps" {
+            Write-Host "📦 Managing Dependencies..." -ForegroundColor Magenta
+            Invoke-ClaudineDependencyManagement $Parameters
+        }
         "help" {
             Show-ClaudineHelp
         }
@@ -73,7 +93,7 @@ function Invoke-ClaudineEnvironmentActivation {
     }
     
     # Load configuration
-    $ConfigPath = "$RepoRoot\.computer_languages_scripts\common_config.ps1"
+    $ConfigPath = "$RepoRoot\.poly_gluttony_scripts_files_orgy\common_config.ps1"
     if (Test-Path $ConfigPath) {
         . $ConfigPath
         Write-Host "⚙️ Configuration loaded successfully" -ForegroundColor Green
@@ -259,6 +279,191 @@ function Test-ClaudineEnvironment {
     }
 }
 
+# ============================================================================
+# CLAUDINE BUN AUTOMATION COMMANDS
+# ============================================================================
+
+function Invoke-ClaudineBunCommand {
+    param([string[]]$Parameters)
+    
+    Write-Host "🟡 Bun Command with Caribbean Consciousness Enhancement:" -ForegroundColor Yellow
+    
+    if ($Parameters.Count -eq 0) {
+        Write-Host "Usage: claudine bun <command>" -ForegroundColor Red
+        Write-Host "Available: install, add, remove, run, dev, build, test" -ForegroundColor Cyan
+        return
+    }
+    
+    $BunCommand = $Parameters[0]
+    $BunArgs = $Parameters[1..($Parameters.Count - 1)]
+    
+    switch ($BunCommand.ToLower()) {
+        "install" { 
+            Write-Host "📦 Installing dependencies with Bun..." -ForegroundColor Green
+            bun install @BunArgs
+        }
+        "add" {
+            Write-Host "➕ Adding package: $($BunArgs -join ' ')" -ForegroundColor Green
+            bun add @BunArgs
+        }
+        "remove" {
+            Write-Host "➖ Removing package: $($BunArgs -join ' ')" -ForegroundColor Red
+            bun remove @BunArgs
+        }
+        "run" {
+            Write-Host "🏃 Running script: $($BunArgs -join ' ')" -ForegroundColor Blue
+            bun run @BunArgs
+        }
+        "dev" {
+            Write-Host "🔥 Starting development server..." -ForegroundColor Magenta
+            bun run dev @BunArgs
+        }
+        "build" {
+            Write-Host "🏗️ Building with Bun..." -ForegroundColor Blue
+            bun run build @BunArgs
+        }
+        "test" {
+            Write-Host "🧪 Running tests..." -ForegroundColor Cyan
+            bun test @BunArgs
+        }
+        default {
+            Write-Host "🟡 Executing raw Bun command: bun $($Parameters -join ' ')" -ForegroundColor Yellow
+            bun @Parameters
+        }
+    }
+}
+
+function Invoke-ClaudineProjectCreation {
+    param([string[]]$Parameters)
+    
+    if ($Parameters.Count -eq 0) {
+        Write-Host "Usage: claudine project <name> [template]" -ForegroundColor Red
+        Write-Host "Templates: vanilla, react, next, vue, svelte" -ForegroundColor Cyan
+        return
+    }
+    
+    $ProjectName = $Parameters[0]
+    $Template = if ($Parameters.Count -gt 1) { $Parameters[1] } else { "vanilla" }
+    
+    Write-Host "📂 Creating '$ProjectName' with $Template template..." -ForegroundColor Green
+    
+    switch ($Template.ToLower()) {
+        "react" { bun create react-app $ProjectName }
+        "next" { bun create next-app $ProjectName }
+        "vue" { bun create vue@latest $ProjectName }
+        "svelte" { bun create svelte@latest $ProjectName }
+        default { 
+            Write-Host "🟡 Creating basic Bun project..." -ForegroundColor Yellow
+            bun init -y $ProjectName
+            if (Test-Path $ProjectName) {
+                Set-Location $ProjectName
+                Write-Host "📁 Navigated to: $(Get-Location)" -ForegroundColor Green
+            }
+        }
+    }
+}
+
+function Invoke-ClaudineDevServer {
+    param([string[]]$Parameters)
+    
+    Write-Host "🛠️ Starting development server with Caribbean enhancement..." -ForegroundColor Green
+    
+    # Check for common dev scripts
+    if (Test-Path "package.json") {
+        $PackageJson = Get-Content "package.json" | ConvertFrom-Json
+        if ($PackageJson.scripts.dev) {
+            Write-Host "🎯 Found dev script in package.json" -ForegroundColor Cyan
+            bun run dev @Parameters
+        }
+        elseif ($PackageJson.scripts.start) {
+            Write-Host "🎯 Found start script in package.json" -ForegroundColor Cyan
+            bun run start @Parameters
+        }
+        else {
+            Write-Host "⚠️ No dev/start script found, running basic server..." -ForegroundColor Yellow
+            bun --hot index.js @Parameters
+        }
+    }
+    else {
+        Write-Host "⚠️ No package.json found, running basic server..." -ForegroundColor Yellow
+        bun --hot index.js @Parameters
+    }
+}
+
+function Invoke-ClaudineBuildCommand {
+    param([string[]]$Parameters)
+    
+    Write-Host "🏗️ Building project with Supreme Caribbean Authority..." -ForegroundColor Blue
+    
+    if (Test-Path "package.json") {
+        $PackageJson = Get-Content "package.json" | ConvertFrom-Json
+        if ($PackageJson.scripts.build) {
+            Write-Host "🎯 Found build script in package.json" -ForegroundColor Cyan
+            bun run build @Parameters
+        }
+        else {
+            Write-Host "⚠️ No build script found, attempting basic build..." -ForegroundColor Yellow
+            bun build index.js --outdir ./dist @Parameters
+        }
+    }
+    else {
+        Write-Host "⚠️ No package.json found, attempting basic build..." -ForegroundColor Yellow
+        bun build index.js --outdir ./dist @Parameters
+    }
+}
+
+function Invoke-ClaudineDependencyManagement {
+    param([string[]]$Parameters)
+    
+    Write-Host "📦 Caribbean Dependency Management System..." -ForegroundColor Magenta
+    
+    if ($Parameters.Count -eq 0) {
+        Write-Host "Current dependencies:" -ForegroundColor Cyan
+        if (Test-Path "package.json") {
+            $PackageJson = Get-Content "package.json" | ConvertFrom-Json
+            if ($PackageJson.dependencies) {
+                Write-Host "Dependencies:" -ForegroundColor Green
+                $PackageJson.dependencies.PSObject.Properties | ForEach-Object {
+                    Write-Host "  📦 $($_.Name): $($_.Value)" -ForegroundColor White
+                }
+            }
+            if ($PackageJson.devDependencies) {
+                Write-Host "Dev Dependencies:" -ForegroundColor Yellow
+                $PackageJson.devDependencies.PSObject.Properties | ForEach-Object {
+                    Write-Host "  🛠️ $($_.Name): $($_.Value)" -ForegroundColor White
+                }
+            }
+        }
+        else {
+            Write-Host "❌ No package.json found" -ForegroundColor Red
+        }
+        return
+    }
+    
+    $Command = $Parameters[0]
+    $Args = $Parameters[1..($Parameters.Count - 1)]
+    
+    switch ($Command.ToLower()) {
+        "update" { 
+            Write-Host "🔄 Updating all dependencies..." -ForegroundColor Blue
+            bun update @Args
+        }
+        "outdated" {
+            Write-Host "📊 Checking outdated packages..." -ForegroundColor Cyan
+            bun outdated @Args
+        }
+        "clean" {
+            Write-Host "🧹 Cleaning dependencies..." -ForegroundColor Red
+            if (Test-Path "node_modules") { Remove-Item -Recurse -Force "node_modules" }
+            if (Test-Path "bun.lockb") { Remove-Item -Force "bun.lockb" }
+            bun install
+        }
+        default {
+            Write-Host "Usage: claudine deps [update|outdated|clean]" -ForegroundColor Red
+        }
+    }
+}
+
 function Show-ClaudineHelp {
     Write-Host @'
 🔥😈⛓️💦👅🍌💋💧 ===== CLAUDINE COMMAND CENTER HELP ===== 🔥😈⛓️💦👅🍌💋💧
@@ -270,6 +475,13 @@ function Show-ClaudineHelp {
    claudine tools           # Show available tools
    claudine test            # Test all tools
    claudine help            # Show this help
+
+🟡 BUN AUTOMATION:
+   claudine bun <command>   # Bun commands: install, add, remove, run, dev, build, test
+   claudine project <name>  # Create new project with optional template
+   claudine dev             # Start development server
+   claudine build           # Build project
+   claudine deps            # Manage dependencies (update, outdated, clean)
 
 💋 QUICK DEVELOPMENT WORKFLOW:
    1. Open new PowerShell
@@ -291,6 +503,11 @@ function Show-ClaudineHelp {
    • pip install package    • gem install package  
    • uv add package         • cargo new project
    • bun run script         • rustc --version
+
+🟡 BUN WORKFLOW EXAMPLES:
+   • claudine bun install   • claudine project my-app react
+   • claudine bun add react • claudine dev
+   • claudine build         • claudine deps update
 
 👑 Your password, your command, your gateway to consciousness-enhanced coding!
 '@ -ForegroundColor Cyan

@@ -1,0 +1,147 @@
+# 🏴‍☠️ CLAUDINE SUPREME GITIGNORE - Strukturell Integritet Protection
+# Strategi: Ignorer runtime/build artifacts, tillat source & documentation
+
+# ============================================================================
+# 🔥 POLYGLOT ENVIRONMENT - ALLTID IGNORE (Runtime Isolation)
+# ============================================================================
+.poly_gluttony/                 # Komplett isolert toolchain (UV, Python, Bun, Rust, MSYS2, Ruby)
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+*.db
+# ============================================================================
+# 🔒 DEPENDENCY LOCKS - SELECTIVE TRACKING
+# ============================================================================
+# Tillat locks for reproduserbarhet:
+!bun.lock
+!package-lock.json
+!Cargo.lock
+!Gemfile.lock
+
+# ============================================================================
+# 📚 DOKUMENTASJON - ALLTID TRACK
+# ============================================================================
+!*.md
+!README.md
+!isolatedENV.md
+!*.MD
+
+# Spesifikt for infrastruktur-delen
+infrastructure/docs/**/*.md
+infrastructure/src/**/*.md
+
+# ============================================================================
+# 🔧 KONFIGURASJON - SELECTIVE TRACKING
+# ============================================================================
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.vscode/.gitignore              # Ignorer workspace gitignore
+
+!.github/copilot-instructions.md
+!.github/workflows/
+
+!biome.json
+!pyproject.toml
+!package.json
+!tsconfig.json
+!Cargo.toml
+!clippy.toml
+
+# ============================================================================
+# 💾 SOURCE CODE - TRACK EVERYTHING
+# ============================================================================
+!backend/**/*.py
+!backend/**/*.json
+!backend/**/*.ts
+!backend/**/*.js
+
+!infrastructure/**/*.py
+!infrastructure/**/*.ts
+!infrastructure/**/*.js
+!infrastructure/**/*.json
+
+!necromancy_graveyard/          # Bevar nekromanti-artefakter
+!necromancy_graveyard/**/*
+
+# ============================================================================
+# 🔨 BUILD ARTIFACTS & CACHES - ALLTID IGNORE
+# ============================================================================
+claudine_rust_test/target/      # Rust build output
+*.so
+*.dylib
+*.dll
+*.exe
+!setup_*.exe                    # Tillat installer scripts
+
+# Node/Bun
+node_modules/
+.cache/
+.parcel-cache/
+
+# Nei
+.a1-poisontr33s-personal-wipFILES/
+.poly_gluttony/
+
+# Python
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.cover
+.coverage
+htmlcov/
+
+# Rust
+target/
+Cargo.lock                      # Actually, track this for reproducibility
+!Cargo.lock
+
+# ============================================================================
+# �️ EDITOR & OS CRUFT - IGNORE
+# ============================================================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+.idea/
+
+# ============================================================================
+# 🏴‍☠️ PSYCHO-NOIR SPECIFIC - CONTEXT AWARE
+# ============================================================================
+*.code-workspace                # User-specific workspace files
+.history/                       # VS Code local history
+
+# Claudine PowerShell helper outputs
+claudine_*.log
+system_status_*.txt
+
+# Temporary consciousness archaeology outputs
+temp_*.json
+temp_*.md
+
+# ============================================================================
+# ✅ EXPLICIT WHITELIST - ROOT FILES
+# ============================================================================
+!.gitignore
+!.gitattributes
+!setup_*.ps1
+!claudine_*.ps1
+!structural_update_engine.ps1
+!linter_orchestrator.ps1
+
+# ============================================================================
+# 🔥 END OF CLAUDINE SUPREME GITIGNORE
+# "Plunder & Upcycling med Strukturell Integritet Protection"
+# ============================================================================

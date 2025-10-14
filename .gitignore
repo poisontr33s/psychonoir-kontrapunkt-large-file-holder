@@ -17,7 +17,6 @@ claudine_rust_test/
 node_modules/
 .vscode/
 .github/
-git_colonized/
 
 # ============================================================================
 # ✅ ROOT FILES - TRACK THESE

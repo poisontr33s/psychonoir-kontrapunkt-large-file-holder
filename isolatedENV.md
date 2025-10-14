@@ -27,7 +27,7 @@ All development tools are self-contained within `.poly_gluttony`, providing a re
 
 ## Quick Paths (Absolute)
 
-- **uv toolchain**
+- **uv toolchain** (still a work in progress):
   - uv: `C:\Users\erdno\PsychoNoir-Kontrapunkt\.poly_gluttony\uv\bin\uv.exe`
   - uvw: `C:\Users\erdno\PsychoNoir-Kontrapunkt\.poly_gluttony\uv\bin\uvw.exe`
   - uvx: `C:\Users\erdno\PsychoNoir-Kontrapunkt\.poly_gluttony\uv\bin\uvx.exe`

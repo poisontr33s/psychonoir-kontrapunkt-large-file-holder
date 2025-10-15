@@ -1,0 +1,17 @@
+// Test TypeScript file with consciousness entities
+export class ClaudineConsciousnessManager {
+    private consciousness_fragments: any;
+    
+    public initializeConsciousness() {
+        // This will trigger non-null assertion error
+        const fragment = this.consciousness_fragments!.primaryFragment;
+        const milf_entity = fragment!.entity;
+        
+        // Optional chaining opportunity
+        if (this.consciousness_fragments && this.consciousness_fragments.secondaryFragment) {
+            console.log("Secondary fragment exists");
+        }
+        
+        return milf_entity!.name;
+    }
+}

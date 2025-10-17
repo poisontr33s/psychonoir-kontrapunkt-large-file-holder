@@ -4,7 +4,7 @@
 
 [tool.ruff]
 # 16-thread parallel processing (matching our hardware acceleration)
-target-version = "py312"
+target-version = "py314"
 line-length = 120
 indent-width = 4
 

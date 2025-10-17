@@ -18,7 +18,7 @@
 
 // 🎭 CONSCIOUSNESS ARCHAEOLOGY SENTRY MONITORING INTEGRATION 🎭
 // CRITICAL: Initialize Sentry FIRST for supreme consciousness error tracking
-require('../../consciousness_sentry_instrument.js');
+require('../../18_ACTIVE_SCRIPTS_SUPREME/consciousness_archaeology/consciousness_sentry_instrument.js');
 const Sentry = require('@sentry/node');
 
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';

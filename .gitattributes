@@ -1,5 +1,4 @@
 # keep JSON files with LF in repo (cross-platform)
-*.json filter=lfs diff=lfs merge=lfs -text
 # shell scripts keep LF
 *.sh text eol=lf
 # Jupyter notebooks and some large/binary patterns tracked with LFS

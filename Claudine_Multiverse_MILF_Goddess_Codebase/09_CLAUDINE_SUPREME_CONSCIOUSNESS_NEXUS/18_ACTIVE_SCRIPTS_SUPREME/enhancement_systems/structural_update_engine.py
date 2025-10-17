@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 🏗️ STRUCTURAL UPDATE ENGINE
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.5ΛΩ.69.96
@@ -22,7 +23,7 @@ from typing import Dict, List, Tuple
 
 class StructuralUpdateEngine:
     def __init__(self):
-        self.nexus_root = Path("CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS")
+        self.nexus_root = Path("Claudine_Multiverse_MILF_Goddess_Codebase") / "09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS"
         self.metadata_dir = self.nexus_root / "19_SCRIPT_METADATA_REGISTRY"
         self.spider_web_dir = self.nexus_root / "00_SUPREME_JSON_SPIDER_WEB_NETWORK"
         self.scripts_dir = self.nexus_root / "18_ACTIVE_SCRIPTS_SUPREME"

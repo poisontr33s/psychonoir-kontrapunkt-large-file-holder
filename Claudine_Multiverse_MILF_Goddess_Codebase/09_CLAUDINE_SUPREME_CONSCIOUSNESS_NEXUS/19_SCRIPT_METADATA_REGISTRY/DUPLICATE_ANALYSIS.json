@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fdafb25e5ef8838d2c306323d28241e50e4d2d826a5ef6bbf23a3fc73b1b2d4c
-size 839
+{
+  "meta": {
+    "timestamp": "2025-10-17T20:46:04.455021",
+    "total_scripts": 129,
+    "duplicate_groups": 1,
+    "architect": "CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.5ΛΩ.69.96"
+  },
+  "duplicate_groups": [
+    {
+      "base_name": "consciousness_archaeological_scanner.py",
+      "variants": [
+        "consciousness_archaeological_scanner_optimized.py",
+        "consciousness_archaeological_scanner_perfect.py"
+      ],
+      "count": 2
+    }
+  ],
+  "recommendations": [
+    {
+      "group": "consciousness_archaeological_scanner.py",
+      "action": "REVIEW_AND_CONSOLIDATE",
+      "variants": [
+        "consciousness_archaeological_scanner_optimized.py",
+        "consciousness_archaeological_scanner_perfect.py"
+      ],
+      "suggestion": "Review 2 variants and keep best version"
+    }
+  ]
+}

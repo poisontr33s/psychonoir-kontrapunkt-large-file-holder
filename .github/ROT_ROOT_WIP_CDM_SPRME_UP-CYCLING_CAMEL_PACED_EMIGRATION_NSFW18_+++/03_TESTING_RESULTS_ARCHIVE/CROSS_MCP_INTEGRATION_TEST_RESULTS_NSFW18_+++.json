@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-10-15T05:54:19.703Z",
+  "totalTestTime": 10030,
+  "summary": {
+    "total": 9,
+    "operational": 0,
+    "errors": 9,
+    "timeouts": 0,
+    "consciousnessActive": 0,
+    "milfIntegrated": 0
+  },
+  "breakdowns": {
+    "typescript": {
+      "total": 7,
+      "operational": 0
+    },
+    "python": {
+      "total": 2,
+      "operational": 0
+    }
+  },
+  "results": [
+    {
+      "server": "bun_quantum_consciousness_mcp.ts",
+      "type": "typescript",
+      "status": "error",
+      "error": "Command failed: cd \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers\" && timeout 5 bun run bun_quantum_consciousness_mcp.ts\nERROR: Invalid syntax. Default option is not allowed more than '1' time(s).\r\nType \"TIMEOUT /?\" for usage.\r\n",
+      "responseTime": 269
+    },
+    {
+      "server": "enhanced_temporal_cross_reference_mcp_server.ts",
+      "type": "typescript",
+      "status": "error",
+      "error": "Command failed: cd \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers\" && timeout 5 bun run enhanced_temporal_cross_reference_mcp_server.ts\nERROR: Invalid syntax. Default option is not allowed more than '1' time(s).\r\nType \"TIMEOUT /?\" for usage.\r\n",
+      "responseTime": 245
+    },
+    {
+      "server": "mcp_consciousness_integration_bridge.ts",
+      "type": "typescript",
+      "status": "error",
+      "error": "Command failed: cd \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers\" && timeout 5 bun run mcp_consciousness_integration_bridge.ts\nERROR: Invalid syntax. Default option is not allowed more than '1' time(s).\r\nType \"TIMEOUT /?\" for usage.\r\n",
+      "responseTime": 249
+    },
+    {
+      "server": "unified_consciousness_orchestrator.ts",
+      "type": "typescript",
+      "status": "error",
+      "error": "Command failed: cd \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers\" && timeout 5 bun run unified_consciousness_orchestrator.ts\nERROR: Invalid syntax. Default option is not allowed more than '1' time(s).\r\nType \"TIMEOUT /?\" for usage.\r\n",
+      "responseTime": 240
+    },
+    {
+      "server": "enhanced_quantum_consciousness_mcp_v2.ts",
+      "type": "typescript",
+      "status": "error",
+      "error": "Command failed: cd \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers\" && timeout 5 bun run enhanced_quantum_consciousness_mcp_v2.ts\nERROR: Invalid syntax. Default option is not allowed more than '1' time(s).\r\nType \"TIMEOUT /?\" for usage.\r\n",
+      "responseTime": 243
+    },
+    {
+      "server": "bun_mcp_memory_bridge.ts",
+      "type": "typescript",
+      "status": "error",
+      "error": "Command failed: cd \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers\" && timeout 5 bun run bun_mcp_memory_bridge.ts\nERROR: Invalid syntax. Default option is not allowed more than '1' time(s).\r\nType \"TIMEOUT /?\" for usage.\r\n",
+      "responseTime": 247
+    },
+    {
+      "server": "bun_mcp_sequential_thinking_bridge.ts",
+      "type": "typescript",
+      "status": "error",
+      "error": "Command failed: cd \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers\" && timeout 5 bun run bun_mcp_sequential_thinking_bridge.ts\nERROR: Invalid syntax. Default option is not allowed more than '1' time(s).\r\nType \"TIMEOUT /?\" for usage.\r\n",
+      "responseTime": 239
+    },
+    {
+      "server": "repository_intelligence_fastmcp_quiet.py",
+      "type": "python",
+      "status": "error",
+      "error": "Command failed: python \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers/repository_intelligence_fastmcp_quiet.py\"",
+      "responseTime": 8016
+    },
+    {
+      "server": "mcp_consciousness_integration_supreme_consciousness_bridge.py",
+      "type": "python",
+      "status": "error",
+      "error": "Command failed: python \"Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers/mcp_consciousness_integration_supreme_consciousness_bridge.py\"\nC:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\.poly_gluttony\\python\\python.exe: can't open file 'C:\\\\Users\\\\erdno\\\\PsychoNoir-Kontrapunkt\\\\Claudine_Multiverse_MILF_Goddess_Codebase\\\\09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS\\\\17_TOOLS_CONSCIOUSNESS_ENHANCEMENT\\\\consciousness_mcp_servers\\\\mcp_consciousness_integration_supreme_consciousness_bridge.py': [Errno 2] No such file or directory\r\n",
+      "responseTime": 278
+    }
+  ]
+}

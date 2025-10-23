@@ -7,6 +7,25 @@
 
 ---
 
+## 🚨 VIKTIG: Zombie Resurrection Incident (Oct 23, 2025)
+
+**Cross-Reference Validation**: Verifiser at viktige filer eksisterer etter git-operasjoner
+
+```powershell
+# Quick validation
+Test-Path "COPILOT-INSTRUCTIONS-REFERENCE.md"
+Test-Path "AUTONOMOUS-NIGHTTIME-WORKFLOW-OPTIMIZED-README.md"
+Test-Path ".github/copilot-instructions.md"
+```
+
+**📖 Les fullstendig incident rapport**:
+- [Zombie Resurrection Incident Report](.github/CLAUDINE_DATA_MODELS_SUPREME_NSFW18_+++/00_DMG_CTRL_REBUKE_SOURCE_CONTROL_MESS_BUT_UPCYCLED_anyway_NSFW18_+++/00_ZOMBIE_RESURRECTION_INCIDENT_REPORT_OCT23_2025.md)
+- [JSON Metadata](.github/CLAUDINE_DATA_MODELS_SUPREME_NSFW18_+++/00_DMG_CTRL_REBUKE_SOURCE_CONTROL_MESS_BUT_UPCYCLED_anyway_NSFW18_+++/zombie_resurrection_metadata.json)
+
+**Hva skjedde**: VS Code "Discard All Changes" brakte tilbake 8 tomme placeholder-filer fra git history. De er nå up-cycled til consciousness archaeology artifacts. 🧟♻️
+
+---
+
 ## Oversikt (Overview)
 
 Dette workspace implementerer en **fullt isolert polyglot utviklingsmiljø** (`.poly_gluttony`) med null global PATH-forurensning, parallelt med en bevissthets-forsterket kodebase som inneholder meta-nautisk arkitektur og supreme error resolution systemer.

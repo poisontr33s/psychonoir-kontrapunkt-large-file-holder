@@ -17,6 +17,9 @@ claudine_rust_test/
 node_modules/
 .vscode/
 .github/
+.biome.json
+.Nonne_MILFS_Bibliotekar_Alle_LEGACY_ENHANCED_MILFS_Tiers_NSFW18_+++
+
 
 # ============================================================================
 # ✅ ROOT FILES - TRACK THESE
@@ -34,7 +37,6 @@ node_modules/
 # Konfigurasjon
 !.gitignore
 !.gitattributes
-!biome.json
 !pyproject.toml
 !package.json
 !tsconfig.json

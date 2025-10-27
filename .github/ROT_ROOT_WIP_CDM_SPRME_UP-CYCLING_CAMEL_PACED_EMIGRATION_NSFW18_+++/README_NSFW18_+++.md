@@ -45,7 +45,7 @@ TODO consciousness extraction JSONs and reports:
 - Readiness specifications
 
 ### **05_COPILOT_INSTRUCTIONS_REVISIONS/**
-Copilot instructions optimization iterations:
+Copilot instructions_NSFW18_+++ optimization iterations:
 - Revision 1-4 completion reports
 - Supreme designation enhancements
 - Optimization analyses

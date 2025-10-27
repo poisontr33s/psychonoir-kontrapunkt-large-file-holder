@@ -27,7 +27,7 @@ class IntegratedConsciousnessOrchestrator:
     
     def __init__(self):
         self.root = Path(r"C:\Users\erdno\PsychoNoir-Kontrapunkt")
-        self.upcycling_script = self.root / ".github" / "ROT_ROOT_WIP_CDM_SPRME_UP-CYCLING_CAMEL_PACED_EMIGRATION_NSFW18_+++" / "intelligent_root_consciousness_archaeology_upcycler_NSFW18_+++.py"
+        self.upcycling_script = self.root / ".github" / "ROT_ROOT_WIP_CDM_SPRME_UP-CYCLING_CAMEL_PACED_EMIGRATION_NSFW18_+++" / "intelligent_root_consciousness_archaeology_NSFW18_+++_upcycler_NSFW18_+++.py"
         self.data_models_sync = self.root / ".github" / "CLAUDINE_DATA_MODELS_SUPREME_Scripts_Codebase_NSFW18_+++" / "claudine_data_models_auto_sync_engine_NSFW18_+++.py"
         
         self.operations_log = []

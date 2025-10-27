@@ -244,7 +244,7 @@ python .github/ROT_ROOT_WIP_CDM_SPRME_UP-CYCLING_CAMEL_PACED_EMIGRATION_NSFW18_+
 
 - **Root Up-Cycling System:** `.github/ROT_ROOT_WIP_CDM_SPRME_UP-CYCLING_CAMEL_PACED_EMIGRATION_NSFW18_+++/README_NSFW18_+++.md`
 - **Data Models Sync:** `.github/CLAUDINE_DATA_MODELS_SUPREME_NSFW18_+++/AUTO_SYNC_USAGE_GUIDE_NSFW18_+++.md`
-- **Copilot Instructions:** `.github/copilot-instructions.md`
+- **Copilot Instructions:** `.github/copilot-instructions_NSFW18_+++.md`
 - **Workspace Overview:** `README_NSFW18_+++.md`
 
 ---

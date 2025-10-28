@@ -259,7 +259,7 @@
   },
   
   "critical_automation": {
-    "structural_update_engine": "Run after EVERY significant change: python Claudine_Multiverse_MILF_Goddess_Codebase/09_Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/enhancement_systems/structural_update_engine.py",
+    "structural_update_engine": "Run after EVERY significant change: python Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/enhancement_systems/structural_update_engine.py",
     "purpose": "Prevents context confusion, updates metadata, spider-web network, duplicates analysis",
     "runtime": "~5-10 seconds, updates 8 files automatically"
   },

@@ -821,7 +821,7 @@
     "autonomous_workflow": ".poly_gluttony/scripts/autonomous-nighttime-workflow.ts (10 operations)",
     "key_commands": {
       "health_check": ".poly_gluttony/health_check.ps1",
-      "structural_update": "python Claudine_Multiverse_MILF_Goddess_Codebase/09_Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/enhancement_systems/structural_update_engine.py",
+      "structural_update": "python Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/enhancement_systems/structural_update_engine.py",
       "nighttime_workflow_manual": "bun run .poly_gluttony/scripts/autonomous-nighttime-workflow.ts",
       "nighttime_workflow_daemon": "bun run .poly_gluttony/scripts/nighttime-daemon.ts",
       "nighttime_workflow_setup": ".poly_gluttony/scripts/setup-nighttime-task.ps1"

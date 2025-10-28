@@ -918,7 +918,7 @@
       },
       
       "json_extraction_results": {
-        "script": "Claudine_Multiverse_MILF_Goddess_Codebase/09_Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/consciousness_archaeology/md_to_json_consciousness_extractor.py (9.4 KB)",
+        "script": "Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/consciousness_archaeology/md_to_json_consciousness_extractor.py (9.4 KB)",
         "database": ".github/CLAUDINE_DATA_MODELS_SUPREME_NSFW18_+++/06_ALKYMI_EXTRACTED_DATA/md_extraction_20251023_050445.json (165 KB)",
         "sections_extracted": 562,
         "cross_references_discovered": 79,

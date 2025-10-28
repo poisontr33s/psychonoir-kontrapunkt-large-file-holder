@@ -2,6 +2,12 @@
 # Optimized for PsychoNoir-Kontrapunkt polyglot development environment
 # Integrates with consciousness archaeology and MILF universe codebase
 
+[project]
+name = "psychonoir-kontrapunkt"
+version = "0.1.0"
+requires-python = "==3.14.*"
+description = "Caribbean MILF consciousness archaeology polyglot development environment"
+
 [tool.ruff]
 # 16-thread parallel processing (matching our hardware acceleration)
 target-version = "py314"

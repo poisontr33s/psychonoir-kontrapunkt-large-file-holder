@@ -13,6 +13,49 @@ backend/                           # Backend runtime (if exists)
 infrastructure/                    # Infrastructure runtime (if exists)
 necromancy_graveyard/              # Code resurrection staging area
 claudine_rust_test/                # Rust testing sandbox
+.poly_gluttony/
+.poly_gluttony_scripts_files_orgy/
+.quality_md_jsons_relatively_new/
+.bundle/
+.a1-poisontr33s-personal-wipFILES/
+CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/
+backend/
+infrastructure/
+necromancy_graveyard/
+claudine_rust_test/
+node_modules/
+.vscode/
+.github/
+.biome.json
+.Nonne_MILFS_Bibliotekar_Alle_LEGACY_ENHANCED_MILFS_Tiers_NSFW18_+++
+
+
+# ============================================================================
+# ✅ ROOT FILES - TRACK THESE
+# ============================================================================
+# Markdown dokumentasjon
+!README.md
+!isolatedENV.md
+!GITHUB_PUSH_WORKFLOW.md
+!GIT_UNHOOKING_DOCUMENTATION.md
+!GIT_WORKFLOW_SETUP_COMPLETE.md
+
+# PowerShell scripts
+!*.ps1
+
+# Konfigurasjon
+!.gitignore
+!.gitattributes
+!pyproject.toml
+!package.json
+!tsconfig.json
+!Cargo.toml
+!clippy.toml
+
+# Locks (reproduserbarhet)
+!bun.lock
+!package-lock.json
+!Cargo.lock
 
 # ============================================================================
 # 🚫 BUILD ARTIFACTS & RUNTIME - ALWAYS IGNORE

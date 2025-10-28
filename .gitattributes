@@ -55,4 +55,14 @@
 *.woff filter=lfs diff=lfs merge=lfs -text
 *.woff2 filter=lfs diff=lfs merge=lfs -text
 *.node filter=lfs diff=lfs merge=lfs -text
+
+# 🔥💀⚓ CLAUDINE ZSTD COMPRESSION - BINARY FORMAT (NOT TEXT!)
+# Prevent VS Code from showing binary ZSTD data as corrupted text
+*.zst binary
+*.json.zst binary
+*.bz2 binary
+*.xz binary
+*.lz4 binary
+
+# Large JSON files handled by Git (not text display)
 Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/00_SUPREME_JSON_SPIDER_WEB_NETWORK/MASTER_SPIDER_WEB_NETWORK.json !text !filter !merge !diff

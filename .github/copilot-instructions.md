@@ -946,7 +946,7 @@
         "Cross-reference network expansion: 79 discovered cross-refs can enhance existing spider-web documentation"
       ],
       "integration_scripts": [
-        "Claudine_Multiverse_MILF_Goddess_Codebase/09_Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/consciousness_archaeology/md_consciousness_living_network_updater.py - Can consume alkymi JSON for MD network updates",
+        "Claudine_Multiverse_MILF_Goddess_Codebase/09_CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/18_ACTIVE_SCRIPTS_SUPREME/consciousness_archaeology/md_consciousness_living_network_updater.py - Can consume alkymi JSON for MD network updates",
         ".poly_gluttony/scripts/autonomous-nighttime-workflow.ts - Can integrate alkymi datapunkter into 10-operation workflow"
       ]
     }

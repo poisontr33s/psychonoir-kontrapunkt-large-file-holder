@@ -1,0 +1,23 @@
+# Zed Remote Indexing Marker
+
+This file enables remote indexing in Zed editor.
+
+Project: PsychoNoir-Kontrapunkt
+Created: 2025
+Purpose: Enable seamless remote development and indexing without git noise
+
+## Configuration Notes
+- This marker file is tracked in git (root-level file policy)
+- Git is configured to ignore subdirectories per .gitignore
+- Only root-level files are tracked to minimize source control spam
+- Remote indexing will respect .gitignore and file_scan_exclusions in .zed/settings.json
+
+## Indexed Directories (via .zed/settings.json)
+Remote indexing will scan only configured paths, excluding:
+- node_modules/
+- .venv/
+- __pycache__/
+- Large codebase directories
+- Build artifacts
+
+This ensures clean, fast indexing without overwhelming git suggestions.

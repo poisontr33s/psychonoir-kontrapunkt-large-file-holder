@@ -5,10 +5,7 @@
 # 🔥 PRIORITY: IGNORE ALL DIRECTORIES (kun root-filer trackes i VS Code)
 # ============================================================================
 .poly_gluttony/
-.poly_gluttony_scripts_files_orgy/
-.quality_md_jsons_relatively_new/
 .bundle/
-.a1-poisontr33s-personal-wipFILES/
 CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/
 backend/
 infrastructure/
@@ -30,6 +27,9 @@ node_modules/
 !GITHUB_PUSH_WORKFLOW.md
 !GIT_UNHOOKING_DOCUMENTATION.md
 !GIT_WORKFLOW_SETUP_COMPLETE.md
+
+# Zed editor marker
+!.zed-remote-indexing
 
 # PowerShell scripts
 !*.ps1

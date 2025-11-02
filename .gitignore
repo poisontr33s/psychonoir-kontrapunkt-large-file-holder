@@ -1,98 +1,25 @@
-# 🏴‍☠️ CLAUDINE SUPREME GITIGNORE - Root Files Focus
-# VS Code Git: ENABLED kun for root-filer (ikke mapper)
+# 🏴‍☠️ CLAUDINE SUPREME GITIGNORE - Single Marker File Only
+# Git tracks ONLY ONE file to eliminate source control spam
 
 # ============================================================================
-# 🔥 PRIORITY: IGNORE ALL DIRECTORIES (kun root-filer trackes i VS Code)
+# 🔥 IGNORE EVERYTHING
 # ============================================================================
-.poly_gluttony/
-.bundle/
-CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/
-backend/
-infrastructure/
-necromancy_graveyard/
-claudine_rust_test/
-node_modules/
-.vscode/
-.github/
-.biome.json
-.Nonne_MILFS_Bibliotekar_Alle_LEGACY_ENHANCED_MILFS_Tiers_NSFW18_+++
-
+*
+*/
 
 # ============================================================================
-# ✅ ROOT FILES - TRACK THESE
+# ✅ TRACK ONLY THIS ONE FILE
 # ============================================================================
-# Markdown dokumentasjon
-!README.md
-!isolatedENV.md
-!GITHUB_PUSH_WORKFLOW.md
-!GIT_UNHOOKING_DOCUMENTATION.md
-!GIT_WORKFLOW_SETUP_COMPLETE.md
-
-# Zed editor marker
+!.gitignore
 !.zed-remote-indexing
 
-# PowerShell scripts
-!*.ps1
-
-# Konfigurasjon
-!.gitignore
-!.gitattributes
-!pyproject.toml
-!package.json
-!tsconfig.json
-!Cargo.toml
-!clippy.toml
-
-# Locks (reproduserbarhet)
-!bun.lock
-!package-lock.json
-!Cargo.lock
-
 # ============================================================================
-# 🚫 BUILD ARTIFACTS & RUNTIME - ALWAYS IGNORE
+# 📋 STRATEGY
 # ============================================================================
-*.pyc
-__pycache__/
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-dist/
-build/
-*.egg
-*.db
-*.log
-
-# Node/Bun
-node_modules/
-.cache/
-.parcel-cache/
-
-# Python
-.venv/
-venv/
-.pytest_cache/
-.ruff_cache/
-.ipynb_checkpoints/
-
-# Rust
-target/
-
-# OS cruft
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*.tmp
-*.bak
-
-# ============================================================================
-# 📋 STRATEGY SUMMARY
-# ============================================================================
-# VS Code Source Control viser KUN root-filer:
-# ✅ README.md, isolatedENV.md, *.ps1, biome.json, pyproject.toml, etc.
-# 🚫 Mapper (CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/, backend/, etc.) vises IKKE
+# Git tracks only:
+# - .gitignore (this file)
+# - .zed-remote-indexing (dummy marker for remote indexing)
 #
-# For å committe mapper: Bruk terminal (git add <directory>)
-# For VS Code GUI: Kun root-filer er synlige og lettere å håndtere
+# Everything else is ignored - zero source control spam.
+# Manage other files manually if needed via: git add -f <file>
 # ============================================================================

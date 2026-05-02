@@ -1,30 +1,40 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @SID: ARCHAEOLOGY_MCP
+# @SID: ARCHAEOLOGY_MCP_MULTI
 # /// script
 # requires-python = ">=3.11"
 # dependencies = ["fastmcp>=3.2"]
 # ///
 """
-PNK Large-File-Holder — Archaeology MCP Server.
+Archaeology MCP Server — repo-agnostic, env-configurable.
 
-Exposes the full district scanner + SQLite archive layer as MCP tools
-so Copilot can run scans, queries, JSON fetches, and lesson compilations
-autonomously without manual CLI invocations.
+Single script that serves any git repo. Point at it from any mcp.json entry
+with a different ARCHAEOLOGY_REPO_ROOT env var to get a specialized instance.
+
+Env vars (all optional — defaults to this script's parent repo):
+  ARCHAEOLOGY_REPO_ROOT   Absolute path to the repo root to target
+  ARCHAEOLOGY_DB_PATH     Override for archive.db location (default: REPO_ROOT/archive.db)
+  ARCHAEOLOGY_SCANNER     Override path to district_scanner.py (default: REPO_ROOT/scripts/district_scanner.py)
+
+When ARCHAEOLOGY_SCANNER is absent from a target repo, the built-in
+fallback scanner runs instead — repo-agnostic, produces a compatible
+district_scan_full_sweep.json so all downstream tools work without modification.
 
 Tools:
-  archaeology_scan          — run scanner + rebuild archive.db
+  archaeology_scan          — run scanner (specialized or fallback) + rebuild archive.db
   archaeology_query         — query archive.db (district / entity / generation / top / unread / search / report)
   archaeology_mark_read     — record a file as read with summary
-  archaeology_fetch_json    — read a generated JSON artifact and return parsed content
+  archaeology_fetch_json    — read a generated JSON artifact and return parsed content (+ repo_info)
   archaeology_lessons_compile — compile cross-session lessons from all JSON artifacts + DB
 
-Registration:
-  .vscode/mcp.json (chthonic-archive) → "pnk-archaeology" entry
-  cwd: this repo root
+Registration pattern (mcp.json):
+  "pnk-archaeology":        { cwd: .../psychonoir-kontrapunkt-large-file-holder }           — specialized
+  "pnk-public-archaeology": { env: ARCHAEOLOGY_REPO_ROOT=.../PsychoNoir-Kontrapunkt }       — fallback scanner
+  "chthonic-archaeology":   { env: ARCHAEOLOGY_REPO_ROOT=.../chthonic-archive }              — fallback scanner
 """
 
 import json
+import os
 import sqlite3
 import subprocess
 import sys
@@ -33,11 +43,16 @@ from pathlib import Path
 
 from fastmcp import FastMCP
 
-REPO_ROOT = Path(__file__).parent.parent
-SCRIPTS_DIR = REPO_ROOT / "scripts"
-DB_PATH = REPO_ROOT / "archive.db"
+_DEFAULT_ROOT = Path(__file__).parent.parent
 
-SCAN_FULL_JSON = SCRIPTS_DIR / "district_scan_full_sweep.json"
+REPO_ROOT   = Path(os.environ.get("ARCHAEOLOGY_REPO_ROOT", str(_DEFAULT_ROOT))).resolve()
+SCRIPTS_DIR = REPO_ROOT / "scripts"
+DB_PATH     = Path(os.environ.get("ARCHAEOLOGY_DB_PATH",   str(REPO_ROOT / "archive.db"))).resolve()
+SCANNER     = Path(os.environ.get("ARCHAEOLOGY_SCANNER",   str(SCRIPTS_DIR / "district_scanner.py"))).resolve()
+
+_REPO_NAME  = REPO_ROOT.name
+
+SCAN_FULL_JSON    = SCRIPTS_DIR / "district_scan_full_sweep.json"
 SCAN_RESULTS_JSON = SCRIPTS_DIR / "district_scan_results.json"
 READS_EXPORT_JSON = SCRIPTS_DIR / "reads_export.json"
 
@@ -46,7 +61,7 @@ GENERATION_LABELS = {-2: "PRESERVED", -1: "GRAVEYARD", 0: "UNCLASSIFIED", 1: "GE
 mcp = FastMCP(
     "pnk-archaeology",
     instructions=(
-        "PsychoNoir-Kontrapunkt large-file-holder archaeology layer. "
+        f"PsychoNoir-Kontrapunkt archaeology layer — scanning {_REPO_NAME}. "
         "Scan districts, query entity archive, track reads, and compile lessons from JSON artifacts."
     ),
 )
@@ -71,6 +86,139 @@ def _gen_label(gen) -> str:
     return GENERATION_LABELS.get(int(gen) if gen is not None else 0, str(gen))
 
 
+def _fallback_scan(sweep_min_lines: int) -> dict:
+    """
+    Built-in repo-agnostic scanner — used when district_scanner.py is absent.
+
+    Walks REPO_ROOT, collects .md and .json files at or above sweep_min_lines,
+    groups by top-level subdirectory as 'district', and writes
+    district_scan_full_sweep.json in a format compatible with build_archive_db.py.
+    """
+    SKIP_DIRS = {".git", "node_modules", "__pycache__", "target", ".bundle"}
+
+    detail: dict[str, dict] = {}
+    total_files = 0
+
+    for filepath in REPO_ROOT.rglob("*"):
+        if not filepath.is_file():
+            continue
+        if any(part in SKIP_DIRS or part.startswith(".venv") for part in filepath.parts):
+            continue
+        if filepath.suffix not in (".md", ".json"):
+            continue
+        try:
+            line_count = sum(1 for _ in filepath.open(encoding="utf-8", errors="ignore"))
+        except Exception:
+            continue
+        if line_count < sweep_min_lines:
+            continue
+
+        rel = filepath.relative_to(REPO_ROOT)
+        parts = rel.parts
+        district = parts[0].upper().lstrip(".") if len(parts) > 1 else "ROOT"
+        entity = filepath.stem
+        total_files += 1
+
+        detail.setdefault(district, {}).setdefault(entity, []).append({
+            "path": str(rel),
+            "tier": "unclassified",
+            "line_count": line_count,
+            "suffix": filepath.suffix,
+        })
+
+    result = {"total_files": total_files, "detail": detail}
+    SCRIPTS_DIR.mkdir(exist_ok=True)
+    with open(SCAN_FULL_JSON, "w", encoding="utf-8") as fh:
+        json.dump(result, fh, indent=2)
+    return result
+
+
+def _build_db_from_scan(data: dict, source_file: str) -> dict:
+    """
+    Minimal in-process DB builder — used when build_archive_db.py is absent.
+    Mirrors the schema from build_archive_db.py (upsert-safe).
+    """
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS scans (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp TEXT NOT NULL,
+            source_file TEXT,
+            total_files INTEGER DEFAULT 0,
+            district_count INTEGER DEFAULT 0,
+            entity_count INTEGER DEFAULT 0,
+            file_count INTEGER DEFAULT 0
+        );
+        CREATE TABLE IF NOT EXISTS districts (
+            name TEXT PRIMARY KEY,
+            entity_count INTEGER DEFAULT 0,
+            active_count INTEGER DEFAULT 0,
+            graveyard_count INTEGER DEFAULT 0,
+            top_file_lines INTEGER DEFAULT 0
+        );
+        CREATE TABLE IF NOT EXISTS entities (
+            name TEXT NOT NULL,
+            district TEXT NOT NULL,
+            max_line_count INTEGER DEFAULT 0,
+            generation INTEGER DEFAULT 0,
+            canonical_file TEXT,
+            PRIMARY KEY (name, district)
+        );
+        CREATE TABLE IF NOT EXISTS files (
+            path TEXT PRIMARY KEY,
+            district TEXT NOT NULL,
+            entity TEXT NOT NULL,
+            suffix TEXT,
+            line_count INTEGER DEFAULT 0,
+            generation INTEGER DEFAULT 0
+        );
+        CREATE TABLE IF NOT EXISTS reads (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            file_path TEXT NOT NULL,
+            session_date TEXT,
+            lines_read TEXT,
+            summary TEXT,
+            timestamp TEXT NOT NULL
+        );
+    """)
+    now = datetime.now(timezone.utc).isoformat()
+    detail = data.get("detail", {})
+    total_entities = sum(len(v) for v in detail.values())
+    total_file_rows = 0
+
+    scan_row = conn.execute(
+        "INSERT INTO scans (timestamp, source_file, total_files, district_count, entity_count) VALUES (?,?,?,?,?)",
+        (now, source_file, data.get("total_files", 0), len(detail), total_entities),
+    )
+    for dist_name, entities in detail.items():
+        dist_files: list[dict] = []
+        for entity_name, file_list in entities.items():
+            for f in file_list:
+                conn.execute(
+                    "INSERT OR REPLACE INTO files (path, district, entity, suffix, line_count, generation) VALUES (?,?,?,?,?,?)",
+                    (f["path"], dist_name, entity_name, f.get("suffix", ""), f.get("line_count", 0), 0),
+                )
+                total_file_rows += 1
+                dist_files.append(f)
+            max_lc = max((f.get("line_count", 0) for f in file_list), default=0)
+            canonical = max(file_list, key=lambda x: x.get("line_count", 0), default={}).get("path", "")
+            conn.execute(
+                "INSERT OR REPLACE INTO entities (name, district, max_line_count, generation, canonical_file) VALUES (?,?,?,?,?)",
+                (entity_name, dist_name, max_lc, 0, canonical),
+            )
+        top_lines = max((f.get("line_count", 0) for f in dist_files), default=0)
+        conn.execute(
+            "INSERT OR REPLACE INTO districts (name, entity_count, active_count, graveyard_count, top_file_lines) VALUES (?,?,?,?,?)",
+            (dist_name, len(entities), len(dist_files), 0, top_lines),
+        )
+    conn.execute("UPDATE scans SET file_count=? WHERE id=?", (total_file_rows, scan_row.lastrowid))
+    conn.commit()
+    conn.close()
+    return {"districts": len(detail), "entities": total_entities, "file_rows": total_file_rows}
+
+
 # ─── tools ───────────────────────────────────────────────────────────────────
 
 @mcp.tool()
@@ -79,55 +227,68 @@ def archaeology_scan(
     rebuild_db: bool = True,
 ) -> dict:
     """
-    Run the district scanner across the full repo then rebuild archive.db.
+    Run the district scanner across the target repo then rebuild archive.db.
+
+    Uses the specialized district_scanner.py when present (PNK-LFH mode).
+    Falls back to a built-in repo-agnostic walker for any other repo.
 
     Args:
-        sweep_min_lines: Minimum line count to include a file in the sweep output (default 200).
-        rebuild_db: If True (default), run build_archive_db.py after scanning to update archive.db.
+        sweep_min_lines: Minimum line count for a file to be included (default 200).
+        rebuild_db: If True (default), rebuild archive.db after scanning.
 
     Returns:
-        dict with scan stats (districts, entities, files) and DB upsert summary.
+        dict with scan stats and DB upsert summary. 'scanner_mode' = 'specialized' | 'fallback'.
     """
-    output_path = SCRIPTS_DIR / "district_scan_full_sweep.json"
-
-    # 1. Run scanner
-    scan_cmd = [
-        sys.executable if "uv" not in sys.executable else "uv",
-        "run", str(SCRIPTS_DIR / "district_scanner.py"),
-        "--sweep-min-lines", str(sweep_min_lines),
-        "--output", str(output_path),
-    ]
-    # Always use uv run for consistency
-    scan_cmd = ["uv", "run", str(SCRIPTS_DIR / "district_scanner.py"),
-                 "--sweep-min-lines", str(sweep_min_lines),
-                 "--output", str(output_path)]
-
-    rc, stdout, stderr = _run(scan_cmd)
-    if rc != 0:
-        return {"error": f"Scanner failed (exit {rc})", "stderr": stderr[:2000]}
-
-    # Parse scan output for stats
+    scanner_mode = "specialized" if SCANNER.exists() else "fallback"
     scan_stats: dict = {}
-    if output_path.exists():
-        with open(output_path, encoding="utf-8") as fh:
-            data = json.load(fh)
-        scan_stats["total_files_scanned"] = data.get("total_files", 0)
-        scan_stats["districts"] = len(data.get("detail", {}))
-        entity_count = sum(len(v) for v in data.get("detail", {}).values())
-        scan_stats["entities"] = entity_count
 
-    # 2. Rebuild DB
+    if scanner_mode == "specialized":
+        rc, stdout, stderr = _run([
+            "uv", "run", str(SCANNER),
+            "--sweep-min-lines", str(sweep_min_lines),
+            "--output", str(SCAN_FULL_JSON),
+        ])
+        if rc != 0:
+            return {
+                "error": f"Scanner failed (exit {rc})",
+                "stderr": stderr[:2000],
+                "repo": str(REPO_ROOT),
+            }
+        if SCAN_FULL_JSON.exists():
+            with open(SCAN_FULL_JSON, encoding="utf-8") as fh:
+                d = json.load(fh)
+            scan_stats = {
+                "total_files_scanned": d.get("total_files", 0),
+                "districts": len(d.get("detail", {})),
+                "entities": sum(len(v) for v in d.get("detail", {}).values()),
+            }
+    else:
+        d = _fallback_scan(sweep_min_lines)
+        scan_stats = {
+            "total_files_scanned": d.get("total_files", 0),
+            "districts": len(d.get("detail", {})),
+            "entities": sum(len(v) for v in d.get("detail", {}).values()),
+        }
+
     db_result: dict = {}
     if rebuild_db:
-        db_cmd = ["uv", "run", str(SCRIPTS_DIR / "build_archive_db.py")]
-        rc2, stdout2, stderr2 = _run(db_cmd)
-        if rc2 != 0:
-            db_result["error"] = stderr2[:1000]
+        build_script = SCRIPTS_DIR / "build_archive_db.py"
+        if build_script.exists():
+            rc2, stdout2, stderr2 = _run(["uv", "run", str(build_script)])
+            if rc2 != 0:
+                db_result = {"error": stderr2[:1000]}
+            else:
+                db_result = {"status": "ok", "output": stdout2.strip()}
         else:
-            db_result["status"] = "ok"
-            db_result["output"] = stdout2.strip()
+            with open(SCAN_FULL_JSON, encoding="utf-8") as fh:
+                scan_json = json.load(fh)
+            stats = _build_db_from_scan(scan_json, str(SCAN_FULL_JSON))
+            db_result = {"status": "ok (in-process)", **stats}
 
     return {
+        "repo": str(REPO_ROOT),
+        "repo_name": _REPO_NAME,
+        "scanner_mode": scanner_mode,
         "scan": scan_stats,
         "db_rebuild": db_result,
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -337,16 +498,33 @@ def archaeology_fetch_json(
 
     Args:
         artifact: Which artifact to fetch:
-            "scan_full"        district_scan_full_sweep.json — full scan results
-            "scan_results"     district_scan_results.json — earlier scan pass
-            "reads_export"     reads_export.json — read history log
-            "historical_list"  list all historical scans in CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/03_HISTORICAL_SCANS/
+            "scan_full"         district_scan_full_sweep.json — full scan results
+            "scan_results"      district_scan_results.json — earlier scan pass
+            "reads_export"      reads_export.json — read history log
+            "historical_list"   list all historical scans in CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/03_HISTORICAL_SCANS/
             "historical_latest" parse the most recent historical scan JSON header
+            "repo_info"         repo root path, present scripts, DB status — use to probe any repo
         max_entities: Maximum number of entities to include in per-district breakdown (default 30).
 
     Returns:
-        Parsed, summarized artifact content.
+        Parsed, summarized artifact content. Every result includes 'repo' + 'repo_name' fields.
     """
+    meta = {"repo": str(REPO_ROOT), "repo_name": _REPO_NAME}
+
+    if artifact == "repo_info":
+        return {
+            **meta,
+            "db_exists": DB_PATH.exists(),
+            "db_size_mb": round(DB_PATH.stat().st_size / 1_048_576, 3) if DB_PATH.exists() else 0,
+            "scanner_available": SCANNER.exists(),
+            "scanner_mode": "specialized" if SCANNER.exists() else "fallback",
+            "build_db_available": (SCRIPTS_DIR / "build_archive_db.py").exists(),
+            "query_archive_available": (SCRIPTS_DIR / "query_archive.py").exists(),
+            "scan_full_exists": SCAN_FULL_JSON.exists(),
+            "scripts_dir": str(SCRIPTS_DIR),
+            "db_path": str(DB_PATH),
+        }
+
     if artifact == "scan_full":
         if not SCAN_FULL_JSON.exists():
             return {"error": "district_scan_full_sweep.json not found — run archaeology_scan first"}
@@ -430,7 +608,8 @@ def archaeology_fetch_json(
     else:
         return {
             "error": f"Unknown artifact: '{artifact}'",
-            "valid_options": ["scan_full", "scan_results", "reads_export", "historical_list", "historical_latest"],
+            "valid_options": ["scan_full", "scan_results", "reads_export",
+                              "historical_list", "historical_latest", "repo_info"],
         }
 
 
@@ -453,6 +632,8 @@ def archaeology_lessons_compile() -> dict:
     """
     lessons: dict = {
         "compiled_at": datetime.now(timezone.utc).isoformat(),
+        "repo": str(REPO_ROOT),
+        "repo_name": _REPO_NAME,
         "generation_distribution": {},
         "district_health": [],
         "read_coverage": {},
@@ -558,14 +739,21 @@ def archaeology_lessons_compile() -> dict:
             )
             gen3_count = lessons["generation_distribution"].get("GEN3-FULLDEPTH", {}).get("file_count", 0)
             gen1_count = lessons["generation_distribution"].get("GEN1-RAW", {}).get("file_count", 0)
-            lessons["key_findings"] = [
-                f"Repository has {total_md} entity-profile .md files across {len(dist_rows)} districts",
-                f"Generation ladder: GEN3-FULLDEPTH={gen3_count} (cRPG-ready), GEN1-RAW={gen1_count} (primary source)",
-                f"Graveyard rate: {graveyard_pct}% of all tracked entities — Caribbean Archipelago deprecated Sep 29, 2025",
-                f"Read coverage: {total_read}/{total_gen1plus} gen1+ files ({round(total_read/max(total_gen1plus,1)*100,1)}%) — archaeology is early-stage",
-                f"T1.5 Bridge tier: autonomously invented by Claudine 5.0 Oct 2025 — Eva Blue elevated from T2 via co-occurrence analysis",
+            unclass_count = lessons["generation_distribution"].get("UNCLASSIFIED", {}).get("file_count", 0)
+            findings = [
+                f"Repo: {_REPO_NAME} — {total_md} entity-profile .md files across {len(dist_rows)} districts",
+                f"Generation ladder: GEN3-FULLDEPTH={gen3_count} (cRPG-ready), GEN1-RAW={gen1_count} (primary source), UNCLASSIFIED={unclass_count}",
+                f"Graveyard rate: {graveyard_pct}% of all tracked entities deprecated/archived",
+                f"Read coverage: {total_read}/{total_gen1plus} gen1+ files ({round(total_read/max(total_gen1plus,1)*100,1)}%) — archaeology in progress",
                 f"GEN3-FULLDEPTH files are the cRPG-portable entity card targets — {gen3_count} confirmed",
             ]
+            # PNK-LFH specific enrichments (silently skipped for other repos)
+            if _REPO_NAME == "psychonoir-kontrapunkt-large-file-holder":
+                findings += [
+                    "T1.5 Bridge tier: autonomously invented by Claudine 5.0 Oct 2025 — Eva Blue elevated from T2 via co-occurrence analysis",
+                    "Caribbean Archipelago: deprecated Sep 29, 2025 — GRAVEYARD classification",
+                ]
+            lessons["key_findings"] = findings
 
         finally:
             conn.close()

@@ -8642,7 +8642,7 @@ Starting (1/8) *Create Vera Steel Psychographic Profile*
 Perfekt! Nå starter jeg med **Vera Steel** - den mest kritiske profilen for Rustbeltet-distriktet. 
 Searched for files matching `**/*eva*blue*.md`, 4 matches
 Perfekt! Jeg fant template-strukturen. La meg lese Eva Blue-profilen for å følge samme format: 
-Read [](file:///c%3A/Users/erdno/PsychoNoir-Kontrapunkt/CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/03_SPECIALIZED_CONSCIOUSNESS_OPERATIVES/SKYSKRAPEREN_SPECIALISTS/eva_blue_aerospace_midwife_consciousness_profile.md)
+Read [](c:/Users/erdno/PsychoNoir-Kontrapunkt/CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/03_SPECIALIZED_CONSCIOUSNESS_OPERATIVES/SKYSKRAPEREN_SPECIALISTS/eva_blue_aerospace_midwife_consciousness_profile.md)
 Perfekt! Nå har jeg template-strukturen. La meg skape **Vera Steel** psychographic profile med samme kvalitet og struktur, men tilpasset Rustbeltet Industrial Survivor arketypen: 
 Created [](file:///c%3A/Users/erdno/PsychoNoir-Kontrapunkt/CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/03_SPECIALIZED_CONSCIOUSNESS_OPERATIVES/RUSTBELTET_SPECIALISTS/vera_steel_mechanical_resurrector_consciousness_profile.md)
 Utmerket! **Vera Steel** profilen er skapt med full kvalitet. La meg nå oppdatere TODO og fortsette med **Raven Bytes**: 

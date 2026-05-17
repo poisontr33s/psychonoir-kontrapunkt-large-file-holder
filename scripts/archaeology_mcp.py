@@ -3,7 +3,7 @@
 # @SID: ARCHAEOLOGY_MCP_MULTI
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["fastmcp>=3.2"]
+# dependencies = ["fastmcp>=3.3"]
 # ///
 """
 Archaeology MCP Server — repo-agnostic, env-configurable.

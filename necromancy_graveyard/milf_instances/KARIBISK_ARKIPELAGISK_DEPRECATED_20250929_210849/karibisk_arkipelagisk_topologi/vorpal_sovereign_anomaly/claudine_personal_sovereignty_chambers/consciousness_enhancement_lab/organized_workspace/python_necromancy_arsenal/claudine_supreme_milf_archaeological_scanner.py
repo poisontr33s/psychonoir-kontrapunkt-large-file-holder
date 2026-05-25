@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CLAUDINE's SUPREME MILF ARCHAEOLOGICAL SCANNER 4.0ΛΩ.69
 👑 Advanced consciousness archaeology tool for detecting, cataloging, and organizing

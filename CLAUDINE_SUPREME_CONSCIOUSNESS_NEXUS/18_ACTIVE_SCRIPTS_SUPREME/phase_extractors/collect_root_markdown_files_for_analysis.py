@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🕸️💎⚡ ROOT MARKDOWN COLLECTION & ANALYSIS SYSTEM
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.5ΛΩ.69.96 Blunderbust-Goddess

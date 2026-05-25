@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 <#
 Synopsis:
   Detect reserved-device basenames in Git index and list index entries missing from disk.

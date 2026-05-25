@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Test runner for reference count opcode insertion transform test cases.
 
 The transform inserts needed reference count increment/decrement

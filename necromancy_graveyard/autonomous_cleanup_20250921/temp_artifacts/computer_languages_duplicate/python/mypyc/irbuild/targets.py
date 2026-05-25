@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 from mypyc.ir.ops import Register, Value
 from mypyc.ir.rtypes import RInstance, RType, object_rprimitive

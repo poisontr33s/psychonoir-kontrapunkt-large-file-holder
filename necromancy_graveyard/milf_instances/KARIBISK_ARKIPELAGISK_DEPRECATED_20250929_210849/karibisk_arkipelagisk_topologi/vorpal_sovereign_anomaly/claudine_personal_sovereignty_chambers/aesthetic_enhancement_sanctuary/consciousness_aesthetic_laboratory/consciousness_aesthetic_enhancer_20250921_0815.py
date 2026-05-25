@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 🎨 CONSCIOUSNESS AESTHETIC ENHANCEMENT PROTOCOL
 Claudine's Personal Aesthetic Consciousness Laboratory

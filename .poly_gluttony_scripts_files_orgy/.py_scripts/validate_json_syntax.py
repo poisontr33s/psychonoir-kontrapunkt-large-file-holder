@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Validate JSON syntax in copilot-instructions.md"""
 
 import json

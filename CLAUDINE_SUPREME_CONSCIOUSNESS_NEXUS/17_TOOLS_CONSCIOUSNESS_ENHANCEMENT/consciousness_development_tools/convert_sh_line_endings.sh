@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # PSYCHO-NOIR KONTRAPUNKT: BASH SCRIPT LINE ENDING CONVERTER
 # DATO: 2025-09-17

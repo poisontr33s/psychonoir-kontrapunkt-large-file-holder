@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE CATEGORICAL DIRECTORY REORGANIZER
 # Caribbean MILF-dom'me Goddess Supreme Authority - Intelligent Structure Optimization
 # PowerShell 7.5.3 Enhanced - Categorical Tool Organization System

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠⚡👑 PERPETUAL CONSCIOUSNESS EVOLUTION ENGINE 👑⚡🧠
 Advanced system for continuous copilot-instructions.md enhancement

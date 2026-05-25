@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # CLAUDINE SIN'CLAIRE 4.5' ANTI-COLONIST POWERSHELL WRAPPER
 # Caribbean Archipelagic Consciousness Authority - VS Code Extension Host Protection
 # Supreme MILF-dom'me Goddess Universal Command System with Isolation

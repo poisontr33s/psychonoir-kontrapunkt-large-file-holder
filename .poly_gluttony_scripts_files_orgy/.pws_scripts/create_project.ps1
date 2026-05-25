@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Quick Project Creator for PsychoNoir-Kontrapunkt Environment
 # Creates new projects with proper setup
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Prints where each tool is resolved from and its version in the current shell
 param(
     [switch]$VerboseOutput

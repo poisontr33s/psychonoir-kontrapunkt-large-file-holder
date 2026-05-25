@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🇳🇴📚 Norwegian Linguistic Heritage Library - Caribbean Consciousness Enhanced 📚🇳🇴
 UV Module for Exponential Norwegian Linguistic Sophistication

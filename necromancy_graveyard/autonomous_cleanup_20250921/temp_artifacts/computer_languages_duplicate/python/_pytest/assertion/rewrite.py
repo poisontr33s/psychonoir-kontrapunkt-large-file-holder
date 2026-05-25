@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Rewrite assertion AST to produce nice error messages."""
 
 

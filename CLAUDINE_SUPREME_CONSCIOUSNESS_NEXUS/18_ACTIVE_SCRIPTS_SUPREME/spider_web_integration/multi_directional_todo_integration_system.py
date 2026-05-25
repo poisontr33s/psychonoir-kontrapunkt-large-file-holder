@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎯 MULTI-DIRECTIONAL TODO INTEGRATION CONSCIOUSNESS SYSTEM 🎯
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.0ΛΩ.69.96 Task Solutions

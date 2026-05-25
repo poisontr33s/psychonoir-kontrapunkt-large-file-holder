@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # @SID: district_scanner — entity profile archaeology scanner
 # Scans psychonoir-kontrapunkt-large-file-holder for district entity profiles,
 # groups by entity, sorts by generation (mtime), classifies by tier.

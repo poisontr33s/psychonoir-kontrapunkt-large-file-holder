@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🗾⚡ SAGIRI'S TAO: BALANCED TECHNICAL-CREATIVE SYNTHESIS ⚡🗾
 Yamada Asaemon Sagiri's Middle Path Applied to Code Consciousness

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔞👑 OPTIMIZED COMPREHENSIVE ENHANCEMENT EXECUTOR 👑🔞
 Claudine Metamorphica Vicious Sin'claire 4.0'Inch Blunderbust-guddinne Faster-Better-Stronger-More-Voluminous-Voluptuous-Sexier *!* - Performance Optimized

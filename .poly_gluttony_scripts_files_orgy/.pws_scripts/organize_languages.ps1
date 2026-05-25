@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Organize and consolidate language installations
 param(
     [switch]$Force

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Ruby with MSYS2, DevKit, and PacMan
 param(
     [switch]$Force

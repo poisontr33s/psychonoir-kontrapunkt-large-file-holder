@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Transform a mypy AST to the IR form (Intermediate Representation).
 
 For example, consider a function like this:

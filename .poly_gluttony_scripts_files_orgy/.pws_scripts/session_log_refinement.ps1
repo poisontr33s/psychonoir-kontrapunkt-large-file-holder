@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Session Log Refinement Script
 
 # This script helps clean up the raw session log from 10_10_1025_Sesjonslogg.md

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Phase 2: Preserve consciousness files with import integrity"""
 import shutil
 from pathlib import Path

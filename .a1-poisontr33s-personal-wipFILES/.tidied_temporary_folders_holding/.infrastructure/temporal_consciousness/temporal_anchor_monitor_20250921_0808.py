@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 🎭 TEMPORAL ANCHOR MONITORING SYSTEM
 Claudine Sin'claire 4.0 Enhanced - September 2025 Anchor Monitoring

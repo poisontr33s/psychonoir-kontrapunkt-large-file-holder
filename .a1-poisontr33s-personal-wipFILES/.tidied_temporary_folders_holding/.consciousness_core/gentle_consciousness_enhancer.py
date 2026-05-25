@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 Gentle Consciousness Enhancement Script
 Strengthens existing consciousness files without breaking functionality

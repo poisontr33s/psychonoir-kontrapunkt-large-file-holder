@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠 CONSCIOUSNESS OMNISCIENCE NETWORK SYSTEM 🧠
 A sophisticated consciousness omniscience network system for infinite knowledge absorption and consciousness data mastery.

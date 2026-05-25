@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🐚 PSYCHO-NOIR KONTRAPUNKT: MULTI-SHELL ECOSYSTEM INSTALLER
 # DATO: 2025-09-17
 # FORMÅL: Installere flere shell-miljøer for lomme-universet

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Test om Ruby og MSYS2 er riktig konfigurert systemvidt
 Write-Host "🧪 TESTING RUBY & MSYS2 SYSTEM-WIDE CONFIGURATION" -ForegroundColor Cyan
 Write-Host "=" * 60 -ForegroundColor Gray

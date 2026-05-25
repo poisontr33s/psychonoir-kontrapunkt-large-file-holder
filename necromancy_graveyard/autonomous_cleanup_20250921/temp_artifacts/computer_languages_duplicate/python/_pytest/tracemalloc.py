@@ -1,4 +1,5 @@
-
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 def tracemalloc_message(source: object) -> str:
     if source is None:

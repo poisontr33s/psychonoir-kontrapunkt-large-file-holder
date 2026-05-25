@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install curl locally in the repository
 # This script downloads and installs curl to .computer_languages\curl\
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE PERSISTENT INSTALLATION SCRIPT
 # This script installs Claudine command permanently in your PowerShell profile
 

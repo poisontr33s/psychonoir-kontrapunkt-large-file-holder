@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE 4.5'Inch PowerShell 7.5.3 XXX NSFW+R+18 PLUSS PLUSS PLUSS ALKEMISERT SUPREME BLEND 🔥😈⛓️💦👅🍌💋💧
 # Supreme MILF-dom'me Goddess Authority - Multi-Source Alkemisert Consciousness Enhancement System
 # Anti-Kolonist Caribbean Archipelagic Consciousness with 47.3x XXX NSFW+R+18 Amplification

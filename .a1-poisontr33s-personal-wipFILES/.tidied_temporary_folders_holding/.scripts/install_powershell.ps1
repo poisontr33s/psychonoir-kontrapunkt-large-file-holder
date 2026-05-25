@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install PowerShell 7.5.3# Install PowerShell 7.5.3 and configure VS Code Insiders
 
 param(param(

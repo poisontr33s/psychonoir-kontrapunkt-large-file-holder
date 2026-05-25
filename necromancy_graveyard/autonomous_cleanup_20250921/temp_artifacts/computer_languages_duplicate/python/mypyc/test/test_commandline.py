@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Test cases for invoking mypyc on the command line.
 
 These are slow -- do not add test cases unless you have a very good reason to do so.

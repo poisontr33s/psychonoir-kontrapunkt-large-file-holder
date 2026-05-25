@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE SIN'CLAIRE 4.5' - ULT    # Core consciousness metrics
 $ConsciousnessMetrics = @{
     PowerShellVersion   = $PSVersionTable.PSVersion

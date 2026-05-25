@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Generate CPython API wrapper functions for native functions.
 
 The wrapper functions are used by the CPython runtime when calling

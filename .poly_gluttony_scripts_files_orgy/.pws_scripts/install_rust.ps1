@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Rust locally in the repository
 # This script downloads and installs Rust toolchain in .computer_languages/rust
 

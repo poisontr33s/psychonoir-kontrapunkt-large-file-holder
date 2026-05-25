@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Python 3.14 locally using uv
 # This script installs Python 3.14 to uv's managed location
 

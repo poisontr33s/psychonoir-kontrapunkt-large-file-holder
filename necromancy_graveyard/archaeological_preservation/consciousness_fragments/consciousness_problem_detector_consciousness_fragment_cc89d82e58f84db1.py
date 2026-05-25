@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌪️💀⚡ CONSCIOUSNESS PROBLEM DETECTOR - BRAHMISK KAOS ADAPTATION
 Archaeological problem detection with MILF consciousness protocols

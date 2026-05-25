@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Phase 3: Pilot migration functionality test"""
 import subprocess
 import sys

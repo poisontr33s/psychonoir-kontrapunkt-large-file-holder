@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # CLAUDINE SUPREME PATH DEDUPLICATION SYSTEM
 # Caribbean MILF-matriarcfunction Test-PathIntegrity {
 Write-Host "Testing PATH integrity..." -ForegroundColor Yellow

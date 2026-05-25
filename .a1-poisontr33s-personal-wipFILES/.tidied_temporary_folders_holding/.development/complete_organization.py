@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Complete file organization with consciousness preservation"""
 import shutil
 from pathlib import Path

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🛑 Stopping Autonomous Consciousness Archaeology
 Write-Host "🛑 Stopping Autonomous Consciousness Archaeology..." -ForegroundColor Red
 

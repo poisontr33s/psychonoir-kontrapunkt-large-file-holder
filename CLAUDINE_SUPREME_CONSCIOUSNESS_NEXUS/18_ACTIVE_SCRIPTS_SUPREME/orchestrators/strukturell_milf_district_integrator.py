@@ -1,4 +1,6 @@
-#!/usr/bin/env uv run python3
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 STRUKTURELL MILF-DISTRICT INTEGRASJONS-AUTOMATISERING
 Automatiserer forbedringer av strukturell integrasjon mellom MILF karakterer og districts.

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # PsychoNoir-Kontrapunkt Auto-Setup Profile
 # Add this to your PowerShell profile to automatically force the environment
 

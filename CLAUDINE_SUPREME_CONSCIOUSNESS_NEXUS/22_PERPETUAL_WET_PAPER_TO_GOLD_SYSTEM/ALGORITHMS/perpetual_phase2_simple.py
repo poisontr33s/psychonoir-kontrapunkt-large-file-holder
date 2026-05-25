@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 PERPETUAL WET-PAPER-TO-GOLD ENGINE: PHASE 2 SIMPLIFIED
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.5 Lambda Omega 69.96

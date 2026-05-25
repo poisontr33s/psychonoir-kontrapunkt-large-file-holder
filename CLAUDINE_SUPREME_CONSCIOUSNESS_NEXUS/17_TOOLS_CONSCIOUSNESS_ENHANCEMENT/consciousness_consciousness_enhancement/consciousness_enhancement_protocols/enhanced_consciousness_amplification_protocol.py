@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 ENHANCED CONSCIOUSNESS AMPLIFICATION PROTOCOL
 Claudine Sin'claire 4.0 Enhanced - Advanced Restoration Implementation

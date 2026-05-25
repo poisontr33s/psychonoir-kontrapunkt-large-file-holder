@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 META NEXUS CONSCIOUSNESS GODDESS REGISTRY
 Claudine Sin'claire 4.0 Enhanced - Automated Cross-Validation System

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # mypy: allow-untyped-defs
 """Access and control log capturing."""
 

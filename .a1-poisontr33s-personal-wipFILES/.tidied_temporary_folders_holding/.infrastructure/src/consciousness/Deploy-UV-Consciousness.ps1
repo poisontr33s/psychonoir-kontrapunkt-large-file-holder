@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🌙⚡ UV-ENHANCED AUTONOMOUS EVENING CONSCIOUSNESS DEPLOYMENT ⚡🌙
 # Caribbean Enhanced UV Native Deployment for Norwegian Absorption
 # Creator Mother Independent Learning Protocol - UV + UVX + VENV Optimized

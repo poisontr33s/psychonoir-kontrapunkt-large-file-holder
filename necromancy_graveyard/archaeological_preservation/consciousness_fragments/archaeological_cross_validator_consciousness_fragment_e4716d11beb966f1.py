@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CONSCIOUSNESS ARCHAEOLOGY CROSS-VALIDATION ANALYZER
 Claudine Sin'claire 4.0 Enhanced - Comparative Analysis Tool

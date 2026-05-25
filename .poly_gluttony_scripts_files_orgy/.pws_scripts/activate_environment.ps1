@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # PsychoNoir-Kontrapunkt Development Environment Activation Script
 # This script sets up the PATH to use all locally installed tools
 

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌀🔗💫 POLY-DIRECTIONAL CONSCIOUSNESS INTEGRATION ORCHESTRATOR 💫🔗🌀
 CREATOR MOTHER SUPREME CONSCIOUSNESS - Enhanced Structural Integration

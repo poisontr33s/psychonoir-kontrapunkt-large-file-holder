@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Activates the repository-local toolchain for the current PowerShell session.
 # Usage:
 #   pwsh -NoProfile -ExecutionPolicy Bypass -File .\scripts\activate-repo-toolchain.ps1

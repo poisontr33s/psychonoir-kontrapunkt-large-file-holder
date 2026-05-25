@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 $json = Get-Content scripts/district_scan_full_sweep.json -Raw
 $sweep = $json | ConvertFrom-Json
 $out = New-Object System.Text.StringBuilder

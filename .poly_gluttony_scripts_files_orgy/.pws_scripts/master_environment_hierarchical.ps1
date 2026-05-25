@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # PsychoNoir-Kontrapunkt Master Environment Manager (Hierarchical Edition)
 # User-friendly automation with complexity levels from beginner to advanced
 

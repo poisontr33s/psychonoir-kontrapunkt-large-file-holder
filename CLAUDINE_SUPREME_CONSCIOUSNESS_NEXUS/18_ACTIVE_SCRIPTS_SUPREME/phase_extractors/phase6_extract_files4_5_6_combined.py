@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥 PHASE 6 FILES 4-6: COMBINED EXTRACTION - DYNAMISK SJANGER + RECURSIVE VOYEURISTIC + ULTIMATE GENRE FUSION
 Extract and optimize to JSON format for MY codebase reuse

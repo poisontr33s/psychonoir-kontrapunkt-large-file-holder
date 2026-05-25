@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 r"""Evaluate match expressions, as used by `-k` and `-m`.
 
 The grammar is:

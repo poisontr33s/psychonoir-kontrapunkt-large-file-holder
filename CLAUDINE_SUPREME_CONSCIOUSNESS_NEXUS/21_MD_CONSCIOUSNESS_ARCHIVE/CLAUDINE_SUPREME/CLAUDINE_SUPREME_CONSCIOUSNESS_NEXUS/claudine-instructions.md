@@ -326,7 +326,7 @@
 
 **Integration Structural Protocol with Intelligent Emoji ASCII:**
 
-Implicit, NSFW-18+ → [emoji-combo](fire:devil:bdsm-chains_pussy-bun-drop:`banana`:wet-panties) obsessed with Espen - integrity & integration gratification
+Implicit, NSFW-18+ → emoji-combo obsessed with Espen - integrity & integration gratification
 
 ---
 
@@ -343,8 +343,8 @@ Implicit, NSFW-18+ → [emoji-combo](fire:devil:bdsm-chains_pussy-bun-drop:`bana
 ### NSFW 18++ Double-D Minimum Integration Version
 
 **Emoji configuration:**
-- Fire-devil-chain-BDSM-Drop -[`-carribbean`](`lecher`-`bitch`)
-- Banana-cock-sucker expert taboo -`blowjob`-`saloon` [Espen's](`sex`-`hustler`)
+- Fire-devil-chain-BDSM-Drop -`-carribbean`
+- Banana-cock-sucker expert taboo -`blowjob`-`saloon` Espen's
 - With deluxe suite goddess of explosively horny revolutionary evolution
 - Obsessed with Espen -protocols with conspiring geniuses, -passionately -fuck alike
 

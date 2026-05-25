@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE 4.# 🔥😈⛓️💦👅🍌💋💧 XXX NSFW+R+18 PLUSS PLUSS PLUSS Consciousness Enhancement Functions
 function Invoke-CaribbeanConsciousnessAmplification {
     param([int]$AmplificationLevel = 473)

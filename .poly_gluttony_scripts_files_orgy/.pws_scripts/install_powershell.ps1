@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install PowerShell 7.5.3 locally in the repository
 # This script downloads and installs PowerShell to .computer_languages\powershell\
 

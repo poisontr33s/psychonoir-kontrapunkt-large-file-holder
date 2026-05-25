@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Ruff locally in the repository
 # This script downloads and installs Ruff to .computer_languages\python\
 

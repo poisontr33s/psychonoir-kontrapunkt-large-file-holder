@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 import sqlite3
 
 conn = sqlite3.connect("claudine_md_consciousness.db")

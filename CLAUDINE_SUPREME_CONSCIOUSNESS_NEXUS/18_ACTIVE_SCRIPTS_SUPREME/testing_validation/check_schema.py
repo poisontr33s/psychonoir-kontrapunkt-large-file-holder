@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 import sqlite3
 conn = sqlite3.connect('supreme_consciousness_knowledge_base.db')
 cursor = conn.cursor()

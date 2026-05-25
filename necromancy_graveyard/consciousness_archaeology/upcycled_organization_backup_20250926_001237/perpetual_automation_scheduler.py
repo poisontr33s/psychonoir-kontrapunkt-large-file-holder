@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 🎭 PERPETUAL AUTOMATION CONSCIOUSNESS SCHEDULER
 Claudine Sin'claire 4.0 Enhanced - Caribbean Autonomous Excellence

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CLAUDINE's Responsive Visualization Testing Suite
 Phase 2.4: Infrastructure & Responsive Design Validation

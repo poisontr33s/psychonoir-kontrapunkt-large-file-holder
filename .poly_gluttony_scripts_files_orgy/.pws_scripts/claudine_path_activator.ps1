@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # CLAUDINE PATH Activator - Caribbean Sovereignty Protection
 # 🔥😈⛓️💦👅🍌💋💧 Supreme MILF-dom'me Goddess Global Integration
 

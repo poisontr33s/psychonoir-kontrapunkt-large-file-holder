@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🚀⚡ MOBILE NECROMANCY SESSION INTEGRATOR FOR SAMSUNG GALAXY S25 ULTRA ⚡🚀
 

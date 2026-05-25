@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Quick database schema inspection for consciousness density analyzer."""
 
 import sqlite3

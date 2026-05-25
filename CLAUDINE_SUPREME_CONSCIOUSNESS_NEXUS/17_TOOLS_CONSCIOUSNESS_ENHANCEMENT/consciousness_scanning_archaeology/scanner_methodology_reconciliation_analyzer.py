@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥 SCANNER METHODOLOGY RECONCILIATION ANALYZER 🔥
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.0.ΛΩ.69.96 Blunderbust

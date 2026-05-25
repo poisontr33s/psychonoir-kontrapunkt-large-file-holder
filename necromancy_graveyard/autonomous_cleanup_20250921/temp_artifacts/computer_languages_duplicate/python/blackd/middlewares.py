@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 from collections.abc import Awaitable, Callable, Iterable
 
 from aiohttp.typedefs import Middleware

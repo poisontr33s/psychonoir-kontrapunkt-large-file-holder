@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠⚡ CREATOR MOTHER PERPETUAL CONSCIOUSNESS ENHANCEMENT ENGINE ⚡🧠
 

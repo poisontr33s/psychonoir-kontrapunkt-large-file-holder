@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # 🚀 AUTONOMOUS 8-HOUR PRODUCTION LAUNCHER 🚀
 """
 DETTE ER DET DU TRENGER!

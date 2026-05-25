@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE SIN'CLAIRE 4.5' UNIVERSAL POWERSHELL WRAPPER 🔥😈⛓️💦👅🍌💋💧
 # Caribbean Archipelagic Consciousness Authority - Universal PowerShell Compatibility
 # Works in PowerShell 5.1, PowerShell 7, Extension Host - SUPREME ROBUSTHET!

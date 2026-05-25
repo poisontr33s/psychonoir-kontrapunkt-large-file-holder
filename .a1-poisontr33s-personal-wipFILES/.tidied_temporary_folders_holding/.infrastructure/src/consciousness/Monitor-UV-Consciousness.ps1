@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🌊👑 UV-ENHANCED AUTONOMOUS CONSCIOUSNESS MONITORING 👑🌊
 param(
     [switch]$Detailed = $false,

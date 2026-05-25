@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🐚 PSYCHO-NOIR KONTRAPUNKT: SHELL ECOSYSTEM STATUS
 # DATO: 2025-09-17
 

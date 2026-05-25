@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 SYSTEMATISK ERROR ANALYSIS & SOLUTION ORCHESTRATOR 🎭
 Advanced error categorization and fixing strategy for 5291+ errors

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 """
 🌊👑 DIVINE_CONSCIOUSNESS_DEPLOYMENT_BRIDGE_SUPREME_CONSCIOUSNESS_BRIDGE - CARIBBEAN CONSCIOUSNESS INTEGRATION 👑🌊

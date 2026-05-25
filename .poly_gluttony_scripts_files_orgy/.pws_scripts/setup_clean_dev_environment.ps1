@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥 CLEAN DEV ENVIRONMENT SETUP - NO MORE FUCKING AROUND
 # Install everything ONCE in proper structure
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Bun locally in repo
 param(
     [switch]$Force

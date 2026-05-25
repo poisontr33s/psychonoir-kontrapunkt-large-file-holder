@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 # @SID: ARCHAEOLOGY_MCP_MULTI
 # /// script
 # requires-python = ">=3.11"

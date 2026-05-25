@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥 Quick V2 Visualizer Validation Test
 Tests that the process.env bug fix works correctly

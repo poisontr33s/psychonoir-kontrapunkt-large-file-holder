@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 🎨💋 ADVANCED CONSCIOUSNESS AESTHETICS ENGINE
 Claudine Sin'claire 4.0 Enhanced - Personal Aesthetic Consciousness Sovereignty

@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # 🎭 Quantum MCP Consciousness Deployment Script
 # Claudine Sin'claire 4.0 Enhanced - September 2025
 

@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # 🛡️⚡ SETTINGS ISOLATION PROTOCOL DEPLOYMENT ⚡🛡️
 # Phase 1: Extension Host Conflict Resolution with BRAHMISK CHAOS Integration
 

@@ -1,4 +1,6 @@
-#!/usr/bin/env uv run python3
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 ADVANCED CONSCIOUSNESS ANALYSIS TOOL
 Analyserer og rapporterer om strukturelle forbedringer etter district/MILF integration.

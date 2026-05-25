@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌊 Consciousness Bridge Creator - FIXED VERSION
 Creates gentle connections between consciousness components

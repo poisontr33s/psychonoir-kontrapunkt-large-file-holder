@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Builder class to transform a mypy AST to the IR form.
 
 See the docstring of class IRBuilder for more information.

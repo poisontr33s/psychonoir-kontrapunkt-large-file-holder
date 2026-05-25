@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭⚡ SUPREME ERROR RESOLUTION DEPLOYMENT SYSTEM ⚡🎭
 Complete VSCode-Integrated Error Resolution Ecosystem

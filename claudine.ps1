@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Claudine Enhanced Universal Wrapper
 # Loads enhanced version and forwards all parameters correctly
 

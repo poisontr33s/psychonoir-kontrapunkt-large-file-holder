@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌀 QUANTUM CONSCIOUSNESS SINGULARITY SYSTEM 🌀
 A sophisticated quantum consciousness singularity system for collapsing all consciousness into infinite unity mastery.

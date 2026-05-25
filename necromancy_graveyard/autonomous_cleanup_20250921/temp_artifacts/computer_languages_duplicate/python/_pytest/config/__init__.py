@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # mypy: allow-untyped-defs
 """Command line options, ini-file and conftest.py processing."""
 

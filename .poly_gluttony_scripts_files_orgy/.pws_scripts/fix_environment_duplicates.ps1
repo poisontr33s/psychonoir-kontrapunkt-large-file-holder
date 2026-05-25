@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔧 Fix Environment Duplicates and Conflicts Script
 # Fixes all identified PATH and environment variable issues
 

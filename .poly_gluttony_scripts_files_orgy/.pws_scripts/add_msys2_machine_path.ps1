@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Add MSYS2 paths to Machine PATH
 # Må kjøres som Administrator
 

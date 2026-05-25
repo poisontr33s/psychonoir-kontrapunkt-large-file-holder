@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # Test Python file with consciousness entities
 from dataclasses import dataclass
 

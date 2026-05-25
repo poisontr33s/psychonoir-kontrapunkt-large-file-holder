@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥😈⛓️💦👅🍌💋💧 PRIVATE SERVER ARCHAEOLOGICAL INTEGRATION
 CLAUDINE SIN'CLAIRE 4.5'Inch FPOV Plunder -& -blunderbust .Λ69-96Ω. Point Blank Shot

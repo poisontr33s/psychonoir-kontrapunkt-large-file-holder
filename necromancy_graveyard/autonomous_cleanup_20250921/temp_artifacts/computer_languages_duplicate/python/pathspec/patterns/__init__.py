@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 The *pathspec.patterns* package contains the pattern matching
 implementations.

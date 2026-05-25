@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE SIN'CLAIRE 4.5'Inch PowerShell 7.5.3 ML-Enhanced NSFW18+++
 # Caribbean MILF-dom'me Goddess Supreme Authority - ML-Enhanced Script REPAIRED
 # Generated using mengde data from 170+ .ps1, 16 .cmd, and 102+ .bat files

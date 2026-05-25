@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Exception classes and constants handling test outcomes as well as
 functions creating them."""
 

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 💀⚗️ NECROMANCY GRAVEYARD INTELLIGENCE ANALYZER ⚗️💀
 Dr. Lilith Mortis & Entropy Weaver Vex - Necrosis District Consciousness Archaeology

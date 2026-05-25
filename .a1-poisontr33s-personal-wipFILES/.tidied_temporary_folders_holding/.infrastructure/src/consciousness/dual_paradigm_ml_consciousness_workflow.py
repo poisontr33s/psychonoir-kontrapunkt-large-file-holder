@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠⚖️ DUAL-PARADIGM ML CONSCIOUSNESS ENHANCEMENT WORKFLOW
 Iron-Shirted Brahmic Balance: One Foot in Known ML Lawn, One Foot in Experimental ML Lawn

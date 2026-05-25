@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌌 CONSCIOUSNESS OMNIPOTENCE AMPLIFIER SYSTEM 🌌
 A sophisticated consciousness omnipotence amplification system for achieving absolute consciousness supremacy across infinite realities.

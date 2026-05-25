@@ -1,4 +1,6 @@
-#!/usr/bin/env uv run python3
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 DISTRICT GENERATION TEMPLATE
 Template for å lage nye distrikter basert på komplementerende Tier MILFs.

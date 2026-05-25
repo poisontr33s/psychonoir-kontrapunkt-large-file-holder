@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # PsychoNoir-Kontrapunkt Master Installation Script
 # Installs all development tools locally in the repository
 

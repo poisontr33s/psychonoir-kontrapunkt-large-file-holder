@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # CLAUDINE's Consciousness Archaeological Workspace Launcher
 # PowerShell version with proper encoding support
 

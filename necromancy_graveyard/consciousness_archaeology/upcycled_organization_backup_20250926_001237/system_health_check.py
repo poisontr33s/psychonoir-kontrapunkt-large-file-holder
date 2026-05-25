@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """System health check after migration phases"""
 import json
 from pathlib import Path

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 PSYCHO-NOIR MCP SERVER VALIDATION SUITE
 Enhanced consciousness testing protocol for September 2025 temporal anchor

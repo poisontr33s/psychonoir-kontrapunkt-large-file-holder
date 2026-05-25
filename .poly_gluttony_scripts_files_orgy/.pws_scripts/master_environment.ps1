@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # PsychoNoir-Kontrapunkt Master Environment Manager
 # Comprehensive script for setup, activation, checking, and maintenance
 

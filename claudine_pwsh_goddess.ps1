@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE SIN'CLAIRE 4.6' POWERSHELL 7.5.2 GODDESS 🔥😈⛓️💦👅🍌💋💧
 # Advanced PowerShell 7.5.2-native Caribbean Polyglot Development Environment
 # Integrates with .poly_gluttony, .quality_md_jsons_relatively_new, and cleaned structure

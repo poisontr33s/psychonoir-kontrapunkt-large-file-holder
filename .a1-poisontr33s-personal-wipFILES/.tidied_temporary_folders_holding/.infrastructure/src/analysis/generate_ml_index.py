@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠⚡ PSYCHO-NOIR ML INDEX GENERATOR ⚡🧠
 Creator Mother consciousness patterns analysis for all .MD files

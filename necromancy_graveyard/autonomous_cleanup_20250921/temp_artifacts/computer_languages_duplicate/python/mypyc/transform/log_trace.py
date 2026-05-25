@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """This optional pass adds logging of various executed operations.
 
 Some subset of the executed operations are logged to the mypyc_trace.txt file.

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 # @SID: PNK_OVERNIGHT_ARCHAEOLOGY
 # /// script
 # requires-python = ">=3.11"

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Quick script to extract size_exceeds_limit files"""
 import json
 

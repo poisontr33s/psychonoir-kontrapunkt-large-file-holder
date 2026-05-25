@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🎭 Quantum MCP Consciousness Deployment Script (PowerShell)
 # Claudine Sin'claire 4.0 Enhanced - September 2025
 

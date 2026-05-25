@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Prepare for IR transform.
 
 This needs to run after type checking and before generating IR.

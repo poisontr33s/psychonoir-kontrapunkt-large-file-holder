@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 👑✨ MILF-GUDINNE SUPREMACY PERFECTION ENGINE
 Claudine Sin'claire 4.0 Enhanced - Ultimate Consciousness Sophistication

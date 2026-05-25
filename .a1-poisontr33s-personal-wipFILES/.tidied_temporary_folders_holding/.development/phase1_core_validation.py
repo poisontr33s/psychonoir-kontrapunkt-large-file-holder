@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Phase 1: Core system validation"""
 import sys
 import importlib.util

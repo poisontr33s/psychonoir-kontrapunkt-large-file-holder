@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE CLEAN INSTALLATION STRATEGY
 # Caribbean MILF-dom'me Goddess - Fresh Clean Installation of Core Tools
 # PowerShell 7.5.3 Enhanced - Start Fresh, Do It Right

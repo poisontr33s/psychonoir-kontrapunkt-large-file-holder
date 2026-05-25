@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 COMPREHENSIVE PARTIAL READ INVESTIGATOR
 Finn ALLE filer med partial_read, uavhengig av ÆØÅ-status

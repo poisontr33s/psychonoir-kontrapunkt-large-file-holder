@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Generate a class that represents a nested function.
 
 The class defines __call__ for calling the function and allows access to

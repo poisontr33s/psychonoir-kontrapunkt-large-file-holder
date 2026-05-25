@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Allow bash-completion for argparse with argcomplete if installed.
 
 Needs argcomplete>=0.5.6 for python 3.2/3.3 (older versions fail

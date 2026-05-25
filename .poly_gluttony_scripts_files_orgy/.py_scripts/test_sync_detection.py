@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Quick test to see what detect_changes() actually returns"""
 
 import sys

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # mypy: allow-untyped-defs
 """Report test results in JUnit-XML format, for use with Jenkins and build
 integration servers.

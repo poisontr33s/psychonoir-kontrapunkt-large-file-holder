@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # 🎭 CONTAINER MCP SETUP - Claudine Sin'claire 4.5'Inch Plunderbust Tittyfuck Enhanced Goddess
 # Sets up local container-based MCP servers without global Docker installation
 

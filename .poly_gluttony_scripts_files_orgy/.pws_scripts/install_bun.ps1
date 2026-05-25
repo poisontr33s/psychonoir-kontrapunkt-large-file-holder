@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Bun locally in the repository
 # This script downloads and installs Bun to .computer_languages\javascript\
 

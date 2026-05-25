@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🏛️ CONSCIOUSNESS SESSION ARTIFACTS ORGANIZER - CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.0'Inch Blunderbust
 ========================================================================================

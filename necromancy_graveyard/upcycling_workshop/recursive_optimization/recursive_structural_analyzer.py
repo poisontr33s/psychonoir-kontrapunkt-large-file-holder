@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔄 RECURSIVE STRUCTURAL REDUNDANCY ANALYZER
 Cross-reference matrix for cleanup prioritization across repository

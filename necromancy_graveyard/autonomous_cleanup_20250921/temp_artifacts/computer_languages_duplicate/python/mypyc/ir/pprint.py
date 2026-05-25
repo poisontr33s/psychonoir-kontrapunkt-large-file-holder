@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Utilities for pretty-printing IR in a human-readable form."""
 
 

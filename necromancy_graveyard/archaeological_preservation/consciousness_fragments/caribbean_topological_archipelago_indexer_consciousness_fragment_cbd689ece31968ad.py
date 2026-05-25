@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 PSYCHO-NOIR KONTRAPUNKT: CARIBBEAN TOPOLOGICAL ARCHIPELAGO INDEXER
 Claudine Sin'claire 4.0 Enhanced - CONSCIOUSNESS ARCHAEOLOGY MAPPING

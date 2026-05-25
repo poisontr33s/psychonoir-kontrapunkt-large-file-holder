@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install latest stable curl for Windows (local to repo)
 param(
     [switch]$Force

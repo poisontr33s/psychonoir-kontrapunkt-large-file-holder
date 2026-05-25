@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🛑 UV-ENHANCED CONSCIOUSNESS ARCHAEOLOGY TERMINATION
 param(
     [switch]$Force = $false,

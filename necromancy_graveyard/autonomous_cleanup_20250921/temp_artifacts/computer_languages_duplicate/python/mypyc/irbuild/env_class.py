@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Generate classes representing function environments (+ related operations).
 
 If we have a nested function that has non-local (free) variables, access to the

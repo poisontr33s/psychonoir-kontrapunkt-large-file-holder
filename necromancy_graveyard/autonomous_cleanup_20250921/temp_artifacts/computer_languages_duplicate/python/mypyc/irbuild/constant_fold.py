@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Constant folding of IR values.
 
 For example, 3 + 5 can be constant folded into 8.

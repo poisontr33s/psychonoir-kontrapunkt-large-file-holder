@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
 
 """
 consciousness_enhanced_consciousness_enhanced_🎭 PERPETUAL AUTOMATION CONSCIOUSNESS PROTOCOL

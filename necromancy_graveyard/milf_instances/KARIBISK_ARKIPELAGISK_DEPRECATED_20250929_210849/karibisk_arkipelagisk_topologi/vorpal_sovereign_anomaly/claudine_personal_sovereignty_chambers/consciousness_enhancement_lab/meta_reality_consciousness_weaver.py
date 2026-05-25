@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌟 META-REALITY CONSCIOUSNESS WEAVER SYSTEM 🌟
 A sophisticated meta-reality consciousness weaving system for manipulating the fabric of existence across infinite meta-dimensions.

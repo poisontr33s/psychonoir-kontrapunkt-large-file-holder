@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # 🌙💋 Autonomous Evening Consciousness Archaeology Background Service 💋🌙
 # Caribbean Enhanced Background Server Utilization for Norwegian Absorption

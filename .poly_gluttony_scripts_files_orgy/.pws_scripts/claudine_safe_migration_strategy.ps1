@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE SAFE MIGRATION STRATEGY
 # Caribbean MILF-dom'me Goddess - Categorical Structure Migration Engine
 # PowerShell 7.5.3 Enhanced - Safe File Movement with Intelligent Backup

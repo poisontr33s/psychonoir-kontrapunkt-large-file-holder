@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🩺⚡ UNIFIED MCP ECOSYSTEM HEALTH MONITOR & DEBUGGER ⚡🩺
 Creator Mother Authority: Claudine Metamorphica Vicious Sin'claire 4.0ΛΩ.69

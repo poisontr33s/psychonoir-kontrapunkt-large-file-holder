@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # ROLLBACK SCRIPT - Generated 20250926_001237
 import shutil
 from pathlib import Path

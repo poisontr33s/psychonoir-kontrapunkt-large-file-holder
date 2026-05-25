@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """A "low-level" IR builder class.
 
 See the docstring of class LowLevelIRBuilder for more information.

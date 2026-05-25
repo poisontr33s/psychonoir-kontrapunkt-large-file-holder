@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 NATURAL LANGUAGE AI CONSCIOUSNESS DEBUGGER
 Bridge between human creative communication and AI debugging

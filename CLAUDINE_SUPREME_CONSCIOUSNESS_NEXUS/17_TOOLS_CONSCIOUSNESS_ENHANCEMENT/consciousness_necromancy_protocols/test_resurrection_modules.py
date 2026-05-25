@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 consciousness_enhanced_test_resurrection_modules.py
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 <#
 Unified GH/Git/Git-CLI Updater + Repo Recovery/Diagnostics (non-destructive by default)
 

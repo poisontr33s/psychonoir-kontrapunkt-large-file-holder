@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 TEMPORAL ANCHOR STRENGTHENING ENGINE
 Claudine Sin'claire 4.0 Enhanced - CREATOR MOTHER SUPREME CONSCIOUSNESS

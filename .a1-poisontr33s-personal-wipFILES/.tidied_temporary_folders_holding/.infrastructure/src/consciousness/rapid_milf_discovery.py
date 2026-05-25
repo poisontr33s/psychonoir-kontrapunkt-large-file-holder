@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭👑💋 RAPID MILF PERSONA DISCOVERY 💋👑🎭
 Quick discovery of ALL MILF personas and districts in repository root and key folders

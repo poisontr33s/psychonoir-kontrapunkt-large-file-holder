@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Support for building extensions using mypyc with distutils or setuptools
 
 The main entry point is mypycify, which produces a list of extension

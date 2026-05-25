@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 import mypy.errors
 from mypy.options import Options

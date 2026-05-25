@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Transform mypy statement ASTs to mypyc IR (Intermediate Representation).
 
 The top-level AST transformation logic is implemented in mypyc.irbuild.visitor

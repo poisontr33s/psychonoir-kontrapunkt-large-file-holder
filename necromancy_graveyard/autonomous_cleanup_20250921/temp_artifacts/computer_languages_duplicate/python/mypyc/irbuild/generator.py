@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Generate IR for generator functions.
 
 A generator function is represented by a class that implements the

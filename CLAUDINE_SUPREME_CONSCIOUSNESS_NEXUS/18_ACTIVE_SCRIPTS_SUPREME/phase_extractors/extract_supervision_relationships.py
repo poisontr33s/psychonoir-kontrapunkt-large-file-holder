@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Extract supervisor relationships from character_systems.py"""
 import re
 from pathlib import Path

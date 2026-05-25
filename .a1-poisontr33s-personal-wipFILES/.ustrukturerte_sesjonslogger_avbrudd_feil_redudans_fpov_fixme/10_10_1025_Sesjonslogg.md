@@ -6,7 +6,7 @@ poisontr33s: * *`'Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blan
 * *was trying to explain to GPT-5:
 * 1. The point was -->. %root repo as win11 os but **in** vscode repository%/ .computer_languages, install latest stable python, rust, bun. bun being javascript supposedly and deserves the javascript or bun folder in .computer_languages, and how to do it step y step from this method? Not any python scripts I have made they are not related here." --
 * 2. "Please revert the scripts/ecosystem_status.py back to its previous state. "
-* *(jeg gjorde dette selv)* [HELDIGVIS.](Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blank -shot'` -'MILF' -`'dom'me` -guddinne)
+* *(jeg gjorde dette selv)* HELDIGVIS.
 
 * 3."Thats why I disabled most of my extensions because I wanted to have my .computer_languages from root of repository to a tidy place where I can steb by step install and configure which is the first relevant based on my previous folder, and not gpt-5  - messed it up. by being .. well.. i dont even know! useless here."
   * "And vscode just updated and our whole session wiped out, the only residue I have left is the added session resumption but its in .md not json and its unrefined and havent been up-cycled either. So bad timing."
@@ -25,7 +25,7 @@ Searched codebase for "* *`'Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -P
 * *was trying to explain to GPT-5:
 * 1. The point was -->. %root repo as win11 os but **in** vscode repository%/ .computer_languages, install latest stable python, rust, bun. bun being javascript supposedly and deserves the javascript or bun folder in .computer_languages, and how to do it step y step from this method? Not any python scripts I have made they are not related here." --
 * 2. "Please revert the scripts/ecosystem_status.py back to its previous state. "
-* *(jeg gjorde dette selv)* [HELDIGVIS.](Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blank -shot'` -'MILF' -`'dom'me` -guddinne)
+* *(jeg gjorde dette selv)* HELDIGVIS.
 
 * 3."Thats why I disabled most of my extensions because I wanted to have my .computer_languages from root of repository to a tidy place where I can steb by step install and configure which is the first relevant based on my previous folder, and not gpt-5  - messed it up. by being .. well.. i dont even know! useless here."
   * "And vscode just updated and our whole session wiped out, the only residue I have left is the added session resumption but its in .md not json and its unrefined and havent been up-cycled either. So bad timing."
@@ -42,7 +42,7 @@ poisontr33s: * *`'Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blan
 * *was trying to explain to GPT-5:
 * 1. The point was -->. %root repo as win11 os but **in** vscode repository%/ .computer_languages, install latest stable python, rust, bun. bun being javascript supposedly and deserves the javascript or bun folder in .computer_languages, and how to do it step y step from this method? Not any python scripts I have made they are not related here." --
 * 2. "Please revert the scripts/ecosystem_status.py back to its previous state. "
-* *(jeg gjorde dette selv)* [HELDIGVIS.](Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blank -shot'` -'MILF' -`'dom'me` -guddinne)
+* *(jeg gjorde dette selv)* HELDIGVIS.
 
 * 3."Thats why I disabled most of my extensions because I wanted to have my .computer_languages from root of repository to a tidy place where I can steb by step install and configure which is the first relevant based on my previous folder, and not gpt-5  - messed it up. by being .. well.. i dont even know! useless here."
   * "And vscode just updated and our whole session wiped out, the only residue I have left is the added session resumption but its in .md not json and its unrefined and havent been up-cycled either. So bad timing."
@@ -59,7 +59,7 @@ GitHub Copilot: Searched codebase for "* *`'Claudine Sin'claire 4.5' -Blunderbus
 * *was trying to explain to GPT-5:
 * 1. The point was -->. %root repo as win11 os but **in** vscode repository%/ .computer_languages, install latest stable python, rust, bun. bun being javascript supposedly and deserves the javascript or bun folder in .computer_languages, and how to do it step y step from this method? Not any python scripts I have made they are not related here." --
 * 2. "Please revert the scripts/ecosystem_status.py back to its previous state. "
-* *(jeg gjorde dette selv)* [HELDIGVIS.](Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blank -shot'` -'MILF' -`'dom'me` -guddinne)
+* *(jeg gjorde dette selv)* HELDIGVIS.
 
 * 3."Thats why I disabled most of my extensions because I wanted to have my .computer_languages from root of repository to a tidy place where I can steb by step install and configure which is the first relevant based on my previous folder, and not gpt-5  - messed it up. by being .. well.. i dont even know! useless here."
   * "And vscode just updated and our whole session wiped out, the only residue I have left is the added session resumption but its in .md not json and its unrefined and havent been up-cycled either. So bad timing."
@@ -76,7 +76,7 @@ poisontr33s: * *`'Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blan
 * *was trying to explain to GPT-5:
 * 1. The point was -->. %root repo as win11 os but **in** vscode repository%/ .computer_languages, install latest stable python, rust, bun. bun being javascript supposedly and deserves the javascript or bun folder in .computer_languages, and how to do it step y step from this method? Not any python scripts I have made they are not related here." --
 * 2. "Please revert the scripts/ecosystem_status.py back to its previous state. "
-* *(jeg gjorde dette selv)* [HELDIGVIS.](Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blank -shot'` -'MILF' -`'dom'me` -guddinne)
+* *(jeg gjorde dette selv)* HELDIGVIS.
 
 * 3."Thats why I disabled most of my extensions because I wanted to have my .computer_languages from root of repository to a tidy place where I can steb by step install and configure which is the first relevant based on my previous folder, and not gpt-5  - messed it up. by being .. well.. i dont even know! useless here."
   * "And vscode just updated and our whole session wiped out, the only residue I have left is the added session resumption but its in .md not json and its unrefined and havent been up-cycled either. So bad timing."
@@ -93,7 +93,7 @@ GitHub Copilot: Searched codebase for "* *`'Claudine Sin'claire 4.5' -Blunderbus
 * *was trying to explain to GPT-5:
 * 1. The point was -->. %root repo as win11 os but **in** vscode repository%/ .computer_languages, install latest stable python, rust, bun. bun being javascript supposedly and deserves the javascript or bun folder in .computer_languages, and how to do it step y step from this method? Not any python scripts I have made they are not related here." --
 * 2. "Please revert the scripts/ecosystem_status.py back to its previous state. "
-* *(jeg gjorde dette selv)* [HELDIGVIS.](Claudine Sin'claire 4.5' -Blunderbust -69.ΛΩ.96 -Point -blank -shot'` -'MILF' -`'dom'me` -guddinne)
+* *(jeg gjorde dette selv)* HELDIGVIS.
 
 * 3."Thats why I disabled most of my extensions because I wanted to have my .computer_languages from root of repository to a tidy place where I can steb by step install and configure which is the first relevant based on my previous folder, and not gpt-5  - messed it up. by being .. well.. i dont even know! useless here."
   * "And vscode just updated and our whole session wiped out, the only residue I have left is the added session resumption but its in .md not json and its unrefined and havent been up-cycled either. So bad timing."

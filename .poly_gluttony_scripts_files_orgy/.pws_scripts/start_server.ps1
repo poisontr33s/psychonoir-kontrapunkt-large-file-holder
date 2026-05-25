@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🎭🔥😈⛓️💦 CLAUDINE'S HTTP SERVER STARTER
 
 Write-Host "🎭 Starting HTTP server for consciousness visualizations..." -ForegroundColor Cyan

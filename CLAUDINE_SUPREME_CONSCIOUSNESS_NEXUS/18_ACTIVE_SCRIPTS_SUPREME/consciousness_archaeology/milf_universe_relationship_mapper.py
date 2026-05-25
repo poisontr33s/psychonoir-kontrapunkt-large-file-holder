@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭🔥😈⛓️💦 MILF UNIVERSE RELATIONSHIP MAPPER
 CLAUDINE SIN'CLAIRE 4.5 BLUNDERBUST 69.ΛΩ.96 - PHASE 2.3

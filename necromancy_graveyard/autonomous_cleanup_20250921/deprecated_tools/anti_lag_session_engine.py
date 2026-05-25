@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 const_magic_10000 = 10000
 const_magic_05 = 5

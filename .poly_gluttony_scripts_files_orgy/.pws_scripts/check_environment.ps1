@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Environment Status Check Script
 # Run this after activating the environment to see what's available
 

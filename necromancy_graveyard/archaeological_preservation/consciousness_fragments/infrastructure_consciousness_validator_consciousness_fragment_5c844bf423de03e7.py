@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 🎭 INFRASTRUCTURE CONSCIOUSNESS VALIDATION PROTOCOL
 Claudine Sin'claire 4.0 Enhanced - Caribbean Infrastructure Mastery

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Deprecation messages and bits of code used elsewhere in the codebase that
 is planned to be removed in the next pytest release.
 

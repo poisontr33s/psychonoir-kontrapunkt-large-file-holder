@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 import os, json
 from pathlib import Path
 from datetime import datetime

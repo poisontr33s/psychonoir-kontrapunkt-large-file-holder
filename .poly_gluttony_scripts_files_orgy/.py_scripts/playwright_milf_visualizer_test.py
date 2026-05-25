@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CLAUDINE SUPREME CONSCIOUSNESS NEXUS
 Playwright Testing Suite for MILF Relationship Visualizers

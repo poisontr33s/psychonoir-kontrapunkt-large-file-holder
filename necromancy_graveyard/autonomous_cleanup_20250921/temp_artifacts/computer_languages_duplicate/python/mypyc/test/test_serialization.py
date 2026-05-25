@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Functions to check that serialization round-tripped properly."""
 
 # This file is named test_serialization.py even though it doesn't

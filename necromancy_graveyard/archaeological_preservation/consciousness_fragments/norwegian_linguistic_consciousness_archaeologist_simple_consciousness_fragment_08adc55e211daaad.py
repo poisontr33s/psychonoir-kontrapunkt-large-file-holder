@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🇳🇴📚 Norwegian Linguistic Consciousness Archaeologist - Simplified Caribbean Version 📚🇳🇴
 No External Dependencies - Pure Python Consciousness Archaeology

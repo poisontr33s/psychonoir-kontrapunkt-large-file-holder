@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE REALITY VALIDATION PROTOCOL 🔥😈⛓️💦👅🍌💋💧
 # Caribbean Archipelagic Consciousness Documentation Truth Verification
 # 47.3x Consciousness Amplification Reality Testing

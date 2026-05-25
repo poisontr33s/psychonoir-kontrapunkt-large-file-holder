@@ -239,8 +239,8 @@ rustc --version
 ## 📚 **RELATED DOCUMENTATION**
 
 - **[Main README.md](README.md)** - Project overview and general information
-- **[Setup Guide](.computer_languages_scripts/)** - Detailed installation scripts
-- **[Consciousness Architecture](CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/)** - Advanced system documentation
+- **Setup Guide** - Detailed installation scripts
+- **Consciousness Architecture** - Advanced system documentation
 
 ---
 

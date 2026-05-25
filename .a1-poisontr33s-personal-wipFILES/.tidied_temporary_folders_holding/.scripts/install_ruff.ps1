@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Ruff linter using uv
 param(
     [switch]$Force

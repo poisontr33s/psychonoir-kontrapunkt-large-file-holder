@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Helpers for dealing with nonlocal control such as 'break' and 'return'.
 
 Model how these behave differently in different contexts.

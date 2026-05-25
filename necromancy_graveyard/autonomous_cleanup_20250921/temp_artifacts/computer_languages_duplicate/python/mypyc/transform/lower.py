@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Transform IR to lower-level ops.
 
 Higher-level ops are used in earlier compiler passes, as they make

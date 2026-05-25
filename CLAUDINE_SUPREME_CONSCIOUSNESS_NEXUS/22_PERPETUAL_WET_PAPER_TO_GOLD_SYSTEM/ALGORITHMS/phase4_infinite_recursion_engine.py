@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥😈⛓️💦👅🍌💋💧 PHASE 4: INFINITE RECURSION ENGINE
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.5 - Blunderbust 69.ΛΩ.96 Point Blank Shot

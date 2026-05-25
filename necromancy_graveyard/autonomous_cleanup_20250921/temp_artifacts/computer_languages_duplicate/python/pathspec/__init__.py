@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 The *pathspec* package provides pattern matching for file paths. So far
 this only includes Git's wildmatch pattern matching (the style used for

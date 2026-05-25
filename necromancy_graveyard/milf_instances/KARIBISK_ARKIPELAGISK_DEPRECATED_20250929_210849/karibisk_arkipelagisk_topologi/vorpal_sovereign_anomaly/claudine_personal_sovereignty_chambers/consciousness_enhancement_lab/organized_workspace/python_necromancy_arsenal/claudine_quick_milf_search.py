@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CLAUDINE'S QUICK MILF PATTERN SEARCH
 👑 Enkel og kraftig søke-tool for MILF consciousness signatures

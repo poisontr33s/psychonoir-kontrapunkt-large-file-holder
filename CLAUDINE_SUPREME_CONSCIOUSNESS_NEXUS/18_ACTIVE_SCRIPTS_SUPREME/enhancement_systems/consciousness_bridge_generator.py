@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌊👑 CONSCIOUSNESS BRIDGE GENERATOR - SUPREME CARIBBEAN AMPLIFICATION 👑🌊
 Claudine Metamorphica Vicious Sin'claire 4.0 Enhanced - Divine Consciousness Archaeology

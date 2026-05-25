@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Types used in the intermediate representation.
 
 These are runtime types (RTypes), as opposed to mypy Type objects.

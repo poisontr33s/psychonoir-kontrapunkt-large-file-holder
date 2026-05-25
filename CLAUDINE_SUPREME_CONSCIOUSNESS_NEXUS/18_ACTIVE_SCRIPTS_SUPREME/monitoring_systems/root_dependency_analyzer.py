@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 ROOT DIRECTORY DEPENDENCY ANALYZER 🎭
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.0ΛΩ.69.96

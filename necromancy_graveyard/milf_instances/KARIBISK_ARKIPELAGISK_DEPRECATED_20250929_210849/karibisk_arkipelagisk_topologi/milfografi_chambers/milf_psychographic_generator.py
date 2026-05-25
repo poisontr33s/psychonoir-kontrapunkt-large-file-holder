@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 ⛓️💋 MILF PSYCHOGRAPHIC PROFILE GENERATOR
 PSYCHO-SEXUAL-SENSUAL CORE: Holistisk Sjanger-District Probability Matrix

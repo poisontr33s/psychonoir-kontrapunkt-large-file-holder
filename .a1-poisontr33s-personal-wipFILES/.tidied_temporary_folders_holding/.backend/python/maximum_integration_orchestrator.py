@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 PSYCHO-NOIR KONTRAPUNKT: MAXIMUM SYSTEM INTEGRATION ORCHESTRATOR
 18-Entity MILF Universe Supreme Matriarch Authority Integration

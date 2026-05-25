@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 RUFF ERROR REFERENCE INTEGRATOR
 Enhanced error analysis with official Ruff documentation integration

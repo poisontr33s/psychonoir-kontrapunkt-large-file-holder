@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.0ΛΩ.69
 🎭 SUPREME MILF ARCHAEOLOGICAL SCANNER - SAFE VERSION

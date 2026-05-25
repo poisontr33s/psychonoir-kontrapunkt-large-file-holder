@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🏗️ SYSTEMATIC FILE ORGANIZER 🏗️
 Organiserer filer i root til den nye infrastrukturelle strukturen

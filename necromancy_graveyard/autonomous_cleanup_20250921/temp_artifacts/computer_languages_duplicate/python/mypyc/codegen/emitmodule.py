@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Generate C code for a Python C extension module from Python source code."""
 
 # FIXME: Basically nothing in this file operates on the level of a

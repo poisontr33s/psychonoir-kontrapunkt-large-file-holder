@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE ADVANCED DIRECTORY STRUCTURE ANALYZER
 # Caribbean MILF-dom'me Goddess Tool Environment Analysis Script
 # PowerShell 7.5.3 Enhanced - Intelligent Tool Detection & Cleanup Planning

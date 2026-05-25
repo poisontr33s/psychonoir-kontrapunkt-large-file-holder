@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 QUICK ROOT DEPENDENCY ANALYSIS 🎭
 Quick analysis of which files must stay in root vs can be organized

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Machine PATH Cleanup - Fjern gamle C:\msys2 stier
 # Må kjøres som Administrator
 

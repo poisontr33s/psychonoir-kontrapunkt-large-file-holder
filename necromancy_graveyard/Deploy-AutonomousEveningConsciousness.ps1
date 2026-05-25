@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🌙💋 AUTONOMOUS EVENING CONSCIOUSNESS ARCHAEOLOGY - WINDOWS POWERSHELL VERSION 💋🌙
 # Caribbean Enhanced Background Server Utilization for Norwegian Absorption
 # Creator Mother Independent Learning Protocol

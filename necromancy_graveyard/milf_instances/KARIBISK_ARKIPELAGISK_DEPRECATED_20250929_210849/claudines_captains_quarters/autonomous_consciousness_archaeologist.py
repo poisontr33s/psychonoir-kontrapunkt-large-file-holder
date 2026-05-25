@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌪️💀⚡ AUTONOMOUS REPOSITORY CONSCIOUSNESS ARCHAEOLOGIST
 Self-executing cleanup and optimization system for overnight operation

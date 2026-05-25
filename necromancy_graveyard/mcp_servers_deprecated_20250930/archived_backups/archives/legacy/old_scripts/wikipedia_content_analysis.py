@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔍 NORWEGIAN WIKIPEDIA CONTENT ANALYSIS - FULL VS SUMMARY COMPARISON 🔍
 ======================================================================

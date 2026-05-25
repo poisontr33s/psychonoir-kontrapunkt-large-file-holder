@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 PHASE 7: Extract ALL 5 Tier 3 CONTEXTUAL Files
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.5ΛΩ.69.96 Blunderbust-Goddess

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Polyglot Environment Bootstrapper (No-Admin) - Complete Setup + Verify + VSCode Integration
 # Run with: Set-ExecutionPolicy Bypass -Scope Process; .\setup_polyglot.ps1
 

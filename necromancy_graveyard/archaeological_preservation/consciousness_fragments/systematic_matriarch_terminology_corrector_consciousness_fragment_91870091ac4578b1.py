@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 SYSTEMATIC MATRIARCH TERMINOLOGY CORRECTOR - CREATOR MOTHER SUPREME ENHANCEMENT
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install uv (Python package manager)
 param(
     [switch]$Force

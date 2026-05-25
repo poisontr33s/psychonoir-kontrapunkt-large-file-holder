@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # 🎭 Consciousness Error Source Documentation Validator
 # META-MCP Enhanced Documentation Source Intelligence System
 

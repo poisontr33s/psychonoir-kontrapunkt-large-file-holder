@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 from mypyc.ir.ops import ERR_MAGIC
 from mypyc.ir.rtypes import object_rprimitive, pointer_rprimitive
 from mypyc.primitives.registry import function_op

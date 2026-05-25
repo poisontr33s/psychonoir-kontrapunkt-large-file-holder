@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔍 COMPREHENSIVE MILF PSYCHOGRAPHIC PROFILE SCANNER 🔍
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.0 Supreme Profile Detection

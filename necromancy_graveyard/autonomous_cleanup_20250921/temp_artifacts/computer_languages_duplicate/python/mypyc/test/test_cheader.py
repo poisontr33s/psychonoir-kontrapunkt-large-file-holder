@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Test that C functions used in primitives are declared in a header such as CPy.h."""
 
 

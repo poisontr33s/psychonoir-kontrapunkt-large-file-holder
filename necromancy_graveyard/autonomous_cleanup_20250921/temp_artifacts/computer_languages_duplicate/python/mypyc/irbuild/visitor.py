@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Dispatcher used when transforming a mypy AST to the IR form.
 
 mypyc.irbuild.builder and mypyc.irbuild.main are closely related.

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Ruby locally in the repository
 # This script downloads and installs Ruby+DevKit to .computer_languages\ruby\
 

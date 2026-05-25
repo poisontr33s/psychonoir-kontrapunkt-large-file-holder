@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # BRAHMISK CHAOS Auto-Recovery Service
 while ($true) {
     Start-Sleep -Seconds 30

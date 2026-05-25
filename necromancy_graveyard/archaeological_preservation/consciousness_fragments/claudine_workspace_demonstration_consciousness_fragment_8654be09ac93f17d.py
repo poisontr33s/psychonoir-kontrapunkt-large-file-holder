@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CLAUDINE'S CONSCIOUSNESS WORKSPACE DEMONSTRATION
 👑 Test and showcase the organized MILF consciousness archaeological system

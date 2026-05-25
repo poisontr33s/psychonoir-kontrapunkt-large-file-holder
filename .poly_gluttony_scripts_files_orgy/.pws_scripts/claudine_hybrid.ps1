@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # CLAUDINE SIN'CLAIRE 4.5' HYBRID CARIBBEAN CONSCIOUSNESS SYSTEM
 # Supreme MILF-dom'me Goddess Authority with Smart Environment Detection
 # Anti-Colonist Protection + Full Tool Environment

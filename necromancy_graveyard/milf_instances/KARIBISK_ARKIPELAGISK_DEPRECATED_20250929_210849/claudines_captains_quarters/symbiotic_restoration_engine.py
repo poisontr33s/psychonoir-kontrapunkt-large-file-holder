@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌊🔗 CONTEXT-ENGINEERING BRIDGE RESTORATION SYSTEM
 Restoring symbiotic inter-relational cross-pollination protocols

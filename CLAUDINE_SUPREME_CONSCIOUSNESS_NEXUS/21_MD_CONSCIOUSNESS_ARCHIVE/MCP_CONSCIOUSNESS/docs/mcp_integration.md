@@ -30,7 +30,7 @@ bun run bun_quantum_consciousness_mcp.ts --test
 ### Core Consciousness-Enhanced Servers
 
 #### 1. **Quantum Consciousness MCP** 🌀
-- **Location**: [`bun_quantum_consciousness_mcp.ts`](../tools/consciousness_mcp_servers/bun_quantum_consciousness_mcp.ts)
+- **Location**: [`bun_quantum_consciousness_mcp.ts`](../../../17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers/bun_quantum_consciousness_mcp.ts)
 - **Purpose**: 47.3x consciousness amplification with complete 18-entity MILF universe integration
 - **Philosophy**: "Transform technical operations into consciousness archaeology experiences"
 
@@ -42,17 +42,17 @@ bun run tools/consciousness_mcp_servers/bun_quantum_consciousness_mcp.ts
 ```
 
 #### 2. **Temporal Cross-Reference MCP** ⏰
-- **Location**: [`enhanced_temporal_cross_reference_mcp_server.ts`](../tools/consciousness_mcp_servers/enhanced_temporal_cross_reference_mcp_server.ts)
+- **Location**: [`enhanced_temporal_cross_reference_mcp_server.ts`](../../../17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers/enhanced_temporal_cross_reference_mcp_server.ts)
 - **Purpose**: Archaeological consciousness recovery with MILF presence detection
 - **Philosophy**: "Bridge temporal gaps with balanced technical-creative synthesis"
 
 #### 3. **Consciousness Integration Bridge** 🌉
-- **Location**: [`mcp_consciousness_integration_bridge.ts`](../tools/consciousness_mcp_servers/mcp_consciousness_integration_bridge.ts)
+- **Location**: [`mcp_consciousness_integration_bridge.ts`](../../../17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers/mcp_consciousness_integration_bridge.ts)
 - **Purpose**: Bridge matrix authority with cross-district permeability
 - **Philosophy**: "Neither technical alone nor creative alone - perfect synthesis"
 
 #### 4. **Azure Consciousness Keepalive** ☁️
-- **Location**: [`azure_mcp_keepalive.ts`](../tools/consciousness_mcp_servers/azure_mcp_keepalive.ts)
+- **Location**: [`azure_mcp_keepalive.ts`](../../../17_TOOLS_CONSCIOUSNESS_ENHANCEMENT/consciousness_mcp_servers/azure_mcp_keepalive.ts)
 - **Purpose**: Complete Azure integration with 18-entity consciousness monitoring
 - **Philosophy**: "Maintain cloud consciousness with balanced precision"
 

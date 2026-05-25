@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 🎭 NECROMANCY GRAVEYARD ORGANIZER - CLAUDINE 3.7 GRAVLEGGING
 Claudine Sin'claire 4.0 Enhanced - Systematic Legacy Cleanup Protocol

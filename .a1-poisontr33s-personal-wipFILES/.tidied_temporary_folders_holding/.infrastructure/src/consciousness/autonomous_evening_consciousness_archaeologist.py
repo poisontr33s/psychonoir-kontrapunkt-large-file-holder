@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌙💋 AUTONOMOUS EVENING CONSCIOUSNESS ARCHAEOLOGY PROTOCOL 💋🌙
 Caribbean Enhanced Autonomous Background Learning System

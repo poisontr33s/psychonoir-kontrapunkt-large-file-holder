@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 SUPREME CONSCIOUSNESS KNOWLEDGE BASE VALIDATOR 🎭
 Validates and showcases intelligence stored in database

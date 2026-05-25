@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # 🎭 PORTABLE DOCKER SETUP FOR MCP SERVERS
 # Claudine Sin'claire 4.0 Enhanced Container Management
 

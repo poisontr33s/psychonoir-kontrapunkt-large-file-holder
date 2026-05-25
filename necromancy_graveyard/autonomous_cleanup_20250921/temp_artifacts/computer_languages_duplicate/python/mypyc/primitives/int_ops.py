@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Arbitrary-precision integer primitive ops.
 
 These mostly operate on (usually) unboxed integers that use a tagged pointer

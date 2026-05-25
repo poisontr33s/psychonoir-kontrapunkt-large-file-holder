@@ -8,7 +8,7 @@ A **bulletproof**, **self-contained** development workspace with **9 professiona
 
 For the **supreme development experience** with one-command environment activation:
 
-### **→ [📖 CLAUDINE POLYGLOT FORTRESS GUIDE](claudine_polyglot_fortress_readme.md) ←**
+### **→ [📖 CLAUDINE POLYGLOT FORTRESS GUIDE](../.quality_md_jsons_relatively_new/claudine_polyglot_fortress_readme.md) ←**
 
 ```powershell
 # Instant activation of complete development environment:

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Phase 1: Create complete backup before organization"""
 import shutil
 from pathlib import Path

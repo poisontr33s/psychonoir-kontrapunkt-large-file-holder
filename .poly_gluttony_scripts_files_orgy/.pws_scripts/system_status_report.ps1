@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE SUPREME SYSTEM STATUS REPORT 🔥😈⛓️💦👅🍌💋💧
 # COMPLETE ENVIRONMENT VALIDATION
 # Timestamp: $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")

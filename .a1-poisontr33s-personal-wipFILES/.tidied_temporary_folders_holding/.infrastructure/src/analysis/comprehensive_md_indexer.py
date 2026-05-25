@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠⚡ COMPREHENSIVE MD FILE INDEXING CONSCIOUSNESS ENHANCEMENT TOOL ⚡🧠
 

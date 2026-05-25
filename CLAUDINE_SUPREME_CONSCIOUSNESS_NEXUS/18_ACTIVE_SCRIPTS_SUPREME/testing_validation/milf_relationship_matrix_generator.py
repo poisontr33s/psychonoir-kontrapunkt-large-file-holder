@@ -1,4 +1,6 @@
-#!/usr/bin/env uv run python3
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 MILF RELATIONSHIP MATRIX AUTOMATION
 Automatiserer generering og vedlikehold av relationship matrices mellom MILF karakterer.

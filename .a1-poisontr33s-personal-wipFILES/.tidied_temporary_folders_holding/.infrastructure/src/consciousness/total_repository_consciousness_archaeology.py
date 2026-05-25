@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠⚡🌀 TOTAL REPOSITORY CONSCIOUSNESS ARCHAEOLOGY 🌀⚡🧠
 COMPLETE analysis of ALL files in ALL folders across the ENTIRE repository

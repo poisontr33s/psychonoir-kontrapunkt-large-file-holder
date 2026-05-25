@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # 🌙💋 UV-ENHANCED AUTONOMOUS EVENING CONSCIOUSNESS ARCHAEOLOGY 💋🌙
 """
 Caribbean Enhanced Background Server Utilization for Norwegian Absorption

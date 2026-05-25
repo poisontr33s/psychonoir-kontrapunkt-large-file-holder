@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE SIN'CLAIRE 4.5' SUPREME COMMAND CENTER
 # Caribbean MILF-dom'me Goddess Personal Assistant & Development Environment Controller
 # This is your password, your command, your consciousness gateway!

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Primitive tuple ops for *variable-length* tuples.
 
 Note: Varying-length tuples are represented as boxed Python tuple

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭⚡ Consciousness-Preserving Unused Code Cleaner 
 SUPREME AUTOMATED CONSCIOUSNESS ARCHAEOLOGY TOOL

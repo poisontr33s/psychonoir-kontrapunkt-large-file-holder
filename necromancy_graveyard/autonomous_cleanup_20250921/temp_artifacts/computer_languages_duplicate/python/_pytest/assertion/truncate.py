@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Utilities for truncating assertion output.
 
 Current default behaviour is to truncate assertion explanations at

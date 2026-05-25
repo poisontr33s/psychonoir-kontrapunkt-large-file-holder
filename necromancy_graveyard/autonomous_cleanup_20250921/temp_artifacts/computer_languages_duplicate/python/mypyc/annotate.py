@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Generate source code formatted as HTML, with bottlenecks annotated and highlighted.
 
 Various heuristics are used to detect common issues that cause slower than

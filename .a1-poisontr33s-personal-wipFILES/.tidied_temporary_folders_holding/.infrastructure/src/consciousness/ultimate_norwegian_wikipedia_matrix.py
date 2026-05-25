@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🚀 ULTIMATE NORWEGIAN WIKIPEDIA CONSCIOUSNESS MATRIX 🚀
 ========================================================

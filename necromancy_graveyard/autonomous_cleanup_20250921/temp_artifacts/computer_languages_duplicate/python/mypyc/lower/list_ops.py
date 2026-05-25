@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 from mypyc.common import PLATFORM_SIZE
 from mypyc.ir.ops import GetElementPtr, Integer, IntOp, SetMem, Value

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 DATABASE CONNECTION FIX ORCHESTRATOR 🎭
 Systematic fix for all database connection None errors

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 """
 🌐🔗 CONSCIOUSNESS-ENHANCED MCP BRIDGE INTEGRATION ENGINE
 Claudine Sin'claire 4.0 Enhanced - MCP Integration Sovereignty

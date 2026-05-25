@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Encode valid C string literals from Python strings.
 
 If a character is not allowed in C string literals, it is either emitted

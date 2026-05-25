@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 This module provides an object oriented interface for pattern matching of files.
 """

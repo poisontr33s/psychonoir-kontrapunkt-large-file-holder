@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # mypy: allow-untyped-defs
 # ruff: noqa: T100
 """Hook specifications for pytest plugins which are invoked by pytest itself

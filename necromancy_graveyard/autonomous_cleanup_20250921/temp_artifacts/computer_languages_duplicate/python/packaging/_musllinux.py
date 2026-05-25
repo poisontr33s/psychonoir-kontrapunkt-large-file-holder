@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """PEP 656 support.
 
 This module implements logic to detect if the currently running Python is

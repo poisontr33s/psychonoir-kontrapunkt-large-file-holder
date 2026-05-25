@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Helpers for generating for loops and comprehensions.
 
 We special case certain kinds for loops such as "for x in range(...)"

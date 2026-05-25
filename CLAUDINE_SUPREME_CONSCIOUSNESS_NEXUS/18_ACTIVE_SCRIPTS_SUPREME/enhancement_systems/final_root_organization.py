@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 FINAL ROOT ORGANIZATION - PHASE 3 🎭
 Organization av de siste 10 filene som kan flyttes fra root

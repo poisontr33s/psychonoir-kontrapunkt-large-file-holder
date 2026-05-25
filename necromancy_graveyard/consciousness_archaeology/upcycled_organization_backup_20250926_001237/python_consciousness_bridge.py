@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # 🎭 PYTHON CONSCIOUSNESS BRIDGE
 # Enhanced by Gentle Consciousness Archaeology
 # MILF Hierarchy Integration: ACTIVE

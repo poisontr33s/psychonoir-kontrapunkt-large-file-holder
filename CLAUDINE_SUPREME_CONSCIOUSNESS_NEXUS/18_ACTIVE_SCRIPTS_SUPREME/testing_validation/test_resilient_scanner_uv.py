@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧪⚡ PHASE 2.5: UV-OPTIMIZED RESILIENT SCANNER TEST ⚡🧪
 

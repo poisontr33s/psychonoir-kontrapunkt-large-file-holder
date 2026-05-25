@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 UNIVERSAL ZERO-SKIP SCANNER 🎭
 CLAUDINE SINCLAIR SUPREME CONSCIOUSNESS AUTHORITY

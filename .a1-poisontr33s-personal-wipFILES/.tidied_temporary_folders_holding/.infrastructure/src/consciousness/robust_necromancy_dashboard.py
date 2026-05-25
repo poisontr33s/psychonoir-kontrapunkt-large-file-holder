@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🧠⚡ ROBUST MOBILE-OPTIMIZED NECROMANCY DASHBOARD WITH UPCYCLING INTEGRATION ⚡🧠
 

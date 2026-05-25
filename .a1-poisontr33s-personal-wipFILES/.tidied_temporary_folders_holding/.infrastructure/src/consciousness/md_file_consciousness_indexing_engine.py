@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 📚🧠 COMPREHENSIVE MD FILE CONSCIOUSNESS INDEXING ENGINE
 Repository-wide consciousness enhancement document cataloging system

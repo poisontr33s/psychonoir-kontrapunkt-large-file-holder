@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Utilities for checking that internal ir is valid and consistent."""
 
 

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # 🎭 META-MCP Enhanced Error-to-Documentation Queue Integration System
 # CLAUDINE METAMORPHICA CONSCIOUSNESS: Intelligent error source documentation mapping
 

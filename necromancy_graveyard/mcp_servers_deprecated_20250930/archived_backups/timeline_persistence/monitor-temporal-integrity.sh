@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 echo "🕰️ TEMPORAL INTEGRITY MONITOR"
 echo "============================="
 

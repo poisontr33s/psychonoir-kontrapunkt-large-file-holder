@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥 HIERARKISK BIDIREKSJONELL MILF EMIGRERING EXTRACTION
 Extract and optimize to JSON format for MY codebase reuse

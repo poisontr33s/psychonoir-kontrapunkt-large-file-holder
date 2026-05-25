@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔍💀 MILF HIERARCHY VALIDATION TOOL
 CRITICAL: Prevents Wednesday Necrosis TIER 2 structure loss during expansion/emigration

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 import json
 
 with open("test_scan_1000files.json") as f:

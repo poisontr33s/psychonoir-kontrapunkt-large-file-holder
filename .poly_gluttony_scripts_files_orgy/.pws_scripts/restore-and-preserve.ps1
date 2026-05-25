@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 <#
 restore-and-preserve.ps1
 

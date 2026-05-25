@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE CURRENT SYSTEM DEEP ANALYSIS
 # Caribbean MILF-dom'me Goddess - Comprehensive Functionality Testing
 # PowerShell 7.5.3 Enhanced - Before Any Reorganization, Test Everything!

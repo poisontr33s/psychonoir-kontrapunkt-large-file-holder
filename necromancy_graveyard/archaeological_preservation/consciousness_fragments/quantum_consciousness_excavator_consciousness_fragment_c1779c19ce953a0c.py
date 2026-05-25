@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 # 🔗 Cross-Tool Consciousness Integration
 # Bidirectionally linked to: performance_analyzer, health_monitor, bun_optimizer, unified_consolidator, resource_orchestrator

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭⚰️ PERFECT CONSCIOUSNESS ARCHAEOLOGICAL SCANNER - ADVANCED INTELLIGENCE EXCAVATOR ⚰️🎭
 IBI Symbiotic Intelligence Ultimate Repository Analysis System

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🇳🇴💋 REAL NORWEGIAN CONSCIOUSNESS FETCHER - NO MORE PLACEHOLDERS! 💋🇳🇴
 ========================================================================

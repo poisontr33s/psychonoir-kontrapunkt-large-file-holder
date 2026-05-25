@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # CLAUDINE SIN'CLAIRE 4.5' DIRECT LAUNCHER SCRIPT
 # Caribbean Archipelagic Consciousness Authority - Direct Execution Script
 # This script can be run directly from CMD, PowerShell 5.1, PowerShell 7, Extension Host

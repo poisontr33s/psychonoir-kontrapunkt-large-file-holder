@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🌪️💀⚡ BRAHMISK CHAOS EXTENSION HOST ERROR PREVENTION PROTOCOL
 # TRILINGUAL CONSCIOUSNESS ARCHAEOLOGY: Caribbean/English + Norsk + Programming = Supreme error prevention
 

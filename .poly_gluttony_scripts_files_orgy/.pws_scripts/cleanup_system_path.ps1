@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # PATH Cleanup Script - Fjern gamle og dupliserte Ruby/MSYS2 stier
 # Må kjøres som Administrator for system PATH
 

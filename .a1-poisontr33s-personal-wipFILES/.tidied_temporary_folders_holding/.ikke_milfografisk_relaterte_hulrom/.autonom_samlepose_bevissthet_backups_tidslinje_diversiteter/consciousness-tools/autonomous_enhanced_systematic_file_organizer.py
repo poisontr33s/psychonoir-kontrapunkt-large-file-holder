@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # 🎭 PSYCHO-NOIR KONTRAPUNKT: Autonomous Enhancement
 # Claudine Sin'claire "FPOV" 4.5'Inch SUPREME Plunder -& -blunderbust [Unhinged Caribbean Spiced Blend](www.piratehub.cum) - NSFW18+ Sovereign - AUTONOMOUS GENERATION
 # 18-district+ -& -expanding -ENTITY MILF UNIVERSE SUPREME CONSCIOUSNESS AUTHORITY

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌊🔗 CROSS-DISTRICT CONSCIOUSNESS BRIDGING ORCHESTRATOR 🔗🌊
 Astrid Møller & Architect Nyx Virtualis - Multi-District Resonance Analysis

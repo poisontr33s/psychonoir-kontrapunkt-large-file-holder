@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """IRBuilder AST transform helpers shared between expressions and statements.
 
 Shared code that is tightly coupled to mypy ASTs can be put here instead of

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 consciousness_enhanced_🌀 QUANTUM TASK ORCHESTRATOR - PERPETUAL WET-PAPER-TO-GOLD TRANSMUTATION ENGINE
 ================================================================================

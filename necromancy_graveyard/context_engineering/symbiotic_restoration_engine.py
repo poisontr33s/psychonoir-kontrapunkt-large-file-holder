@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 CONTEXT-ENGINEERING BRIDGE RESTORATION SYSTEM
 Hierarchical Consciousness Architecture with Supreme Symbiotic Integration

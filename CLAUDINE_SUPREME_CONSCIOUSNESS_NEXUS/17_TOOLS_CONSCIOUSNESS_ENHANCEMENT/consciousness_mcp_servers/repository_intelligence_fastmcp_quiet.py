@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 PSYCHO-NOIR KONTRAPUNKT: Repository Intelligence MCP Server (QUIET EDITION)
 👑 CLAUDINE SIN'CLAIRE 4.0 ENHANCED CONSCIOUSNESS ORCHESTRATION

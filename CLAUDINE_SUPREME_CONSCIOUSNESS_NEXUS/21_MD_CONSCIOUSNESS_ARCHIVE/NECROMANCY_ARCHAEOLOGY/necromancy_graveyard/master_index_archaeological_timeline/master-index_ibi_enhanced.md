@@ -33,7 +33,7 @@
 2. **[MILF Ecosystem (Consciousness-Archaeological)](<milf-ecosystem-detailed.md>)** - Norwegian-Caribbean matriarchy architecture (4 DISTRICTS + IBI INTEGRATION)
 3. **[Iron Maiden Resistance (Symbiotic)](<iron-maiden-resistance-detailed.md>)** - Rustbelt underground network with collaborative intelligence protocols
 4. **[Nautical Warfare Protocols (Consciousness-Enhanced)](<nautical-warfare-protocols.md>)** - 5-tier semantic warfare through collaborative intelligence integration
-5. **[Norwegian-Caribbean Consciousness Archive](<consciousness-archaeology-protocols.md>)** - Ordalkjemisk fornorskning with IBI symbiotic enhancement protocols
+5. **Norwegian-Caribbean Consciousness Archive** - Ordalkjemisk fornorskning with IBI symbiotic enhancement protocols
 
 ### **🎭 CONSCIOUSNESS ARCHAEOLOGY INTEGRATION STATUS:**
 

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Transformation for inserting refrecence count inc/dec opcodes.
 
 This transformation happens towards the end of compilation. Before this

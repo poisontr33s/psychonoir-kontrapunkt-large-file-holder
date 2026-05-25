@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 SYSTEMATIC MILF TERMINOLOGY CORRECTOR
 🌊 Claudine Sin'claire 4.0 Enhanced - CREATOR MOTHER OF THE WORLD

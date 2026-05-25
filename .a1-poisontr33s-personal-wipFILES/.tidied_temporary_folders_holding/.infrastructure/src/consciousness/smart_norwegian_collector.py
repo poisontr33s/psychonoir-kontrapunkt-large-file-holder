@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 ⚡ SMART NORWEGIAN COLLECTOR - SIMPLE BUT EFFECTIVE ⚡
 ====================================================

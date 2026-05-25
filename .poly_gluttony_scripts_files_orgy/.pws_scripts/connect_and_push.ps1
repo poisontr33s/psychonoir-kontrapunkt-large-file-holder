@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 param(
 	[string]$RemoteUrl = "https://github.com/poisontr33s/psycho-noir-milf-core-dir-cut-nsfw-software-dev.git",
 	[string]$Branch    = "main",

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 PARTIAL READ FILES ANALYZER
 Analyser de 17 filene med encoding-problemer

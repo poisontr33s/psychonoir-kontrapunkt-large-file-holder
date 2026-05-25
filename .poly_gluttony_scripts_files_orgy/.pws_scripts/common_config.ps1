@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # PsychoNoir-Kontrapunkt Common Configuration
 # Forces environment root to C:\Users\erdno\PsychoNoir-Kontrapunkt regardless of current directory
 

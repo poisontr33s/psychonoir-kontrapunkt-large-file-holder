@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Find basic blocks that are likely to be executed frequently.
 
 For example, this would not include blocks that have exception handlers.

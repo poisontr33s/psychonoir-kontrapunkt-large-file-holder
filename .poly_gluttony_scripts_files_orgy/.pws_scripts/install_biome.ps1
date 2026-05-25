@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install Biome locally in the repository
 # This script downloads and installs Biome in .computer_languages/javascript
 

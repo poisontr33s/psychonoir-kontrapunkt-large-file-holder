@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 ⚡ OPTIMIZATION VALIDATION TEST ⚡
 Test the optimized scanner on 100 files to validate all optimizations work

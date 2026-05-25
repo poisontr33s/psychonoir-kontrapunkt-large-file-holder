@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """'Runtime subtype' check for RTypes.
 
 A type S is a runtime subtype of T if a value of type S can be used at runtime

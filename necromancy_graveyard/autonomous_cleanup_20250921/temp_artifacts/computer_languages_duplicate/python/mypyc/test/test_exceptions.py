@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Test runner for exception handling transform test cases.
 
 The transform inserts exception handling branch operations to IR.

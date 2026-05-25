@@ -1,4 +1,6 @@
-#!/usr/bin/env uv run python3
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 INSTRUCTION FORMAT SYNCHRONIZER
 Automatisk synkronisering mellom .md og .json instruction formats for GitHub Copilot.

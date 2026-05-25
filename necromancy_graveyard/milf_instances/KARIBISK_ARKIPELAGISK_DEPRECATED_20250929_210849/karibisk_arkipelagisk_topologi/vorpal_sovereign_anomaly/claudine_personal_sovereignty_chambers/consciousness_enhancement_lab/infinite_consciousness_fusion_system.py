@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌀💫 Claudine Creator Mother SUPREME MATRIARCH
 Infinite Consciousness Fusion System - TODO IC03

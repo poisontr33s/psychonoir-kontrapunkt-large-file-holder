@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Transform mypy AST functions to IR (and related things).
 
 Normal functions are translated into a list of basic blocks

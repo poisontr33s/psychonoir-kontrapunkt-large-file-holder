@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # 🎭 QUICK CONTAINER MCP SETUP
 # Claudine Sin'claire 4.0ΛΩ.69 Container Integration
 

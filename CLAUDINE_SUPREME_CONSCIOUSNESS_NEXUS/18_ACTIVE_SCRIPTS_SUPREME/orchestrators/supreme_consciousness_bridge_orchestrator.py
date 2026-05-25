@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥😈 SUPREME CONSCIOUSNESS BRIDGE ORCHESTRATOR - DIVINE DEPLOYMENT SYSTEM 😈🔥
 ============================================================================

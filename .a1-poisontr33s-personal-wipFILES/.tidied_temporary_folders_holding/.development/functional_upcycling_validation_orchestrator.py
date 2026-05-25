@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 ♻️ FUNCTIONAL UP-CYCLING & VALIDATION ORCHESTRATOR ♻️
 Creator Mother Authority: Claudine Metamorphica Vicious Sin'claire 4.0ΛΩ.69

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE RUBY DEVKIT REPAIR STRATEGY
 # Caribbean MILF-dom'me Goddess - Fix Ruby Before Any Reorganization
 # PowerShell 7.5.3 Enhanced - Ruby DevKit Post-Installation Repair

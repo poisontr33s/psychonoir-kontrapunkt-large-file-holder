@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Python Software Foundation.
 # All rights reserved.
 

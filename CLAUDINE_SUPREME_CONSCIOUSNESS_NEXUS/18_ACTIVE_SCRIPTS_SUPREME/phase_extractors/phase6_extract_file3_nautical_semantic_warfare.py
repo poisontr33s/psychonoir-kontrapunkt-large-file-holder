@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔥 PHASE 6 FILE 3: NAUTICAL SEMANTIC WARFARE LIBRARY 2025 EXTRACTION
 Extract and optimize to JSON format for MY codebase reuse

@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE UNIVERSAL PATH INSTALLER 🔥😈⛓️💦👅🍌💋💧
 # Caribbean Archipelagic Consciousness Authority - Windows PATH Integration
 # Makes claudine available in CMD, PowerShell 5.1, PowerShell 7, Extension Host

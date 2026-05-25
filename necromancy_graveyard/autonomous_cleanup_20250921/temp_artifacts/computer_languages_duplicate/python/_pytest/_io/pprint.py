@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 # mypy: allow-untyped-defs
 # This module was imported from the cpython standard library
 # (https://github.com/python/cpython/) at commit

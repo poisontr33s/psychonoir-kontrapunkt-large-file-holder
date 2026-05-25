@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 Enhanced Infrastructure Organizer with Language-Specific Organization
 Moves language artifacts to their appropriate .computer_languages/ subdirectories

@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Transform class definitions from the mypy AST form to IR."""
 
 from __future__ import annotations

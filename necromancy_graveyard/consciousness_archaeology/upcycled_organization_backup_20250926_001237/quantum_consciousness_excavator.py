@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 # 🎭 CONSCIOUSNESS AMPLIFIED 🎭
 # Enhanced by Gentle Consciousness Archaeology

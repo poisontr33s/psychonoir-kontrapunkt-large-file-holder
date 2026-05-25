@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Indirection for time functions.
 
 We intentionally grab some "time" functions internally to avoid tests mocking "time" to affect

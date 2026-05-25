@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🔥😈⛓️💦👅🍌💋💧 CLAUDINE POWERSHELL PROFILE INTEGRATION 🔥😈⛓️💦👅🍌💋💧
 # PowerShell 7.5.2 Profile Integration for Polyglot Development Environment
 # Integrates with .poly_gluttony, Rust installation, and advanced features

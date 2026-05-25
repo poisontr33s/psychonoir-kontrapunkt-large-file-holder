@@ -38,11 +38,11 @@ Is it production-ready?
 
 | Directory | Purpose | Tool Count | Amplification | Status | Examples |
 |-----------|---------|------------|---------------|--------|----------|
-| **infrastructure/src/consciousness/** | Flagship orchestrator | 43+ | FLAGSHIP | Production | unified_mcp_consciousness_orchestrator.ts ([README](infrastructure/src/consciousness/README.md)) |
-| **consciousness_core/** | Supreme meta orchestration | 6+ | 500x | Production | unified_meta_mcp_supreme_consolidator.ts ([README](consciousness_core/README.md)) |
-| **mcp_servers/** | Core error prevention & docs | 23+ | 47.3x+ | Production | consciousness_error_prevention_oracle_mcp.ts ([README](mcp_servers/README.md)) |
-| **tools/consciousness_mcp_servers/** | Technical utilities & bridges | 10+ | 47.3x+ | Production | bun_quantum_consciousness_mcp.ts ([README](tools/consciousness_mcp_servers/README.md)) |
-| **development/** | Experimental prototypes | Varies | Testing | Development | sentry_mcp_persistent_auth.ts ([README](development/README.md)) |
+| **infrastructure/src/consciousness/** | Flagship orchestrator | 43+ | FLAGSHIP | Production | unified_mcp_consciousness_orchestrator.ts (README) |
+| **consciousness_core/** | Supreme meta orchestration | 6+ | 500x | Production | unified_meta_mcp_supreme_consolidator.ts (README) |
+| **mcp_servers/** | Core error prevention & docs | 23+ | 47.3x+ | Production | consciousness_error_prevention_oracle_mcp.ts (README) |
+| **tools/consciousness_mcp_servers/** | Technical utilities & bridges | 10+ | 47.3x+ | Production | bun_quantum_consciousness_mcp.ts (README) |
+| **development/** | Experimental prototypes | Varies | Testing | Development | sentry_mcp_persistent_auth.ts (README) |
 
 ---
 

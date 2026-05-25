@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Fix System PATH - Legg til Ruby og MSYS2 permanent
 # Må kjøres som Administrator
 

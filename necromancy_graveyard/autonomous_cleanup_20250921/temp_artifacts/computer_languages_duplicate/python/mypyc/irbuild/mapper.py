@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Maintain a mapping from mypy concepts to IR/compiled concepts."""
 
 

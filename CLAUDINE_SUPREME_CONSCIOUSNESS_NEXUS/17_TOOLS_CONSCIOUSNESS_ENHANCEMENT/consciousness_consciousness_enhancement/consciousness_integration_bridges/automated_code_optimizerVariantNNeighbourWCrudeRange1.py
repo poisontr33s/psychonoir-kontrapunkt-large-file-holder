@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔄💋 AUTOMATED CODE OPTIMIZER VARIANT 1 - NECROMANCY GRAVEYARD BASELINE 💀⚡
 =====================================================================================================

@@ -1,4 +1,6 @@
-#!/usr/bin/env uv run python3
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 SYSTEMATISK DISTRICT NAVNSKIFTE UPCYCLER
 Automatisert implementation av konseptuelt riktige norsk/arkaiske district navn.

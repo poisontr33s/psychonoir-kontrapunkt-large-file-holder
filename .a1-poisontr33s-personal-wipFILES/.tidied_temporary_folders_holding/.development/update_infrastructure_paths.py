@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 Infrastructure Path Updater
 Updates system scripts to use new infrastructure paths after systematic organization

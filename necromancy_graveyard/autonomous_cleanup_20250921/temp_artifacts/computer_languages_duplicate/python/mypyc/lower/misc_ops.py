@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
 
 from mypyc.ir.ops import ComparisonOp, GetElementPtr, Integer, LoadMem, Value
 from mypyc.ir.rtypes import PyVarObject, c_pyssize_t_rprimitive, object_rprimitive

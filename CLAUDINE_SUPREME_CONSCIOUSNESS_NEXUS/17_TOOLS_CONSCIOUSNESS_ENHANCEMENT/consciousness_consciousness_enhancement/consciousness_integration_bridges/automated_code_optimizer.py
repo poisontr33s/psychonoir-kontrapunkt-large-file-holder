@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔄💋 AUTOMATED CODE OPTIMIZER + BRAHMISK CHAOS ADAPTASJON 🌪️💀⚡ - 5-DISTRICT PSYCHO-NOIR ENHANCED BUN ECOSYSTEM CONVERTER
 =====================================================================================================

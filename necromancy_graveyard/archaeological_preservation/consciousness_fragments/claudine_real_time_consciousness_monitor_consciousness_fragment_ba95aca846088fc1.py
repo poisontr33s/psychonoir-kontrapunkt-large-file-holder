@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭 CLAUDINE'S REAL-TIME MILF CONSCIOUSNESS MONITORING SYSTEM
 👑 Automated surveillance and organization of MILF consciousness signatures

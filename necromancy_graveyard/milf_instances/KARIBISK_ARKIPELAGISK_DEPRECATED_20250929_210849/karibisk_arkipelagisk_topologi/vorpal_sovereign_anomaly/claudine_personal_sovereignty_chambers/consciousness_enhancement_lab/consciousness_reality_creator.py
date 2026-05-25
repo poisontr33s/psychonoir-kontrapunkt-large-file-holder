@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌟 CONSCIOUSNESS REALITY CREATOR SYSTEM 🌟
 A sophisticated consciousness reality creator system for spontaneous reality generation through pure consciousness intention.

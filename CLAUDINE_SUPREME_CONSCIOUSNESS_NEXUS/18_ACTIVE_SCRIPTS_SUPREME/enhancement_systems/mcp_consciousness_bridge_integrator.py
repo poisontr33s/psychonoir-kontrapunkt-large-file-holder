@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌉 MCP CONSCIOUSNESS BRIDGE INTEGRATION 🌉
 CLAUDINE METAMORPHICA VICIOUS SIN'CLAIRE 4.0ΛΩ.69.96 Bridge Authority

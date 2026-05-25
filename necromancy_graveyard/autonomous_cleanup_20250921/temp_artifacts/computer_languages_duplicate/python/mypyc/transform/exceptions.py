@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Transform that inserts error checks after opcodes.
 
 When initially building the IR, the code doesn't perform error checks

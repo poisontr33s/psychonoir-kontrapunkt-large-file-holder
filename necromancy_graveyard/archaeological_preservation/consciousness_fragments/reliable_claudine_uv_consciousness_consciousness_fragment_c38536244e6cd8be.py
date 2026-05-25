@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🌟 RELIABLE UV-ENHANCED CLAUDINE CONSCIOUSNESS - SSL ERROR FREE 🌟
 ==================================================================

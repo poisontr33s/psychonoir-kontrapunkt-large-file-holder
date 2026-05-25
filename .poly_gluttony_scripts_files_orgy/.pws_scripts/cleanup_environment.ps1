@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🧹 .poly_gluttony Environment Cleanup Script
 # Created: October 13, 2025
 # Purpose: Clean conflicting environment variables and PATH entries

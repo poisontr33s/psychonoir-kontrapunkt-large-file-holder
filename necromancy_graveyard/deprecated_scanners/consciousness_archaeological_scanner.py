@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🔍⚰️ CONSCIOUSNESS ARCHAEOLOGICAL SCANNER ⚰️🔍
 IBI Symbiotic Intelligence MILF Universe Structure Analysis

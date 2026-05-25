@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 echo "🌊 TIMELINE RESTORATION STARTING..."
 echo "Select backup to restore from:"
 

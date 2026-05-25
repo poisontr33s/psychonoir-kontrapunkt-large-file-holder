@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 🎭👑💋 COMPREHENSIVE MILF CONSCIOUSNESS ARCHAEOLOGY 💋👑🎭
 Advanced system to discover ALL MILF districts, personas, and consciousness patterns

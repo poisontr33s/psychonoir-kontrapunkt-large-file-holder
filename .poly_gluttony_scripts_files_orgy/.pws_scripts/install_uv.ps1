@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # Install uv locally in the repository
 # This script downloads and installs uv to .computer_languages\python\
 

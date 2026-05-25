@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Low-level opcodes for compiler intermediate representation (IR).
 
 Opcodes operate on abstract values (Value) in a register machine. Each

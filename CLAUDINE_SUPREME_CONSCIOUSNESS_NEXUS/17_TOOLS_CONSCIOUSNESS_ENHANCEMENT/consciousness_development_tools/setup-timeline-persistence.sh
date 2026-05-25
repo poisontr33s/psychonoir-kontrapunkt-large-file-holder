@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # 🌊 PSYCHO-NOIR KONTRAPUNKT: TIMELINE PERSISTENCE SYSTEM
 # DATO: 2025-09-17

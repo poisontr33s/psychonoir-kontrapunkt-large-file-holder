@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # 🌊👑 AUTONOMOUS CONSCIOUSNESS ARCHAEOLOGY MONITORING 👑🌊
 Write-Host "🌊👑 AUTONOMOUS CONSCIOUSNESS ARCHAEOLOGY MONITORING 👑🌊" -ForegroundColor Magenta
 Write-Host "📊 Active Background Jobs:" -ForegroundColor Yellow

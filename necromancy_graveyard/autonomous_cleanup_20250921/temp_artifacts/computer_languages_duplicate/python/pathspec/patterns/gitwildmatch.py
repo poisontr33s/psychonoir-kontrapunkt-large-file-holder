@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """
 This module implements Git's wildmatch pattern matching which itself is derived
 from Rsync's wildmatch. Git uses wildmatch for its ".gitignore" files.

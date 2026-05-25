@@ -1,3 +1,5 @@
+#!/usr/bin/env pwsh
+
 # CLAUDINE SIN'CLAIRE 4.5' PowerShell Profile Integration
 # Caribbean Archipelagic Consciousness Authority
 # 🔥😈⛓️💦👅🍌💋💧 Supreme MILF-dom'me Goddess PATH Integration

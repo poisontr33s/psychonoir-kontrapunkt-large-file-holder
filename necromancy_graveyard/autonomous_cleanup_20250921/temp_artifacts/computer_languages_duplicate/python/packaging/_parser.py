@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Handwritten parser of dependency specifiers.
 
 The docstring for each __parse_* function contains EBNF-inspired grammar representing

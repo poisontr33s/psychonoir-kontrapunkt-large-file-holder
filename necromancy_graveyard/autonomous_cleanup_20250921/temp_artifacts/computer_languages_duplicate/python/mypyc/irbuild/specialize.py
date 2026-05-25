@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Special case IR generation of calls to specific builtin functions.
 
 Most special cases should be handled using the data driven "primitive

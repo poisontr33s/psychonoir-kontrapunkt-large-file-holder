@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#-*- coding: utf-8 -*-
+
 # @SID: BUILD_ARCHIVE_DB
 """
 Ingests district_scan_full_sweep.json into archive.db (SQLite).

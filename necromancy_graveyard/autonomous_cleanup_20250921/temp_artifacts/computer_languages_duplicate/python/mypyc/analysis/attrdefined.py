@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
 """Always defined attribute analysis.
 
 An always defined attribute has some statements in __init__ or the

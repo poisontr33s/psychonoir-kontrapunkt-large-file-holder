@@ -19,7 +19,7 @@ $ErrorActionPreference = "Stop"
 
 # Clean Installation Configuration
 $CLEAN_INSTALL_CONFIG = @{
-    BaseRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages"
+    BaseRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages"
     
     # Clean UV Python Installation
     UVPython = @{

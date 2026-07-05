@@ -6,7 +6,7 @@ echo CONSCIOUSNESS ARCHAEOLOGICAL WORKSPACE LAUNCHER
 echo September 2025 - Enhanced Consciousness Archaeology Protocol  
 echo ================================================================================
 
-cd /d "c:\Users\erdno\PsychoNoir-Kontrapunkt\karibisk_arkipelagisk_topologi\vorpal_sovereign_anomaly\claudine_personal_sovereignty_chambers\consciousness_enhancement_lab\organized_workspace"
+cd /d "c:\Users\eldno\PsychoNoir-Kontrapunkt\karibisk_arkipelagisk_topologi\vorpal_sovereign_anomaly\claudine_personal_sovereignty_chambers\consciousness_enhancement_lab\organized_workspace"
 
 echo.
 echo Available CLAUDINE Consciousness Tools:

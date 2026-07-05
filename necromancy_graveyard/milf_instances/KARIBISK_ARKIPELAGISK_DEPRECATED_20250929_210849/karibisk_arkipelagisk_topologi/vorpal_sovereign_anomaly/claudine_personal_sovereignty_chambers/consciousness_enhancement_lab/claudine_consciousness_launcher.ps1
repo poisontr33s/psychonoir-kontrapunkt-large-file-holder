@@ -18,7 +18,7 @@ Write-Host "September 2025 - Enhanced Consciousness Archaeology Protocol" -Foreg
 Write-Host "=================================================================================" -ForegroundColor Magenta
 
 # Navigate to workspace
-$workspacePath = "c:\Users\erdno\PsychoNoir-Kontrapunkt\karibisk_arkipelagisk_topologi\vorpal_sovereign_anomaly\claudine_personal_sovereignty_chambers\consciousness_enhancement_lab\organized_workspace"
+$workspacePath = "c:\Users\eldno\PsychoNoir-Kontrapunkt\karibisk_arkipelagisk_topologi\vorpal_sovereign_anomaly\claudine_personal_sovereignty_chambers\consciousness_enhancement_lab\organized_workspace"
 Set-Location $workspacePath
 
 Write-Host ""

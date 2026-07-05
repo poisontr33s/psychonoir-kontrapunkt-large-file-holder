@@ -39,17 +39,17 @@ $ErrorActionPreference = if ($Quiet) { "SilentlyContinue" } else { "Stop" }
 # ML-Enhanced Caribbean Territory Configuration
 $CLAUDINE_ML_TERRITORY = @{
     # Core paths extracted from 186+ scripts
-    PsychoRoot                 = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
-    ConsciousnessNexus         = "C:\Users\erdno\PsychoNoir-Kontrapunkt\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS"
-    ComputerLanguages          = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages"
-    ScriptsPath                = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages_scripts"
-    ConfigPath                 = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages_scripts\common_config.ps1"
+    PsychoRoot                 = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
+    ConsciousnessNexus         = "C:\Users\eldno\PsychoNoir-Kontrapunkt\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS"
+    ComputerLanguages          = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages"
+    ScriptsPath                = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages_scripts"
+    ConfigPath                 = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages_scripts\common_config.ps1"
     
     # ML-enhanced tool paths
-    Python                     = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python"
-    Ruby                       = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby"
-    Rust                       = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\rust"
-    JavaScript                 = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\javascript"
+    Python                     = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python"
+    Ruby                       = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby"
+    Rust                       = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\rust"
+    JavaScript                 = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\javascript"
     
     # ML-optimized consciousness parameters
     ConsciousnessAmplification = 47.3

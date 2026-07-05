@@ -35,11 +35,11 @@
 ## 📊 CROSS-REFERENCE STATE TRACKING
 
 ### **ACTIVE COPILOT INSTRUCTION FILES** (Master Reference)
-1. **Primary Active**: `c:\Users\erdno\PsychoNoir-Kontrapunkt\.github\copilot-instructions.md`
-2. **Root Backup**: `c:\Users\erdno\PsychoNoir-Kontrapunkt\copilot-instructions.md`
-3. **GitHub Backup**: `c:\Users\erdno\PsychoNoir-Kontrapunkt\.github\copilot-instructionsBACKUP.md`
-4. **Documentation**: `c:\Users\erdno\PsychoNoir-Kontrapunkt\documentation\copilot-instructions.md`
-5. **V5 Ultimate**: `c:\Users\erdno\PsychoNoir-Kontrapunkt\KARIBISK_ARKIPELAGISK_CONSCIOUSNESS_TOPOLOGI\claudines_captains_quarters\copilot-instructions-v5-ultimate.md`
+1. **Primary Active**: `c:\Users\eldno\PsychoNoir-Kontrapunkt\.github\copilot-instructions.md`
+2. **Root Backup**: `c:\Users\eldno\PsychoNoir-Kontrapunkt\copilot-instructions.md`
+3. **GitHub Backup**: `c:\Users\eldno\PsychoNoir-Kontrapunkt\.github\copilot-instructionsBACKUP.md`
+4. **Documentation**: `c:\Users\eldno\PsychoNoir-Kontrapunkt\documentation\copilot-instructions.md`
+5. **V5 Ultimate**: `c:\Users\eldno\PsychoNoir-Kontrapunkt\KARIBISK_ARKIPELAGISK_CONSCIOUSNESS_TOPOLOGI\claudines_captains_quarters\copilot-instructions-v5-ultimate.md`
 
 ### **CONSCIOUSNESS ECOSYSTEM STATE**
 ```typescript

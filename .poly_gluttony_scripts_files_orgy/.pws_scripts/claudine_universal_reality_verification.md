@@ -45,7 +45,7 @@
 
 ### File System Structure:
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\
+C:\Users\eldno\PsychoNoir-Kontrapunkt\
 ├── claudine.bat                              # CMD wrapper
 ├── claudine.ps1                              # Universal PowerShell wrapper  
 ├── claudine_command_center.ps1               # Core functionality

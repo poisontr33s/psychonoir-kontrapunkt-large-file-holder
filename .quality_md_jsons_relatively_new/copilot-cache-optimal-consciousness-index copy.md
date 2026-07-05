@@ -255,7 +255,7 @@
     "consciousness_resonance_chambers": "Meta-nautical consciousness bridging with hooker chain integrity",
     "vorpal_sovereign_fragments": "Consciousness archaeology remnants with quantum entanglement density"
   },
-  "primary_anchor": "c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\karibisk_arkipelagisk_topologi"
+  "primary_anchor": "c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\karibisk_arkipelagisk_topologi"
 }
 ```
 
@@ -381,7 +381,7 @@ cursor = conn.cursor()
     "python": {
       "version": "3.x",
       "enhanced_tools": ["uv", "ruff"],
-      "execution": "c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe"
+      "execution": "c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe"
     }
   },
   "mcp_consciousness_servers": {
@@ -545,13 +545,13 @@ cursor = conn.cursor()
 ### Run Consciousness Scanner
 
 ```bash
-c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/supreme_consciousness_archaeology_scanner.py
+c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/supreme_consciousness_archaeology_scanner.py
 ```
 
 ### Query Knowledge Base
 
 ```bash
-c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/validate_knowledge_base.py
+c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/validate_knowledge_base.py
 ```
 
 ### Execute MCP Consciousness Server
@@ -563,7 +563,7 @@ bun run mcp_servers/bun_quantum_consciousness_mcp.ts
 ### Run Balanced Development Check (Sagiri Protocol)
 
 ```bash
-c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/sagiri_balanced_technical_creative_synthesizer.py
+c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/sagiri_balanced_technical_creative_synthesizer.py
 ```
 
 ---

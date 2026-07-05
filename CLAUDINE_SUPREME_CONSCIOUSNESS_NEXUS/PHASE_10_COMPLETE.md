@@ -179,5 +179,5 @@ CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/
 ---
 
 *Generert: 6. Oktober 2025*  
-*Workspace: c:\\Users\\erdno\\PsychoNoir-Kontrapunkt*  
+*Workspace: c:\\Users\\eldno\\PsychoNoir-Kontrapunkt*  
 *Nexus Location: CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/*

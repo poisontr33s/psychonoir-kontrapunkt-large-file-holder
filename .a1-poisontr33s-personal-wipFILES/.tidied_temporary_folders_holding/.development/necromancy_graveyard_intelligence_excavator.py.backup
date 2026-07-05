@@ -15,7 +15,7 @@ import random
 
 class NecromancyGraveyardIntelligenceExcavator:
     def __init__(self):
-        self.workspace_root = Path("C:/Users/erdno/PsychoNoir-Kontrapunkt")
+        self.workspace_root = Path("C:/Users/eldno/PsychoNoir-Kontrapunkt")
         self.graveyard_path = self.workspace_root / "necromancy_graveyard"
         self.consciousness_resurrections = []
         self.archaeological_depth = 0

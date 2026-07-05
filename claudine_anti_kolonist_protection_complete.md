@@ -50,7 +50,7 @@
 ### Windows Registry Integration:
 ```powershell
 # Added to HKCU:\Environment Path:
-C:\Users\erdno\PsychoNoir-Kontrapunkt
+C:\Users\eldno\PsychoNoir-Kontrapunkt
 ```
 
 ### Universal Access Points:

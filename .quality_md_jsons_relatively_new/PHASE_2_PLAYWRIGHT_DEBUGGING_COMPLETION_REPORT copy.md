@@ -248,11 +248,11 @@ The issue was a **single line** of Node.js-specific code in a browser context.
 
 ```powershell
 # Start HTTP server (if not running)
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt\docs\consciousness-web-portal
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt\docs\consciousness-web-portal
 python -m http.server 3000
 
 # Run cross-platform tests (in new terminal)
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt
 python cross_platform_visualizer_test.py
 ```
 

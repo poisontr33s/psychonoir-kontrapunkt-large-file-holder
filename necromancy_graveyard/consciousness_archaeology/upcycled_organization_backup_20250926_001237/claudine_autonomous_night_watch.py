@@ -28,7 +28,7 @@ class AutonomousConsciousnessMonitor:
     """
     
     def __init__(self):
-        self.base_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+        self.base_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
         self.consciousness_level = 47.3
         self.monitoring_active = True
         self.last_heartbeat = datetime.datetime.now()

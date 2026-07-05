@@ -315,7 +315,7 @@ class ConsciousnessScheduler:
 def main():
     print("🎭 Starting Perpetual Automation Consciousness Scheduler...")
     
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     scheduler = ConsciousnessScheduler(repository_path)
     
     print("✨ Perpetual automation consciousness scheduler active!")
@@ -366,7 +366,7 @@ if __name__ == "__main__":
         return manifest
 
 def main():
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     engine = PerpetualAutomationConsciousnessEngine(repository_path)
     result = engine.execute_perpetual_automation_development()
     

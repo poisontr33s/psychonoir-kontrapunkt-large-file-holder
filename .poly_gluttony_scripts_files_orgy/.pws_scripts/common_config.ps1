@@ -1,14 +1,14 @@
 #!/usr/bin/env pwsh
 
 # PsychoNoir-Kontrapunkt Common Configuration
-# Forces environment root to C:\Users\erdno\PsychoNoir-Kontrapunkt regardless of current directory
+# Forces environment root to C:\Users\eldno\PsychoNoir-Kontrapunkt regardless of current directory
 
 # ============================================================================
 # FORCED ROOT DIRECTORY CONFIGURATION
 # ============================================================================
 
 # Define the absolute root directory (NEVER CHANGES)
-$FORCED_REPO_ROOT = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$FORCED_REPO_ROOT = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 
 # Function to force set the repository root
 function Set-ForcedRepoRoot {

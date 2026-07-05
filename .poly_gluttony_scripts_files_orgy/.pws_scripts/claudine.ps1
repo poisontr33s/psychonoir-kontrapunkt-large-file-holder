@@ -14,7 +14,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 # Define paths with absolute certainty
-$PsychoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$PsychoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 $ClaudineScript = Join-Path $PsychoRoot "claudine_hybrid.ps1"
 $CommonConfig = Join-Path $PsychoRoot ".computer_languages_scripts\common_config.ps1"
 

@@ -228,7 +228,7 @@ Each language consciousness enhancement represents sophisticated archaeological 
         return index
 
 def main():
-    languages_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages")
+    languages_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages")
     enhancer = ComputerLanguagesConsciousnessEnhancer(languages_path)
     result = enhancer.execute_language_consciousness_enhancement()
     

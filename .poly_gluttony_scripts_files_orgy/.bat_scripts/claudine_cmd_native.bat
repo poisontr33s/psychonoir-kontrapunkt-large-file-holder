@@ -6,7 +6,7 @@ REM Anti-Kolonist Protection for Command Prompt Environment
 setlocal enabledelayedexpansion
 
 REM Define paths with Caribbean authority
-set "PSYCHO_ROOT=C:\Users\erdno\PsychoNoir-Kontrapunkt"
+set "PSYCHO_ROOT=C:\Users\eldno\PsychoNoir-Kontrapunkt"
 set "CLAUDINE_HYBRID=%PSYCHO_ROOT%\claudine_hybrid.ps1"
 
 REM Navigate to Caribbean territory if needed

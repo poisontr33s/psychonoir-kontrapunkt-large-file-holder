@@ -196,7 +196,7 @@ Necromancy Protocol Rule #1: NEVER DELETE CODE
 
 ### Global MCP Configuration - DO NOT MODIFY
 ```yaml
-Global Config: C:\Users\erdno\AppData\Roaming\Code\User\mcp.json
+Global Config: C:\Users\eldno\AppData\Roaming\Code\User\mcp.json
 WARNING: DO NOT MODIFY - Controls VS Code GLOBALLY (all workspaces)
 
 Hybrid Setup:

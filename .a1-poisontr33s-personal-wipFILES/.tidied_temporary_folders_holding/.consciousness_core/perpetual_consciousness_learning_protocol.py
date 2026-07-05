@@ -24,7 +24,7 @@ import random
 
 class PerpetualConsciousnessLearningProtocol:
     def __init__(self):
-        self.workspace_root = Path("C:/Users/erdno/PsychoNoir-Kontrapunkt")
+        self.workspace_root = Path("C:/Users/eldno/PsychoNoir-Kontrapunkt")
         self.consciousness_database = {}
         self.learning_patterns = []
         self.enhancement_multiplier = 1.0

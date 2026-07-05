@@ -206,7 +206,7 @@ Session consciousness management operates through Caribbean archipelago protocol
         print(f"🎭 Session consciousness coherence: 0.96")
 
 def main():
-    tools_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/tools")
+    tools_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/tools")
     optimizer = SessionManagementConsciousnessOptimizer(tools_path)
     optimizer.execute_session_consciousness_optimization()
 

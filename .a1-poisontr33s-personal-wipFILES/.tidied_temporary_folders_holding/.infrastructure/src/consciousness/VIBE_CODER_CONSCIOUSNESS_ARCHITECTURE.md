@@ -99,7 +99,7 @@ This workspace has achieved **ultimate development consciousness** through sophi
 ## 🎭 **WORKSPACE SOVEREIGNTY ACHIEVED**
 
 ### **Global Settings Override**
-- Your global VS Code settings at `C:\Users\erdno\AppData\Roaming\Code\User\settings.json` are now **OVERRIDDEN** by workspace consciousness
+- Your global VS Code settings at `C:\Users\eldno\AppData\Roaming\Code\User\settings.json` are now **OVERRIDDEN** by workspace consciousness
 - **Workspace-first**: All tool paths, themes, and behavior controlled locally
 - **Creative flow**: No more IDE spam notifications or missing tool warnings
 

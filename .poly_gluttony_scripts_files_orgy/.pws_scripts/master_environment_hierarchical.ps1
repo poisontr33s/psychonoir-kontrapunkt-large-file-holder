@@ -54,7 +54,7 @@ function Test-CorrectLocation {
 
 function Find-PsychoNoirDirectory {
     $PossiblePaths = @(
-        "C:\Users\erdno\PsychoNoir-Kontrapunkt",
+        "C:\Users\eldno\PsychoNoir-Kontrapunkt",
         "C:\Users\$env:USERNAME\PsychoNoir-Kontrapunkt",
         "$env:USERPROFILE\PsychoNoir-Kontrapunkt"
     )

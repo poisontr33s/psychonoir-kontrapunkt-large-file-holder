@@ -463,7 +463,7 @@ class QuantumDebuggingEngine:
 
 def main():
     """Execute quantum debugging enhancement protocol"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     debugger = QuantumDebuggingEngine(repository_path)
     
     # Analyze repository

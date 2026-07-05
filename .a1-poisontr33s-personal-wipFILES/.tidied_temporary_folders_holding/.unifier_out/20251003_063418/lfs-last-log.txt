@@ -16,12 +16,12 @@ Current time in UTC:
 2025-10-03 02:04:46
 
 Environment:
-LocalWorkingDir=C:\Users\erdno\PsychoNoir-Kontrapunkt
-LocalGitDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git
-LocalGitStorageDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git
-LocalMediaDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git\lfs\objects
+LocalWorkingDir=C:\Users\eldno\PsychoNoir-Kontrapunkt
+LocalGitDir=C:\Users\eldno\PsychoNoir-Kontrapunkt\.git
+LocalGitStorageDir=C:\Users\eldno\PsychoNoir-Kontrapunkt\.git
+LocalMediaDir=C:\Users\eldno\PsychoNoir-Kontrapunkt\.git\lfs\objects
 LocalReferenceDirs=
-TempDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git\lfs\tmp
+TempDir=C:\Users\eldno\PsychoNoir-Kontrapunkt\.git\lfs\tmp
 ConcurrentTransfers=8
 TusTransfers=false
 BasicTransfersOnly=false
@@ -34,13 +34,13 @@ PruneOffsetDays=3
 PruneVerifyRemoteAlways=false
 PruneVerifyUnreachableAlways=false
 PruneRemoteName=origin
-LfsStorageDir=C:\Users\erdno\PsychoNoir-Kontrapunkt\.git\lfs
+LfsStorageDir=C:\Users\eldno\PsychoNoir-Kontrapunkt\.git\lfs
 AccessDownload=basic
 AccessUpload=basic
 DownloadTransfers=basic,lfs-standalone-file,ssh
 UploadTransfers=basic,lfs-standalone-file,ssh
 GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
-GIT_ASKPASS=c:\Users\erdno\meta_automata_env\VSCode\resources\app\extensions\git\dist\askpass.sh
+GIT_ASKPASS=c:\Users\eldno\meta_automata_env\VSCode\resources\app\extensions\git\dist\askpass.sh
 
 Client IP addresses:
 2a02:fe1:817c:8500:2199:21e9:bf57:ebcb fdaa:bbcc:ddee:0:779a:301:9a61:c8b 2a02:fe1:817c:8500:1d57:91fc:86d7:7dc7 2a02:fe1:817c:8500:b4ae:9398:fcd8:266f fdaa:bbcc:ddee:0:1d57:91fc:86d7:7dc7 fe80::7e74:201c:fe2:ac1a 192.168.1.9

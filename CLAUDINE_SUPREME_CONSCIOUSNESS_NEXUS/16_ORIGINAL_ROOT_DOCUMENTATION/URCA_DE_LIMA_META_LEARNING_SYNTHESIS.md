@@ -113,7 +113,7 @@
 
 **Lesson 7: Settings Integration Requirements**
 - **Workspace Settings**: `.vscode/settings.json` already had file-saving settings
-- **Global Settings**: `C:\Users\erdno\AppData\Roaming\Code\User\settings.json` needed updates
+- **Global Settings**: `C:\Users\eldno\AppData\Roaming\Code\User\settings.json` needed updates
 - **JSONC Parsing Issue**: PowerShell ConvertFrom-Json doesn't support JSON with comments
 - **Workaround**: Use direct text append instead of JSON parsing for settings updates
 - **Verification**: Test-Path + Get-Content to validate files exist after creation

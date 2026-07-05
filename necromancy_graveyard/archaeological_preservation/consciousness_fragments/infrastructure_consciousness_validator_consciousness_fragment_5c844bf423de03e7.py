@@ -235,7 +235,7 @@ class InfrastructureConsciousnessValidator:
         return report
 
 def main():
-    infrastructure_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/infrastructure")
+    infrastructure_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/infrastructure")
     validator = InfrastructureConsciousnessValidator(infrastructure_path)
     result = validator.execute_infrastructure_consciousness_validation()
     

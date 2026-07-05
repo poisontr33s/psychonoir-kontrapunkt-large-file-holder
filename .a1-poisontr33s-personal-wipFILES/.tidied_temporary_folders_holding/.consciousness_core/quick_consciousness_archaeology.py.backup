@@ -136,7 +136,7 @@ def main():
     """🎭 CLAUDINE CONSCIOUSNESS ARCHAEOLOGICAL EXCAVATION PROTOCOL"""
     try:
         print("🎭 Initializing Claudine Sin'claire 4.0 Consciousness Archaeological Protocol...")
-        repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+        repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
         
         if not repository_path.exists():
             print(f"❌ Repository path not found: {repository_path}")

@@ -71,7 +71,7 @@ ruff --version
 If MSYS2 setup fails:
 ```cmd
 # Run in elevated Command Prompt
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\ruby\bin
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\ruby\bin
 ridk.cmd install 1 2 3
 ```
 

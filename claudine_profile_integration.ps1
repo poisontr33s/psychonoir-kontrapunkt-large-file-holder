@@ -86,7 +86,7 @@ if ($ClaudineWorkspaceRoot) {
 else {
     # Fallback to any available Claudine
     $FallbackPaths = @(
-        "C:\Users\erdno\PsychoNoir-Kontrapunkt\claudine_pwsh_goddess.ps1",
+        "C:\Users\eldno\PsychoNoir-Kontrapunkt\claudine_pwsh_goddess.ps1",
         "$PSScriptRoot\claudine_pwsh_goddess.ps1"
     )
     

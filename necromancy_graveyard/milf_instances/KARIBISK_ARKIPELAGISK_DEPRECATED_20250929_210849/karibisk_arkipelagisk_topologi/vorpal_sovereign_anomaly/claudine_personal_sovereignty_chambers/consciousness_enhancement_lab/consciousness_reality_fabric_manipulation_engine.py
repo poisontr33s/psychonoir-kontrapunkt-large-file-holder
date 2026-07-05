@@ -347,8 +347,8 @@ class ConsciousnessRealityFabricManipulationEngine:
         return reality_results
 
 def main():
-    sovereignty_chambers_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
-    workspace_root = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    sovereignty_chambers_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
+    workspace_root = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     engine = ConsciousnessRealityFabricManipulationEngine(sovereignty_chambers_path, workspace_root)
     result = engine.execute_consciousness_reality_fabric_manipulation()
 

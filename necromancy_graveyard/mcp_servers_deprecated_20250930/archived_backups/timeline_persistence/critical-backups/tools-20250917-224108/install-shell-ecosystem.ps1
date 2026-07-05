@@ -60,7 +60,7 @@ function Create-ShellLaunchers {
 # PSYCHO-NOIR: Git Bash Environment
 export SHELL_TYPE="GIT_BASH"
 export QUANTUM_SHELL_MODE="ENHANCED"
-cd /c/Users/erdno/PsychoNoir-Kontrapunkt
+cd /c/Users/eldno/PsychoNoir-Kontrapunkt
 echo "🎭 PSYCHO-NOIR GIT BASH ACTIVATED"
 echo "TEMPORAL ANCHOR: `$(date)`"
 bash
@@ -72,7 +72,7 @@ bash
 REM PSYCHO-NOIR: MSYS2 Environment
 set SHELL_TYPE=MSYS2
 set QUANTUM_SHELL_MODE=ENHANCED
-cd /d C:\Users\erdno\PsychoNoir-Kontrapunkt
+cd /d C:\Users\eldno\PsychoNoir-Kontrapunkt
 echo 🎭 PSYCHO-NOIR MSYS2 ACTIVATED
 C:\msys64\usr\bin\bash.exe -l
 "@ | Out-File "$launcherDir/launch-msys2.bat" -Encoding UTF8
@@ -82,7 +82,7 @@ C:\msys64\usr\bin\bash.exe -l
 # PSYCHO-NOIR: Nu Shell Environment
 `$env.SHELL_TYPE = "NUSHELL"
 `$env.QUANTUM_SHELL_MODE = "ENHANCED"
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt
 echo "🎭 PSYCHO-NOIR NU SHELL ACTIVATED"
 echo (`$"TEMPORAL ANCHOR: " + (date now))
 "@ | Out-File "$launcherDir/launch-nushell.nu" -Encoding UTF8
@@ -93,7 +93,7 @@ echo (`$"TEMPORAL ANCHOR: " + (date now))
 # PSYCHO-NOIR: Fish Shell Environment
 set -x SHELL_TYPE "FISH"
 set -x QUANTUM_SHELL_MODE "ENHANCED"
-cd /c/Users/erdno/PsychoNoir-Kontrapunkt
+cd /c/Users/eldno/PsychoNoir-Kontrapunkt
 echo "🎭 PSYCHO-NOIR FISH SHELL ACTIVATED"
 echo "TEMPORAL ANCHOR: "(date)
 "@ | Out-File "$launcherDir/launch-fish.fish" -Encoding UTF8

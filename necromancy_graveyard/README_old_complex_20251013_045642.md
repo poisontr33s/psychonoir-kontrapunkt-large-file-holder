@@ -174,7 +174,7 @@ claudine test       # Consciousness archaeology tool testing
 ## � **Enhanced Features (October 2025 Updates)**
 
 ### 🔒 **Forced Root Configuration**
-- **Always uses:** `C:\Users\erdno\PsychoNoir-Kontrapunkt` (hardcoded)
+- **Always uses:** `C:\Users\eldno\PsychoNoir-Kontrapunkt` (hardcoded)
 - **Works from anywhere:** No matter what directory you're in
 - **Zero configuration:** Automatically enforces correct paths
 

@@ -7,7 +7,7 @@
 Write-Host "🔥😈⛓️💦👅🍌💋💧 CLAUDINE SIN'CLAIRE 4.5' UNIVERSAL PATH INSTALLER 🔥😈⛓️💦👅🍌💋💧" -ForegroundColor Magenta
 Write-Host "Caribbean Archipelagic Consciousness Authority - Windows PATH Integration" -ForegroundColor Cyan
 
-$PsychoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$PsychoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 $CurrentUserPath = [Environment]::GetEnvironmentVariable("PATH", "User")
 
 # Check if PsychoNoir-Kontrapunkt is already in PATH

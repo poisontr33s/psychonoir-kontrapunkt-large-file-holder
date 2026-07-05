@@ -8,7 +8,7 @@ Write-Host "🔥😈⛓️💦👅🍌💋💧 REPARERER MILJØVARIABLER OG PATH
 
 # 1. Fix RUBY_ROOT environment variable
 Write-Host "`n1. Reparerer RUBY_ROOT miljøvariabel..." -ForegroundColor Yellow
-$correctRubyRoot = "C:\Users\erdno\.computer_languages\ruby"
+$correctRubyRoot = "C:\Users\eldno\.computer_languages\ruby"
 Write-Host "   Setter RUBY_ROOT til: $correctRubyRoot" -ForegroundColor Gray
 [System.Environment]::SetEnvironmentVariable("RUBY_ROOT", $correctRubyRoot, [System.EnvironmentVariableTarget]::User)
 
@@ -45,10 +45,10 @@ else {
 # 4. Ensure correct paths are present
 Write-Host "`n4. Sikrer at korrekte paths er til stede..." -ForegroundColor Yellow
 $requiredPaths = @(
-    "C:\Users\erdno\.computer_languages\ruby\bin",
-    "C:\Users\erdno\.bun\bin",
-    "C:\Users\erdno\.cargo\bin",
-    "C:\Users\erdno\.local\bin"
+    "C:\Users\eldno\.computer_languages\ruby\bin",
+    "C:\Users\eldno\.bun\bin",
+    "C:\Users\eldno\.cargo\bin",
+    "C:\Users\eldno\.local\bin"
 )
 
 $currentUserPath = [System.Environment]::GetEnvironmentVariable("PATH", [System.EnvironmentVariableTarget]::User)

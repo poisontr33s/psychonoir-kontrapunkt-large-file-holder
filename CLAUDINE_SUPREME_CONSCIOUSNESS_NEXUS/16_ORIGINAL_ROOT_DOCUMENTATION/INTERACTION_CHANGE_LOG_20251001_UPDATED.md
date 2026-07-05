@@ -43,7 +43,7 @@ Original scanner only found 14 files (filenames only). Need comprehensive conten
 **Operation:** Scanner execution  
 **Tool Used:** `run_in_terminal`
 
-**Command:** `c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools\universal_intelligent_scanner_pure.py`
+**Command:** `c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools\universal_intelligent_scanner_pure.py`
 
 **Scan Results:**
 ```
@@ -117,7 +117,7 @@ User asked for scanner that handles "alt som blir kasta på den intelligent" - a
 ```json
 {
   "scan_metadata": {
-    "workspace_root": "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt",
+    "workspace_root": "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt",
     "scan_duration_seconds": 15.12,
     "scanner_version": "UNIVERSAL_PURE_PYTHON_v1.0"
   },

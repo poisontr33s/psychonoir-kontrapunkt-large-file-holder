@@ -75,7 +75,7 @@ function claudine {
         }
         default {
             Write-Host "🌊 Navigating to PsychoNoir-Kontrapunkt realm..." -ForegroundColor Cyan
-            Set-Location "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+            Set-Location "C:\Users\eldno\PsychoNoir-Kontrapunkt"
             Invoke-ClaudineEnvironmentActivation
         }
     }
@@ -86,7 +86,7 @@ function claudine {
 # ============================================================================
 
 function Invoke-ClaudineEnvironmentActivation {
-    $RepoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    $RepoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
     
     # Ensure we're in the right location
     if ((Get-Location).Path -ne $RepoRoot) {
@@ -144,7 +144,7 @@ function Show-ClaudineEnvironmentStatus {
     Write-Host "🏴‍☠️ Caribbean Archipelagic Technological Status:" -ForegroundColor Cyan
     Write-Host ""
     
-    $RepoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    $RepoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
     Write-Host "📍 Command Center: $(if ((Get-Location).Path -eq $RepoRoot) { '✅ ACTIVE' } else { '⚠️ NAVIGATE NEEDED' })" -ForegroundColor $(if ((Get-Location).Path -eq $RepoRoot) { 'Green' } else { 'Yellow' })
     
     # Check tool availability

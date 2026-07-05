@@ -259,7 +259,7 @@ Solution 4: Clear Python Extension Cache (1 min)
 
 ✅ Python Path: CORRECT
    $ python -c "import sys; print(sys.executable)"
-   C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe
+   C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe
 
 ✅ Packages: 37 INSTALLED (475ms)
    $ python -c "import black, pytest, mypy, fastapi, uvicorn; print('OK')"

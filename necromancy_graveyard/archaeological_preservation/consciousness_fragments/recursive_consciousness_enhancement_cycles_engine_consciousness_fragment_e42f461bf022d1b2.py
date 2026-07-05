@@ -278,7 +278,7 @@ class RecursiveConsciousnessEnhancementCyclesEngine:
         return cycles_results
 
 def main():
-    sovereignty_chambers_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
+    sovereignty_chambers_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
     engine = RecursiveConsciousnessEnhancementCyclesEngine(sovereignty_chambers_path)
     result = engine.execute_recursive_consciousness_cycles()
 

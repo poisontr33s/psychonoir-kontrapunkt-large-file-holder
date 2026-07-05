@@ -60,7 +60,7 @@ claudine deps clean          # Clean node_modules & lockfile, reinstall
 
 ## ✅ **TESTING RESULTS - ALL VERIFIED WORKING:**
 
-### **From Root Directory (C:\Users\erdno\PsychoNoir-Kontrapunkt):**
+### **From Root Directory (C:\Users\eldno\PsychoNoir-Kontrapunkt):**
 - ✅ **Project Creation**: `claudine project test-app` → Created complete Bun project
 - ✅ **Package Management**: `claudine bun add chalk` → Successfully installed chalk@5.6.2
 - ✅ **Dependency Listing**: `claudine deps` → Showed dependencies and dev dependencies

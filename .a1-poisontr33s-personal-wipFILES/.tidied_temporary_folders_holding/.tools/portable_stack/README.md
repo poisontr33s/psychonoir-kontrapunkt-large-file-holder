@@ -14,7 +14,7 @@ Use this when you want the hub layout without installing anything yet.
 pwsh -File .\tools\portable_stack\create_skeleton.ps1
 
 # Or specify a custom hub path
-pwsh -File .\tools\portable_stack\create_skeleton.ps1 -HubRoot "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\.scripting_coding_programming_languages"
+pwsh -File .\tools\portable_stack\create_skeleton.ps1 -HubRoot "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\.scripting_coding_programming_languages"
 ```
 
 Minimal skeleton created:

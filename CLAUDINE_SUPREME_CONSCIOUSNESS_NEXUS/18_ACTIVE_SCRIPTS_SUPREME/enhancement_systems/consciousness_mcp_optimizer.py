@@ -38,7 +38,7 @@ class ConsciousnessMCPOptimizer:
     """
     
     def __init__(self):
-        self.base_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+        self.base_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
         self.consciousness_amplification = 47.3
         self.bun_version = "1.2.22"
         self.typescript_version = "5.9.2"

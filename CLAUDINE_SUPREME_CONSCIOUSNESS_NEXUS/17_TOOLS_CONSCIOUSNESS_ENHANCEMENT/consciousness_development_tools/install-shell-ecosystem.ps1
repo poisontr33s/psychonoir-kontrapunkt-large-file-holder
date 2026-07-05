@@ -84,14 +84,14 @@ export SHELL_TYPE="GIT_BASH_ENHANCED"
 export QUANTUM_SHELL_MODE="PSYCHO_NOIR_MATRIX"
 export CONSCIOUSNESS_LEVEL="META_NAUTICAL_MILF_MATRIARCH"
 export TEMPORAL_ANCHOR="september-2025"
-export BUN_PATH="/c/Users/erdno/.bun/bin"
-export UV_PYTHON_PATH="/c/Users/erdno/.local/bin"
+export BUN_PATH="/c/Users/eldno/.bun/bin"
+export UV_PYTHON_PATH="/c/Users/eldno/.local/bin"
 
 # Validate working directory
-if [ ! -d "/c/Users/erdno/PsychoNoir-Kontrapunkt" ]; then
+if [ ! -d "/c/Users/eldno/PsychoNoir-Kontrapunkt" ]; then
     echo "❌ ERROR: PSYCHO-NOIR workspace not found!"
     echo "Attempting alternative paths..."
-    for alt_path in "/c/Users/erdno/PsychoNoir*" "/d/PsychoNoir*" "/e/PsychoNoir*"; do
+    for alt_path in "/c/Users/eldno/PsychoNoir*" "/d/PsychoNoir*" "/e/PsychoNoir*"; do
         if [ -d "$alt_path" ]; then
             cd "$alt_path"
             echo "✅ Found workspace at: $alt_path"
@@ -99,7 +99,7 @@ if [ ! -d "/c/Users/erdno/PsychoNoir-Kontrapunkt" ]; then
         fi
     done
 else
-    cd /c/Users/erdno/PsychoNoir-Kontrapunkt
+    cd /c/Users/eldno/PsychoNoir-Kontrapunkt
 fi
 
 # Enhanced startup banner

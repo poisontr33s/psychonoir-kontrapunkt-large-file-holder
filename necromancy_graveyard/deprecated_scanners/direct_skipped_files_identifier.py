@@ -20,7 +20,7 @@ class DirectSkippedFilesIdentifier:
     🔍 Direct identifier for skipped files using scanner logic
     """
     
-    def __init__(self, workspace_root: str = "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt"):
+    def __init__(self, workspace_root: str = "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt"):
         self.workspace_root = Path(workspace_root)
         self.max_file_size_mb = 10.0
         

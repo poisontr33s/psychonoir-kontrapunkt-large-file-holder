@@ -34,7 +34,7 @@ From session log analysis, work stopped after:
 **Tool Used:** `create_file`
 
 **File Created:**
-- **Path:** `c:\Users\erdno\PsychoNoir-Kontrapunkt\tools\comprehensive_aeoaa_filename_scanner.py`
+- **Path:** `c:\Users\eldno\PsychoNoir-Kontrapunkt\tools\comprehensive_aeoaa_filename_scanner.py`
 - **Size:** 229 lines
 - **Purpose:** Systematic scanner to find ALL files with Norwegian characters (Æ/Ø/Å) that previous scanners couldn't read
 

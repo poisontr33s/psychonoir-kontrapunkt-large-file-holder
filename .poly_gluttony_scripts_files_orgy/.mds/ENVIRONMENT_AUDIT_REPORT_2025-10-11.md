@@ -36,9 +36,9 @@
 | **Cargo** | 1.90.0 | ✅ Working | `.computer_languages\rust` |
 
 ### **Environment Variables (All Correctly Set):**
-- `PYTHONHOME`: `C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python`
-- `RUBY_HOME`: `C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby`
-- `CARGO_HOME`: `C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\rust`
+- `PYTHONHOME`: `C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python`
+- `RUBY_HOME`: `C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby`
+- `CARGO_HOME`: `C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\rust`
 
 ---
 
@@ -51,7 +51,7 @@
 - **Last Modified:** 10/11/2025 3:01:20 AM
 - **Function:** Contains hardcoded root path enforcement
 - **Key Features:**
-  - Forced root: `C:\Users\erdno\PsychoNoir-Kontrapunkt`
+  - Forced root: `C:\Users\eldno\PsychoNoir-Kontrapunkt`
   - Validation functions working
   - Environment variable setters functional
 
@@ -93,7 +93,7 @@
 
 ### **Directory Structure Health:**
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\
+C:\Users\eldno\PsychoNoir-Kontrapunkt\
 ├── 📁 .computer_languages/        ✅ 8 tool directories
 ├── 📁 projects/                   ✅ Project templates
 ├── 📁 scripts/                    ✅ Installation scripts
@@ -124,7 +124,7 @@ C:\Users\erdno\PsychoNoir-Kontrapunkt\
 | `check` | Repo root | ✅ Pass | All 9/9 tools verified working |
 
 ### **PowerShell Profile Integration:**
-- ✅ Profile installed at: `C:\Users\erdno\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
+- ✅ Profile installed at: `C:\Users\eldno\OneDrive\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
 - ✅ Auto-loads on PowerShell startup
 - ✅ Provides global access to convenience functions
 - ✅ Includes comprehensive help documentation

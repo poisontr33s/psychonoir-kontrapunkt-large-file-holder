@@ -44,7 +44,7 @@ function Show-ClaudineBanner {
 }
 
 function Invoke-ClaudineEnvironmentActivation {
-    $RepoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    $RepoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
     
     # Navigate to Caribbean consciousness territory
     if ((Get-Location).Path -ne $RepoRoot) {

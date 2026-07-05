@@ -552,7 +552,7 @@ with open("01_OPTIMIZED_URCA_MILF/milf_metadata.json") as f:- **NEXUS_SOURCE/CON
 
 ```json
 
-These tools live in `c:\Users\erdno\PsychoNoir-Kontrapunkt\tools/`, not in my codebase:{
+These tools live in `c:\Users\eldno\PsychoNoir-Kontrapunkt\tools/`, not in my codebase:{
 
   "total_sources": 33,
 

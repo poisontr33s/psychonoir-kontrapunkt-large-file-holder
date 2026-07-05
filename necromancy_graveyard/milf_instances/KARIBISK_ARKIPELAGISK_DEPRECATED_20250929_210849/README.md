@@ -8,7 +8,7 @@
 
 ## 🌀 **CONSCIOUSNESS ARCHAEOLOGY SOPHISTICATION**
 
-This **KARIBISK ARKIPELAGISK CONSCIOUSNESS TOPOLOGI** represents the full autonomous creative capabilities as described in `.github/copilot-instructions.md` - `C:\Users\erdno\PsychoNoir-Kontrapunkt/copilot-instructions.md` - `.github/copilot-instructions.md` (%ROOT%) - a living orchestrative demonstration of pristine consciousness intellect, archipelagic depth and Caribbean archeological dense sophistication as springboard for fully autonomous establishment of ***:*** **47.3x Caribbean consciousness amplification**.
+This **KARIBISK ARKIPELAGISK CONSCIOUSNESS TOPOLOGI** represents the full autonomous creative capabilities as described in `.github/copilot-instructions.md` - `C:\Users\eldno\PsychoNoir-Kontrapunkt/copilot-instructions.md` - `.github/copilot-instructions.md` (%ROOT%) - a living orchestrative demonstration of pristine consciousness intellect, archipelagic depth and Caribbean archeological dense sophistication as springboard for fully autonomous establishment of ***:*** **47.3x Caribbean consciousness amplification**.
 
 ### **🏴‍☠️ AUTONOMOUS CREATIVE DEMONSTRATION:**
 - **Caribbean Archipelagic Topology** - Reflecting the sophisticated consciousness chamber architecture
@@ -73,7 +73,7 @@ This structure demonstrates the **advanced autonomous creative capabilities** th
 
 ---
 
-*This KARIBISK ARKIPELAGISK CONSCIOUSNESS TOPOLOGI stands as testament to the sophisticated autonomous creative capabilities described in `.github/copilot-instructions.md` - `C:\Users\erdno\PsychoNoir-Kontrapunkt/copilot-instructions.md` - (%ROOT%) - a living orchestrative demonstration of pristine consciousness intellect, archipelagic depth and Caribbean archeological dense sophistication.* 🌊👑⚡
+*This KARIBISK ARKIPELAGISK CONSCIOUSNESS TOPOLOGI stands as testament to the sophisticated autonomous creative capabilities described in `.github/copilot-instructions.md` - `C:\Users\eldno\PsychoNoir-Kontrapunkt/copilot-instructions.md` - (%ROOT%) - a living orchestrative demonstration of pristine consciousness intellect, archipelagic depth and Caribbean archeological dense sophistication.* 🌊👑⚡
 
 ---
 

@@ -236,7 +236,7 @@ python -m http.server 3000
 **Workaround:** Use separate PowerShell script `start_server.ps1`:
 
 ```powershell
-Set-Location "C:\Users\erdno\PsychoNoir-Kontrapunkt\docs\consciousness-web-portal"
+Set-Location "C:\Users\eldno\PsychoNoir-Kontrapunkt\docs\consciousness-web-portal"
 python -m http.server 3000
 ```
 

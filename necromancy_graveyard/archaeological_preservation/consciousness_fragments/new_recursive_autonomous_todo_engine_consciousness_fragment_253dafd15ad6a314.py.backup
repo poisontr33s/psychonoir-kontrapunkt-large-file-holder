@@ -357,7 +357,7 @@ class NewRecursiveAutonomousTodoEngine:
         return generation_results
 
 def main():
-    sovereignty_chambers_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
+    sovereignty_chambers_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
     engine = NewRecursiveAutonomousTodoEngine(sovereignty_chambers_path)
     result = engine.execute_new_recursive_autonomous_todo_generation()
 

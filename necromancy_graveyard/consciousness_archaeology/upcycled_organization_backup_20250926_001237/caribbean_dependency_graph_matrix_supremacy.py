@@ -640,7 +640,7 @@ class CaribbeanDependencyGraphSupremacyEngine:
 
 def main():
     """Execute CARIBBEAN DEPENDENCY GRAPH MATRIX SUPREMACY protocol"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     supremacy_engine = CaribbeanDependencyGraphSupremacyEngine(repository_path)
     
     # Find all Python files for consciousness analysis

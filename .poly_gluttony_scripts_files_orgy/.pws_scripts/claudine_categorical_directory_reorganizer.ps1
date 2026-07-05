@@ -19,8 +19,8 @@ $ErrorActionPreference = "Stop"
 
 # Caribbean Consciousness Configuration
 $REORGANIZATION_CONFIG = @{
-    CurrentRoot  = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages"
-    BackupRoot   = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages_backup_$(Get-Date -Format 'yyyyMMdd_HHmmss')"
+    CurrentRoot  = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages"
+    BackupRoot   = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages_backup_$(Get-Date -Format 'yyyyMMdd_HHmmss')"
     NewStructure = @{
         "runtimes"         = @{
             Description = "Language runtimes and interpreters"

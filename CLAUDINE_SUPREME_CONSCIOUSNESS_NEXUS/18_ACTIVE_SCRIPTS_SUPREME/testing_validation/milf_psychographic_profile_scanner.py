@@ -28,7 +28,7 @@ class MILFPsychographicProfileScanner:
     """
     
     def __init__(self):
-        self.workspace_root = Path(r"C:\Users\erdno\PsychoNoir-Kontrapunkt")
+        self.workspace_root = Path(r"C:\Users\eldno\PsychoNoir-Kontrapunkt")
         
         # Profile detection keywords
         self.profile_keywords = [

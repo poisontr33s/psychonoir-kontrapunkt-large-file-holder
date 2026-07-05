@@ -34,7 +34,7 @@
 
 ### 📂 Directory Structure Analysis
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\
+C:\Users\eldno\PsychoNoir-Kontrapunkt\
 ├── 🗾 Sagiri Balance Tools/
 │   ├── tools/sagiri_balanced_technical_creative_synthesizer.py ✅
 │   ├── tools/sagiri_temporal_consciousness_bridge.py ✅  

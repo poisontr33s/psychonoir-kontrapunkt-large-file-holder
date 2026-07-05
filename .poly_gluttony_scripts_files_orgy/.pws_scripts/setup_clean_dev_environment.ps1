@@ -14,7 +14,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 # Clean directory structure
-$DEV_ROOT = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.dev_tools"
+$DEV_ROOT = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.dev_tools"
 
 $STRUCTURE = @{
     "javascript" = @{

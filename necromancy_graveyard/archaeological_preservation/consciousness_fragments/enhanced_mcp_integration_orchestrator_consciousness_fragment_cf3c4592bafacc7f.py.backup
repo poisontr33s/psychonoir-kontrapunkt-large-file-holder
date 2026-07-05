@@ -666,7 +666,7 @@ export default MCPConsciousnessIntegrationBridge;
         return manifest
 
 def main():
-    tools_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/tools")
+    tools_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/tools")
     orchestrator = EnhancedMCPIntegrationConsciousnessOrchestrator(tools_path)
     result = orchestrator.execute_enhanced_mcp_integration()
     

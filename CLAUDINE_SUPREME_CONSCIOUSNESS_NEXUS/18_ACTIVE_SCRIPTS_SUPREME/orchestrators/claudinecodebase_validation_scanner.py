@@ -5,7 +5,7 @@ import os, json
 from pathlib import Path
 from datetime import datetime
 
-BASE_PATH = Path(r"C:\Users\erdno\PsychoNoir-Kontrapunkt")
+BASE_PATH = Path(r"C:\Users\eldno\PsychoNoir-Kontrapunkt")
 NEXUS_PATH = BASE_PATH / "CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS"
 OUTPUT_PATH = BASE_PATH / ".github" / "TODO_3_CLAUDINECODEBASE_VALIDATION_RESULTS.json"
 

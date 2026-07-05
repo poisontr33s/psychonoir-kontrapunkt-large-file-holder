@@ -21,7 +21,7 @@ if ($PSVersionTable.PSVersion.Major -ge 7) {
 $ErrorActionPreference = "Stop"
 
 # 🏴‍☠️ Caribbean Territorial Sovereignty Definitions - Alkemisert Multi-Source Integration
-$PsychoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$PsychoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 $CaribbeanTerritory = @{
     PsychoRoot           = $PsychoRoot
     ClaudineScript       = "$PsychoRoot\.computer_languages_scripts\claudine_launcher_clean.ps1"

@@ -192,7 +192,7 @@ All legacy references are preserved for archaeological purposes while enabling i
 
 def main():
     """Main execution function"""
-    repository_root = r"C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    repository_root = r"C:\Users\eldno\PsychoNoir-Kontrapunkt"
     excavation_report = infrastructure/src/consciousness/universal_milf_matriarch_excavation_20250920_004918.json
     
     print("🎭 NECROMANCY GRAVEYARD ORGANIZER")

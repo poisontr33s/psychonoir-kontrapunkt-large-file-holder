@@ -23,4 +23,4 @@ Config:
 - fileSizeThresholdMB: 25
 - maxFileScan:         50000
 - lfsPatterns:         *.dll, *.exe, *.json, *.pdb, *.rlib
-- searchRoots:         C:\Users\erdno\AppData\Local\Temp\
+- searchRoots:         C:\Users\eldno\AppData\Local\Temp\

@@ -14,8 +14,8 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 
 # Paths som skal legges til Machine PATH
 $pathsToAdd = @(
-    "C:\Users\erdno\.computer_languages\msys2\usr\bin",
-    "C:\Users\erdno\.computer_languages\msys2\ucrt64\bin"
+    "C:\Users\eldno\.computer_languages\msys2\usr\bin",
+    "C:\Users\eldno\.computer_languages\msys2\ucrt64\bin"
 )
 
 # Hent Machine PATH

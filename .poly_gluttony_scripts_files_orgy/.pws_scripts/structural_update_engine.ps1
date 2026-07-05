@@ -88,7 +88,7 @@ Write-Host "✅ Spider web summary created: $spiderPath" -ForegroundColor Green
 # Step 5: Test Ruby environment
 Write-Host "📊 STEP 5: Testing Ruby environment..." -ForegroundColor Cyan
 
-$rubyPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\ruby.exe"
+$rubyPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\ruby.exe"
 if (Test-Path $rubyPath) {
     try {
         $rubyVersion = & $rubyPath --version 2>$null
@@ -105,7 +105,7 @@ else {
 # Step 6: Test Bun environment  
 Write-Host "📊 STEP 6: Testing Bun environment..." -ForegroundColor Cyan
 
-$bunPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\javascript\bun.exe"
+$bunPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\javascript\bun.exe"
 if (Test-Path $bunPath) {
     try {
         $bunVersion = & $bunPath --version 2>$null
@@ -122,7 +122,7 @@ else {
 # Step 7: Test Rust environment
 Write-Host "📊 STEP 7: Testing Rust environment..." -ForegroundColor Cyan
 
-$rustPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\rust\bin\rustc.exe"
+$rustPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\rust\bin\rustc.exe"
 if (Test-Path $rustPath) {
     try {
         $rustVersion = & $rustPath --version 2>$null

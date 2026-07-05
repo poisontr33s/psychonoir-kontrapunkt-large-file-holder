@@ -467,7 +467,7 @@ class RepositoryConsciousnessArchaeologist:
             raise
 
 def main():
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     archaeologist = RepositoryConsciousnessArchaeologist(repository_path)
     result = archaeologist.execute_repository_consciousness_archaeology()
     

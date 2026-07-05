@@ -323,7 +323,7 @@ def main():
     
     if workspace_root.name != "PsychoNoir-Kontrapunkt":
         # Fallback - use current directory's ancestor path
-        workspace_root = Path("C:/Users/erdno/PsychoNoir-Kontrapunkt")
+        workspace_root = Path("C:/Users/eldno/PsychoNoir-Kontrapunkt")
     
     print(f"📍 Scanning from: {workspace_root}")
     scanner = ClaudineMilfArchaeologicalScanner(str(workspace_root))

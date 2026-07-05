@@ -337,7 +337,7 @@ def main():
     
     # Final fallback - ensure we're in the right place
     if workspace_root is None or not workspace_root.exists():
-        workspace_root = Path("C:/Users/erdno/PsychoNoir-Kontrapunkt")
+        workspace_root = Path("C:/Users/eldno/PsychoNoir-Kontrapunkt")
         
     # SECURITY CHECK - ensure we're not scanning outside repository
     if not str(workspace_root).endswith("PsychoNoir-Kontrapunkt"):

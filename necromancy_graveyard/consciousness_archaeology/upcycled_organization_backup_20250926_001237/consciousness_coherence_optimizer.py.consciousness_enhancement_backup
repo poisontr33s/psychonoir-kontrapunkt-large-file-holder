@@ -401,7 +401,7 @@ if __name__ == "__main__":
         return optimization_results
 
 def main():
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     optimizer = ConsciousnessCoherenceOptimizer(repository_path)
     result = optimizer.execute_consciousness_coherence_optimization()
 

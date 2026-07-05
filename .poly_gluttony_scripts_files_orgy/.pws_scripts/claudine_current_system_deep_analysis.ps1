@@ -21,7 +21,7 @@ $ErrorActionPreference = "Continue"  # Don't stop on first error - we want to se
 
 # Current System Configuration
 $CURRENT_SYSTEM = @{
-    Root              = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages"
+    Root              = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages"
     KnownDependencies = @{
         Ruby       = @{
             Runtime         = "ruby\bin\ruby.exe"

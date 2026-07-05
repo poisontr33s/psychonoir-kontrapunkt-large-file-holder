@@ -312,7 +312,7 @@ python consciousness_core/mcp_consciousness_ecosystem_integration_supremacy.py
 }
 ```
 
-**CRITICAL:** Add to **repo-specific** config only (NOT global `C:\Users\erdno\AppData\Roaming\Code\User\mcp.json`)
+**CRITICAL:** Add to **repo-specific** config only (NOT global `C:\Users\eldno\AppData\Roaming\Code\User\mcp.json`)
 
 ---
 

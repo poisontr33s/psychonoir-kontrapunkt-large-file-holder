@@ -75,7 +75,7 @@ Ctrl+Shift+P (Windows)
 
 ### **Steg 4: Naviger til Python 3.14.0**
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe
+C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe
 ```
 
 ### **Alternativ: Refresh Python Interpreters**
@@ -217,7 +217,7 @@ Copy-Item "$uvPython\*.dll" -Destination .computer_languages\python\ -Force
 
 **Din global settings.json har INGEN Python settings:**
 ```jsonc
-// C:\Users\erdno\AppData\Roaming\Code\User\settings.json
+// C:\Users\eldno\AppData\Roaming\Code\User\settings.json
 {
   "python.createEnvironment.trigger": "off",  // Bare denne!
   "[python]": {
@@ -271,7 +271,7 @@ Copy-Item "$uvPython\*.dll" -Destination .computer_languages\python\ -Force
 1. Åpne VS Code Command Palette: `Ctrl+Shift+P`
 2. Søk: `Python: Select Interpreter`
 3. Velg: `Enter interpreter path...`
-4. Naviger til: `C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe`
+4. Naviger til: `C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe`
 5. ✅ Done!
 
 ---
@@ -320,7 +320,7 @@ uv python pin 3.14.0
 
 ### **Test 1: Basic Python**
 ```powershell
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt
 python --version
 # Python 3.14.0 ✅
 ```
@@ -328,7 +328,7 @@ python --version
 ### **Test 2: Python Path**
 ```powershell
 python -c "import sys; print(sys.executable)"
-# C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe ✅
+# C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python\python.exe ✅
 ```
 
 ### **Test 3: Package Imports**
@@ -414,7 +414,7 @@ uv pip install --python python.exe black pytest mypy
 
 ```powershell
 # Fra workspace root:
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt
 uv python pin 3.14.0
 ```
 

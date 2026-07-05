@@ -10,8 +10,8 @@ Write-Host ""
 
 # 1. Update conflicting HOME variables
 Write-Host "1. Updating HOME variables to point to .poly_gluttony..." -ForegroundColor Yellow
-$env:RUBY_ROOT = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.poly_gluttony\ruby"
-$env:BUN_INSTALL = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.poly_gluttony\bun"
+$env:RUBY_ROOT = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.poly_gluttony\ruby"
+$env:BUN_INSTALL = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.poly_gluttony\bun"
 
 Write-Host "   ✅ RUBY_ROOT = $env:RUBY_ROOT" -ForegroundColor Green
 Write-Host "   ✅ BUN_INSTALL = $env:BUN_INSTALL" -ForegroundColor Green

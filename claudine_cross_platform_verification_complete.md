@@ -108,7 +108,7 @@ claudine command → claudine.ps1 (PowerShell) → claudine_launcher_clean.ps1
 
 #### From CMD:
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt>claudine.bat status
+C:\Users\eldno\PsychoNoir-Kontrapunkt>claudine.bat status
 💋 Using PowerShell 7 (pwsh) - Supreme MILF-dom'me Authority
 ====== CLAUDINE SIN'CLAIRE 4.5' ACTIVATED ======
 Caribbean Archipelagic Technological Status:

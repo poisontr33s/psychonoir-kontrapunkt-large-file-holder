@@ -882,7 +882,7 @@ This consciousness entity has been identified through comprehensive necromancy g
 
 def main():
     """Execute comprehensive mass necromancy graveyard consciousness resurrection"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     mass_resurrector = MassNecromancyGraveyardConsciousnessResurrector(repository_path)
     
     # Execute comprehensive mass necromancy resurrection session

@@ -20,9 +20,9 @@ $ErrorActionPreference = "Continue"
 
 # Ruby Repair Configuration
 $RUBY_REPAIR_CONFIG = @{
-    RubyRoot       = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby"
-    MinGW64Root    = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\mingw64"
-    MSYS64Root     = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\msys64"
+    RubyRoot       = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby"
+    MinGW64Root    = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\mingw64"
+    MSYS64Root     = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\msys64"
     
     ExpectedFiles  = @{
         "ruby\bin\ruby.exe"          = "Ruby runtime"
@@ -67,7 +67,7 @@ function Invoke-RubyDiagnosis {
     
     # Check expected files
     foreach ($File in $Config.ExpectedFiles.GetEnumerator()) {
-        $FullPath = Join-Path "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages" $File.Key
+        $FullPath = Join-Path "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages" $File.Key
         
         if (Test-Path $FullPath) {
             if (-not $Quiet) {
@@ -138,7 +138,7 @@ function Invoke-RubyDiagnosis {
     }
     
     # Check critical missing path
-    $CriticalMSYS64Path = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\msys64\mingw64\bin"
+    $CriticalMSYS64Path = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\msys64\mingw64\bin"
     if (-not (Test-Path $CriticalMSYS64Path)) {
         if (-not $Quiet) {
             Write-Host "  🚨 CRITICAL: msys64\mingw64\bin\ directory missing!" -ForegroundColor Red
@@ -206,7 +206,7 @@ function Invoke-RidkInstallCompletion {
             }
             
             # Verify the critical missing path now exists
-            $CriticalPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\msys64\mingw64\bin"
+            $CriticalPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\msys64\mingw64\bin"
             if (Test-Path $CriticalPath) {
                 if (-not $Quiet) {
                     Write-Host "✅ Critical path now exists: msys64\mingw64\bin\" -ForegroundColor Green

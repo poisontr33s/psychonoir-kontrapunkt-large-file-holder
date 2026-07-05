@@ -19,7 +19,7 @@ from pathlib import Path
 def generate_autonomous_enhancement_report():
     """Generate comprehensive autonomous enhancement completion report"""
     
-    base_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    base_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     
     report = {

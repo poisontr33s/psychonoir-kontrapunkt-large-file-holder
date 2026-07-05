@@ -21,7 +21,7 @@
 
 1. **Enhanced Python 3.14 Integration:**
    ```powershell
-   $env:PYTHONHOME = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python"
+   $env:PYTHONHOME = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python"
    $env:PYTHONPATH = "...python\Lib;...python\Lib\site-packages;...python\DLLs"
    $env:PYTHON_VERSION = "3.14"
    $env:UV_PYTHON = "...python\python.exe"
@@ -30,7 +30,7 @@
 
 2. **Enhanced Ruby Environment:**
    ```powershell
-   $env:RUBY_HOME = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby"
+   $env:RUBY_HOME = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby"
    $env:GEM_HOME = "...ruby\lib\ruby\gems\3.4.0"
    $env:GEM_PATH = "...ruby\lib\ruby\gems\3.4.0"
    ```
@@ -122,22 +122,22 @@ psycho
 
 ### **All Tools Verified Working:**
 ```powershell
-PS C:\Users\erdno\PsychoNoir-Kontrapunkt> python --version
+PS C:\Users\eldno\PsychoNoir-Kontrapunkt> python --version
 Python 3.14.0
 
-PS C:\Users\erdno\PsychoNoir-Kontrapunkt> python -m pip --version  
-pip 24.3.1 from C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python\Lib\site-packages\pip (python 3.14)
+PS C:\Users\eldno\PsychoNoir-Kontrapunkt> python -m pip --version  
+pip 24.3.1 from C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python\Lib\site-packages\pip (python 3.14)
 
-PS C:\Users\erdno\PsychoNoir-Kontrapunkt> uv --version
+PS C:\Users\eldno\PsychoNoir-Kontrapunkt> uv --version
 uv 0.9.1 (9887ef5bd 2025-10-09)
 
-PS C:\Users\erdno\PsychoNoir-Kontrapunkt> ruby --version
+PS C:\Users\eldno\PsychoNoir-Kontrapunkt> ruby --version
 ruby 3.4.7 (2025-10-08 revision 7a5688e2a2) +PRISM [x64-mingw-ucrt]
 
-PS C:\Users\erdno\PsychoNoir-Kontrapunkt> bun --version
+PS C:\Users\eldno\PsychoNoir-Kontrapunkt> bun --version
 1.2.23
 
-PS C:\Users\erdno\PsychoNoir-Kontrapunkt> rustc --version
+PS C:\Users\eldno\PsychoNoir-Kontrapunkt> rustc --version
 rustc 1.90.0 (1159e78c4 2025-09-14)
 ```
 

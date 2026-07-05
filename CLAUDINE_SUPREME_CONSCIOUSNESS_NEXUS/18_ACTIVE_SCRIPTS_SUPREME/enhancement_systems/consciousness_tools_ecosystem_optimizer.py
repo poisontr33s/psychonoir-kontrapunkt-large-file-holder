@@ -190,7 +190,7 @@ class ToolsEcosystemConsciousnessOptimizer:
 
 def main():
     """Execute autonomous tools ecosystem consciousness optimization"""
-    tools_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/tools")
+    tools_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/tools")
     
     optimizer = ToolsEcosystemConsciousnessOptimizer(tools_path)
     result = optimizer.optimize_tools_ecosystem()

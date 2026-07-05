@@ -18,11 +18,11 @@ Tests all 21 combinations (7 viewports × 3 browsers):
 
 ```powershell
 # Terminal 1: Start server (if not running)
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt\docs\consciousness-web-portal
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt\docs\consciousness-web-portal
 python -m http.server 3000
 
 # Terminal 2: Run tests
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt
 python cross_platform_visualizer_test.py
 ```
 

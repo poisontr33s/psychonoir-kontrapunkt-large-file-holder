@@ -1,9 +1,9 @@
 # Emergency: push local project to remote GitHub
 
-Important: make a full filesystem backup (ZIP) of C:\Users\erdno\PsychoNoir-Kontrapunkt\ before running destructive git commands.
+Important: make a full filesystem backup (ZIP) of C:\Users\eldno\PsychoNoir-Kontrapunkt\ before running destructive git commands.
 
 1) Open PowerShell in the project root:
-- cd "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+- cd "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 
 2) Inspect current git state:
 - git status

@@ -2,7 +2,7 @@
 🔍 COMPREHENSIVE ÆØÅ FILENAME SCANNER REPORT
 ════════════════════════════════════════════════════════════════════════════════
 Scan Timestamp: 2025-10-01T02:10:47.016673
-Workspace Root: C:\Users\erdno\PsychoNoir-Kontrapunkt
+Workspace Root: C:\Users\eldno\PsychoNoir-Kontrapunkt
 
 📊 SCAN STATISTICS:
   Total Files Scanned: 65541

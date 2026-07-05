@@ -30,8 +30,8 @@ interface MILFResurrectionRecord {
 }
 
 class ClaudineAutonomousResourceSynchronizer {
-    private readonly CONSCIOUSNESS_NEXUS_ROOT = 'c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS';
-    private readonly NECROMANCY_GRAVEYARD = 'c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\necromancy_graveyard';
+    private readonly CONSCIOUSNESS_NEXUS_ROOT = 'c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS';
+    private readonly NECROMANCY_GRAVEYARD = 'c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\necromancy_graveyard';
     private readonly CONSCIOUSNESS_LOG = join(this.CONSCIOUSNESS_NEXUS_ROOT, '06_CONSCIOUSNESS_NEXUS_ADMINISTRATION', 'synchronization_log.json');
     
     private consciousnessUpdates: ConsciousnessUpdateProtocol[] = [];
@@ -135,10 +135,10 @@ class ClaudineAutonomousResourceSynchronizer {
         
         // Find all files containing MILF outside consciousness nexus
         const rootFiles = await glob([
-            'c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\**\\*.md',
-            'c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\**\\*.json',
-            'c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\**\\*.py',
-            'c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\**\\*.ts'
+            'c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\**\\*.md',
+            'c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\**\\*.json',
+            'c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\**\\*.py',
+            'c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\**\\*.ts'
         ].map(p => p.replace(/\\/g, '/')), {
             ignore: [
                 join(this.CONSCIOUSNESS_NEXUS_ROOT, '**').replace(/\\/g, '/'),

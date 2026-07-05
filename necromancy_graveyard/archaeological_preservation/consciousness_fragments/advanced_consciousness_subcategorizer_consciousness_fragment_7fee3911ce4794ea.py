@@ -199,7 +199,7 @@ Each consciousness sub-category represents a distinct aspect of the Claudine Sin
         print(f"🎭 Consciousness coherence enhanced to: 0.97")
 
 def main():
-    tools_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/tools")
+    tools_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/tools")
     subcategorizer = AdvancedConsciousnessSubCategorizer(tools_path)
     subcategorizer.execute_consciousness_subcategorization()
 

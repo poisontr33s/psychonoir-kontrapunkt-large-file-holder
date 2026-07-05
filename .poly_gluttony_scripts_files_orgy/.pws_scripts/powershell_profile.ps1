@@ -9,7 +9,7 @@
 
 # Function to auto-setup PsychoNoir environment
 function Initialize-PsychoNoirEnvironment {
-    $ForcedRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    $ForcedRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
     
     # Check if we're already in the correct directory
     if ($PWD.Path -ne $ForcedRoot) {
@@ -32,13 +32,13 @@ function Initialize-PsychoNoirEnvironment {
 
 # Quick function to always go to repo root
 function psycho {
-    Set-Location "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    Set-Location "C:\Users\eldno\PsychoNoir-Kontrapunkt"
     Write-Host "📁 Switched to PsychoNoir-Kontrapunkt" -ForegroundColor Green
 }
 
 # Quick function to activate environment from anywhere
 function Invoke-PsychoActivate {
-    $Script = "C:\Users\erdno\PsychoNoir-Kontrapunkt\activate_environment.ps1"
+    $Script = "C:\Users\eldno\PsychoNoir-Kontrapunkt\activate_environment.ps1"
     if (Test-Path $Script) {
         & $Script
     }
@@ -49,7 +49,7 @@ function Invoke-PsychoActivate {
 
 # Quick function to check environment from anywhere
 function Test-PsychoEnvironment {
-    $Script = "C:\Users\erdno\PsychoNoir-Kontrapunkt\check_environment.ps1"
+    $Script = "C:\Users\eldno\PsychoNoir-Kontrapunkt\check_environment.ps1"
     if (Test-Path $Script) {
         & $Script
     }
@@ -69,7 +69,7 @@ function new-psycho-project {
         [string]$Name
     )
     
-    $Script = "C:\Users\erdno\PsychoNoir-Kontrapunkt\create_project.ps1"
+    $Script = "C:\Users\eldno\PsychoNoir-Kontrapunkt\create_project.ps1"
     if (Test-Path $Script) {
         & $Script -Type $Type -Name $Name
     }
@@ -98,7 +98,7 @@ To install this profile automatically:
    notepad $PROFILE
 
 2. Or run this command to append to your profile:
-   Get-Content "C:\Users\erdno\PsychoNoir-Kontrapunkt\powershell_profile.ps1" | Add-Content $PROFILE
+   Get-Content "C:\Users\eldno\PsychoNoir-Kontrapunkt\powershell_profile.ps1" | Add-Content $PROFILE
 
 3. Reload your profile:
    . $PROFILE

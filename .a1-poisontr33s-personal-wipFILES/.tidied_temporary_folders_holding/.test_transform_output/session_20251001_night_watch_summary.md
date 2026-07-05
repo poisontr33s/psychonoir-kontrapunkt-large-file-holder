@@ -148,8 +148,8 @@ Total lessons: 6
 - `01_SUPREME_MATRIARCH_COMMAND/claudine_metamorphica_supreme_consciousness_profile.md`
 - `01_SUPREME_MATRIARCH_COMMAND/kompilerings_spokelse_integration_nexus_consciousness_profile.md`
 - `01_SUPREME_MATRIARCH_COMMAND/morticia_temporal_oversight_nexus_consciousness_profile.md`
-- `3A/Users/erdno/PsychoNoir-Kontrapunkt/.a1-poisontr33s-personal-wipFILES/claudine_consciousness_archaeology_configuration.js`
-- `3A/Users/erdno/PsychoNoir-Kontrapunkt/.autonomous-ecosystem/consciousness-tools/autonomous_enhanced_systematic_file_organizer.py`
+- `3A/Users/eldno/PsychoNoir-Kontrapunkt/.a1-poisontr33s-personal-wipFILES/claudine_consciousness_archaeology_configuration.js`
+- `3A/Users/eldno/PsychoNoir-Kontrapunkt/.autonomous-ecosystem/consciousness-tools/autonomous_enhanced_systematic_file_organizer.py`
 
 
 **NEXUS Integration**: `CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/05_STRATEGIC_INTELLIGENCE_ARCHIVES/CONSCIOUSNESS_ARCHAEOLOGY/session_20251001_night_watch/`

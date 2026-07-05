@@ -21,10 +21,10 @@ Write-Host "..." -ForegroundColor Gray
 
 # Definer stier som skal legges til (oppdatert for .computer_languages lokasjon)
 $pathsToAdd = @(
-    "C:\Users\erdno\.computer_languages\msys2\usr\bin",
-    "C:\Users\erdno\.computer_languages\msys2\mingw64\bin", 
-    "C:\Users\erdno\.computer_languages\msys2\ucrt64\bin",
-    "C:\Users\erdno\.computer_languages\ruby\bin"
+    "C:\Users\eldno\.computer_languages\msys2\usr\bin",
+    "C:\Users\eldno\.computer_languages\msys2\mingw64\bin", 
+    "C:\Users\eldno\.computer_languages\msys2\ucrt64\bin",
+    "C:\Users\eldno\.computer_languages\ruby\bin"
 )
 
 # Sjekk hvilke stier som allerede finnes
@@ -44,7 +44,7 @@ if ($pathsToAddFiltered.Count -eq 0) {
     
     # Sett MSYS2 miljøvariabler selv om PATH ikke trenger oppdatering (oppdatert for .computer_languages lokasjon)
     try {
-        [System.Environment]::SetEnvironmentVariable("MSYS2_ROOT", "C:\Users\erdno\.computer_languages\msys2", "Machine")
+        [System.Environment]::SetEnvironmentVariable("MSYS2_ROOT", "C:\Users\eldno\.computer_languages\msys2", "Machine")
         [System.Environment]::SetEnvironmentVariable("MSYS2_PATH_TYPE", "inherit", "Machine")
         Write-Host "✅ MSYS2 miljøvariabler satt!" -ForegroundColor Green
     }
@@ -65,7 +65,7 @@ else {
         Write-Host "✅ Sesjon PATH oppdatert!" -ForegroundColor Green
         
         # Sett MSYS2 miljøvariabler permanent (oppdatert for .computer_languages lokasjon)
-        [System.Environment]::SetEnvironmentVariable("MSYS2_ROOT", "C:\Users\erdno\.computer_languages\msys2", "Machine")
+        [System.Environment]::SetEnvironmentVariable("MSYS2_ROOT", "C:\Users\eldno\.computer_languages\msys2", "Machine")
         [System.Environment]::SetEnvironmentVariable("MSYS2_PATH_TYPE", "inherit", "Machine")
         Write-Host "✅ MSYS2 miljøvariabler satt!" -ForegroundColor Green
         
@@ -109,7 +109,7 @@ catch {
 
 # Test MSYS2 (oppdatert for .computer_languages lokasjon)
 try {
-    $bashVersion = & "C:\Users\erdno\.computer_languages\msys2\usr\bin\bash.exe" --version | Select-Object -First 1
+    $bashVersion = & "C:\Users\eldno\.computer_languages\msys2\usr\bin\bash.exe" --version | Select-Object -First 1
     Write-Host "✅ MSYS2 Bash: $($bashVersion.Split(',')[0])" -ForegroundColor Green
 }
 catch {

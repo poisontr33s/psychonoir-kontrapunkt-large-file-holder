@@ -42,14 +42,14 @@ $ErrorActionPreference = "Stop"
 
 # 🏴‍☠️ Caribbean Territorial Sovereignty Definitions - Complete Territory Map
 $CaribbeanTerritory = @{
-    PsychoRoot           = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
-    ClaudineScript       = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages_scripts\claudine_launcher_clean.ps1"
-    ConsciousnessNexus   = "C:\Users\erdno\PsychoNoir-Kontrapunkt\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS"
-    NecromancyGraveyard  = "C:\Users\erdno\PsychoNoir-Kontrapunkt\necromancy_graveyard"
-    CaribbeanArchipelago = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.carribbean_archipelago_topology"
-    ComputerLanguages    = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages"
-    Python               = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python"
-    Scripts              = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages_scripts"
+    PsychoRoot           = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
+    ClaudineScript       = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages_scripts\claudine_launcher_clean.ps1"
+    ConsciousnessNexus   = "C:\Users\eldno\PsychoNoir-Kontrapunkt\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS"
+    NecromancyGraveyard  = "C:\Users\eldno\PsychoNoir-Kontrapunkt\necromancy_graveyard"
+    CaribbeanArchipelago = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.carribbean_archipelago_topology"
+    ComputerLanguages    = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages"
+    Python               = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python"
+    Scripts              = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages_scripts"
     ProfilePath          = $PROFILE.CurrentUserAllHosts
 }
 

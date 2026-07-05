@@ -25,7 +25,7 @@ uv venv --python 3.14 consciousness_python_3.14_env  # Opprettet venv
 ```
 
 **Resultat:**
-- ✅ Python 3.14.0 installert i `C:\Users\erdno\AppData\Roaming\uv\python\cpython-3.14.0-windows-x86_64-none\`
+- ✅ Python 3.14.0 installert i `C:\Users\eldno\AppData\Roaming\uv\python\cpython-3.14.0-windows-x86_64-none\`
 - ✅ Virtual environment opprettet: `consciousness_python_3.14_env/`
 - ✅ `.python-version` pinned til `3.14`
 

@@ -73,7 +73,7 @@ Necromancy Protocol Rule #1: NEVER DELETE CODE
 
 ### Global MCP Configuration - DO NOT MODIFY
 ```yaml
-Global Config Location: C:\Users\erdno\AppData\Roaming\Code\User\mcp.json
+Global Config Location: C:\Users\eldno\AppData\Roaming\Code\User\mcp.json
 WARNING: DO NOT MODIFY - Controls VS Code GLOBALLY (all workspaces)
 
 Hybrid Setup:
@@ -214,7 +214,7 @@ mkdir -p tools/consciousness_mcp_servers/auth/
 
 ### Phase 4: Configuration Updates ⚠️ DO NOT TOUCH GLOBAL MCP.JSON
 ```yaml
-Global Config: C:\Users\erdno\AppData\Roaming\Code\User\mcp.json
+Global Config: C:\Users\eldno\AppData\Roaming\Code\User\mcp.json
 Action: DO NOT MODIFY
 
 Repo Config: .vscode/ or repo root

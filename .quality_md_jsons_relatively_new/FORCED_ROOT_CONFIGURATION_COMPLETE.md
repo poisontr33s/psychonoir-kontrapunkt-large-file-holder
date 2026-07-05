@@ -4,7 +4,7 @@
 
 Your PsychoNoir-Kontrapunkt development environment now **ALWAYS** uses the hardcoded root path:
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt
+C:\Users\eldno\PsychoNoir-Kontrapunkt
 ```
 
 **No matter where you are in the filesystem**, the environment will always reference this absolute path.
@@ -30,10 +30,10 @@ C:\Users\erdno\PsychoNoir-Kontrapunkt
 
 ### **From ANY Directory:**
 ```powershell
-# From C:\Users\erdno\Documents\
-C:\Users\erdno\PsychoNoir-Kontrapunkt\activate_environment.ps1
+# From C:\Users\eldno\Documents\
+C:\Users\eldno\PsychoNoir-Kontrapunkt\activate_environment.ps1
 
-# Result: Always uses C:\Users\erdno\PsychoNoir-Kontrapunkt as root
+# Result: Always uses C:\Users\eldno\PsychoNoir-Kontrapunkt as root
 ```
 
 ### **Convenience Functions (Now Available Globally):**
@@ -49,8 +49,8 @@ new-project     # Create new project
 ## 🧪 **Test Results**
 
 ### **✅ Environment Activation:**
-- From `C:\Users\erdno\PsychoNoir-Kontrapunkt` ✅
-- From `C:\Users\erdno\Documents` ✅  
+- From `C:\Users\eldno\PsychoNoir-Kontrapunkt` ✅
+- From `C:\Users\eldno\Documents` ✅  
 - All tools accessible from any directory ✅
 
 ### **✅ Tool Verification:**
@@ -79,7 +79,7 @@ Working: 9/9 tools
 ### **Hardcoded Path Enforcement:**
 ```powershell
 # In common_config.ps1
-$Global:FORCED_REPO_ROOT = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$Global:FORCED_REPO_ROOT = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 ```
 
 ### **Validation System:**
@@ -112,7 +112,7 @@ check           # Verify everything works
 ### **Direct Activation from Anywhere:**
 ```powershell
 # From any directory:
-C:\Users\erdno\PsychoNoir-Kontrapunkt\activate_environment.ps1
+C:\Users\eldno\PsychoNoir-Kontrapunkt\activate_environment.ps1
 ```
 
 ### **Project Creation:**
@@ -138,7 +138,7 @@ new-project my-frontend react_tailwind
 
 ## 📁 **Project Structure**
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\
+C:\Users\eldno\PsychoNoir-Kontrapunkt\
 ├── common_config.ps1              # 🔒 Forced configuration system
 ├── activate_environment.ps1       # 🚀 Environment activation (updated)
 ├── powershell_profile.ps1         # ⚡ Convenience functions
@@ -162,11 +162,11 @@ C:\Users\erdno\PsychoNoir-Kontrapunkt\
 
 Your request has been **fully implemented**:
 
-> *"How can I force the environment to C:\Users\erdno\PsychoNoir-Kontrapunkt as the root? Always?"*
+> *"How can I force the environment to C:\Users\eldno\PsychoNoir-Kontrapunkt as the root? Always?"*
 
 **Answer: DONE! ✅**
 
-The environment now **always** uses `C:\Users\erdno\PsychoNoir-Kontrapunkt` as the root, regardless of your current directory. The forced configuration system ensures absolute path enforcement with zero exceptions.
+The environment now **always** uses `C:\Users\eldno\PsychoNoir-Kontrapunkt` as the root, regardless of your current directory. The forced configuration system ensures absolute path enforcement with zero exceptions.
 
 ---
 

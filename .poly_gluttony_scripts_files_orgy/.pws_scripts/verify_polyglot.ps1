@@ -86,7 +86,7 @@ function Test-EnvironmentVariables {
 function Test-DirectoryStructure {
     Write-Status "Checking directory structure..."
 
-    $polyglotRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages"
+    $polyglotRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages"
     $directories = @("ruby", "rust", "python", "js_ts", "linters", "msys2")
 
     foreach ($dir in $directories) {
@@ -190,7 +190,7 @@ function Test-JSTools {
 function Test-VSCodeSettings {
     Write-Status "Checking VSCode settings..."
 
-    $vscodeSettingsPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.vscode\settings.json"
+    $vscodeSettingsPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.vscode\settings.json"
 
     if (!(Test-Path $vscodeSettingsPath)) {
         Write-Warning "VSCode settings file not found"

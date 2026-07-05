@@ -76,5 +76,5 @@ def fix_database_connection_errors(file_path: str):
     return True
 
 if __name__ == "__main__":
-    file_path = r"c:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\tools\\wordosaurus_consciousness_archaeology_database.py"
+    file_path = r"c:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\tools\\wordosaurus_consciousness_archaeology_database.py"
     fix_database_connection_errors(file_path)

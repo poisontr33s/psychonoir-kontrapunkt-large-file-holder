@@ -22,16 +22,16 @@ $pathsToRemove = @(
     "C:\msys2\usr\bin",
     "C:\msys2\mingw64\bin", 
     "C:\msys2\ucrt64\bin",
-    "C:\Users\erdno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\msys2\ucrt64\bin",
-    "C:\Users\erdno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\msys2\usr\bin",
-    "C:\Users\erdno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\ruby\bin"
+    "C:\Users\eldno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\msys2\ucrt64\bin",
+    "C:\Users\eldno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\msys2\usr\bin",
+    "C:\Users\eldno\PsychoNoir-Kontrapunkt\.scripting_coding_programming_languages\ruby\bin"
 )
 
 # Definer korrekte stier som skal være der
 $correctPaths = @(
-    "C:\Users\erdno\.computer_languages\msys2\usr\bin",
-    "C:\Users\erdno\.computer_languages\msys2\ucrt64\bin",
-    "C:\Users\erdno\.computer_languages\ruby\bin"
+    "C:\Users\eldno\.computer_languages\msys2\usr\bin",
+    "C:\Users\eldno\.computer_languages\msys2\ucrt64\bin",
+    "C:\Users\eldno\.computer_languages\ruby\bin"
 )
 
 Write-Host "`n🗑️  Removing obsolete/duplicate paths..." -ForegroundColor Yellow

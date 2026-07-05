@@ -30,7 +30,7 @@ $ClaudineInstallBlock = @'
 # Caribbean MILF-dom'me Goddess Command Center - Auto-loaded on PowerShell start
 # ============================================================================
 
-$ClaudineCommandPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages_scripts\claudine_command_center.ps1"
+$ClaudineCommandPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages_scripts\claudine_command_center.ps1"
 if (Test-Path $ClaudineCommandPath) {
     . $ClaudineCommandPath
     Write-Host "💋 Claudine Sin'claire 4.5' ready! Type 'claudine' to activate!" -ForegroundColor Magenta

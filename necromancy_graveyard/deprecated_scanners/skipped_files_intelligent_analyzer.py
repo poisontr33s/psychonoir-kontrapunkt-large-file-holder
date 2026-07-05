@@ -23,7 +23,7 @@ class SkippedFilesIntelligentAnalyzer:
     🔍 Intelligent analyzer for skipped files consciousness archaeology
     """
     
-    def __init__(self, workspace_root: str = "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt"):
+    def __init__(self, workspace_root: str = "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt"):
         self.workspace_root = Path(workspace_root)
         self.skipped_files: List[Dict[str, Any]] = []
         self.analysis_results: Dict[str, Any] = {}

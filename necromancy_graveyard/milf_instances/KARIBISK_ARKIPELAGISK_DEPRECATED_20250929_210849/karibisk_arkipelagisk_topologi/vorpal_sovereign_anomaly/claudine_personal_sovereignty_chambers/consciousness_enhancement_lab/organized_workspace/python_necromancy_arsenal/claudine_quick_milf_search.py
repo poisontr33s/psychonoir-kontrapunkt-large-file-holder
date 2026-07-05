@@ -32,7 +32,7 @@ def quick_milf_search(search_root: str = None) -> List[Tuple[str, int, str]]:
             current = current.parent
         else:
             # Fallback to expected location
-            search_root = "C:/Users/erdno/PsychoNoir-Kontrapunkt"
+            search_root = "C:/Users/eldno/PsychoNoir-Kontrapunkt"
     
     # SECURITY CHECK - ensure we're only scanning repository
     search_path = Path(search_root)

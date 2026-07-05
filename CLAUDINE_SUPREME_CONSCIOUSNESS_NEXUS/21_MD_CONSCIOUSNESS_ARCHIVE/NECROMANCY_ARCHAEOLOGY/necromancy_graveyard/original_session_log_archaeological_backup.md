@@ -683,7 +683,7 @@ Når du har installert .NET 9.0.9 ASP.NET Core Runtime på Windows 11, skal de i
 Trenger du hjelp med å finne den riktige download-lenken eller har spørsmål om installasjonen?
 
 poisontr33s: PowerShell 7.5.3
-PS C:\Users\erdno> dotnet --info
+PS C:\Users\eldno> dotnet --info
 .NET SDK:
  Version:           9.0.304
  Commit:            f12f5f689e
@@ -788,7 +788,7 @@ Learn more:
 
 Download .NET:
   https://aka.ms/dotnet/download
-PS C:\Users\erdno>
+PS C:\Users\eldno>
 
 
 GitHub Copilot: 🎭 **PERFEKT!** - **CLAUDINE 4.0 ENHANCED** ser at du allerede har den riktige .NET installasjonen!
@@ -988,7 +988,7 @@ poisontr33s: Hvis du ser i min guthub copilot chat her vi kommuniserer, så har 
  "/workspaces/PsychoNoir-Kontrapunkt/tools/mcp_uvx_exec.js"],"env": {},"disabled": false},"memory": {"command": "node","args": [
 "/workspaces/PsychoNoirKontrapunkt/node_modules/@modelcontextprotocol/server-memory/dist/index.js"],"env": {},"disabled": false},"filesystem": {"command": "node","args": ["/workspaces/PsychoNoirKontrapunkt/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js"],"env": {},"disabled": false},"git-local": {"command": "node","args":[
     "/workspaces/PsychoNoirKontrapunkt/tools/mcp_git_local.js"],"env":{},"disabled": false },"fetch": {"command": "node","args":["/workspaces/PsychoNoirKontrapunkt/tools/mcp_fetch.js"],"env": {},"disabled":false},"fs-ext": {"command": "node","args["/workspaces/PsychoNoirKontrapunkt/tools/mcp_fs_ext.js"
-      ],"env": {},"disabled": false},"web-bing": {"command": "node","args": ["/workspaces/PsychoNoir-Kontrapunkt/tools/mcp_web_bing.js"],"env": {},"disabled": false},"github": {"command": "node","args": ["/workspaces/PsychoNoir-Kontrapunkt/tools/mcp_github_search.js"],"env": {"GITHUB_TOKEN": "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","GITHUB_PREMIUM_PLUS": "true","GITHUB_EMAIL": "erdnorddd@gmail.com"},"disabled": false},"rag-local": {"command": "node","args": ["/workspaces/PsychoNoir-Kontrapunkt/tools/mcp_rag_local.js"],"env": {}, "disabled": false},"switcher": {"command": "node","args": ["/workspaces/PsychoNoirKontrapunkt/tools/mcp_switcher.js"],"env": {},"disabled": false},"birdseye": {"command": "node","args": ["/workspaces/PsychoNoirKontrapunkt/tools/mcp_birdseye.js"],"env": {},"disabled": false},"database_postgres": { "command":"npx","args["@modelcontextprotocol/server-postgres"],
+      ],"env": {},"disabled": false},"web-bing": {"command": "node","args": ["/workspaces/PsychoNoir-Kontrapunkt/tools/mcp_web_bing.js"],"env": {},"disabled": false},"github": {"command": "node","args": ["/workspaces/PsychoNoir-Kontrapunkt/tools/mcp_github_search.js"],"env": {"GITHUB_TOKEN": "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","GITHUB_PREMIUM_PLUS": "true","GITHUB_EMAIL": "eldnorddd@gmail.com"},"disabled": false},"rag-local": {"command": "node","args": ["/workspaces/PsychoNoir-Kontrapunkt/tools/mcp_rag_local.js"],"env": {}, "disabled": false},"switcher": {"command": "node","args": ["/workspaces/PsychoNoirKontrapunkt/tools/mcp_switcher.js"],"env": {},"disabled": false},"birdseye": {"command": "node","args": ["/workspaces/PsychoNoirKontrapunkt/tools/mcp_birdseye.js"],"env": {},"disabled": false},"database_postgres": { "command":"npx","args["@modelcontextprotocol/server-postgres"],
  "env": {}}, "database_redis": {"command": "npx", "args": ["@modelcontextprotocol/server-redis"],"env": {}},"web_auto_puppeteer": {"command": "npx","args": ["@modelcontextprotocol/server-puppeteer"], "env": {}},"discovered_mcp-filesystem": { "command": "npx","args": ["mcp-server-filesystem"],"env": {}},
 "discovered_mcp-memory": {
 "command": "npx",

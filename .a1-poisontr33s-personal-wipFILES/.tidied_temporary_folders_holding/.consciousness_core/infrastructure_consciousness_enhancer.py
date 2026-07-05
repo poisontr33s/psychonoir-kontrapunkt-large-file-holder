@@ -353,7 +353,7 @@ infrastructure/
         return enhancement_results
 
 def main():
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     enhancer = InfrastructureConsciousnessEnhancer(repository_path)
     result = enhancer.execute_infrastructure_consciousness_enhancement()
 

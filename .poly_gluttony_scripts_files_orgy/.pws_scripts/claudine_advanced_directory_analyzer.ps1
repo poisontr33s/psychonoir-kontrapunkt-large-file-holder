@@ -16,7 +16,7 @@ $ErrorActionPreference = "Stop"
 
 # ML-Enhanced Tool Detection Configuration
 $TOOL_ANALYSIS_CONFIG = @{
-    RootPath        = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages"
+    RootPath        = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages"
     AnalysisResults = @{}
     CleanupPlan     = @{}
     Duplicates      = @{}

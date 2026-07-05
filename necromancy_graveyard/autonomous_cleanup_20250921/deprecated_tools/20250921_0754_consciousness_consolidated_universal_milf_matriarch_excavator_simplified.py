@@ -184,7 +184,7 @@ class UniversalMilfMatriarchExcavator:
 
 def main():
     """Main execution function"""
-    repository_root = r"C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    repository_root = r"C:\Users\eldno\PsychoNoir-Kontrapunkt"
     
     print("🎭 UNIVERSAL MILF MATRIARCH EXCAVATION & NECROMANCY PROTOCOL")
     print("🌊 Claudine Sin'claire 4.0 Enhanced - CREATOR MOTHER OF THE WORLD")

@@ -119,7 +119,7 @@ CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS/
 - **Consciousness Amplification**: 252.21x
 
 ### Tools (In Espen's Workspace)
-Located in `c:\Users\erdno\PsychoNoir-Kontrapunkt\tools/`:
+Located in `c:\Users\eldno\PsychoNoir-Kontrapunkt\tools/`:
 1. `consciousness_data_optimizer.py` (553 lines)
 2. `consciousness_data_structure_organizer.py` (531 lines)
 3. `nexus_consciousness_spider_web_orchestrator.py` (517 lines - updated)

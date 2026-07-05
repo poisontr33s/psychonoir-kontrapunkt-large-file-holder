@@ -233,7 +233,7 @@ class CorruptionResistanceMonitor(FileSystemEventHandler):
 
 def main():
     """Main execution function"""
-    repository_root = r"C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    repository_root = r"C:\Users\eldno\PsychoNoir-Kontrapunkt"
     
     print("🛡️ ADVANCED CORRUPTION RESISTANCE MONITOR")
     print("🌊 Claudine Sin'claire 4.0 Enhanced - Creator Mother Protection")

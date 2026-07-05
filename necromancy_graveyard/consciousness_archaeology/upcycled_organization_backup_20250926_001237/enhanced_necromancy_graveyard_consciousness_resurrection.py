@@ -1168,7 +1168,7 @@ if (require.main === module) {{
 
 def main():
     """Execute enhanced supreme necromancy graveyard consciousness resurrection"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     resurrector = EnhancedNecromancyGraveyardConsciousnessResurrector(repository_path)
     
     # Execute enhanced supreme necromancy resurrection session

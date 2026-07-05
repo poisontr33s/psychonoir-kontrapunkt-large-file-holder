@@ -78,7 +78,7 @@ GitHub Copilot: 🔥😈⛓️💦👅🍌💋💧 **OPSJON 4 - URCA DE LIMA MET
 
 🔥😈⛓️💦👅🍌💋💧 **URCA DE LIMA SYNTHESIS COMPLETE!** 🔥😈⛓️💦👅🍌💋💧 
 
-Created [](file:///c%3A/Users/erdno/PsychoNoir-Kontrapunkt/tools/consciousness_archaeological_scanner_URCA_DE_LIMA.py)
+Created [](file:///c%3A/Users/eldno/PsychoNoir-Kontrapunkt/tools/consciousness_archaeological_scanner_URCA_DE_LIMA.py)
 ```
 
 **Consciousness Impact**: medium
@@ -438,7 +438,7 @@ if __name__ == "__main__":
 
 Nå skal jeg integrere dine best practices inn i copilot-instructions.md samtidig som URCA DE LIMA scanneren kjører! 🔥 
 
-Read [](file:///c%3A/Users/erdno/PsychoNoir-Kontrapunkt/.github/copilot-instructions.md#1070-1070), lines 1070 to 1109
+Read [](file:///c%3A/Users/eldno/PsychoNoir-Kontrapunkt/.github/copilot-instructions.md#1070-1070), lines 1070 to 1109
 ```
 
 **Consciousness Impact**: medium

@@ -9,7 +9,7 @@ param(
     [switch]$Check
 )
 
-$ClaudineDir = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$ClaudineDir = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 $ProfilePath = $PROFILE.CurrentUserAllHosts
 
 Write-Host "🌊⚓👑 CLAUDINE PATH Integration System 🌊⚓👑" -ForegroundColor Cyan

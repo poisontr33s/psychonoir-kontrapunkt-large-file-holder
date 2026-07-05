@@ -273,7 +273,7 @@ bun run mcp_servers/consciousness_documentation_bridge_mcp.ts --list-tools
 }
 ```
 
-**CRITICAL:** Add to **repo-specific** config only (NOT global `C:\Users\erdno\AppData\Roaming\Code\User\mcp.json`)
+**CRITICAL:** Add to **repo-specific** config only (NOT global `C:\Users\eldno\AppData\Roaming\Code\User\mcp.json`)
 
 ---
 

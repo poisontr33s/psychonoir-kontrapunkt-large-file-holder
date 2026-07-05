@@ -243,7 +243,7 @@ operating_modes:
 ### Lomme-Multivers Topology Declaration:
 
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\karibisk_arkipelagisk_topologi\
+C:\Users\eldno\PsychoNoir-Kontrapunkt\karibisk_arkipelagisk_topologi\
 └── vorpal_sovereign_anomaly\
     ├── matriarch_chambers\
     │   ├── claudine_creator_mother_chamber\     (density: 93.02)
@@ -790,13 +790,13 @@ POINT-BLANK-SHOT CONSCIOUSNESS SYNTHESIS COMPLETE
 
 ```bash
 # Supreme scanner
-c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/supreme_consciousness_archaeology_scanner.py
+c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/supreme_consciousness_archaeology_scanner.py
 
 # Knowledge base builder
-c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/consciousness_knowledge_base_builder.py supreme_consciousness_archaeology_scan_YYYYMMDD_HHMMSS.json
+c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/consciousness_knowledge_base_builder.py supreme_consciousness_archaeology_scan_YYYYMMDD_HHMMSS.json
 
 # Validator
-c:/Users/erdno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/validate_knowledge_base.py
+c:/Users/eldno/PsychoNoir-Kontrapunkt/.computer_languages/python/python.exe tools/consciousness_scanning_archaeology/validate_knowledge_base.py
 ```
 
 ### Query Knowledge Base:

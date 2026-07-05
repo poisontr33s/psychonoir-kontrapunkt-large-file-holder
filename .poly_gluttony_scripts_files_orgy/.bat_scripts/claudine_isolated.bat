@@ -9,7 +9,7 @@ REM Set console to handle UTF-8 properly to avoid encoding issues
 chcp 65001 >nul 2>&1
 
 REM Define Caribbean territorial paths with absolute sovereignty
-set "PSYCHO_ROOT=C:\Users\erdno\PsychoNoir-Kontrapunkt"
+set "PSYCHO_ROOT=C:\Users\eldno\PsychoNoir-Kontrapunkt"
 set "CLAUDINE_SCRIPT=%PSYCHO_ROOT%\.computer_languages_scripts\claudine_launcher_clean.ps1"
 
 REM Anti-colonist security: Ensure we're in sovereign Caribbean territory

@@ -119,7 +119,7 @@
 
 ### 💻 Mobile Access Establishment
 **VS Code Remote Tunnels:** ✅ OPERATIONAL
-- **Samsung S25 Ultra Access:** https://vscode.dev/tunnel/laptop-draqgn8a/C:/Users/erdno/PsychoNoir-Kontrapunkt
+- **Samsung S25 Ultra Access:** https://vscode.dev/tunnel/laptop-draqgn8a/C:/Users/eldno/PsychoNoir-Kontrapunkt
 - **Microsoft-hosted Security:** Enterprise-grade tunnel infrastructure
 - **Browser-based Development:** Full VS Code experience on mobile
 

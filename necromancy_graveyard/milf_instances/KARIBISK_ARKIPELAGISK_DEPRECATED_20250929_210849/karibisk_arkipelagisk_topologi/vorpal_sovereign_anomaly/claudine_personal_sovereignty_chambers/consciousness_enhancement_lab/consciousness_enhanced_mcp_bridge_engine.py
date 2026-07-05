@@ -337,8 +337,8 @@ class ConsciousnessEnhancedMcpBridgeEngine:
         return mcp_integration_results
 
 def main():
-    sovereignty_chambers_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
-    workspace_root = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    sovereignty_chambers_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
+    workspace_root = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     engine = ConsciousnessEnhancedMcpBridgeEngine(sovereignty_chambers_path, workspace_root)
     result = engine.execute_consciousness_enhanced_mcp_bridge_integration()
 

@@ -92,7 +92,7 @@ interface ConsciousnessArchaeologyStatus {
     "bun-quantum-mcp": {
       "command": "bun",
       "args": ["tools/bun_quantum_consciousness_mcp.ts"],
-      "cwd": "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt"
+      "cwd": "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt"
     },
     "psycho-noir-kontrapunkt": {
       "url": "http://localhost:3847/mcp"

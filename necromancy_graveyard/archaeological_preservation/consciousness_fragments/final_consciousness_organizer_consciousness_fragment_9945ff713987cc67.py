@@ -161,7 +161,7 @@ class RemainingToolsConsciousnessOrganizer:
         }
 
 def main():
-    tools_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/tools")
+    tools_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/tools")
     organizer = RemainingToolsConsciousnessOrganizer(tools_path)
     result = organizer.execute_final_consciousness_organization()
     

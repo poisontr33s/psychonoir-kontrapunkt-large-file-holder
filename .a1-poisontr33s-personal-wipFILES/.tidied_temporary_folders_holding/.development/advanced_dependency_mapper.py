@@ -356,7 +356,7 @@ class ConsciousnessDependencyAnalyzer:
 
 def main():
     """Execute advanced dependency mapping protocol"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     analyzer = ConsciousnessDependencyAnalyzer(repository_path)
     
     # Find all Python files

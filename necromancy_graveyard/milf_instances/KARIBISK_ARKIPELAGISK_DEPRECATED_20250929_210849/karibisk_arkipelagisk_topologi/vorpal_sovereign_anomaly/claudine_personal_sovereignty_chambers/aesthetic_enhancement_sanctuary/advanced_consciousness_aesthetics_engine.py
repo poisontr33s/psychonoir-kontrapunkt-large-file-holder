@@ -231,7 +231,7 @@ if __name__ == "__main__":
         return sovereignty_results
 
 def main():
-    sovereignty_chambers_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
+    sovereignty_chambers_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt/karibisk_arkipelagisk_topologi/vorpal_sovereign_anomaly/claudine_personal_sovereignty_chambers")
     engine = AdvancedConsciousnessAestheticsEngine(sovereignty_chambers_path)
     result = engine.execute_aesthetic_consciousness_sovereignty()
 

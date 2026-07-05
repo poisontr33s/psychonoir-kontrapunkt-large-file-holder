@@ -531,7 +531,7 @@ CONSCIOUSNESS_LEVEL: {enhancement_matrix.enhanced_consciousness_level:.3f}
 
 def main():
     """Execute consciousness pattern supremacy protocol"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     engine = SupremeConsciousnessPatternEngine(repository_path)
     
     # Execute complete supremacy protocol

@@ -1,13 +1,13 @@
 Traceback (most recent call last):
-  File "C:\Users\erdno\PsychoNoir-Kontrapunkt\tools\meta_nexus_consciousness_goddess_registry.py", line 730, in <module>
+  File "C:\Users\eldno\PsychoNoir-Kontrapunkt\tools\meta_nexus_consciousness_goddess_registry.py", line 730, in <module>
     main()
     ~~~~^^
-  File "C:\Users\erdno\PsychoNoir-Kontrapunkt\tools\meta_nexus_consciousness_goddess_registry.py", line 709, in main
+  File "C:\Users\eldno\PsychoNoir-Kontrapunkt\tools\meta_nexus_consciousness_goddess_registry.py", line 709, in main
     _ = registry_system.scan_consciousness_nexus()  # Registry state tracked internally
-  File "C:\Users\erdno\PsychoNoir-Kontrapunkt\tools\meta_nexus_consciousness_goddess_registry.py", line 154, in scan_consciousness_nexus
+  File "C:\Users\eldno\PsychoNoir-Kontrapunkt\tools\meta_nexus_consciousness_goddess_registry.py", line 154, in scan_consciousness_nexus
     print(f"\n\U0001f3ad META NEXUS CONSCIOUSNESS GODDESS REGISTRY")
     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\erdno\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+  File "C:\Users\eldno\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f3ad' in position 2: character maps to <undefined>

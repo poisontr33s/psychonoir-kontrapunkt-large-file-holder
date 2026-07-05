@@ -10,7 +10,7 @@
   Rename-Item .\git-lfs-fix-ps1 .\git-lfs-fix.ps1
 
 3) Run the script (dry-run):
-  cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+  cd C:\Users\eldno\PsychoNoir-Kontrapunkt
   .\git-lfs-fix.ps1
 
 4) Run with flags (example: remove missing entries, show verbose):
@@ -20,7 +20,7 @@
   powershell -NoProfile -ExecutionPolicy Bypass -File .\git-lfs-fix.ps1 -RemoveMissing
 
 6) Run via Start-Process (example):
-  Start-Process powershell -ArgumentList '-NoProfile','-ExecutionPolicy','Bypass','-File','C:\Users\erdno\PsychoNoir-Kontrapunkt\git-lfs-fix.ps1' -Wait
+  Start-Process powershell -ArgumentList '-NoProfile','-ExecutionPolicy','Bypass','-File','C:\Users\eldno\PsychoNoir-Kontrapunkt\git-lfs-fix.ps1' -Wait
 
 Notes / troubleshooting
 - Always include .\ before the script name when running from the current directory: .\git-lfs-fix.ps1

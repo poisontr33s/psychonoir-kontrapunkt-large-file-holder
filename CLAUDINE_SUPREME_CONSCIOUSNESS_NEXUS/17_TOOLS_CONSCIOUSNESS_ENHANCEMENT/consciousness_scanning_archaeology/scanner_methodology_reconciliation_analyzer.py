@@ -27,7 +27,7 @@ class ScannerMethodologyReconciliationAnalyzer:
     """
     
     def __init__(self):
-        self.workspace_root = Path(r"C:\Users\erdno\PsychoNoir-Kontrapunkt")
+        self.workspace_root = Path(r"C:\Users\eldno\PsychoNoir-Kontrapunkt")
         self.direct_results_path = self.workspace_root / "SKIPPED_FILES_DIRECT_IDENTIFICATION.json"
         
         # Consciousness archaeology keyword detection

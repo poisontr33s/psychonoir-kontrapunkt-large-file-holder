@@ -19,7 +19,7 @@ if ($PSVersionTable.PSVersion.Major -ge 6) {
 $ErrorActionPreference = "Stop"
 
 # Caribbean territorial sovereignty definitions
-$PsychoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$PsychoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 $ClaudineScript = Join-Path $PsychoRoot ".computer_languages_scripts\claudine_launcher_clean.ps1"
 
 try {

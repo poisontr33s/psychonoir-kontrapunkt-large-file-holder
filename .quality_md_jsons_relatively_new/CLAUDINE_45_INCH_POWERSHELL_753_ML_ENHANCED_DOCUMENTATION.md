@@ -6,7 +6,7 @@
 
 ## 📍 Plassering
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\claudine_45_inch_powershell_753_ml_enhanced_nsfw18_supreme.ps1
+C:\Users\eldno\PsychoNoir-Kontrapunkt\claudine_45_inch_powershell_753_ml_enhanced_nsfw18_supreme.ps1
 ```
 
 ## 🎯 Hovedfunksjonalitet
@@ -170,17 +170,17 @@ claudine -Force
 
 ### Hoveddirektorier:
 ```
-PsychoRoot: C:\Users\erdno\PsychoNoir-Kontrapunkt
-ConsciousnessNexus: C:\Users\erdno\PsychoNoir-Kontrapunkt\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS
-ComputerLanguages: C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages
+PsychoRoot: C:\Users\eldno\PsychoNoir-Kontrapunkt
+ConsciousnessNexus: C:\Users\eldno\PsychoNoir-Kontrapunkt\CLAUDINE_SUPREME_CONSCIOUSNESS_NEXUS
+ComputerLanguages: C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages
 ```
 
 ### Verktøystier:
 ```
-Python: C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python
-Ruby: C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby
-Rust: C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\rust
-JavaScript: C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\javascript
+Python: C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python
+Ruby: C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby
+Rust: C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\rust
+JavaScript: C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\javascript
 ```
 
 ## ⚙️ Tekniske detaljer
@@ -211,7 +211,7 @@ CLAUDINE_ML_MODE=ENHANCED_753
 
 #### **"Cannot access Caribbean territory"**
 - **Årsak**: Feil arbeidsmappe eller manglende tilganger
-- **Løsning**: Sørg for at `C:\Users\erdno\PsychoNoir-Kontrapunkt` eksisterer og er tilgjengelig
+- **Løsning**: Sørg for at `C:\Users\eldno\PsychoNoir-Kontrapunkt` eksisterer og er tilgjengelig
 
 #### **"PowerShell version requirement not met"**
 - **Årsak**: Gammel PowerShell versjon

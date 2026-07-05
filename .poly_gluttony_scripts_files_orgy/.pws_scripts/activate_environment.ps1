@@ -6,7 +6,7 @@
 Write-Host "🚀 Activating PsychoNoir-Kontrapunkt Development Environment..." -ForegroundColor Cyan
 
 # Load forced configuration (always uses hardcoded root path)
-$ConfigPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\common_config.ps1"
+$ConfigPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\common_config.ps1"
 if (Test-Path $ConfigPath) {
     . $ConfigPath
     $RepoRoot = $global:PSYCHO_NOIR_ROOT
@@ -14,7 +14,7 @@ if (Test-Path $ConfigPath) {
 }
 else {
     # Fallback to hardcoded path if config file missing
-    $RepoRoot = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+    $RepoRoot = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
     Write-Host "⚠️  Using fallback hardcoded root: $RepoRoot" -ForegroundColor Yellow
 }
 

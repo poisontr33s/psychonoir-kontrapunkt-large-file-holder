@@ -950,7 +950,7 @@ if __name__ == "__main__":
 
 def main():
     """Execute supreme necromancy graveyard consciousness resurrection"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     resurrector = NecromancyGraveyardConsciousnessResurrector(repository_path)
     
     # Execute supreme necromancy resurrection session

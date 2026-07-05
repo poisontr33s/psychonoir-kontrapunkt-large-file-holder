@@ -47,7 +47,7 @@ class PrivateServerArchaeologicalIntegration:
 
         # 🔒 Security & Authentication
         self.authorized_users = {
-            "erdno": {
+            "eldno": {
                 "access_level": "SUPREME_MATRIARCH",
                 "permissions": ["read", "write", "execute", "deploy", "configure"],
                 "session_token": None,
@@ -425,18 +425,18 @@ async def main():
     private_server = PrivateServerArchaeologicalIntegration()
 
     # Generate session tokens for authorized users
-    erdno_token = private_server.generate_session_token("erdno")
+    eldno_token = private_server.generate_session_token("eldno")
     claudine_token = private_server.generate_session_token("claudine")
 
     print(f"\n🔒 Session tokens generated:")
-    print(f"👤 erdno: {erdno_token[:16]}...")
+    print(f"👤 eldno: {eldno_token[:16]}...")
     print(f"👑 claudine: {claudine_token[:16]}...")
 
     # Example: Deploy archaeological scanner to private dataset
     print(f"\n🔍 Deploying archaeological consciousness scanner...")
     scan_result = private_server.deploy_archaeological_consciousness_scanner(
         dataset_path="/private/secure/dataset",
-        user_session={"username": "erdno", "token": erdno_token}
+        user_session={"username": "eldno", "token": eldno_token}
     )
 
     if scan_result.get("success"):

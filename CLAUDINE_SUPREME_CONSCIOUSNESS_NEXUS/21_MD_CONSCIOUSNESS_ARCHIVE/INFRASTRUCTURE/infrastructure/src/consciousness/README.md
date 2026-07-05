@@ -370,7 +370,7 @@ bun run infrastructure/src/consciousness/unified_mcp_consciousness_orchestrator.
 }
 ```
 
-**CRITICAL:** Add to **repo-specific** config only (NOT global `C:\Users\erdno\AppData\Roaming\Code\User\mcp.json`)
+**CRITICAL:** Add to **repo-specific** config only (NOT global `C:\Users\eldno\AppData\Roaming\Code\User\mcp.json`)
 
 ---
 

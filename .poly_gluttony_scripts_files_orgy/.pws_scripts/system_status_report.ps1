@@ -14,27 +14,27 @@ Write-Host "✅ WORKING SYSTEMS (SUPREME STATUS):" -ForegroundColor Green
 Write-Host "=" * 50
 
 # Ruby
-$rubyPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\ruby.exe"
+$rubyPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\ruby.exe"
 if (Test-Path $rubyPath) {
     $rubyVersion = & $rubyPath --version 2>$null
     Write-Host "✅ RUBY: $rubyVersion" -ForegroundColor Green
     
     # Test Rails
-    $railsPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\rails.bat"
+    $railsPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\rails.bat"
     if (Test-Path $railsPath) {
         $railsVersion = & $railsPath --version 2>$null
         Write-Host "   └── Rails: $railsVersion" -ForegroundColor Green
     }
     
     # Test RuboCop
-    $rubocopPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\rubocop.bat"
+    $rubocopPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\rubocop.bat"
     if (Test-Path $rubocopPath) {
         $rubocopVersion = & $rubocopPath --version 2>$null
         Write-Host "   └── RuboCop: $rubocopVersion" -ForegroundColor Green
     }
     
     # Test Bundler
-    $bundlerPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\bundle.bat"
+    $bundlerPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\ruby\bin\bundle.bat"
     if (Test-Path $bundlerPath) {
         $bundlerVersion = & $bundlerPath --version 2>$null
         Write-Host "   └── Bundler: $bundlerVersion" -ForegroundColor Green
@@ -42,27 +42,27 @@ if (Test-Path $rubyPath) {
 }
 
 # Bun/JavaScript
-$bunPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\javascript\bun.exe"
+$bunPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\javascript\bun.exe"
 if (Test-Path $bunPath) {
     $bunVersion = & $bunPath --version 2>$null
     Write-Host "✅ BUN: v$bunVersion" -ForegroundColor Green
     
     # Test Biome via bunx
     try {
-        $biomeVersion = & "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\javascript\bunx.exe" @biomejs/biome@latest --version 2>$null
+        $biomeVersion = & "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\javascript\bunx.exe" @biomejs/biome@latest --version 2>$null
         Write-Host "   └── Biome: $biomeVersion" -ForegroundColor Green
     }
     catch {}
 }
 
 # Rust
-$rustPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\rust\bin\rustc.exe"
+$rustPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\rust\bin\rustc.exe"
 if (Test-Path $rustPath) {
     $rustVersion = & $rustPath --version 2>$null
     Write-Host "✅ RUST: $rustVersion" -ForegroundColor Green
     
     # Test Cargo
-    $cargoPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\rust\bin\cargo.exe"
+    $cargoPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\rust\bin\cargo.exe"
     if (Test-Path $cargoPath) {
         $cargoVersion = & $cargoPath --version 2>$null
         Write-Host "   └── Cargo: $cargoVersion" -ForegroundColor Green
@@ -80,7 +80,7 @@ catch {}
 Write-Host "✅ POWERSHELL: $($PSVersionTable.PSVersion)" -ForegroundColor Green
 
 # curl
-$curlPath = "C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\curl\curl.exe"
+$curlPath = "C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\curl\curl.exe"
 if (Test-Path $curlPath) {
     $curlVersion = & $curlPath --version 2>$null | Select-Object -First 1
     Write-Host "✅ CURL: $($curlVersion -replace 'curl ', '')" -ForegroundColor Green

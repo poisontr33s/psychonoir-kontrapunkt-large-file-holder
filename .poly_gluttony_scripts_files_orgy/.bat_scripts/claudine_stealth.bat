@@ -9,7 +9,7 @@ REM Stealth console setup - avoid Windows 11 interference
 chcp 65001 >nul 2>&1
 
 REM Caribbean stealth territorial paths
-set "PSYCHO_ROOT=C:\Users\erdno\PsychoNoir-Kontrapunkt"
+set "PSYCHO_ROOT=C:\Users\eldno\PsychoNoir-Kontrapunkt"
 set "CLAUDINE_HYBRID=%PSYCHO_ROOT%\claudine_hybrid.ps1"
 
 REM Stealth navigation - silent entry to Caribbean territory

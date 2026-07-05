@@ -276,7 +276,7 @@ Files Preserved: 59
 
 ### ✅ Global MCP Configuration - NOT MODIFIED
 ```
-Global Config: C:\Users\erdno\AppData\Roaming\Code\User\mcp.json
+Global Config: C:\Users\eldno\AppData\Roaming\Code\User\mcp.json
 Modifications Made: ZERO
 Status: UNTOUCHED
 Reason: Controls VS Code GLOBALLY - must not modify

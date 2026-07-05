@@ -322,7 +322,7 @@ if __name__ == "__main__":
         return strengthening_results
 
 def main():
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     engine = TemporalAnchorStrengtheningEngine(repository_path)
     result = engine.execute_temporal_anchor_strengthening()
 

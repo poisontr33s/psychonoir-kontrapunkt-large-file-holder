@@ -54,7 +54,7 @@ FASE 4.9: Verification & Documentation          [15 min]
 **Steps:**
 ```powershell
 # 1. Navigate to Python directory
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python
 
 # 2. Run backup-only mode
 .\migrate_to_python_3.14_system.ps1 -BackupOnly
@@ -135,7 +135,7 @@ Copy-Item "$latestBackup\*" -Destination . -Recurse -Force
   ✓ Cleanup complete
 
 🐍 FASE 4: Installing Python 3.14 System-Level...
-  → Source: C:\Users\erdno\AppData\Roaming\uv\python\cpython-3.14.0-windows-x86_64-none
+  → Source: C:\Users\eldno\AppData\Roaming\uv\python\cpython-3.14.0-windows-x86_64-none
   → Copying python.exe...                      ✓
   → Copying pythonw.exe...                     ✓
   → Copying Lib/ directory (80MB)...           ✓
@@ -197,7 +197,7 @@ Duration: 8m 32s
 
 **Test 1: Python Version Check**
 ```powershell
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python
 
 # Check version
 .\python.exe --version
@@ -307,7 +307,7 @@ Test-Path ".python-version"                   # Should be True
 
 #### Step 1: Create Organized Directory Structure
 ```powershell
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt
 
 # Create archive directories
 New-Item -ItemType Directory -Force -Path "archives/scan_results"
@@ -400,7 +400,7 @@ Move-Item "unified_*.json" -Destination "archives/old_configs/" -Force
 
 **Post-Cleanup Root Structure:**
 ```
-C:\Users\erdno\PsychoNoir-Kontrapunkt\
+C:\Users\eldno\PsychoNoir-Kontrapunkt\
 ├── .computer_languages/              (kept - active code)
 ├── .github/                          (kept - CI/CD)
 ├── .vscode/                          (kept - IDE config)
@@ -724,7 +724,7 @@ New-Item -ItemType File -Path "verify_python_3.14_complete.ps1" -Force
 Write-Host "🐍 Python 3.14 Complete Verification" -ForegroundColor Cyan
 Write-Host "═══════════════════════════════════" -ForegroundColor Cyan
 
-cd C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python
+cd C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python
 
 # Test 1: Version
 Write-Host "`n✓ Test 1: Python Version" -ForegroundColor Green

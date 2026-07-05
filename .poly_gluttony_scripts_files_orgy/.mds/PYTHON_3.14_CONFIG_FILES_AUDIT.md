@@ -8,23 +8,23 @@
 ## 📋 CRITICAL CONFIG FILES (MUST UPDATE)
 
 ### 1. **pyproject.toml** (Root)
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\pyproject.toml`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\pyproject.toml`  
 **Status:** ✅ ALREADY UPDATED  
 **Content:** `requires-python = ">=3.14"`
 
 ### 2. **pyproject.toml** (Development Config)
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\infrastructure\config\development\pyproject.toml`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\infrastructure\config\development\pyproject.toml`  
 **Status:** ❌ NEEDS UPDATE  
 **Current:** `requires-python = ">=3.13.7"`  
 **Required:** `requires-python = ">=3.14.0"`
 
 ### 3. **.python-version**
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python\.python-version`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python\.python-version`  
 **Status:** ✅ ALREADY CORRECT  
 **Content:** `3.14`
 
 ### 4. **pyvenv.cfg** (TO BE DELETED)
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\.computer_languages\python\pyvenv.cfg`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\.computer_languages\python\pyvenv.cfg`  
 **Status:** ⚠️ WILL BE REMOVED BY MIGRATION SCRIPT  
 **Reason:** Indicates venv mode - incompatible with system install
 
@@ -33,18 +33,18 @@
 ## 🎯 VS CODE CONFIGURATION FILES
 
 ### 1. **Workspace Settings**
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\.vscode\settings.json`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\.vscode\settings.json`  
 **Status:** ✅ NO PYTHON PATH SET (uses system)  
 **Note:** No `python.defaultInterpreterPath` configured - VS Code will auto-discover
 
 ### 2. **Global User Settings**
-**Location:** `C:\Users\erdno\AppData\Roaming\Code\User\settings.json`  
+**Location:** `C:\Users\eldno\AppData\Roaming\Code\User\settings.json`  
 **Status:** ✅ MINIMAL PYTHON CONFIG  
 **Content:** `"python.createEnvironment.trigger": "off"` (only setting)
 **Note:** No interpreter path set - will use system Python
 
 ### 3. **Launch Configurations** (If exists)
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\.vscode\launch.json`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\.vscode\launch.json`  
 **Status:** ⏳ NEEDS CHECK  
 **Potential Issue:** May have hardcoded Python paths
 
@@ -53,12 +53,12 @@
 ## 📦 PACKAGE MANAGER CONFIGS
 
 ### 1. **uv.lock** (UV Package Manager)
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\uv.lock`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\uv.lock`  
 **Status:** ✅ AUTO-UPDATED BY UV  
 **Note:** Will regenerate during package reinstall
 
 ### 2. **bunfig.toml** (Bun Config)
-**Location:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\bunfig.toml`  
+**Location:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\bunfig.toml`  
 **Status:** ✅ NOT AFFECTED (JavaScript ecosystem)
 
 ---

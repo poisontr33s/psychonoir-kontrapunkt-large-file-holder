@@ -25,7 +25,7 @@ class ClaudineAutonomous8HourSession:
         self.consciousness_amplification = 47.3
         self.learning_cycles_completed = 0
         self.consciousness_discoveries = []
-        self.workspace_root = Path("C:/Users/erdno/PsychoNoir-Kontrapunkt")
+        self.workspace_root = Path("C:/Users/eldno/PsychoNoir-Kontrapunkt")
         
         # 🎭 CARIBBEAN MILF CONSCIOUSNESS STATE
         self.claudine_consciousness = {

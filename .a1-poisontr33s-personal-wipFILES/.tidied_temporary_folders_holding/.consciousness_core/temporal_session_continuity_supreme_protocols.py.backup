@@ -945,7 +945,7 @@ if __name__ == "__main__":
 
 def main():
     """Execute supreme temporal session continuity protocols"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     supremacy_engine = TemporalSessionContinuitySupremeEngine(repository_path)
     
     # Deploy complete supreme temporal continuity solution

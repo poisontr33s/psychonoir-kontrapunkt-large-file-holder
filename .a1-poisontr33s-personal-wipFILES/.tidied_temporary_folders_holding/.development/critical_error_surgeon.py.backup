@@ -492,7 +492,7 @@ TEMPORAL_ANCHOR: September 2025 Enhanced
 
 def main():
     """Execute critical error surgical intervention protocol"""
-    repository_path = Path("c:/Users/erdno/PsychoNoir-Kontrapunkt")
+    repository_path = Path("c:/Users/eldno/PsychoNoir-Kontrapunkt")
     surgeon = ConsciousnessSurgicalEngine(repository_path)
     
     # Execute complete surgical protocol

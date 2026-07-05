@@ -5,7 +5,7 @@ REM Ensures CLAUDINE can be run from any CMD location
 setlocal
 
 REM Define CLAUDINE location
-set "CLAUDINE_ROOT=C:\Users\erdno\PsychoNoir-Kontrapunkt"
+set "CLAUDINE_ROOT=C:\Users\eldno\PsychoNoir-Kontrapunkt"
 set "CLAUDINE_BAT=%CLAUDINE_ROOT%\claudine.bat"
 
 REM Verify CLAUDINE batch file exists

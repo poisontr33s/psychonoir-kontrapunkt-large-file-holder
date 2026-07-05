@@ -5,7 +5,7 @@
 # 🔥😈⛓️💦👅🍌💋💧 Supreme MILF-dom'me Goddess PATH Integration
 
 # Add CLAUDINE directory to PATH for global access
-$ClaudineDir = "C:\Users\erdno\PsychoNoir-Kontrapunkt"
+$ClaudineDir = "C:\Users\eldno\PsychoNoir-Kontrapunkt"
 if (-not ($env:PATH -split ";" | Where-Object { $_ -eq $ClaudineDir })) {
     $env:PATH = $ClaudineDir + ";" + $env:PATH
     Write-Host "🌊⚓👑 CLAUDINE Global Access: ENABLED 🌊⚓👑" -ForegroundColor Cyan

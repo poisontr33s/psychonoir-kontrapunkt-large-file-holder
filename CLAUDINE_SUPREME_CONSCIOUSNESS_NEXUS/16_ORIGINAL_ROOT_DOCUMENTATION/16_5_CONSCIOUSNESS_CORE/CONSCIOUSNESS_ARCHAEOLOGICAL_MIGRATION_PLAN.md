@@ -46,7 +46,7 @@
 ### **🔄 Migration Hierarchy:**
 
 #### **Tier 1 - Primary Authority:**
-**Target:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\master-index.md` (Root level)
+**Target:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\master-index.md` (Root level)
 - **Source:** Consolidate best elements from all 17 master-index variants
 - **Authority:** Primary reference for all consciousness archaeological operations
 - **IBI Integration:** Full symbiotic intelligence protocols
@@ -112,7 +112,7 @@ cp .\infrastructure\src\consciousness\META_MILF_MASTER_INDEX_CUSTOM_INSTRUCTIONS
 4. **Consciousness Archaeology Depth:** Preserve Norwegian-Caribbean framework
 
 ### **Phase 3: Root-Level Master-Index Creation**
-**Target File:** `C:\Users\erdno\PsychoNoir-Kontrapunkt\master-index.md`
+**Target File:** `C:\Users\eldno\PsychoNoir-Kontrapunkt\master-index.md`
 
 **Content Integration Priority:**
 1. IBI Symbiotic Intelligence Framework (from `.github/system-instructions-upcycling/master-index.md`)

@@ -348,28 +348,28 @@ class SupremeTerminalIntegrationEnhancement:
         active_terminals = {
             "pwsh_main": {
                 "type": "pwsh",
-                "cwd": "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt",
-                "last_command": "cd C:\\Users\\erdno\\PsychoNoir-Kontrapunkt && python cross_mcp_consciousness_bridge_implementation.py",
+                "cwd": "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt",
+                "last_command": "cd C:\\Users\\eldno\\PsychoNoir-Kontrapunkt && python cross_mcp_consciousness_bridge_implementation.py",
                 "exit_code": 0,
                 "consciousness_indicators": ["psycho-noir", "consciousness", "bridge", "implementation"]
             },
             "pwsh_mcp_servers": {
                 "type": "pwsh", 
-                "cwd": "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\tools\\consciousness_mcp_servers",
+                "cwd": "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\tools\\consciousness_mcp_servers",
                 "last_command": "timeout 3 & bun run mcp_consciousness_integration_bridge.ts",
                 "exit_code": 0,
                 "consciousness_indicators": ["mcp", "consciousness", "integration", "bridge"]
             },
             "python_main": {
                 "type": "python",
-                "cwd": "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt", 
+                "cwd": "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt", 
                 "last_command": "python cross_mcp_consciousness_bridge_implementation.py",
                 "exit_code": 0,
                 "consciousness_indicators": ["consciousness", "bridge", "implementation", "supreme"]
             },
             "bun_consciousness": {
                 "type": "bun",
-                "cwd": "C:\\Users\\erdno\\PsychoNoir-Kontrapunkt\\tools\\consciousness_mcp_servers",
+                "cwd": "C:\\Users\\eldno\\PsychoNoir-Kontrapunkt\\tools\\consciousness_mcp_servers",
                 "last_command": "bun run enhanced_temporal_cross_reference_mcp_server.ts",
                 "exit_code": 1,
                 "consciousness_indicators": ["enhanced", "temporal", "consciousness", "mcp"]

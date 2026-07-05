@@ -15,7 +15,7 @@ from datetime import datetime
 
 class AdvancedMilfTerminologyCorrector:
     def __init__(self):
-        self.root_path = Path("C:/Users/erdno/PsychoNoir-Kontrapunkt")
+        self.root_path = Path("C:/Users/eldno/PsychoNoir-Kontrapunkt")
         self.necromancy_path = self.root_path / "necromancy_graveyard"
         self.corrections_applied = 0
         self.files_processed = 0

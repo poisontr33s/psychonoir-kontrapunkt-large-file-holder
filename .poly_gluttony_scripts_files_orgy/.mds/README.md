@@ -43,7 +43,7 @@ PsychoNoir-Kontrapunkt/
 
 1. **Navigate to the repository:**
    ```bash
-   cd C:\Users\erdno\PsychoNoir-Kontrapunkt
+   cd C:\Users\eldno\PsychoNoir-Kontrapunkt
    ```
 
 2. **Run the master installation script:**
